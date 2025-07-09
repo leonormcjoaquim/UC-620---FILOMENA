@@ -17,6 +17,7 @@ namespace Projeto_620
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
+
         }
     }
 }

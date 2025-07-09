@@ -8,3 +8,14 @@ C:\Users\leono\OneDrive\Ambiente de Trabalho\Exercicios C#\UC 620\Projeto 620\Pr
 C:\Users\leono\OneDrive\Ambiente de Trabalho\Exercicios C#\UC 620\Projeto 620\Projeto 620\obj\Debug\Projeto 620.csproj.CoreCompileInputs.cache
 C:\Users\leono\OneDrive\Ambiente de Trabalho\Exercicios C#\UC 620\Projeto 620\Projeto 620\obj\Debug\Projeto 620.exe
 C:\Users\leono\OneDrive\Ambiente de Trabalho\Exercicios C#\UC 620\Projeto 620\Projeto 620\obj\Debug\Projeto 620.pdb
+C:\Users\leono\OneDrive\Ambiente de Trabalho\Exercicios C#\UC 620\Projeto 620\UC-620---FILOMENA\Projeto 620\bin\Debug\Projeto 620.exe.config
+C:\Users\leono\OneDrive\Ambiente de Trabalho\Exercicios C#\UC 620\Projeto 620\UC-620---FILOMENA\Projeto 620\bin\Debug\Projeto 620.exe
+C:\Users\leono\OneDrive\Ambiente de Trabalho\Exercicios C#\UC 620\Projeto 620\UC-620---FILOMENA\Projeto 620\bin\Debug\Projeto 620.pdb
+C:\Users\leono\OneDrive\Ambiente de Trabalho\Exercicios C#\UC 620\Projeto 620\UC-620---FILOMENA\Projeto 620\obj\Debug\Projeto 620.csproj.AssemblyReference.cache
+C:\Users\leono\OneDrive\Ambiente de Trabalho\Exercicios C#\UC 620\Projeto 620\UC-620---FILOMENA\Projeto 620\obj\Debug\Projeto_620.Form1.resources
+C:\Users\leono\OneDrive\Ambiente de Trabalho\Exercicios C#\UC 620\Projeto 620\UC-620---FILOMENA\Projeto 620\obj\Debug\Projeto_620.Properties.Resources.resources
+C:\Users\leono\OneDrive\Ambiente de Trabalho\Exercicios C#\UC 620\Projeto 620\UC-620---FILOMENA\Projeto 620\obj\Debug\Projeto_620.registar.resources
+C:\Users\leono\OneDrive\Ambiente de Trabalho\Exercicios C#\UC 620\Projeto 620\UC-620---FILOMENA\Projeto 620\obj\Debug\Projeto 620.csproj.GenerateResource.cache
+C:\Users\leono\OneDrive\Ambiente de Trabalho\Exercicios C#\UC 620\Projeto 620\UC-620---FILOMENA\Projeto 620\obj\Debug\Projeto 620.csproj.CoreCompileInputs.cache
+C:\Users\leono\OneDrive\Ambiente de Trabalho\Exercicios C#\UC 620\Projeto 620\UC-620---FILOMENA\Projeto 620\obj\Debug\Projeto 620.exe
+C:\Users\leono\OneDrive\Ambiente de Trabalho\Exercicios C#\UC 620\Projeto 620\UC-620---FILOMENA\Projeto 620\obj\Debug\Projeto 620.pdb

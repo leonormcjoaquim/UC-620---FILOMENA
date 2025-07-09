@@ -10,21 +10,17 @@ using System.Windows.Forms;
 
 namespace Projeto_620
 {
-    public partial class Form1 : Form
+    public partial class registar : Form
     {
-        public Form1()
+        public registar()
         {
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void registar_Load(object sender, EventArgs e)
         {
-            this.Hide();
-            registar frmClientes = new registar();
 
-            frmClientes.Show();
-  
         }
     }
 }
