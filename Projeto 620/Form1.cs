@@ -26,5 +26,10 @@ namespace Projeto_620
             frmClientes.Show();
   
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string huehue = null;
+        }
     }
 }
