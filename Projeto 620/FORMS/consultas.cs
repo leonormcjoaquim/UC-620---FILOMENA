@@ -8,28 +8,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Projeto_620
+namespace Projeto_620.FORMS
 {
-    public partial class Form1 : Form
+    public partial class btn_sair : Form
     {
-        public Form1()
+        public btn_sair()
         {
             InitializeComponent();
-            this.StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            registar frmClientes = new registar();
-
-            frmClientes.Show();
-  
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            string huehue = null;
+            login Login = new login();
+            Login.Show();
         }
     }
 }

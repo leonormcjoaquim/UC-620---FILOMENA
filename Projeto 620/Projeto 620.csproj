@@ -46,22 +46,55 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="FORMS\alimentacao.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FORMS\alimentacao.Designer.cs">
+      <DependentUpon>alimentacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\consultas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\consultas.Designer.cs">
+      <DependentUpon>consultas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\paginaInicial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\paginaInicial.Designer.cs">
+      <DependentUpon>paginaInicial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\treino.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\treino.Designer.cs">
+      <DependentUpon>treino.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="registar.cs">
+    <Compile Include="FORMS\registar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="registar.Designer.cs">
+    <Compile Include="FORMS\registar.Designer.cs">
       <DependentUpon>registar.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="FORMS\consultas.resx">
+      <DependentUpon>consultas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\paginaInicial.resx">
+      <DependentUpon>paginaInicial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\treino.resx">
+      <DependentUpon>treino.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -72,7 +105,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="registar.resx">
+    <EmbeddedResource Include="FORMS\registar.resx">
       <DependentUpon>registar.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">

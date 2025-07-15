@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Projeto_620.FORMS;
 
 namespace Projeto_620
 {
@@ -16,7 +17,7 @@ namespace Projeto_620
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new login());
 
         }
     }
