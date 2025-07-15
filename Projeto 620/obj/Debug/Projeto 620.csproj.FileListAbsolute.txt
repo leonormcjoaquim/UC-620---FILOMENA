@@ -19,3 +19,29 @@ C:\Users\leono\OneDrive\Ambiente de Trabalho\Exercicios C#\UC 620\Projeto 620\UC
 C:\Users\leono\OneDrive\Ambiente de Trabalho\Exercicios C#\UC 620\Projeto 620\UC-620---FILOMENA\Projeto 620\obj\Debug\Projeto 620.csproj.CoreCompileInputs.cache
 C:\Users\leono\OneDrive\Ambiente de Trabalho\Exercicios C#\UC 620\Projeto 620\UC-620---FILOMENA\Projeto 620\obj\Debug\Projeto 620.exe
 C:\Users\leono\OneDrive\Ambiente de Trabalho\Exercicios C#\UC 620\Projeto 620\UC-620---FILOMENA\Projeto 620\obj\Debug\Projeto 620.pdb
+<<<<<<< Updated upstream
+=======
+G:\GitHub\Projeto_UC00620\UC-620---FILOMENA\Projeto 620\bin\Debug\Projeto 620.exe.config
+G:\GitHub\Projeto_UC00620\UC-620---FILOMENA\Projeto 620\bin\Debug\Projeto 620.exe
+G:\GitHub\Projeto_UC00620\UC-620---FILOMENA\Projeto 620\bin\Debug\Projeto 620.pdb
+G:\GitHub\Projeto_UC00620\UC-620---FILOMENA\Projeto 620\obj\Debug\Projeto 620.csproj.AssemblyReference.cache
+G:\GitHub\Projeto_UC00620\UC-620---FILOMENA\Projeto 620\obj\Debug\Projeto 620.exe.config
+G:\GitHub\Projeto_UC00620\UC-620---FILOMENA\Projeto 620\obj\Debug\Projeto_620.Form1.resources
+G:\GitHub\Projeto_UC00620\UC-620---FILOMENA\Projeto 620\obj\Debug\Projeto_620.Properties.Resources.resources
+G:\GitHub\Projeto_UC00620\UC-620---FILOMENA\Projeto 620\obj\Debug\Projeto_620.registar.resources
+G:\GitHub\Projeto_UC00620\UC-620---FILOMENA\Projeto 620\obj\Debug\Projeto 620.csproj.GenerateResource.cache
+G:\GitHub\Projeto_UC00620\UC-620---FILOMENA\Projeto 620\obj\Debug\Projeto 620.csproj.CoreCompileInputs.cache
+G:\GitHub\Projeto_UC00620\UC-620---FILOMENA\Projeto 620\obj\Debug\Projeto 620.exe
+G:\GitHub\Projeto_UC00620\UC-620---FILOMENA\Projeto 620\obj\Debug\Projeto 620.pdb
+A:\ORGANIZAR\Exercicios C#\UC 620\Projeto 620\UC-620---FILOMENA\Projeto 620\bin\Debug\Projeto 620.exe.config
+A:\ORGANIZAR\Exercicios C#\UC 620\Projeto 620\UC-620---FILOMENA\Projeto 620\bin\Debug\Projeto 620.exe
+A:\ORGANIZAR\Exercicios C#\UC 620\Projeto 620\UC-620---FILOMENA\Projeto 620\bin\Debug\Projeto 620.pdb
+A:\ORGANIZAR\Exercicios C#\UC 620\Projeto 620\UC-620---FILOMENA\Projeto 620\obj\Debug\Projeto 620.csproj.AssemblyReference.cache
+A:\ORGANIZAR\Exercicios C#\UC 620\Projeto 620\UC-620---FILOMENA\Projeto 620\obj\Debug\Projeto_620.Form1.resources
+A:\ORGANIZAR\Exercicios C#\UC 620\Projeto 620\UC-620---FILOMENA\Projeto 620\obj\Debug\Projeto_620.Properties.Resources.resources
+A:\ORGANIZAR\Exercicios C#\UC 620\Projeto 620\UC-620---FILOMENA\Projeto 620\obj\Debug\Projeto_620.registar.resources
+A:\ORGANIZAR\Exercicios C#\UC 620\Projeto 620\UC-620---FILOMENA\Projeto 620\obj\Debug\Projeto 620.csproj.GenerateResource.cache
+A:\ORGANIZAR\Exercicios C#\UC 620\Projeto 620\UC-620---FILOMENA\Projeto 620\obj\Debug\Projeto 620.csproj.CoreCompileInputs.cache
+A:\ORGANIZAR\Exercicios C#\UC 620\Projeto 620\UC-620---FILOMENA\Projeto 620\obj\Debug\Projeto 620.exe
+A:\ORGANIZAR\Exercicios C#\UC 620\Projeto 620\UC-620---FILOMENA\Projeto 620\obj\Debug\Projeto 620.pdb
+>>>>>>> Stashed changes
