@@ -7,24 +7,8 @@
       "RelativeMoniker": "D:0:0:{BBDC885C-2778-4D63-8C40-9A1FA2A80EA3}|Projeto 620\\Projeto 620.csproj|solutionrelative:projeto 620\\forms\\paginainicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BBDC885C-2778-4D63-8C40-9A1FA2A80EA3}|Projeto 620\\Projeto 620.csproj|a:\\organizar\\exercicios c#\\uc 620\\projeto 620\\uc-620---filomena\\projeto 620\\forms\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BBDC885C-2778-4D63-8C40-9A1FA2A80EA3}|Projeto 620\\Projeto 620.csproj|solutionrelative:projeto 620\\forms\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BBDC885C-2778-4D63-8C40-9A1FA2A80EA3}|Projeto 620\\Projeto 620.csproj|a:\\organizar\\exercicios c#\\uc 620\\projeto 620\\uc-620---filomena\\projeto 620\\forms\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BBDC885C-2778-4D63-8C40-9A1FA2A80EA3}|Projeto 620\\Projeto 620.csproj|solutionrelative:projeto 620\\forms\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BBDC885C-2778-4D63-8C40-9A1FA2A80EA3}|Projeto 620\\Projeto 620.csproj|a:\\organizar\\exercicios c#\\uc 620\\projeto 620\\uc-620---filomena\\projeto 620\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BBDC885C-2778-4D63-8C40-9A1FA2A80EA3}|Projeto 620\\Projeto 620.csproj|solutionrelative:projeto 620\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BBDC885C-2778-4D63-8C40-9A1FA2A80EA3}|Projeto 620\\Projeto 620.csproj|a:\\organizar\\exercicios c#\\uc 620\\projeto 620\\uc-620---filomena\\projeto 620\\forms\\alimentacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BBDC885C-2778-4D63-8C40-9A1FA2A80EA3}|Projeto 620\\Projeto 620.csproj|solutionrelative:projeto 620\\forms\\alimentacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BBDC885C-2778-4D63-8C40-9A1FA2A80EA3}|Projeto 620\\Projeto 620.csproj|a:\\organizar\\exercicios c#\\uc 620\\projeto 620\\uc-620---filomena\\projeto 620\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BBDC885C-2778-4D63-8C40-9A1FA2A80EA3}|Projeto 620\\Projeto 620.csproj|solutionrelative:projeto 620\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{BBDC885C-2778-4D63-8C40-9A1FA2A80EA3}|Projeto 620\\Projeto 620.csproj|a:\\organizar\\exercicios c#\\uc 620\\projeto 620\\uc-620---filomena\\projeto 620\\forms\\paginainicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BBDC885C-2778-4D63-8C40-9A1FA2A80EA3}|Projeto 620\\Projeto 620.csproj|solutionrelative:projeto 620\\forms\\paginainicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,8 +18,25 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "paginaInicial.cs [Design]",
+              "DocumentMoniker": "A:\\ORGANIZAR\\Exercicios C#\\UC 620\\Projeto 620\\UC-620---FILOMENA\\Projeto 620\\FORMS\\paginaInicial.cs",
+              "RelativeDocumentMoniker": "Projeto 620\\FORMS\\paginaInicial.cs",
+              "ToolTip": "A:\\ORGANIZAR\\Exercicios C#\\UC 620\\Projeto 620\\UC-620---FILOMENA\\Projeto 620\\FORMS\\paginaInicial.cs [Design]",
+              "RelativeToolTip": "Projeto 620\\FORMS\\paginaInicial.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-16T00:06:54.489Z",
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -44,72 +45,10 @@
               "RelativeDocumentMoniker": "Projeto 620\\FORMS\\paginaInicial.cs",
               "ToolTip": "A:\\ORGANIZAR\\Exercicios C#\\UC 620\\Projeto 620\\UC-620---FILOMENA\\Projeto 620\\FORMS\\paginaInicial.cs",
               "RelativeToolTip": "Projeto 620\\FORMS\\paginaInicial.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAIAwwBEAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAHEAAAAAAAAAAAAAwIIAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-15T19:57:07.806Z",
+              "WhenOpened": "2025-07-16T02:24:03.617Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "login.cs",
-              "DocumentMoniker": "A:\\ORGANIZAR\\Exercicios C#\\UC 620\\Projeto 620\\UC-620---FILOMENA\\Projeto 620\\FORMS\\login.cs",
-              "RelativeDocumentMoniker": "Projeto 620\\FORMS\\login.cs",
-              "ToolTip": "A:\\ORGANIZAR\\Exercicios C#\\UC 620\\Projeto 620\\UC-620---FILOMENA\\Projeto 620\\FORMS\\login.cs",
-              "RelativeToolTip": "Projeto 620\\FORMS\\login.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABYAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-15T19:51:10.033Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "A:\\ORGANIZAR\\Exercicios C#\\UC 620\\Projeto 620\\UC-620---FILOMENA\\Projeto 620\\Program.cs",
-              "RelativeDocumentMoniker": "Projeto 620\\Program.cs",
-              "ToolTip": "A:\\ORGANIZAR\\Exercicios C#\\UC 620\\Projeto 620\\UC-620---FILOMENA\\Projeto 620\\Program.cs",
-              "RelativeToolTip": "Projeto 620\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAmwAsAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-15T19:48:13.777Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "login.cs [Design]",
-              "DocumentMoniker": "A:\\ORGANIZAR\\Exercicios C#\\UC 620\\Projeto 620\\UC-620---FILOMENA\\Projeto 620\\FORMS\\login.cs",
-              "RelativeDocumentMoniker": "Projeto 620\\FORMS\\login.cs",
-              "ToolTip": "A:\\ORGANIZAR\\Exercicios C#\\UC 620\\Projeto 620\\UC-620---FILOMENA\\Projeto 620\\FORMS\\login.cs [Design]",
-              "RelativeToolTip": "Projeto 620\\FORMS\\login.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-15T19:48:08.994Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "alimentacao.cs [Design]",
-              "DocumentMoniker": "A:\\ORGANIZAR\\Exercicios C#\\UC 620\\Projeto 620\\UC-620---FILOMENA\\Projeto 620\\FORMS\\alimentacao.cs",
-              "RelativeDocumentMoniker": "Projeto 620\\FORMS\\alimentacao.cs",
-              "ToolTip": "A:\\ORGANIZAR\\Exercicios C#\\UC 620\\Projeto 620\\UC-620---FILOMENA\\Projeto 620\\FORMS\\alimentacao.cs [Design]",
-              "RelativeToolTip": "Projeto 620\\FORMS\\alimentacao.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-15T19:47:47.211Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "A:\\ORGANIZAR\\Exercicios C#\\UC 620\\Projeto 620\\UC-620---FILOMENA\\Projeto 620\\Form1.cs",
-              "RelativeDocumentMoniker": "Projeto 620\\Form1.cs",
-              "ToolTip": "A:\\ORGANIZAR\\Exercicios C#\\UC 620\\Projeto 620\\UC-620---FILOMENA\\Projeto 620\\Form1.cs [Design]",
-              "RelativeToolTip": "Projeto 620\\Form1.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-15T19:45:17.864Z",
-              "EditorCaption": " [Design]"
             }
           ]
         }
