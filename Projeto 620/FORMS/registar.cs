@@ -16,6 +16,7 @@ namespace Projeto_620
         {
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
+            
         }
 
         private void registar_Load(object sender, EventArgs e)
@@ -23,13 +24,7 @@ namespace Projeto_620
 
         }
 
-        private void nightControlBox1_Click(object sender, EventArgs e)
-        {
 
-                Application.Exit();
-
-        }
-      
 
         private void pb_foto_Click(object sender, EventArgs e)
         {
@@ -41,5 +36,32 @@ namespace Projeto_620
             }
             pb_foto.Image = new Bitmap(pb_foto.Image, new Size(150, 150));
         }
+
+        private void nightControlBox1_MouseClick(object sender, MouseEventArgs e)
+        {
+
+            // Use buttons base on their size
+
+            var controlBox = sender as ReaLTaiizor.Controls.NightControlBox;
+            int buttonWidth = controlBox.Width / 3; // 3 buttons 
+
+            if (e.X < buttonWidth) //  Minimize
+            {
+                this.WindowState = FormWindowState.Minimized;
+            }
+            else if (e.X < buttonWidth * 2) // Maximize
+            {
+                if (this.WindowState == FormWindowState.Maximized)
+                    this.WindowState = FormWindowState.Normal;
+                else
+                    this.WindowState = FormWindowState.Maximized;
+            }
+            else //  Close
+            {
+                Application.Exit();
+            }
+        }
+
+
     }
 }
