@@ -22,5 +22,26 @@ namespace Projeto_620
         {
 
         }
+
+        private void nightControlBox1_Click(object sender, EventArgs e)
+        {
+            if (MinimizeBox)
+            {
+                this.WindowState = FormWindowState.Minimized;
+            }
+            else
+                this.Close();
+        }
+
+        private void pb_foto_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Image Files|*.jpg;*.jpeg;*.png;";
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                pb_foto.Image = Image.FromFile(openFileDialog.FileName);
+            }
+            pb_foto.Image = new Bitmap(pb_foto.Image, new Size(150, 150));
+        }
     }
 }
