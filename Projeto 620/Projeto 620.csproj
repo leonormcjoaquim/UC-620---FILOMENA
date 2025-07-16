@@ -81,6 +81,12 @@
     <Compile Include="FORMS\treino.Designer.cs">
       <DependentUpon>treino.cs</DependentUpon>
     </Compile>
+    <Compile Include="models\Alimentacao.cs" />
+    <Compile Include="models\Consulta.cs" />
+    <Compile Include="models\Exercicio.cs" />
+    <Compile Include="models\Marcacao.cs" />
+    <Compile Include="models\TreinoPT.cs" />
+    <Compile Include="models\User.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="FORMS\registar.cs">
@@ -89,6 +95,7 @@
     <Compile Include="FORMS\registar.Designer.cs">
       <DependentUpon>registar.cs</DependentUpon>
     </Compile>
+    <Compile Include="utils\GlobalUtils.cs" />
     <EmbeddedResource Include="FORMS\alimentacao.resx">
       <DependentUpon>alimentacao.cs</DependentUpon>
     </EmbeddedResource>
@@ -130,8 +137,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Utils\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

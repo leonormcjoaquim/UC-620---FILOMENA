@@ -24,7 +24,6 @@ G:\GitHub\Projeto_UC00620\UC-620---FILOMENA\Projeto 620\bin\Debug\Projeto 620.ex
 G:\GitHub\Projeto_UC00620\UC-620---FILOMENA\Projeto 620\bin\Debug\Projeto 620.pdb
 G:\GitHub\Projeto_UC00620\UC-620---FILOMENA\Projeto 620\obj\Debug\Projeto 620.csproj.AssemblyReference.cache
 G:\GitHub\Projeto_UC00620\UC-620---FILOMENA\Projeto 620\obj\Debug\Projeto 620.exe.config
-G:\GitHub\Projeto_UC00620\UC-620---FILOMENA\Projeto 620\obj\Debug\Projeto_620.Form1.resources
 G:\GitHub\Projeto_UC00620\UC-620---FILOMENA\Projeto 620\obj\Debug\Projeto_620.Properties.Resources.resources
 G:\GitHub\Projeto_UC00620\UC-620---FILOMENA\Projeto 620\obj\Debug\Projeto_620.registar.resources
 G:\GitHub\Projeto_UC00620\UC-620---FILOMENA\Projeto 620\obj\Debug\Projeto 620.csproj.GenerateResource.cache
@@ -49,3 +48,11 @@ A:\ORGANIZAR\Exercicios C#\UC 620\Projeto 620\UC-620---FILOMENA\Projeto 620\bin\
 A:\ORGANIZAR\Exercicios C#\UC 620\Projeto 620\UC-620---FILOMENA\Projeto 620\bin\Debug\ReaLTaiizor.xml
 A:\ORGANIZAR\Exercicios C#\UC 620\Projeto 620\UC-620---FILOMENA\Projeto 620\obj\Debug\Projeto_620.alimentacao.resources
 A:\ORGANIZAR\Exercicios C#\UC 620\Projeto 620\UC-620---FILOMENA\Projeto 620\obj\Debug\Projeto .D8456F9E.Up2Date
+G:\GitHub\Projeto_UC00620\UC-620---FILOMENA\Projeto 620\bin\Debug\ReaLTaiizor.dll
+G:\GitHub\Projeto_UC00620\UC-620---FILOMENA\Projeto 620\bin\Debug\ReaLTaiizor.xml
+G:\GitHub\Projeto_UC00620\UC-620---FILOMENA\Projeto 620\obj\Debug\Projeto_620.alimentacao.resources
+G:\GitHub\Projeto_UC00620\UC-620---FILOMENA\Projeto 620\obj\Debug\Projeto_620.FORMS.btn_sair.resources
+G:\GitHub\Projeto_UC00620\UC-620---FILOMENA\Projeto 620\obj\Debug\Projeto_620.FORMS.login.resources
+G:\GitHub\Projeto_UC00620\UC-620---FILOMENA\Projeto 620\obj\Debug\Projeto_620.FORMS.paginaInicial.resources
+G:\GitHub\Projeto_UC00620\UC-620---FILOMENA\Projeto 620\obj\Debug\Projeto_620.FORMS.treino.resources
+G:\GitHub\Projeto_UC00620\UC-620---FILOMENA\Projeto 620\obj\Debug\Projeto .D8456F9E.Up2Date

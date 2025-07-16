@@ -25,13 +25,11 @@ namespace Projeto_620
 
         private void nightControlBox1_Click(object sender, EventArgs e)
         {
-            if (MinimizeBox)
-            {
-                this.WindowState = FormWindowState.Minimized;
-            }
-            else
-                this.Close();
+
+                Application.Exit();
+
         }
+      
 
         private void pb_foto_Click(object sender, EventArgs e)
         {
