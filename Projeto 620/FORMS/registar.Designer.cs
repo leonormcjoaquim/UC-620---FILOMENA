@@ -65,7 +65,7 @@
             this.nightControlBox1.EnableMaximizeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
             this.nightControlBox1.EnableMinimizeButton = true;
             this.nightControlBox1.EnableMinimizeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
-            this.nightControlBox1.Location = new System.Drawing.Point(879, 0);
+            this.nightControlBox1.Location = new System.Drawing.Point(858, -2);
             this.nightControlBox1.MaximizeHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.nightControlBox1.MaximizeHoverForeColor = System.Drawing.Color.White;
             this.nightControlBox1.MinimizeHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -226,10 +226,10 @@
             // pb_foto
             // 
             this.pb_foto.Image = ((System.Drawing.Image)(resources.GetObject("pb_foto.Image")));
-            this.pb_foto.Location = new System.Drawing.Point(749, 98);
+            this.pb_foto.Location = new System.Drawing.Point(680, 97);
             this.pb_foto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pb_foto.Name = "pb_foto";
-            this.pb_foto.Size = new System.Drawing.Size(180, 201);
+            this.pb_foto.Size = new System.Drawing.Size(260, 300);
             this.pb_foto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pb_foto.TabIndex = 13;
             this.pb_foto.TabStop = false;
@@ -239,11 +239,11 @@
             // 
             this.nightLabel6.AutoSize = true;
             this.nightLabel6.BackColor = System.Drawing.Color.Transparent;
-            this.nightLabel6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nightLabel6.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nightLabel6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.nightLabel6.Location = new System.Drawing.Point(747, 75);
+            this.nightLabel6.Location = new System.Drawing.Point(769, 54);
             this.nightLabel6.Name = "nightLabel6";
-            this.nightLabel6.Size = new System.Drawing.Size(41, 20);
+            this.nightLabel6.Size = new System.Drawing.Size(82, 41);
             this.nightLabel6.TabIndex = 14;
             this.nightLabel6.Text = "Foto";
             // 

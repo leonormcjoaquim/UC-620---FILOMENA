@@ -59,6 +59,7 @@ namespace Projeto_620.FORMS
             if (sidebarExpand)
             {
                 pn_opcoes.Width -= 8;
+                // SE O NOME FOR MAIOR QUE AQUELE FODE O RESTO
                 lbl_ola.Location = new Point(lbl_ola.Location.X - 8, lbl_ola.Location.Y);
                 lbl_nome.Location = new Point(lbl_nome.Location.X - 8, lbl_nome.Location.Y);
                 if (pn_opcoes.Width <= 54)
@@ -173,5 +174,35 @@ namespace Projeto_620.FORMS
             }
         }
 
+        private void nightControlBox1_MouseClick(object sender, MouseEventArgs e)
+        {
+            // Use buttons base on their size
+
+            var controlBox = sender as ReaLTaiizor.Controls.NightControlBox;
+            int buttonWidth = controlBox.Width / 3; // 3 buttons 
+
+            if (e.X < buttonWidth) //  Minimize
+            {
+                this.WindowState = FormWindowState.Minimized;
+            }
+            else if (e.X < buttonWidth * 2) // Maximize
+            {
+                if (this.WindowState == FormWindowState.Maximized)
+                    this.WindowState = FormWindowState.Normal;
+                else
+                    this.WindowState = FormWindowState.Maximized;
+            }
+            else //  Close
+            {
+                Application.Exit();
+            }
+        }
+
+        private void btn_workouts_Click(object sender, EventArgs e)
+        {
+            Form exercicios = new treino();
+            exercicios.Show();
+            this.Close();
+        }
     }
 }

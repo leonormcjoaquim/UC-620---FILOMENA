@@ -32,6 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(paginaInicial));
             this.pb_menu = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pan_color = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pn_opcoes = new System.Windows.Forms.FlowLayoutPanel();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -57,7 +58,6 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.sidebarTransition = new System.Windows.Forms.Timer(this.components);
-            this.pan_color = new System.Windows.Forms.Panel();
             this.pb_foto = new System.Windows.Forms.PictureBox();
             this.bigLabel1 = new ReaLTaiizor.Controls.BigLabel();
             this.probar_exercicio = new ReaLTaiizor.Controls.LostProgressBar();
@@ -66,6 +66,8 @@
             this.probar_calorias = new ReaLTaiizor.Controls.LostProgressBar();
             this.lbl_ola = new System.Windows.Forms.Label();
             this.lbl_nome = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.nightControlBox1 = new ReaLTaiizor.Controls.NightControlBox();
             ((System.ComponentModel.ISupportInitialize)(this.pb_menu)).BeginInit();
             this.panel1.SuspendLayout();
             this.pn_opcoes.SuspendLayout();
@@ -98,6 +100,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.nightControlBox1);
             this.panel1.Controls.Add(this.pan_color);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pb_menu);
@@ -106,6 +109,14 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1000, 53);
             this.panel1.TabIndex = 4;
+            // 
+            // pan_color
+            // 
+            this.pan_color.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.pan_color.Location = new System.Drawing.Point(60, 53);
+            this.pan_color.Name = "pan_color";
+            this.pan_color.Size = new System.Drawing.Size(940, 551);
+            this.pan_color.TabIndex = 6;
             // 
             // label1
             // 
@@ -187,6 +198,7 @@
             this.btn_workouts.TabIndex = 7;
             this.btn_workouts.Text = "Exercicios";
             this.btn_workouts.UseVisualStyleBackColor = false;
+            this.btn_workouts.Click += new System.EventHandler(this.btn_workouts_Click);
             this.btn_workouts.MouseHover += new System.EventHandler(this.btn_workouts_MouseHover);
             // 
             // panel9
@@ -453,14 +465,6 @@
             this.sidebarTransition.Interval = 10;
             this.sidebarTransition.Tick += new System.EventHandler(this.sidebarTransition_Tick);
             // 
-            // pan_color
-            // 
-            this.pan_color.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.pan_color.Location = new System.Drawing.Point(60, 53);
-            this.pan_color.Name = "pan_color";
-            this.pan_color.Size = new System.Drawing.Size(940, 551);
-            this.pan_color.TabIndex = 6;
-            // 
             // pb_foto
             // 
             this.pb_foto.Location = new System.Drawing.Point(569, 292);
@@ -475,7 +479,7 @@
             this.bigLabel1.BackColor = System.Drawing.Color.Transparent;
             this.bigLabel1.Font = new System.Drawing.Font("Segoe UI", 25F);
             this.bigLabel1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.bigLabel1.Location = new System.Drawing.Point(559, 69);
+            this.bigLabel1.Location = new System.Drawing.Point(677, 69);
             this.bigLabel1.Name = "bigLabel1";
             this.bigLabel1.Size = new System.Drawing.Size(201, 57);
             this.bigLabel1.TabIndex = 7;
@@ -511,7 +515,7 @@
             this.bigLabel3.BackColor = System.Drawing.Color.Transparent;
             this.bigLabel3.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bigLabel3.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.bigLabel3.Location = new System.Drawing.Point(560, 214);
+            this.bigLabel3.Location = new System.Drawing.Point(562, 214);
             this.bigLabel3.Name = "bigLabel3";
             this.bigLabel3.Size = new System.Drawing.Size(120, 38);
             this.bigLabel3.TabIndex = 10;
@@ -551,12 +555,49 @@
             this.lbl_nome.TabIndex = 15;
             this.lbl_nome.Text = "teste";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label2.Location = new System.Drawing.Point(175, 188);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(239, 345);
+            this.label2.TabIndex = 16;
+            this.label2.Text = "NÃO \r\nSEI\r\nO QUE \r\nPOR\r\nAQUI\r\n";
+            // 
+            // nightControlBox1
+            // 
+            this.nightControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.nightControlBox1.BackColor = System.Drawing.Color.Transparent;
+            this.nightControlBox1.CloseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.nightControlBox1.CloseHoverForeColor = System.Drawing.Color.White;
+            this.nightControlBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.nightControlBox1.DefaultLocation = true;
+            this.nightControlBox1.DisableMaximizeColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
+            this.nightControlBox1.DisableMinimizeColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
+            this.nightControlBox1.EnableCloseColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
+            this.nightControlBox1.EnableMaximizeButton = false;
+            this.nightControlBox1.EnableMaximizeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
+            this.nightControlBox1.EnableMinimizeButton = true;
+            this.nightControlBox1.EnableMinimizeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
+            this.nightControlBox1.Location = new System.Drawing.Point(849, 9);
+            this.nightControlBox1.MaximizeHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.nightControlBox1.MaximizeHoverForeColor = System.Drawing.Color.White;
+            this.nightControlBox1.MinimizeHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.nightControlBox1.MinimizeHoverForeColor = System.Drawing.Color.White;
+            this.nightControlBox1.Name = "nightControlBox1";
+            this.nightControlBox1.Size = new System.Drawing.Size(139, 31);
+            this.nightControlBox1.TabIndex = 17;
+            this.nightControlBox1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.nightControlBox1_MouseClick);
+            // 
             // paginaInicial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ClientSize = new System.Drawing.Size(1000, 600);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.lbl_nome);
             this.Controls.Add(this.lbl_ola);
             this.Controls.Add(this.probar_calorias);
@@ -631,5 +672,7 @@
         private ReaLTaiizor.Controls.LostProgressBar probar_calorias;
         private System.Windows.Forms.Label lbl_ola;
         private System.Windows.Forms.Label lbl_nome;
+        private System.Windows.Forms.Label label2;
+        private ReaLTaiizor.Controls.NightControlBox nightControlBox1;
     }
 }
