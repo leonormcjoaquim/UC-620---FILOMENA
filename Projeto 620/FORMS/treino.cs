@@ -53,5 +53,22 @@ namespace Projeto_620.FORMS
                 }
             }
         }
+
+        private void btn_exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btn_exit_MouseHover(object sender, EventArgs e)
+        {
+            btn_exit.Cursor = Cursors.Default;
+        }
+
+        private void bt_logout_Click(object sender, EventArgs e)
+        {
+            Form form = new login();
+            form.Show();
+            this.Close();
+        }
     }
 }

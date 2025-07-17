@@ -126,6 +126,7 @@
             this.btn_login.TabIndex = 4;
             this.btn_login.Text = "Login";
             this.btn_login.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.btn_login.Click += new System.EventHandler(this.btn_login_Click_1);
             this.btn_login.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btn_login_MouseClick);
             // 
             // label1

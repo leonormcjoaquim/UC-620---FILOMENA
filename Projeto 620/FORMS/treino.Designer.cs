@@ -108,7 +108,7 @@
             this.pn_opcoes.Controls.Add(this.btn_exit);
             this.pn_opcoes.Location = new System.Drawing.Point(0, 59);
             this.pn_opcoes.Name = "pn_opcoes";
-            this.pn_opcoes.Size = new System.Drawing.Size(50, 496);
+            this.pn_opcoes.Size = new System.Drawing.Size(52, 542);
             this.pn_opcoes.TabIndex = 7;
             // 
             // btn_home
@@ -243,6 +243,7 @@
             this.bt_logout.TabIndex = 7;
             this.bt_logout.Text = "Logout";
             this.bt_logout.UseVisualStyleBackColor = false;
+            this.bt_logout.Click += new System.EventHandler(this.bt_logout_Click);
             // 
             // btn_exit
             // 
@@ -262,6 +263,8 @@
             this.btn_exit.TabIndex = 7;
             this.btn_exit.Text = "Exit";
             this.btn_exit.UseVisualStyleBackColor = false;
+            this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
+            this.btn_exit.MouseHover += new System.EventHandler(this.btn_exit_MouseHover);
             // 
             // sidebarTransition
             // 

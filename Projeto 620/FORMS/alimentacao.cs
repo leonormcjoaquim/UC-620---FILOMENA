@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Projeto_620.FORMS;
+using Projeto_620.models;
 
 namespace Projeto_620
 {
@@ -51,5 +53,25 @@ namespace Projeto_620
             Application.Exit();
         }
 
+        private void bt_logout_MouseClick(object sender, MouseEventArgs e)
+        {
+            Form formLogin = new login();
+            formLogin.Show();
+            this.Close();
+        }
+
+        private void btn_home_Click(object sender, EventArgs e)
+        {
+            Form inicio = new paginaInicial();
+            inicio.Show();
+            this.Close();
+        }
+
+        private void btn_appoitments_MouseClick(object sender, MouseEventArgs e)
+        {
+            Form marcacao = new consultas(); 
+            marcacao.Show();
+            this.Close();
+        }
     }
 }

@@ -54,9 +54,9 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.panel1.Controls.Add(this.pn_opcoes);
             this.panel1.Controls.Add(this.panel3);
-            this.panel1.Location = new System.Drawing.Point(-11, -6);
+            this.panel1.Location = new System.Drawing.Point(-2, 1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1000, 600);
+            this.panel1.Size = new System.Drawing.Size(1004, 599);
             this.panel1.TabIndex = 0;
             // 
             // pn_opcoes
@@ -71,9 +71,9 @@
             this.pn_opcoes.Controls.Add(this.button2);
             this.pn_opcoes.Controls.Add(this.bt_logout);
             this.pn_opcoes.Controls.Add(this.btn_exit);
-            this.pn_opcoes.Location = new System.Drawing.Point(23, 62);
+            this.pn_opcoes.Location = new System.Drawing.Point(3, 59);
             this.pn_opcoes.Name = "pn_opcoes";
-            this.pn_opcoes.Size = new System.Drawing.Size(326, 496);
+            this.pn_opcoes.Size = new System.Drawing.Size(52, 537);
             this.pn_opcoes.TabIndex = 6;
             // 
             // btn_home
@@ -94,6 +94,7 @@
             this.btn_home.TabIndex = 7;
             this.btn_home.Text = "Home";
             this.btn_home.UseVisualStyleBackColor = false;
+            this.btn_home.Click += new System.EventHandler(this.btn_home_Click);
             // 
             // btn_appoitments
             // 
@@ -113,6 +114,7 @@
             this.btn_appoitments.TabIndex = 7;
             this.btn_appoitments.Text = "Especialista";
             this.btn_appoitments.UseVisualStyleBackColor = false;
+            this.btn_appoitments.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btn_appoitments_MouseClick);
             // 
             // btn_workouts
             // 
@@ -208,6 +210,7 @@
             this.bt_logout.TabIndex = 7;
             this.bt_logout.Text = "Logout";
             this.bt_logout.UseVisualStyleBackColor = false;
+            this.bt_logout.MouseClick += new System.Windows.Forms.MouseEventHandler(this.bt_logout_MouseClick);
             // 
             // btn_exit
             // 
@@ -237,14 +240,14 @@
             this.panel3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1000, 56);
+            this.panel3.Size = new System.Drawing.Size(1004, 56);
             this.panel3.TabIndex = 7;
             // 
             // pb_menu
             // 
             this.pb_menu.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.pb_menu.Image = ((System.Drawing.Image)(resources.GetObject("pb_menu.Image")));
-            this.pb_menu.Location = new System.Drawing.Point(24, 18);
+            this.pb_menu.Location = new System.Drawing.Point(4, 11);
             this.pb_menu.Name = "pb_menu";
             this.pb_menu.Padding = new System.Windows.Forms.Padding(15, 5, 0, 0);
             this.pb_menu.Size = new System.Drawing.Size(51, 35);
@@ -262,7 +265,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(982, 553);
+            this.ClientSize = new System.Drawing.Size(1000, 600);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "alimentacao";
