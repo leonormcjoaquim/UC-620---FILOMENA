@@ -1,58 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "G:\\GitHub\\Projeto_UC00620\\UC-620---FILOMENA\\",
+  "WorkspaceRootPath": "A:\\ORGANIZAR\\Exercicios C#\\UC 620\\Projeto 620\\UC-620---FILOMENA\\",
   "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{BBDC885C-2778-4D63-8C40-9A1FA2A80EA3}|Projeto 620\\Projeto 620.csproj|G:\\GitHub\\Projeto_UC00620\\UC-620---FILOMENA\\projeto 620\\forms\\registar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BBDC885C-2778-4D63-8C40-9A1FA2A80EA3}|Projeto 620\\Projeto 620.csproj|solutionrelative:projeto 620\\forms\\registar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-      "AbsoluteMoniker": "D:0:0:{BBDC885C-2778-4D63-8C40-9A1FA2A80EA3}|Projeto 620\\Projeto 620.csproj|G:\\GitHub\\Projeto_UC00620\\UC-620---FILOMENA\\projeto 620\\forms\\registar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BBDC885C-2778-4D63-8C40-9A1FA2A80EA3}|Projeto 620\\Projeto 620.csproj|solutionrelative:projeto 620\\forms\\registar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BBDC885C-2778-4D63-8C40-9A1FA2A80EA3}|Projeto 620\\Projeto 620.csproj|g:\\github\\projeto_uc00620\\uc-620---filomena\\projeto 620\\forms\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BBDC885C-2778-4D63-8C40-9A1FA2A80EA3}|Projeto 620\\Projeto 620.csproj|solutionrelative:projeto 620\\forms\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BBDC885C-2778-4D63-8C40-9A1FA2A80EA3}|Projeto 620\\Projeto 620.csproj|G:\\GitHub\\Projeto_UC00620\\UC-620---FILOMENA\\projeto 620\\forms\\paginainicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BBDC885C-2778-4D63-8C40-9A1FA2A80EA3}|Projeto 620\\Projeto 620.csproj|solutionrelative:projeto 620\\forms\\paginainicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BBDC885C-2778-4D63-8C40-9A1FA2A80EA3}|Projeto 620\\Projeto 620.csproj|g:\\github\\projeto_uc00620\\uc-620---filomena\\projeto 620\\forms\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BBDC885C-2778-4D63-8C40-9A1FA2A80EA3}|Projeto 620\\Projeto 620.csproj|solutionrelative:projeto 620\\forms\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BBDC885C-2778-4D63-8C40-9A1FA2A80EA3}|Projeto 620\\Projeto 620.csproj|g:\\github\\projeto_uc00620\\uc-620---filomena\\projeto 620\\forms\\paginainicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BBDC885C-2778-4D63-8C40-9A1FA2A80EA3}|Projeto 620\\Projeto 620.csproj|solutionrelative:projeto 620\\forms\\paginainicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-=======
-      "AbsoluteMoniker": "D:0:0:{BBDC885C-2778-4D63-8C40-9A1FA2A80EA3}|Projeto 620\\Projeto 620.csproj|A:\\ORGANIZAR\\Exercicios C#\\UC 620\\Projeto 620\\UC-620---FILOMENA\\projeto 620\\forms\\paginainicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BBDC885C-2778-4D63-8C40-9A1FA2A80EA3}|Projeto 620\\Projeto 620.csproj|solutionrelative:projeto 620\\forms\\paginainicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-=======
-      "AbsoluteMoniker": "D:0:0:{BBDC885C-2778-4D63-8C40-9A1FA2A80EA3}|Projeto 620\\Projeto 620.csproj|A:\\ORGANIZAR\\Exercicios C#\\UC 620\\Projeto 620\\UC-620---FILOMENA\\projeto 620\\forms\\paginainicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BBDC885C-2778-4D63-8C40-9A1FA2A80EA3}|Projeto 620\\Projeto 620.csproj|solutionrelative:projeto 620\\forms\\paginainicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
->>>>>>> Stashed changes
-      "AbsoluteMoniker": "D:0:0:{BBDC885C-2778-4D63-8C40-9A1FA2A80EA3}|Projeto 620\\Projeto 620.csproj|A:\\ORGANIZAR\\Exercicios C#\\UC 620\\Projeto 620\\UC-620---FILOMENA\\projeto 620\\forms\\alimentacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BBDC885C-2778-4D63-8C40-9A1FA2A80EA3}|Projeto 620\\Projeto 620.csproj|solutionrelative:projeto 620\\forms\\alimentacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BBDC885C-2778-4D63-8C40-9A1FA2A80EA3}|Projeto 620\\Projeto 620.csproj|a:\\organizar\\exercicios c#\\uc 620\\projeto 620\\uc-620---filomena\\projeto 620\\forms\\alimentacao.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BBDC885C-2778-4D63-8C40-9A1FA2A80EA3}|Projeto 620\\Projeto 620.csproj|solutionrelative:projeto 620\\forms\\alimentacao.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
     {
       "AbsoluteMoniker": "D:0:0:{BBDC885C-2778-4D63-8C40-9A1FA2A80EA3}|Projeto 620\\Projeto 620.csproj|A:\\ORGANIZAR\\Exercicios C#\\UC 620\\Projeto 620\\UC-620---FILOMENA\\projeto 620\\forms\\paginainicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BBDC885C-2778-4D63-8C40-9A1FA2A80EA3}|Projeto 620\\Projeto 620.csproj|solutionrelative:projeto 620\\forms\\paginainicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BBDC885C-2778-4D63-8C40-9A1FA2A80EA3}|Projeto 620\\Projeto 620.csproj|A:\\ORGANIZAR\\Exercicios C#\\UC 620\\Projeto 620\\UC-620---FILOMENA\\projeto 620\\forms\\treino.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BBDC885C-2778-4D63-8C40-9A1FA2A80EA3}|Projeto 620\\Projeto 620.csproj|solutionrelative:projeto 620\\forms\\treino.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
->>>>>>> Stashed changes
+      "AbsoluteMoniker": "D:0:0:{BBDC885C-2778-4D63-8C40-9A1FA2A80EA3}|Projeto 620\\Projeto 620.csproj|A:\\ORGANIZAR\\Exercicios C#\\UC 620\\Projeto 620\\UC-620---FILOMENA\\projeto 620\\forms\\paginainicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BBDC885C-2778-4D63-8C40-9A1FA2A80EA3}|Projeto 620\\Projeto 620.csproj|solutionrelative:projeto 620\\forms\\paginainicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBDC885C-2778-4D63-8C40-9A1FA2A80EA3}|Projeto 620\\Projeto 620.csproj|a:\\organizar\\exercicios c#\\uc 620\\projeto 620\\uc-620---filomena\\projeto 620\\forms\\registar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BBDC885C-2778-4D63-8C40-9A1FA2A80EA3}|Projeto 620\\Projeto 620.csproj|solutionrelative:projeto 620\\forms\\registar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBDC885C-2778-4D63-8C40-9A1FA2A80EA3}|Projeto 620\\Projeto 620.csproj|A:\\ORGANIZAR\\Exercicios C#\\UC 620\\Projeto 620\\UC-620---FILOMENA\\projeto 620\\forms\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBDC885C-2778-4D63-8C40-9A1FA2A80EA3}|Projeto 620\\Projeto 620.csproj|solutionrelative:projeto 620\\forms\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBDC885C-2778-4D63-8C40-9A1FA2A80EA3}|Projeto 620\\Projeto 620.csproj|A:\\ORGANIZAR\\Exercicios C#\\UC 620\\Projeto 620\\UC-620---FILOMENA\\projeto 620\\forms\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BBDC885C-2778-4D63-8C40-9A1FA2A80EA3}|Projeto 620\\Projeto 620.csproj|solutionrelative:projeto 620\\forms\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -61,78 +29,65 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-<<<<<<< Updated upstream
           "DockedWidth": 155,
-=======
-          "DockedWidth": 200,
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
               "$type": "Document",
-<<<<<<< Updated upstream
               "DocumentIndex": 2,
-              "Title": "login.cs",
-              "DocumentMoniker": "G:\\GitHub\\Projeto_UC00620\\UC-620---FILOMENA\\Projeto 620\\FORMS\\login.cs",
-              "RelativeDocumentMoniker": "Projeto 620\\FORMS\\login.cs",
-              "ToolTip": "G:\\GitHub\\Projeto_UC00620\\UC-620---FILOMENA\\Projeto 620\\FORMS\\login.cs",
-              "RelativeToolTip": "Projeto 620\\FORMS\\login.cs",
-              "ViewState": "AgIAADoAAAAAAAAAAAAYwFIAAABOAAAAAAAAAA==",
-=======
-              "DocumentIndex": 3,
-              "Title": "alimentacao.Designer.cs",
-              "DocumentMoniker": "A:\\ORGANIZAR\\Exercicios C#\\UC 620\\Projeto 620\\UC-620---FILOMENA\\Projeto 620\\FORMS\\alimentacao.Designer.cs",
-              "RelativeDocumentMoniker": "Projeto 620\\FORMS\\alimentacao.Designer.cs",
-              "ToolTip": "A:\\ORGANIZAR\\Exercicios C#\\UC 620\\Projeto 620\\UC-620---FILOMENA\\Projeto 620\\FORMS\\alimentacao.Designer.cs",
-              "RelativeToolTip": "Projeto 620\\FORMS\\alimentacao.Designer.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAewDwAAAAAAAAAAAAAAA==",
+              "Title": "registar.cs [Design]",
+              "DocumentMoniker": "A:\\ORGANIZAR\\Exercicios C#\\UC 620\\Projeto 620\\UC-620---FILOMENA\\Projeto 620\\FORMS\\registar.cs",
+              "RelativeDocumentMoniker": "Projeto 620\\FORMS\\registar.cs",
+              "ToolTip": "A:\\ORGANIZAR\\Exercicios C#\\UC 620\\Projeto 620\\UC-620---FILOMENA\\Projeto 620\\FORMS\\registar.cs [Design]",
+              "RelativeToolTip": "Projeto 620\\FORMS\\registar.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-17T18:56:48.52Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-17T19:16:25.86Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "login.cs [Design]",
+              "DocumentMoniker": "A:\\ORGANIZAR\\Exercicios C#\\UC 620\\Projeto 620\\UC-620---FILOMENA\\Projeto 620\\FORMS\\login.cs",
+              "RelativeDocumentMoniker": "Projeto 620\\FORMS\\login.cs",
+              "ToolTip": "A:\\ORGANIZAR\\Exercicios C#\\UC 620\\Projeto 620\\UC-620---FILOMENA\\Projeto 620\\FORMS\\login.cs [Design]",
+              "RelativeToolTip": "Projeto 620\\FORMS\\login.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-17T19:13:32.737Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "alimentacao.Designer.cs",
-              "DocumentMoniker": "A:\\ORGANIZAR\\Exercicios C#\\UC 620\\Projeto 620\\UC-620---FILOMENA\\Projeto 620\\FORMS\\alimentacao.Designer.cs",
-              "RelativeDocumentMoniker": "Projeto 620\\FORMS\\alimentacao.Designer.cs",
-              "ToolTip": "A:\\ORGANIZAR\\Exercicios C#\\UC 620\\Projeto 620\\UC-620---FILOMENA\\Projeto 620\\FORMS\\alimentacao.Designer.cs",
-              "RelativeToolTip": "Projeto 620\\FORMS\\alimentacao.Designer.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAewDwAAAAAAAAAAAAAAA==",
+              "Title": "login.cs",
+              "DocumentMoniker": "A:\\ORGANIZAR\\Exercicios C#\\UC 620\\Projeto 620\\UC-620---FILOMENA\\Projeto 620\\FORMS\\login.cs",
+              "RelativeDocumentMoniker": "Projeto 620\\FORMS\\login.cs",
+              "ToolTip": "A:\\ORGANIZAR\\Exercicios C#\\UC 620\\Projeto 620\\UC-620---FILOMENA\\Projeto 620\\FORMS\\login.cs",
+              "RelativeToolTip": "Projeto 620\\FORMS\\login.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAYwEYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-17T18:56:48.52Z",
+              "WhenOpened": "2025-07-17T19:13:32.677Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "alimentacao.cs",
-              "DocumentMoniker": "A:\\ORGANIZAR\\Exercicios C#\\UC 620\\Projeto 620\\UC-620---FILOMENA\\Projeto 620\\FORMS\\alimentacao.cs",
-              "RelativeDocumentMoniker": "Projeto 620\\FORMS\\alimentacao.cs",
-              "ToolTip": "A:\\ORGANIZAR\\Exercicios C#\\UC 620\\Projeto 620\\UC-620---FILOMENA\\Projeto 620\\FORMS\\alimentacao.cs",
-              "RelativeToolTip": "Projeto 620\\FORMS\\alimentacao.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAD4vygAAAAqAAAAAAAAAA==",
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+              "Title": "paginaInicial.cs",
+              "DocumentMoniker": "A:\\ORGANIZAR\\Exercicios C#\\UC 620\\Projeto 620\\UC-620---FILOMENA\\Projeto 620\\FORMS\\paginaInicial.cs",
+              "RelativeDocumentMoniker": "Projeto 620\\FORMS\\paginaInicial.cs",
+              "ToolTip": "A:\\ORGANIZAR\\Exercicios C#\\UC 620\\Projeto 620\\UC-620---FILOMENA\\Projeto 620\\FORMS\\paginaInicial.cs",
+              "RelativeToolTip": "Projeto 620\\FORMS\\paginaInicial.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAewFQAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-17T16:57:39.909Z",
+              "WhenOpened": "2025-07-17T19:13:32.817Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-<<<<<<< Updated upstream
-              "DocumentIndex": 4,
-              "Title": "login.cs [Design]",
-              "DocumentMoniker": "G:\\GitHub\\Projeto_UC00620\\UC-620---FILOMENA\\Projeto 620\\FORMS\\login.cs",
-              "RelativeDocumentMoniker": "Projeto 620\\FORMS\\login.cs",
-              "ToolTip": "G:\\GitHub\\Projeto_UC00620\\UC-620---FILOMENA\\Projeto 620\\FORMS\\login.cs [Design]",
-              "RelativeToolTip": "Projeto 620\\FORMS\\login.cs [Design]",
-=======
               "DocumentIndex": 1,
               "Title": "paginaInicial.cs [Design]",
               "DocumentMoniker": "A:\\ORGANIZAR\\Exercicios C#\\UC 620\\Projeto 620\\UC-620---FILOMENA\\Projeto 620\\FORMS\\paginaInicial.cs",
@@ -140,105 +95,8 @@
               "ToolTip": "A:\\ORGANIZAR\\Exercicios C#\\UC 620\\Projeto 620\\UC-620---FILOMENA\\Projeto 620\\FORMS\\paginaInicial.cs [Design]",
               "RelativeToolTip": "Projeto 620\\FORMS\\paginaInicial.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-17T18:32:11.871Z",
+              "WhenOpened": "2025-07-17T19:13:32.819Z",
               "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "alimentacao.cs [Design]",
-              "DocumentMoniker": "A:\\ORGANIZAR\\Exercicios C#\\UC 620\\Projeto 620\\UC-620---FILOMENA\\Projeto 620\\FORMS\\alimentacao.cs",
-              "RelativeDocumentMoniker": "Projeto 620\\FORMS\\alimentacao.cs",
-              "ToolTip": "A:\\ORGANIZAR\\Exercicios C#\\UC 620\\Projeto 620\\UC-620---FILOMENA\\Projeto 620\\FORMS\\alimentacao.cs [Design]",
-              "RelativeToolTip": "Projeto 620\\FORMS\\alimentacao.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-17T17:17:28.17Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "treino.cs [Design]",
-              "DocumentMoniker": "A:\\ORGANIZAR\\Exercicios C#\\UC 620\\Projeto 620\\UC-620---FILOMENA\\Projeto 620\\FORMS\\treino.cs",
-              "RelativeDocumentMoniker": "Projeto 620\\FORMS\\treino.cs",
-              "ToolTip": "A:\\ORGANIZAR\\Exercicios C#\\UC 620\\Projeto 620\\UC-620---FILOMENA\\Projeto 620\\FORMS\\treino.cs [Design]",
-              "RelativeToolTip": "Projeto 620\\FORMS\\treino.cs [Design]",
->>>>>>> Stashed changes
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-17T16:59:05.481Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-              "DocumentIndex": 0,
-              "Title": "registar.cs [Design]",
-              "DocumentMoniker": "G:\\GitHub\\Projeto_UC00620\\UC-620---FILOMENA\\Projeto 620\\FORMS\\registar.cs",
-              "RelativeDocumentMoniker": "Projeto 620\\FORMS\\registar.cs",
-              "ToolTip": "G:\\GitHub\\Projeto_UC00620\\UC-620---FILOMENA\\Projeto 620\\FORMS\\registar.cs [Design]",
-              "RelativeToolTip": "Projeto 620\\FORMS\\registar.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-17T02:30:31.206Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "paginaInicial.cs",
-              "DocumentMoniker": "G:\\GitHub\\Projeto_UC00620\\UC-620---FILOMENA\\Projeto 620\\FORMS\\paginaInicial.cs",
-              "RelativeDocumentMoniker": "Projeto 620\\FORMS\\paginaInicial.cs",
-              "ToolTip": "G:\\GitHub\\Projeto_UC00620\\UC-620---FILOMENA\\Projeto 620\\FORMS\\paginaInicial.cs",
-              "RelativeToolTip": "Projeto 620\\FORMS\\paginaInicial.cs",
-              "ViewState": "AgIAAHEAAAAAAAAAAAAqwMQAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-17T02:32:57.873Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "paginaInicial.cs [Design]",
-              "DocumentMoniker": "G:\\GitHub\\Projeto_UC00620\\UC-620---FILOMENA\\Projeto 620\\FORMS\\paginaInicial.cs",
-              "RelativeDocumentMoniker": "Projeto 620\\FORMS\\paginaInicial.cs",
-              "ToolTip": "G:\\GitHub\\Projeto_UC00620\\UC-620---FILOMENA\\Projeto 620\\FORMS\\paginaInicial.cs [Design]",
-              "RelativeToolTip": "Projeto 620\\FORMS\\paginaInicial.cs [Design]",
-=======
-=======
->>>>>>> Stashed changes
-              "DocumentIndex": 4,
-              "Title": "paginaInicial.cs",
-              "DocumentMoniker": "A:\\ORGANIZAR\\Exercicios C#\\UC 620\\Projeto 620\\UC-620---FILOMENA\\Projeto 620\\FORMS\\paginaInicial.cs",
-              "RelativeDocumentMoniker": "Projeto 620\\FORMS\\paginaInicial.cs",
-              "ToolTip": "A:\\ORGANIZAR\\Exercicios C#\\UC 620\\Projeto 620\\UC-620---FILOMENA\\Projeto 620\\FORMS\\paginaInicial.cs",
-              "RelativeToolTip": "Projeto 620\\FORMS\\paginaInicial.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAMwEoAAAAqAAAAAAAAAA==",
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-17T01:33:38.223Z",
-              "EditorCaption": " [Design]"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 207,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "registar.cs",
-              "DocumentMoniker": "G:\\GitHub\\Projeto_UC00620\\UC-620---FILOMENA\\Projeto 620\\FORMS\\registar.cs",
-              "RelativeDocumentMoniker": "Projeto 620\\FORMS\\registar.cs",
-              "ToolTip": "G:\\GitHub\\Projeto_UC00620\\UC-620---FILOMENA\\Projeto 620\\FORMS\\registar.cs",
-              "RelativeToolTip": "Projeto 620\\FORMS\\registar.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAYwEAAAABEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-17T02:28:02.634Z",
-              "EditorCaption": ""
             }
           ]
         }
