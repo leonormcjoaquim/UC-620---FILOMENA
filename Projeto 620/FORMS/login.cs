@@ -82,6 +82,9 @@ namespace Projeto_620.FORMS
 
                // AQUI ERA BOM LIMPAR AS TEXTBOXES MAS NAO DESCOBRI AINDA COMO
 
+                tb_username.TextButton = string.Empty;
+                tb_password.TextButton = string.Empty;
+
                 return;
             }
 
@@ -97,6 +100,8 @@ namespace Projeto_620.FORMS
                 //melhorar esta textbox
                 MessageBox.Show("Utilizador ou password incorretos. Tente novamente.");
                 tb_username.Focus();
+                tb_username.TextButton = string.Empty;
+                tb_password.TextButton = string.Empty;
                 return;
             }
             else
@@ -107,6 +112,8 @@ namespace Projeto_620.FORMS
                 paginaInicial.Show();
                 this.Hide();
             }
-    }
+
+           
+        }
     }
 }

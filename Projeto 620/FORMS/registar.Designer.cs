@@ -47,6 +47,7 @@
             this.nightLabel7 = new ReaLTaiizor.Controls.NightLabel();
             this.btn_registar = new ReaLTaiizor.Controls.CyberButton();
             this.insertPhoto = new System.Windows.Forms.OpenFileDialog();
+            this.btn_voltar = new ReaLTaiizor.Controls.CyberButton();
             ((System.ComponentModel.ISupportInitialize)(this.pb_foto)).BeginInit();
             this.SuspendLayout();
             // 
@@ -65,7 +66,7 @@
             this.nightControlBox1.EnableMaximizeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
             this.nightControlBox1.EnableMinimizeButton = true;
             this.nightControlBox1.EnableMinimizeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
-            this.nightControlBox1.Location = new System.Drawing.Point(858, -2);
+            this.nightControlBox1.Location = new System.Drawing.Point(620, -3);
             this.nightControlBox1.MaximizeHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.nightControlBox1.MaximizeHoverForeColor = System.Drawing.Color.White;
             this.nightControlBox1.MinimizeHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -81,9 +82,10 @@
             this.headerLabel1.BackColor = System.Drawing.Color.Transparent;
             this.headerLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.headerLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.headerLabel1.Location = new System.Drawing.Point(12, 9);
+            this.headerLabel1.Location = new System.Drawing.Point(9, 7);
+            this.headerLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.headerLabel1.Name = "headerLabel1";
-            this.headerLabel1.Size = new System.Drawing.Size(225, 91);
+            this.headerLabel1.Size = new System.Drawing.Size(184, 73);
             this.headerLabel1.TabIndex = 2;
             this.headerLabel1.Text = "Perfil";
             // 
@@ -93,9 +95,10 @@
             this.nightLabel1.BackColor = System.Drawing.Color.Transparent;
             this.nightLabel1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nightLabel1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.nightLabel1.Location = new System.Drawing.Point(24, 117);
+            this.nightLabel1.Location = new System.Drawing.Point(18, 95);
+            this.nightLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.nightLabel1.Name = "nightLabel1";
-            this.nightLabel1.Size = new System.Drawing.Size(60, 20);
+            this.nightLabel1.Size = new System.Drawing.Size(47, 15);
             this.nightLabel1.TabIndex = 3;
             this.nightLabel1.Text = "Nome: ";
             // 
@@ -106,13 +109,13 @@
             this.tb_nome.CustomBGColor = System.Drawing.Color.White;
             this.tb_nome.Font = new System.Drawing.Font("Tahoma", 11F);
             this.tb_nome.ForeColor = System.Drawing.Color.DimGray;
-            this.tb_nome.Location = new System.Drawing.Point(136, 117);
-            this.tb_nome.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tb_nome.Location = new System.Drawing.Point(102, 95);
+            this.tb_nome.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tb_nome.MaxLength = 32767;
             this.tb_nome.Multiline = false;
             this.tb_nome.Name = "tb_nome";
             this.tb_nome.ReadOnly = false;
-            this.tb_nome.Size = new System.Drawing.Size(228, 33);
+            this.tb_nome.Size = new System.Drawing.Size(171, 28);
             this.tb_nome.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
             this.tb_nome.TabIndex = 4;
             this.tb_nome.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
@@ -125,13 +128,13 @@
             this.tb_username.CustomBGColor = System.Drawing.Color.White;
             this.tb_username.Font = new System.Drawing.Font("Tahoma", 11F);
             this.tb_username.ForeColor = System.Drawing.Color.DimGray;
-            this.tb_username.Location = new System.Drawing.Point(136, 194);
-            this.tb_username.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tb_username.Location = new System.Drawing.Point(102, 158);
+            this.tb_username.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tb_username.MaxLength = 32767;
             this.tb_username.Multiline = false;
             this.tb_username.Name = "tb_username";
             this.tb_username.ReadOnly = false;
-            this.tb_username.Size = new System.Drawing.Size(228, 33);
+            this.tb_username.Size = new System.Drawing.Size(171, 28);
             this.tb_username.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
             this.tb_username.TabIndex = 6;
             this.tb_username.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
@@ -143,9 +146,10 @@
             this.nightLabel2.BackColor = System.Drawing.Color.Transparent;
             this.nightLabel2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nightLabel2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.nightLabel2.Location = new System.Drawing.Point(24, 194);
+            this.nightLabel2.Location = new System.Drawing.Point(18, 158);
+            this.nightLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.nightLabel2.Name = "nightLabel2";
-            this.nightLabel2.Size = new System.Drawing.Size(84, 20);
+            this.nightLabel2.Size = new System.Drawing.Size(67, 15);
             this.nightLabel2.TabIndex = 5;
             this.nightLabel2.Text = "Username:";
             // 
@@ -156,13 +160,13 @@
             this.tb_password.CustomBGColor = System.Drawing.Color.White;
             this.tb_password.Font = new System.Drawing.Font("Tahoma", 11F);
             this.tb_password.ForeColor = System.Drawing.Color.DimGray;
-            this.tb_password.Location = new System.Drawing.Point(136, 281);
-            this.tb_password.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tb_password.Location = new System.Drawing.Point(102, 228);
+            this.tb_password.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tb_password.MaxLength = 32767;
             this.tb_password.Multiline = false;
             this.tb_password.Name = "tb_password";
             this.tb_password.ReadOnly = false;
-            this.tb_password.Size = new System.Drawing.Size(228, 33);
+            this.tb_password.Size = new System.Drawing.Size(171, 28);
             this.tb_password.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
             this.tb_password.TabIndex = 8;
             this.tb_password.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
@@ -174,9 +178,10 @@
             this.nightLabel3.BackColor = System.Drawing.Color.Transparent;
             this.nightLabel3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nightLabel3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.nightLabel3.Location = new System.Drawing.Point(24, 281);
+            this.nightLabel3.Location = new System.Drawing.Point(18, 228);
+            this.nightLabel3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.nightLabel3.Name = "nightLabel3";
-            this.nightLabel3.Size = new System.Drawing.Size(80, 20);
+            this.nightLabel3.Size = new System.Drawing.Size(62, 15);
             this.nightLabel3.TabIndex = 7;
             this.nightLabel3.Text = "Password:";
             // 
@@ -186,9 +191,10 @@
             this.nightLabel4.BackColor = System.Drawing.Color.Transparent;
             this.nightLabel4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nightLabel4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.nightLabel4.Location = new System.Drawing.Point(24, 377);
+            this.nightLabel4.Location = new System.Drawing.Point(18, 306);
+            this.nightLabel4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.nightLabel4.Name = "nightLabel4";
-            this.nightLabel4.Size = new System.Drawing.Size(72, 20);
+            this.nightLabel4.Size = new System.Drawing.Size(58, 15);
             this.nightLabel4.TabIndex = 9;
             this.nightLabel4.Text = "Objetivo:";
             // 
@@ -199,13 +205,13 @@
             this.tb_height.CustomBGColor = System.Drawing.Color.White;
             this.tb_height.Font = new System.Drawing.Font("Tahoma", 11F);
             this.tb_height.ForeColor = System.Drawing.Color.DimGray;
-            this.tb_height.Location = new System.Drawing.Point(136, 460);
-            this.tb_height.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tb_height.Location = new System.Drawing.Point(102, 374);
+            this.tb_height.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tb_height.MaxLength = 32767;
             this.tb_height.Multiline = false;
             this.tb_height.Name = "tb_height";
             this.tb_height.ReadOnly = false;
-            this.tb_height.Size = new System.Drawing.Size(144, 33);
+            this.tb_height.Size = new System.Drawing.Size(108, 28);
             this.tb_height.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
             this.tb_height.TabIndex = 12;
             this.tb_height.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
@@ -217,19 +223,20 @@
             this.nightLabel5.BackColor = System.Drawing.Color.Transparent;
             this.nightLabel5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nightLabel5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.nightLabel5.Location = new System.Drawing.Point(24, 460);
+            this.nightLabel5.Location = new System.Drawing.Point(18, 374);
+            this.nightLabel5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.nightLabel5.Name = "nightLabel5";
-            this.nightLabel5.Size = new System.Drawing.Size(94, 20);
+            this.nightLabel5.Size = new System.Drawing.Size(72, 15);
             this.nightLabel5.TabIndex = 11;
             this.nightLabel5.Text = "Altura (cm):";
             // 
             // pb_foto
             // 
             this.pb_foto.Image = ((System.Drawing.Image)(resources.GetObject("pb_foto.Image")));
-            this.pb_foto.Location = new System.Drawing.Point(680, 97);
-            this.pb_foto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pb_foto.Location = new System.Drawing.Point(510, 79);
+            this.pb_foto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pb_foto.Name = "pb_foto";
-            this.pb_foto.Size = new System.Drawing.Size(260, 300);
+            this.pb_foto.Size = new System.Drawing.Size(195, 244);
             this.pb_foto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pb_foto.TabIndex = 13;
             this.pb_foto.TabStop = false;
@@ -241,23 +248,24 @@
             this.nightLabel6.BackColor = System.Drawing.Color.Transparent;
             this.nightLabel6.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nightLabel6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.nightLabel6.Location = new System.Drawing.Point(769, 54);
+            this.nightLabel6.Location = new System.Drawing.Point(577, 44);
+            this.nightLabel6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.nightLabel6.Name = "nightLabel6";
-            this.nightLabel6.Size = new System.Drawing.Size(82, 41);
+            this.nightLabel6.Size = new System.Drawing.Size(65, 32);
             this.nightLabel6.TabIndex = 14;
             this.nightLabel6.Text = "Foto";
             // 
             // cbb_objectives
             // 
             this.cbb_objectives.FormattingEnabled = true;
-            this.cbb_objectives.ItemHeight = 24;
+            this.cbb_objectives.ItemHeight = 23;
             this.cbb_objectives.Items.AddRange(new object[] {
             "Perder Peso",
             "Ganhar Massa Muscular"});
-            this.cbb_objectives.Location = new System.Drawing.Point(136, 374);
-            this.cbb_objectives.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbb_objectives.Location = new System.Drawing.Point(102, 304);
+            this.cbb_objectives.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbb_objectives.Name = "cbb_objectives";
-            this.cbb_objectives.Size = new System.Drawing.Size(228, 30);
+            this.cbb_objectives.Size = new System.Drawing.Size(172, 29);
             this.cbb_objectives.TabIndex = 15;
             this.cbb_objectives.UseSelectable = true;
             // 
@@ -268,13 +276,13 @@
             this.tb_weight.CustomBGColor = System.Drawing.Color.White;
             this.tb_weight.Font = new System.Drawing.Font("Tahoma", 11F);
             this.tb_weight.ForeColor = System.Drawing.Color.DimGray;
-            this.tb_weight.Location = new System.Drawing.Point(136, 529);
-            this.tb_weight.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tb_weight.Location = new System.Drawing.Point(102, 430);
+            this.tb_weight.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tb_weight.MaxLength = 32767;
             this.tb_weight.Multiline = false;
             this.tb_weight.Name = "tb_weight";
             this.tb_weight.ReadOnly = false;
-            this.tb_weight.Size = new System.Drawing.Size(144, 33);
+            this.tb_weight.Size = new System.Drawing.Size(108, 28);
             this.tb_weight.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
             this.tb_weight.TabIndex = 17;
             this.tb_weight.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
@@ -286,9 +294,10 @@
             this.nightLabel7.BackColor = System.Drawing.Color.Transparent;
             this.nightLabel7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nightLabel7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.nightLabel7.Location = new System.Drawing.Point(37, 529);
+            this.nightLabel7.Location = new System.Drawing.Point(28, 430);
+            this.nightLabel7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.nightLabel7.Name = "nightLabel7";
-            this.nightLabel7.Size = new System.Drawing.Size(79, 20);
+            this.nightLabel7.Size = new System.Drawing.Size(61, 15);
             this.nightLabel7.TabIndex = 16;
             this.nightLabel7.Text = "Peso (kg):";
             // 
@@ -318,13 +327,13 @@
             this.btn_registar.Lighting = false;
             this.btn_registar.LinearGradient_Background = false;
             this.btn_registar.LinearGradientPen = false;
-            this.btn_registar.Location = new System.Drawing.Point(717, 487);
-            this.btn_registar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_registar.Location = new System.Drawing.Point(538, 396);
+            this.btn_registar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_registar.Name = "btn_registar";
             this.btn_registar.PenWidth = 15;
             this.btn_registar.Rounding = true;
             this.btn_registar.RoundingInt = 70;
-            this.btn_registar.Size = new System.Drawing.Size(260, 75);
+            this.btn_registar.Size = new System.Drawing.Size(195, 61);
             this.btn_registar.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             this.btn_registar.TabIndex = 18;
             this.btn_registar.Tag = "Cyber";
@@ -338,12 +347,55 @@
             // 
             this.insertPhoto.FileName = "insertPhoto";
             // 
+            // btn_voltar
+            // 
+            this.btn_voltar.Alpha = 20;
+            this.btn_voltar.BackColor = System.Drawing.Color.Transparent;
+            this.btn_voltar.Background = true;
+            this.btn_voltar.Background_WidthPen = 4F;
+            this.btn_voltar.BackgroundPen = true;
+            this.btn_voltar.ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
+            this.btn_voltar.ColorBackground_1 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
+            this.btn_voltar.ColorBackground_2 = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(63)))), ((int)(((byte)(86)))));
+            this.btn_voltar.ColorBackground_Pen = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
+            this.btn_voltar.ColorLighting = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
+            this.btn_voltar.ColorPen_1 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
+            this.btn_voltar.ColorPen_2 = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(63)))), ((int)(((byte)(86)))));
+            this.btn_voltar.CyberButtonStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
+            this.btn_voltar.Effect_1 = true;
+            this.btn_voltar.Effect_1_ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
+            this.btn_voltar.Effect_1_Transparency = 25;
+            this.btn_voltar.Effect_2 = true;
+            this.btn_voltar.Effect_2_ColorBackground = System.Drawing.Color.White;
+            this.btn_voltar.Effect_2_Transparency = 20;
+            this.btn_voltar.Font = new System.Drawing.Font("Arial", 11F);
+            this.btn_voltar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
+            this.btn_voltar.Lighting = false;
+            this.btn_voltar.LinearGradient_Background = false;
+            this.btn_voltar.LinearGradientPen = false;
+            this.btn_voltar.Location = new System.Drawing.Point(326, 396);
+            this.btn_voltar.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_voltar.Name = "btn_voltar";
+            this.btn_voltar.PenWidth = 15;
+            this.btn_voltar.Rounding = true;
+            this.btn_voltar.RoundingInt = 70;
+            this.btn_voltar.Size = new System.Drawing.Size(195, 61);
+            this.btn_voltar.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            this.btn_voltar.TabIndex = 19;
+            this.btn_voltar.Tag = "Cyber";
+            this.btn_voltar.TextButton = "Voltar";
+            this.btn_voltar.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.btn_voltar.Timer_Effect_1 = 5;
+            this.btn_voltar.Timer_RGB = 300;
+            this.btn_voltar.Click += new System.EventHandler(this.btn_voltar_Click);
+            // 
             // registar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.ClientSize = new System.Drawing.Size(1000, 601);
+            this.ClientSize = new System.Drawing.Size(750, 488);
+            this.Controls.Add(this.btn_voltar);
             this.Controls.Add(this.btn_registar);
             this.Controls.Add(this.tb_weight);
             this.Controls.Add(this.nightLabel7);
@@ -362,9 +414,9 @@
             this.Controls.Add(this.headerLabel1);
             this.Controls.Add(this.nightControlBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.MaximumSize = new System.Drawing.Size(3413, 1713);
-            this.MinimumSize = new System.Drawing.Size(1000, 601);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MaximumSize = new System.Drawing.Size(2560, 1392);
+            this.MinimumSize = new System.Drawing.Size(750, 488);
             this.Name = "registar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "registar";
@@ -395,5 +447,6 @@
         private ReaLTaiizor.Controls.NightLabel nightLabel7;
         private ReaLTaiizor.Controls.CyberButton btn_registar;
         private System.Windows.Forms.OpenFileDialog insertPhoto;
+        private ReaLTaiizor.Controls.CyberButton btn_voltar;
     }
 }

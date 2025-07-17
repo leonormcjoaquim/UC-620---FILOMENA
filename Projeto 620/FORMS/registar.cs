@@ -35,23 +35,23 @@ namespace Projeto_620
         private void nightControlBox1_MouseClick(object sender, MouseEventArgs e)
         {
 
-            // Use buttons base on their size
+            // Usar botões com base no seu tamanho
 
             var controlBox = sender as ReaLTaiizor.Controls.NightControlBox;
-            int buttonWidth = controlBox.Width / 3; // 3 buttons 
+            int buttonWidth = controlBox.Width / 3; // 3 botões 
 
-            if (e.X < buttonWidth) //  Minimize
+            if (e.X < buttonWidth) //  Minimizar
             {
                 this.WindowState = FormWindowState.Minimized;
             }
-            else if (e.X < buttonWidth * 2) // Maximize
+            else if (e.X < buttonWidth * 2) // Maximizar
             {
                 if (this.WindowState == FormWindowState.Maximized)
                     this.WindowState = FormWindowState.Normal;
                 else
                     this.WindowState = FormWindowState.Maximized;
             }
-            else //  Close
+            else //  fechar
             {
                 Application.Exit();
             }
@@ -62,11 +62,31 @@ namespace Projeto_620
             string nome = tb_nome.Text;
             string username = tb_username.Text;
             string password = tb_password.Text;
+            string objetivo = cbb_objectives.SelectedItem.ToString();
+            string altura_box = tb_height.Text;
+            string peso_box = tb_weight.Text;
             string caminho = @"C:\cometudoperdetudo\users.xml";
 
+            if(!int.TryParse(altura_box, out int altura))
+            {
+                MessageBox.Show("Número inserido na altura é inválido");
+                return;
+            }
+            if (!int.TryParse(peso_box, out int peso))
+            {
+                MessageBox.Show("Número inserido no peso é inválido");
+                return;
+            }
+
+            if (string.IsNullOrEmpty(nome) || string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password) || string.IsNullOrEmpty(objetivo) || altura >= 260)
+            {
+                MessageBox.Show($"nome: {nome}\nusername: {username}\npass: {password}\nobje: {objetivo}\naltura: {altura}\npeso: {peso}");
+                MessageBox.Show("Erro! Tem de preencher todos os campos.");
+                return;
+            }
             // Tivemos de Criar um ficheiro XML para guardar as informações dos utilizadores
-            //XDocument doc = new XDocument(new XElement("users"));
-            //doc.Save(caminho);
+            // XDocument doc = new XDocument(new XElement("users"));
+            // doc.Save(caminho);
 
             // Um género de abrir documento para trabalharmos com ele
             XDocument doc = XDocument.Load(caminho);
@@ -75,7 +95,11 @@ namespace Projeto_620
             XElement novoUser = new XElement("user",
                                 new XElement("username", username),
                                 new XElement("nome", nome),
-                                new XElement("password", password));
+                                new XElement("password", password),
+                                new XElement("objetivo", objetivo),
+                                new XElement("altura", altura),
+                                new XElement("peso", peso),
+                                new XElement("objetivo", objetivo));
 
             // adicionar o utilizador novo ao documento XML
             doc.Root.Add(novoUser);
@@ -89,6 +113,11 @@ namespace Projeto_620
 
             Form loginPagina = new login();
             loginPagina.Show();
+            this.Close();
+        }
+
+        private void btn_voltar_Click(object sender, EventArgs e)
+        {
             this.Close();
         }
     }
