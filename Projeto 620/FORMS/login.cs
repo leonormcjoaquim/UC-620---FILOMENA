@@ -108,5 +108,10 @@ namespace Projeto_620.FORMS
                 this.Hide();
             }
     }
+
+        private void btn_login_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
