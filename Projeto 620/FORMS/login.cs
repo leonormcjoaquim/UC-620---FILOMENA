@@ -69,6 +69,14 @@ namespace Projeto_620.FORMS
 
         private void btn_login_MouseClick(object sender, MouseEventArgs e)
         {
+            // PARA TESTES
+            //melhorar esta textbox 
+            MessageBox.Show("Login efetuado com sucesso!");
+            Form paginaInicial = new paginaInicial();
+            paginaInicial.Show();
+            this.Hide();
+
+            /*
             tb_username.Focus();
             string caminho = @"C:\cometudoperdetudo\users.xml";
             string username = tb_username.TextButton; // textButton devido à framework que estamos a usar não ter a propriedade text para este elemento
@@ -112,7 +120,7 @@ namespace Projeto_620.FORMS
                 paginaInicial.Show();
                 this.Hide();
             }
-
+            */
            
         }
     }
