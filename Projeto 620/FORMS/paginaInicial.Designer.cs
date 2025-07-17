@@ -57,6 +57,15 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.sidebarTransition = new System.Windows.Forms.Timer(this.components);
+            this.pan_color = new System.Windows.Forms.Panel();
+            this.pb_foto = new System.Windows.Forms.PictureBox();
+            this.bigLabel1 = new ReaLTaiizor.Controls.BigLabel();
+            this.probar_exercicio = new ReaLTaiizor.Controls.LostProgressBar();
+            this.bigLabel2 = new ReaLTaiizor.Controls.BigLabel();
+            this.bigLabel3 = new ReaLTaiizor.Controls.BigLabel();
+            this.probar_calorias = new ReaLTaiizor.Controls.LostProgressBar();
+            this.lbl_ola = new System.Windows.Forms.Label();
+            this.lbl_nome = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pb_menu)).BeginInit();
             this.panel1.SuspendLayout();
             this.pn_opcoes.SuspendLayout();
@@ -71,6 +80,7 @@
             this.panel12.SuspendLayout();
             this.panel13.SuspendLayout();
             this.panel14.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_foto)).BeginInit();
             this.SuspendLayout();
             // 
             // pb_menu
@@ -83,12 +93,12 @@
             this.pb_menu.TabIndex = 3;
             this.pb_menu.TabStop = false;
             this.pb_menu.Click += new System.EventHandler(this.pb_menu_Click);
-            this.pb_menu.MouseLeave += new System.EventHandler(this.pb_menu_MouseLeave);
-            this.pb_menu.MouseHover += new System.EventHandler(this.pb_menu_MouseHover);
+            this.pb_menu.MouseHover += new System.EventHandler(this.pb_menu_MouseHover_1);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.pan_color);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pb_menu);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -150,7 +160,6 @@
             this.btn_home.UseVisualStyleBackColor = false;
             this.btn_home.Click += new System.EventHandler(this.btn_home_Click);
             this.btn_home.MouseHover += new System.EventHandler(this.btn_home_MouseHover);
-            this.btn_home.MouseMove += new System.Windows.Forms.MouseEventHandler(this.btn_home_MouseMove);
             // 
             // panel8
             // 
@@ -178,6 +187,7 @@
             this.btn_workouts.TabIndex = 7;
             this.btn_workouts.Text = "Exercicios";
             this.btn_workouts.UseVisualStyleBackColor = false;
+            this.btn_workouts.MouseHover += new System.EventHandler(this.btn_workouts_MouseHover);
             // 
             // panel9
             // 
@@ -205,6 +215,7 @@
             this.btn_food.TabIndex = 7;
             this.btn_food.Text = "Comida";
             this.btn_food.UseVisualStyleBackColor = false;
+            this.btn_food.MouseHover += new System.EventHandler(this.btn_food_MouseHover);
             // 
             // panel7
             // 
@@ -234,6 +245,7 @@
             this.btn_appoitments.Text = "Especialista";
             this.btn_appoitments.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_appoitments.UseVisualStyleBackColor = false;
+            this.btn_appoitments.MouseHover += new System.EventHandler(this.btn_appoitments_MouseHover);
             // 
             // panel2
             // 
@@ -262,6 +274,7 @@
             this.btn_pt.TabIndex = 7;
             this.btn_pt.Text = "Treino PT";
             this.btn_pt.UseVisualStyleBackColor = false;
+            this.btn_pt.MouseHover += new System.EventHandler(this.btn_pt_MouseHover);
             // 
             // panel10
             // 
@@ -440,11 +453,118 @@
             this.sidebarTransition.Interval = 10;
             this.sidebarTransition.Tick += new System.EventHandler(this.sidebarTransition_Tick);
             // 
+            // pan_color
+            // 
+            this.pan_color.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.pan_color.Location = new System.Drawing.Point(60, 53);
+            this.pan_color.Name = "pan_color";
+            this.pan_color.Size = new System.Drawing.Size(940, 551);
+            this.pan_color.TabIndex = 6;
+            // 
+            // pb_foto
+            // 
+            this.pb_foto.Location = new System.Drawing.Point(569, 292);
+            this.pb_foto.Name = "pb_foto";
+            this.pb_foto.Size = new System.Drawing.Size(401, 269);
+            this.pb_foto.TabIndex = 6;
+            this.pb_foto.TabStop = false;
+            // 
+            // bigLabel1
+            // 
+            this.bigLabel1.AutoSize = true;
+            this.bigLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.bigLabel1.Font = new System.Drawing.Font("Segoe UI", 25F);
+            this.bigLabel1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.bigLabel1.Location = new System.Drawing.Point(559, 69);
+            this.bigLabel1.Name = "bigLabel1";
+            this.bigLabel1.Size = new System.Drawing.Size(201, 57);
+            this.bigLabel1.TabIndex = 7;
+            this.bigLabel1.Text = "Objetivos";
+            // 
+            // probar_exercicio
+            // 
+            this.probar_exercicio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.probar_exercicio.Color = System.Drawing.Color.DodgerBlue;
+            this.probar_exercicio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(63)))), ((int)(((byte)(70)))));
+            this.probar_exercicio.Hover = false;
+            this.probar_exercicio.Location = new System.Drawing.Point(784, 142);
+            this.probar_exercicio.Name = "probar_exercicio";
+            this.probar_exercicio.Progress = 50;
+            this.probar_exercicio.Size = new System.Drawing.Size(168, 43);
+            this.probar_exercicio.TabIndex = 8;
+            // 
+            // bigLabel2
+            // 
+            this.bigLabel2.AutoSize = true;
+            this.bigLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.bigLabel2.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bigLabel2.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.bigLabel2.Location = new System.Drawing.Point(562, 147);
+            this.bigLabel2.Name = "bigLabel2";
+            this.bigLabel2.Size = new System.Drawing.Size(200, 38);
+            this.bigLabel2.TabIndex = 9;
+            this.bigLabel2.Text = "Exercicio Feito:";
+            // 
+            // bigLabel3
+            // 
+            this.bigLabel3.AutoSize = true;
+            this.bigLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.bigLabel3.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bigLabel3.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.bigLabel3.Location = new System.Drawing.Point(560, 214);
+            this.bigLabel3.Name = "bigLabel3";
+            this.bigLabel3.Size = new System.Drawing.Size(120, 38);
+            this.bigLabel3.TabIndex = 10;
+            this.bigLabel3.Text = "Calorias:";
+            // 
+            // probar_calorias
+            // 
+            this.probar_calorias.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.probar_calorias.Color = System.Drawing.Color.DodgerBlue;
+            this.probar_calorias.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(63)))), ((int)(((byte)(70)))));
+            this.probar_calorias.Hover = false;
+            this.probar_calorias.Location = new System.Drawing.Point(784, 214);
+            this.probar_calorias.Name = "probar_calorias";
+            this.probar_calorias.Progress = 50;
+            this.probar_calorias.Size = new System.Drawing.Size(168, 43);
+            this.probar_calorias.TabIndex = 11;
+            // 
+            // lbl_ola
+            // 
+            this.lbl_ola.AutoSize = true;
+            this.lbl_ola.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_ola.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lbl_ola.Location = new System.Drawing.Point(67, 69);
+            this.lbl_ola.Name = "lbl_ola";
+            this.lbl_ola.Size = new System.Drawing.Size(124, 69);
+            this.lbl_ola.TabIndex = 14;
+            this.lbl_ola.Text = "Olá";
+            // 
+            // lbl_nome
+            // 
+            this.lbl_nome.AutoSize = true;
+            this.lbl_nome.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_nome.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lbl_nome.Location = new System.Drawing.Point(175, 69);
+            this.lbl_nome.Name = "lbl_nome";
+            this.lbl_nome.Size = new System.Drawing.Size(160, 69);
+            this.lbl_nome.TabIndex = 15;
+            this.lbl_nome.Text = "teste";
+            // 
             // paginaInicial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ClientSize = new System.Drawing.Size(1000, 600);
+            this.Controls.Add(this.lbl_nome);
+            this.Controls.Add(this.lbl_ola);
+            this.Controls.Add(this.probar_calorias);
+            this.Controls.Add(this.bigLabel3);
+            this.Controls.Add(this.bigLabel2);
+            this.Controls.Add(this.probar_exercicio);
+            this.Controls.Add(this.bigLabel1);
+            this.Controls.Add(this.pb_foto);
             this.Controls.Add(this.pn_opcoes);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -468,7 +588,9 @@
             this.panel12.ResumeLayout(false);
             this.panel13.ResumeLayout(false);
             this.panel14.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pb_foto)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -500,5 +622,14 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btn_pt;
+        private System.Windows.Forms.Panel pan_color;
+        private System.Windows.Forms.PictureBox pb_foto;
+        private ReaLTaiizor.Controls.BigLabel bigLabel1;
+        private ReaLTaiizor.Controls.LostProgressBar probar_exercicio;
+        protected internal ReaLTaiizor.Controls.BigLabel bigLabel2;
+        protected internal ReaLTaiizor.Controls.BigLabel bigLabel3;
+        private ReaLTaiizor.Controls.LostProgressBar probar_calorias;
+        private System.Windows.Forms.Label lbl_ola;
+        private System.Windows.Forms.Label lbl_nome;
     }
 }

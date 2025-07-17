@@ -79,8 +79,9 @@ namespace Projeto_620.FORMS
             {
                 //melhorar esta textbox
                 MessageBox.Show("Por favor, preencha todos os campos.");
-                tb_username.Dispose();
-                tb_password.TextButton = string.Empty; // Limpa o campo de password
+
+               // AQUI ERA BOM LIMPAR AS TEXTBOXES MAS NAO DESCOBRI AINDA COMO
+
                 return;
             }
 

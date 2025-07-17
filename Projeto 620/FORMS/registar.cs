@@ -18,8 +18,7 @@ namespace Projeto_620
         public registar()
         {
             InitializeComponent();
-            this.StartPosition = FormStartPosition.CenterScreen;
-            
+            this.StartPosition = FormStartPosition.CenterScreen; 
         }
 
         private void pb_foto_Click(object sender, EventArgs e)

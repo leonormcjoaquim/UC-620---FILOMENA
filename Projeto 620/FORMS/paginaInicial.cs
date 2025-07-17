@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,6 +16,7 @@ namespace Projeto_620.FORMS
         public paginaInicial()
         {
             InitializeComponent();
+            MostrarImagemAleatoria();
         }
 
         private void btn_logout_Click(object sender, EventArgs e)
@@ -23,9 +25,6 @@ namespace Projeto_620.FORMS
             login Login = new login();
             Login.Show();
         }
-
-
-
         private void nightControlBox1_Click(object sender, EventArgs e)
         {
            Application.Exit();
@@ -60,6 +59,8 @@ namespace Projeto_620.FORMS
             if (sidebarExpand)
             {
                 pn_opcoes.Width -= 8;
+                lbl_ola.Location = new Point(lbl_ola.Location.X - 8, lbl_ola.Location.Y);
+                lbl_nome.Location = new Point(lbl_nome.Location.X - 8, lbl_nome.Location.Y);
                 if (pn_opcoes.Width <= 54)
                 {
                     sidebarExpand = false;
@@ -69,6 +70,8 @@ namespace Projeto_620.FORMS
             else
             {
                 pn_opcoes.Width += 8;
+                lbl_ola.Location = new Point(lbl_ola.Location.X + 8, lbl_ola.Location.Y);
+                lbl_nome.Location = new Point(lbl_nome.Location.X + 8, lbl_nome.Location.Y);
                 if (pn_opcoes.Width >= 165)
                 {
                     sidebarExpand = true;
@@ -111,9 +114,10 @@ namespace Projeto_620.FORMS
 
         private void bt_logout_Click(object sender, EventArgs e)
         {
+            // NÃO ESTÁ A FECHAR AQUI TAMBEM
             Form login = new login();
             login.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void bt_logout_MouseMove(object sender, MouseEventArgs e)
@@ -126,9 +130,48 @@ namespace Projeto_620.FORMS
             btn_exit.Cursor = Cursors.Hand;
         }
 
-        private void btn_home_MouseMove(object sender, MouseEventArgs e)
+        private void pb_menu_MouseHover_1(object sender, EventArgs e)
         {
-            btn_home.Cursor = Cursors.Hand;
+            pb_menu.Cursor = Cursors.Hand;
         }
+
+        private void btn_workouts_MouseHover(object sender, EventArgs e)
+        {
+            btn_workouts.Cursor = Cursors.Hand;
+        }
+
+        private void btn_food_MouseHover(object sender, EventArgs e)
+        {
+            btn_food.Cursor = Cursors.Hand;
+        }
+
+        private void btn_appoitments_MouseHover(object sender, EventArgs e)
+        {
+            btn_appoitments.Cursor = Cursors.Hand;
+        }
+
+        private void btn_pt_MouseHover(object sender, EventArgs e)
+        {
+            btn_pt.Cursor = Cursors.Hand;
+        }
+
+        Random rnd = new Random();
+        private void MostrarImagemAleatoria()
+        {
+            string pastaImagens = @"C:\cometudoperdetudo\imgs";
+            int numeroEscolhido = rnd.Next(1, 4); // temos 3 imagens agora, adicionar mais
+
+            string caminhoImagem = Path.Combine(pastaImagens, $"{numeroEscolhido}.jpeg");
+            if (File.Exists(caminhoImagem))
+            {
+                pb_foto.Image = Image.FromFile(caminhoImagem);
+                pb_foto.SizeMode = PictureBoxSizeMode.StretchImage; 
+            }
+            else
+            {
+                MessageBox.Show("Imagem não encontrada: " + caminhoImagem, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
     }
 }
