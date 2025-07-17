@@ -28,21 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(registar));
             this.nightControlBox1 = new ReaLTaiizor.Controls.NightControlBox();
             this.headerLabel1 = new ReaLTaiizor.Controls.HeaderLabel();
             this.nightLabel1 = new ReaLTaiizor.Controls.NightLabel();
-            this.smallTextBox1 = new ReaLTaiizor.Controls.SmallTextBox();
-            this.smallTextBox2 = new ReaLTaiizor.Controls.SmallTextBox();
+            this.tb_nome = new ReaLTaiizor.Controls.SmallTextBox();
+            this.tb_username = new ReaLTaiizor.Controls.SmallTextBox();
             this.nightLabel2 = new ReaLTaiizor.Controls.NightLabel();
-            this.smallTextBox3 = new ReaLTaiizor.Controls.SmallTextBox();
+            this.tb_password = new ReaLTaiizor.Controls.SmallTextBox();
             this.nightLabel3 = new ReaLTaiizor.Controls.NightLabel();
             this.nightLabel4 = new ReaLTaiizor.Controls.NightLabel();
-            this.smallTextBox5 = new ReaLTaiizor.Controls.SmallTextBox();
+            this.tb_height = new ReaLTaiizor.Controls.SmallTextBox();
             this.nightLabel5 = new ReaLTaiizor.Controls.NightLabel();
             this.pb_foto = new System.Windows.Forms.PictureBox();
             this.nightLabel6 = new ReaLTaiizor.Controls.NightLabel();
-            this.poisonComboBox1 = new ReaLTaiizor.Controls.PoisonComboBox();
-            this.smallTextBox4 = new ReaLTaiizor.Controls.SmallTextBox();
+            this.cbb_objectives = new ReaLTaiizor.Controls.PoisonComboBox();
+            this.tb_weight = new ReaLTaiizor.Controls.SmallTextBox();
             this.nightLabel7 = new ReaLTaiizor.Controls.NightLabel();
             this.btn_registar = new ReaLTaiizor.Controls.CyberButton();
             this.insertPhoto = new System.Windows.Forms.OpenFileDialog();
@@ -64,7 +65,7 @@
             this.nightControlBox1.EnableMaximizeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
             this.nightControlBox1.EnableMinimizeButton = true;
             this.nightControlBox1.EnableMinimizeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
-            this.nightControlBox1.Location = new System.Drawing.Point(627, 0);
+            this.nightControlBox1.Location = new System.Drawing.Point(879, 0);
             this.nightControlBox1.MaximizeHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.nightControlBox1.MaximizeHoverForeColor = System.Drawing.Color.White;
             this.nightControlBox1.MinimizeHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -80,10 +81,9 @@
             this.headerLabel1.BackColor = System.Drawing.Color.Transparent;
             this.headerLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.headerLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.headerLabel1.Location = new System.Drawing.Point(9, 7);
-            this.headerLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.headerLabel1.Location = new System.Drawing.Point(12, 9);
             this.headerLabel1.Name = "headerLabel1";
-            this.headerLabel1.Size = new System.Drawing.Size(184, 73);
+            this.headerLabel1.Size = new System.Drawing.Size(225, 91);
             this.headerLabel1.TabIndex = 2;
             this.headerLabel1.Text = "Perfil";
             // 
@@ -93,50 +93,49 @@
             this.nightLabel1.BackColor = System.Drawing.Color.Transparent;
             this.nightLabel1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nightLabel1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.nightLabel1.Location = new System.Drawing.Point(18, 95);
-            this.nightLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.nightLabel1.Location = new System.Drawing.Point(24, 117);
             this.nightLabel1.Name = "nightLabel1";
-            this.nightLabel1.Size = new System.Drawing.Size(47, 15);
+            this.nightLabel1.Size = new System.Drawing.Size(60, 20);
             this.nightLabel1.TabIndex = 3;
             this.nightLabel1.Text = "Nome: ";
             // 
-            // smallTextBox1
+            // tb_nome
             // 
-            this.smallTextBox1.BackColor = System.Drawing.Color.Transparent;
-            this.smallTextBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
-            this.smallTextBox1.CustomBGColor = System.Drawing.Color.White;
-            this.smallTextBox1.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.smallTextBox1.ForeColor = System.Drawing.Color.DimGray;
-            this.smallTextBox1.Location = new System.Drawing.Point(102, 95);
-            this.smallTextBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.smallTextBox1.MaxLength = 32767;
-            this.smallTextBox1.Multiline = false;
-            this.smallTextBox1.Name = "smallTextBox1";
-            this.smallTextBox1.ReadOnly = false;
-            this.smallTextBox1.Size = new System.Drawing.Size(171, 28);
-            this.smallTextBox1.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
-            this.smallTextBox1.TabIndex = 4;
-            this.smallTextBox1.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
-            this.smallTextBox1.UseSystemPasswordChar = false;
+            this.tb_nome.BackColor = System.Drawing.Color.Transparent;
+            this.tb_nome.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+            this.tb_nome.CustomBGColor = System.Drawing.Color.White;
+            this.tb_nome.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.tb_nome.ForeColor = System.Drawing.Color.DimGray;
+            this.tb_nome.Location = new System.Drawing.Point(136, 117);
+            this.tb_nome.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tb_nome.MaxLength = 32767;
+            this.tb_nome.Multiline = false;
+            this.tb_nome.Name = "tb_nome";
+            this.tb_nome.ReadOnly = false;
+            this.tb_nome.Size = new System.Drawing.Size(228, 33);
+            this.tb_nome.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+            this.tb_nome.TabIndex = 4;
+            this.tb_nome.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
+            this.tb_nome.UseSystemPasswordChar = false;
             // 
-            // smallTextBox2
+            // tb_username
             // 
-            this.smallTextBox2.BackColor = System.Drawing.Color.Transparent;
-            this.smallTextBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
-            this.smallTextBox2.CustomBGColor = System.Drawing.Color.White;
-            this.smallTextBox2.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.smallTextBox2.ForeColor = System.Drawing.Color.DimGray;
-            this.smallTextBox2.Location = new System.Drawing.Point(102, 158);
-            this.smallTextBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.smallTextBox2.MaxLength = 32767;
-            this.smallTextBox2.Multiline = false;
-            this.smallTextBox2.Name = "smallTextBox2";
-            this.smallTextBox2.ReadOnly = false;
-            this.smallTextBox2.Size = new System.Drawing.Size(171, 28);
-            this.smallTextBox2.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
-            this.smallTextBox2.TabIndex = 6;
-            this.smallTextBox2.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
-            this.smallTextBox2.UseSystemPasswordChar = false;
+            this.tb_username.BackColor = System.Drawing.Color.Transparent;
+            this.tb_username.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+            this.tb_username.CustomBGColor = System.Drawing.Color.White;
+            this.tb_username.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.tb_username.ForeColor = System.Drawing.Color.DimGray;
+            this.tb_username.Location = new System.Drawing.Point(136, 194);
+            this.tb_username.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tb_username.MaxLength = 32767;
+            this.tb_username.Multiline = false;
+            this.tb_username.Name = "tb_username";
+            this.tb_username.ReadOnly = false;
+            this.tb_username.Size = new System.Drawing.Size(228, 33);
+            this.tb_username.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+            this.tb_username.TabIndex = 6;
+            this.tb_username.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
+            this.tb_username.UseSystemPasswordChar = false;
             // 
             // nightLabel2
             // 
@@ -144,31 +143,30 @@
             this.nightLabel2.BackColor = System.Drawing.Color.Transparent;
             this.nightLabel2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nightLabel2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.nightLabel2.Location = new System.Drawing.Point(18, 158);
-            this.nightLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.nightLabel2.Location = new System.Drawing.Point(24, 194);
             this.nightLabel2.Name = "nightLabel2";
-            this.nightLabel2.Size = new System.Drawing.Size(67, 15);
+            this.nightLabel2.Size = new System.Drawing.Size(84, 20);
             this.nightLabel2.TabIndex = 5;
             this.nightLabel2.Text = "Username:";
             // 
-            // smallTextBox3
+            // tb_password
             // 
-            this.smallTextBox3.BackColor = System.Drawing.Color.Transparent;
-            this.smallTextBox3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
-            this.smallTextBox3.CustomBGColor = System.Drawing.Color.White;
-            this.smallTextBox3.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.smallTextBox3.ForeColor = System.Drawing.Color.DimGray;
-            this.smallTextBox3.Location = new System.Drawing.Point(102, 228);
-            this.smallTextBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.smallTextBox3.MaxLength = 32767;
-            this.smallTextBox3.Multiline = false;
-            this.smallTextBox3.Name = "smallTextBox3";
-            this.smallTextBox3.ReadOnly = false;
-            this.smallTextBox3.Size = new System.Drawing.Size(171, 28);
-            this.smallTextBox3.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
-            this.smallTextBox3.TabIndex = 8;
-            this.smallTextBox3.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
-            this.smallTextBox3.UseSystemPasswordChar = false;
+            this.tb_password.BackColor = System.Drawing.Color.Transparent;
+            this.tb_password.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+            this.tb_password.CustomBGColor = System.Drawing.Color.White;
+            this.tb_password.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.tb_password.ForeColor = System.Drawing.Color.DimGray;
+            this.tb_password.Location = new System.Drawing.Point(136, 281);
+            this.tb_password.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tb_password.MaxLength = 32767;
+            this.tb_password.Multiline = false;
+            this.tb_password.Name = "tb_password";
+            this.tb_password.ReadOnly = false;
+            this.tb_password.Size = new System.Drawing.Size(228, 33);
+            this.tb_password.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+            this.tb_password.TabIndex = 8;
+            this.tb_password.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
+            this.tb_password.UseSystemPasswordChar = false;
             // 
             // nightLabel3
             // 
@@ -176,10 +174,9 @@
             this.nightLabel3.BackColor = System.Drawing.Color.Transparent;
             this.nightLabel3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nightLabel3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.nightLabel3.Location = new System.Drawing.Point(18, 228);
-            this.nightLabel3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.nightLabel3.Location = new System.Drawing.Point(24, 281);
             this.nightLabel3.Name = "nightLabel3";
-            this.nightLabel3.Size = new System.Drawing.Size(62, 15);
+            this.nightLabel3.Size = new System.Drawing.Size(80, 20);
             this.nightLabel3.TabIndex = 7;
             this.nightLabel3.Text = "Password:";
             // 
@@ -189,31 +186,30 @@
             this.nightLabel4.BackColor = System.Drawing.Color.Transparent;
             this.nightLabel4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nightLabel4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.nightLabel4.Location = new System.Drawing.Point(18, 306);
-            this.nightLabel4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.nightLabel4.Location = new System.Drawing.Point(24, 377);
             this.nightLabel4.Name = "nightLabel4";
-            this.nightLabel4.Size = new System.Drawing.Size(58, 15);
+            this.nightLabel4.Size = new System.Drawing.Size(72, 20);
             this.nightLabel4.TabIndex = 9;
             this.nightLabel4.Text = "Objetivo:";
             // 
-            // smallTextBox5
+            // tb_height
             // 
-            this.smallTextBox5.BackColor = System.Drawing.Color.Transparent;
-            this.smallTextBox5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
-            this.smallTextBox5.CustomBGColor = System.Drawing.Color.White;
-            this.smallTextBox5.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.smallTextBox5.ForeColor = System.Drawing.Color.DimGray;
-            this.smallTextBox5.Location = new System.Drawing.Point(102, 379);
-            this.smallTextBox5.Margin = new System.Windows.Forms.Padding(2);
-            this.smallTextBox5.MaxLength = 32767;
-            this.smallTextBox5.Multiline = false;
-            this.smallTextBox5.Name = "smallTextBox5";
-            this.smallTextBox5.ReadOnly = false;
-            this.smallTextBox5.Size = new System.Drawing.Size(108, 28);
-            this.smallTextBox5.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
-            this.smallTextBox5.TabIndex = 12;
-            this.smallTextBox5.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
-            this.smallTextBox5.UseSystemPasswordChar = false;
+            this.tb_height.BackColor = System.Drawing.Color.Transparent;
+            this.tb_height.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+            this.tb_height.CustomBGColor = System.Drawing.Color.White;
+            this.tb_height.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.tb_height.ForeColor = System.Drawing.Color.DimGray;
+            this.tb_height.Location = new System.Drawing.Point(136, 460);
+            this.tb_height.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tb_height.MaxLength = 32767;
+            this.tb_height.Multiline = false;
+            this.tb_height.Name = "tb_height";
+            this.tb_height.ReadOnly = false;
+            this.tb_height.Size = new System.Drawing.Size(144, 33);
+            this.tb_height.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+            this.tb_height.TabIndex = 12;
+            this.tb_height.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
+            this.tb_height.UseSystemPasswordChar = false;
             // 
             // nightLabel5
             // 
@@ -221,19 +217,20 @@
             this.nightLabel5.BackColor = System.Drawing.Color.Transparent;
             this.nightLabel5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nightLabel5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.nightLabel5.Location = new System.Drawing.Point(18, 379);
-            this.nightLabel5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.nightLabel5.Location = new System.Drawing.Point(24, 460);
             this.nightLabel5.Name = "nightLabel5";
-            this.nightLabel5.Size = new System.Drawing.Size(72, 15);
+            this.nightLabel5.Size = new System.Drawing.Size(94, 20);
             this.nightLabel5.TabIndex = 11;
             this.nightLabel5.Text = "Altura (cm):";
             // 
             // pb_foto
             // 
-            this.pb_foto.Location = new System.Drawing.Point(562, 80);
-            this.pb_foto.Margin = new System.Windows.Forms.Padding(2);
+            this.pb_foto.Image = ((System.Drawing.Image)(resources.GetObject("pb_foto.Image")));
+            this.pb_foto.Location = new System.Drawing.Point(749, 98);
+            this.pb_foto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pb_foto.Name = "pb_foto";
-            this.pb_foto.Size = new System.Drawing.Size(135, 163);
+            this.pb_foto.Size = new System.Drawing.Size(180, 201);
+            this.pb_foto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pb_foto.TabIndex = 13;
             this.pb_foto.TabStop = false;
             this.pb_foto.Click += new System.EventHandler(this.pb_foto_Click);
@@ -244,45 +241,44 @@
             this.nightLabel6.BackColor = System.Drawing.Color.Transparent;
             this.nightLabel6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nightLabel6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.nightLabel6.Location = new System.Drawing.Point(560, 61);
-            this.nightLabel6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.nightLabel6.Location = new System.Drawing.Point(747, 75);
             this.nightLabel6.Name = "nightLabel6";
-            this.nightLabel6.Size = new System.Drawing.Size(32, 15);
+            this.nightLabel6.Size = new System.Drawing.Size(41, 20);
             this.nightLabel6.TabIndex = 14;
             this.nightLabel6.Text = "Foto";
             // 
-            // poisonComboBox1
+            // cbb_objectives
             // 
-            this.poisonComboBox1.FormattingEnabled = true;
-            this.poisonComboBox1.ItemHeight = 23;
-            this.poisonComboBox1.Items.AddRange(new object[] {
+            this.cbb_objectives.FormattingEnabled = true;
+            this.cbb_objectives.ItemHeight = 24;
+            this.cbb_objectives.Items.AddRange(new object[] {
             "Perder Peso",
             "Ganhar Massa Muscular"});
-            this.poisonComboBox1.Location = new System.Drawing.Point(102, 304);
-            this.poisonComboBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.poisonComboBox1.Name = "poisonComboBox1";
-            this.poisonComboBox1.Size = new System.Drawing.Size(172, 29);
-            this.poisonComboBox1.TabIndex = 15;
-            this.poisonComboBox1.UseSelectable = true;
+            this.cbb_objectives.Location = new System.Drawing.Point(136, 374);
+            this.cbb_objectives.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbb_objectives.Name = "cbb_objectives";
+            this.cbb_objectives.Size = new System.Drawing.Size(228, 30);
+            this.cbb_objectives.TabIndex = 15;
+            this.cbb_objectives.UseSelectable = true;
             // 
-            // smallTextBox4
+            // tb_weight
             // 
-            this.smallTextBox4.BackColor = System.Drawing.Color.Transparent;
-            this.smallTextBox4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
-            this.smallTextBox4.CustomBGColor = System.Drawing.Color.White;
-            this.smallTextBox4.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.smallTextBox4.ForeColor = System.Drawing.Color.DimGray;
-            this.smallTextBox4.Location = new System.Drawing.Point(102, 435);
-            this.smallTextBox4.Margin = new System.Windows.Forms.Padding(2);
-            this.smallTextBox4.MaxLength = 32767;
-            this.smallTextBox4.Multiline = false;
-            this.smallTextBox4.Name = "smallTextBox4";
-            this.smallTextBox4.ReadOnly = false;
-            this.smallTextBox4.Size = new System.Drawing.Size(108, 28);
-            this.smallTextBox4.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
-            this.smallTextBox4.TabIndex = 17;
-            this.smallTextBox4.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
-            this.smallTextBox4.UseSystemPasswordChar = false;
+            this.tb_weight.BackColor = System.Drawing.Color.Transparent;
+            this.tb_weight.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+            this.tb_weight.CustomBGColor = System.Drawing.Color.White;
+            this.tb_weight.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.tb_weight.ForeColor = System.Drawing.Color.DimGray;
+            this.tb_weight.Location = new System.Drawing.Point(136, 529);
+            this.tb_weight.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tb_weight.MaxLength = 32767;
+            this.tb_weight.Multiline = false;
+            this.tb_weight.Name = "tb_weight";
+            this.tb_weight.ReadOnly = false;
+            this.tb_weight.Size = new System.Drawing.Size(144, 33);
+            this.tb_weight.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+            this.tb_weight.TabIndex = 17;
+            this.tb_weight.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
+            this.tb_weight.UseSystemPasswordChar = false;
             // 
             // nightLabel7
             // 
@@ -290,10 +286,9 @@
             this.nightLabel7.BackColor = System.Drawing.Color.Transparent;
             this.nightLabel7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nightLabel7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.nightLabel7.Location = new System.Drawing.Point(28, 435);
-            this.nightLabel7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.nightLabel7.Location = new System.Drawing.Point(37, 529);
             this.nightLabel7.Name = "nightLabel7";
-            this.nightLabel7.Size = new System.Drawing.Size(61, 15);
+            this.nightLabel7.Size = new System.Drawing.Size(79, 20);
             this.nightLabel7.TabIndex = 16;
             this.nightLabel7.Text = "Peso (kg):";
             // 
@@ -323,13 +318,13 @@
             this.btn_registar.Lighting = false;
             this.btn_registar.LinearGradient_Background = false;
             this.btn_registar.LinearGradientPen = false;
-            this.btn_registar.Location = new System.Drawing.Point(538, 396);
-            this.btn_registar.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_registar.Location = new System.Drawing.Point(717, 487);
+            this.btn_registar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_registar.Name = "btn_registar";
             this.btn_registar.PenWidth = 15;
             this.btn_registar.Rounding = true;
             this.btn_registar.RoundingInt = 70;
-            this.btn_registar.Size = new System.Drawing.Size(195, 61);
+            this.btn_registar.Size = new System.Drawing.Size(260, 75);
             this.btn_registar.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             this.btn_registar.TabIndex = 18;
             this.btn_registar.Tag = "Cyber";
@@ -337,6 +332,7 @@
             this.btn_registar.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             this.btn_registar.Timer_Effect_1 = 5;
             this.btn_registar.Timer_RGB = 300;
+            this.btn_registar.Click += new System.EventHandler(this.btn_registar_Click);
             // 
             // insertPhoto
             // 
@@ -344,36 +340,35 @@
             // 
             // registar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.ClientSize = new System.Drawing.Size(750, 488);
+            this.ClientSize = new System.Drawing.Size(1000, 601);
             this.Controls.Add(this.btn_registar);
-            this.Controls.Add(this.smallTextBox4);
+            this.Controls.Add(this.tb_weight);
             this.Controls.Add(this.nightLabel7);
-            this.Controls.Add(this.poisonComboBox1);
+            this.Controls.Add(this.cbb_objectives);
             this.Controls.Add(this.nightLabel6);
             this.Controls.Add(this.pb_foto);
-            this.Controls.Add(this.smallTextBox5);
+            this.Controls.Add(this.tb_height);
             this.Controls.Add(this.nightLabel5);
             this.Controls.Add(this.nightLabel4);
-            this.Controls.Add(this.smallTextBox3);
+            this.Controls.Add(this.tb_password);
             this.Controls.Add(this.nightLabel3);
-            this.Controls.Add(this.smallTextBox2);
+            this.Controls.Add(this.tb_username);
             this.Controls.Add(this.nightLabel2);
-            this.Controls.Add(this.smallTextBox1);
+            this.Controls.Add(this.tb_nome);
             this.Controls.Add(this.nightLabel1);
             this.Controls.Add(this.headerLabel1);
             this.Controls.Add(this.nightControlBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
-            this.MaximumSize = new System.Drawing.Size(2560, 1392);
-            this.MinimumSize = new System.Drawing.Size(750, 488);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MaximumSize = new System.Drawing.Size(3413, 1713);
+            this.MinimumSize = new System.Drawing.Size(1000, 601);
             this.Name = "registar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "registar";
             this.TransparencyKey = System.Drawing.Color.Fuchsia;
-            this.Load += new System.EventHandler(this.registar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pb_foto)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -385,18 +380,18 @@
         private ReaLTaiizor.Controls.NightControlBox nightControlBox1;
         private ReaLTaiizor.Controls.HeaderLabel headerLabel1;
         private ReaLTaiizor.Controls.NightLabel nightLabel1;
-        private ReaLTaiizor.Controls.SmallTextBox smallTextBox1;
-        private ReaLTaiizor.Controls.SmallTextBox smallTextBox2;
+        private ReaLTaiizor.Controls.SmallTextBox tb_nome;
+        private ReaLTaiizor.Controls.SmallTextBox tb_username;
         private ReaLTaiizor.Controls.NightLabel nightLabel2;
-        private ReaLTaiizor.Controls.SmallTextBox smallTextBox3;
+        private ReaLTaiizor.Controls.SmallTextBox tb_password;
         private ReaLTaiizor.Controls.NightLabel nightLabel3;
         private ReaLTaiizor.Controls.NightLabel nightLabel4;
-        private ReaLTaiizor.Controls.SmallTextBox smallTextBox5;
+        private ReaLTaiizor.Controls.SmallTextBox tb_height;
         private ReaLTaiizor.Controls.NightLabel nightLabel5;
         private System.Windows.Forms.PictureBox pb_foto;
         private ReaLTaiizor.Controls.NightLabel nightLabel6;
-        private ReaLTaiizor.Controls.PoisonComboBox poisonComboBox1;
-        private ReaLTaiizor.Controls.SmallTextBox smallTextBox4;
+        private ReaLTaiizor.Controls.PoisonComboBox cbb_objectives;
+        private ReaLTaiizor.Controls.SmallTextBox tb_weight;
         private ReaLTaiizor.Controls.NightLabel nightLabel7;
         private ReaLTaiizor.Controls.CyberButton btn_registar;
         private System.Windows.Forms.OpenFileDialog insertPhoto;

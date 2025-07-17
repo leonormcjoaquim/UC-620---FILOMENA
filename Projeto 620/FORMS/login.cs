@@ -8,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
+using ReaLTaiizor.Controls;
 
 namespace Projeto_620.FORMS
 {
@@ -37,18 +39,6 @@ namespace Projeto_620.FORMS
             PaginaInicial.Show();
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btn_login_Click_1(object sender, EventArgs e)
-        {
-            Form paginaInicial = new paginaInicial();
-            paginaInicial.Show();
-            this.Hide();
-        }
-
         private void nightControlBox1_Click(object sender, EventArgs e)
         {
             if (MinimizeBox)
@@ -76,5 +66,46 @@ namespace Projeto_620.FORMS
             Form registar = new registar();
             registar.Show();
         }
+
+        private void btn_login_MouseClick(object sender, MouseEventArgs e)
+        {
+            tb_username.Focus();
+            string caminho = @"C:\cometudoperdetudo\users.xml";
+            string username = tb_username.TextButton; // textButton devido à framework que estamos a usar não ter a propriedade text para este elemento
+            string password = tb_password.TextButton;
+
+            // Verifica se um dos campos está vazio
+            if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password))
+            {
+                //melhorar esta textbox
+                MessageBox.Show("Por favor, preencha todos os campos.");
+                tb_username.Dispose();
+                tb_password.TextButton = string.Empty; // Limpa o campo de password
+                return;
+            }
+
+            // vê todos os users no ficheiro xml e compara se existe ou nao aquele login 
+            XDocument doc = XDocument.Load(caminho);
+            bool userExists = doc.Descendants("user").Where(x =>
+                                x.Element("username")?.Value == username &&
+                                x.Element("password")?.Value == password).Any();
+
+            // if userexists == true
+            if (!userExists)
+            {
+                //melhorar esta textbox
+                MessageBox.Show("Utilizador ou password incorretos. Tente novamente.");
+                tb_username.Focus();
+                return;
+            }
+            else
+            {
+                //melhorar esta textbox 
+                MessageBox.Show("Login efetuado com sucesso!");
+                Form paginaInicial = new paginaInicial();
+                paginaInicial.Show();
+                this.Hide();
+            }
+    }
     }
 }

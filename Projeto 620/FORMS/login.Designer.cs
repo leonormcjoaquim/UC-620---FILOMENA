@@ -37,7 +37,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tb_password = new ReaLTaiizor.Controls.CyberTextBox();
-            this.tb_ursername = new ReaLTaiizor.Controls.CyberTextBox();
+            this.tb_username = new ReaLTaiizor.Controls.CyberTextBox();
             this.nightControlBox1 = new ReaLTaiizor.Controls.NightControlBox();
             this.checkBox1 = new ReaLTaiizor.Controls.CheckBox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -57,12 +57,12 @@
             this.btn_registar.Image = null;
             this.btn_registar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_registar.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
-            this.btn_registar.Location = new System.Drawing.Point(308, 419);
-            this.btn_registar.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_registar.Location = new System.Drawing.Point(411, 516);
+            this.btn_registar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_registar.Name = "btn_registar";
             this.btn_registar.PressedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.btn_registar.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
-            this.btn_registar.Size = new System.Drawing.Size(99, 53);
+            this.btn_registar.Size = new System.Drawing.Size(132, 65);
             this.btn_registar.TabIndex = 0;
             this.btn_registar.Text = "Registar";
             this.btn_registar.TextAlignment = System.Drawing.StringAlignment.Center;
@@ -73,10 +73,10 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(-17, 184);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Location = new System.Drawing.Point(-23, 226);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(250, 307);
+            this.pictureBox1.Size = new System.Drawing.Size(333, 378);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -86,13 +86,12 @@
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(430, 247);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox2.Location = new System.Drawing.Point(573, 304);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(321, 242);
+            this.pictureBox2.Size = new System.Drawing.Size(428, 298);
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // lbl_title
             // 
@@ -100,12 +99,11 @@
             this.lbl_title.BackColor = System.Drawing.Color.Transparent;
             this.lbl_title.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_title.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbl_title.Location = new System.Drawing.Point(170, 0);
-            this.lbl_title.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_title.Location = new System.Drawing.Point(275, 0);
             this.lbl_title.Name = "lbl_title";
-            this.lbl_title.Size = new System.Drawing.Size(398, 172);
+            this.lbl_title.Size = new System.Drawing.Size(470, 318);
             this.lbl_title.TabIndex = 3;
-            this.lbl_title.Text = " Come Tudo\r\nPerde Tudo\r\n";
+            this.lbl_title.Text = "Come Tudo\r\nPerde Tudo\r\n\r\n";
             this.lbl_title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btn_login
@@ -119,16 +117,16 @@
             this.btn_login.Image = null;
             this.btn_login.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_login.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
-            this.btn_login.Location = new System.Drawing.Point(499, 201);
-            this.btn_login.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_login.Location = new System.Drawing.Point(665, 247);
+            this.btn_login.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_login.Name = "btn_login";
             this.btn_login.PressedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.btn_login.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
-            this.btn_login.Size = new System.Drawing.Size(109, 41);
+            this.btn_login.Size = new System.Drawing.Size(145, 50);
             this.btn_login.TabIndex = 4;
             this.btn_login.Text = "Login";
             this.btn_login.TextAlignment = System.Drawing.StringAlignment.Center;
-            this.btn_login.Click += new System.EventHandler(this.btn_login_Click_1);
+            this.btn_login.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btn_login_MouseClick);
             // 
             // label1
             // 
@@ -136,10 +134,9 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(178, 201);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(237, 247);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(123, 30);
+            this.label1.Size = new System.Drawing.Size(156, 38);
             this.label1.TabIndex = 5;
             this.label1.Text = "Username:";
             // 
@@ -149,10 +146,9 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(178, 258);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(237, 318);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(124, 30);
+            this.label2.Size = new System.Drawing.Size(155, 38);
             this.label2.TabIndex = 6;
             this.label2.Text = "Password: ";
             // 
@@ -168,19 +164,19 @@
             this.tb_password.ColorPen_1 = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
             this.tb_password.ColorPen_2 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
             this.tb_password.CyberTextBoxStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
-            this.tb_password.Font = new System.Drawing.Font("Arial", 7F);
+            this.tb_password.Font = new System.Drawing.Font("Arial", 9F);
             this.tb_password.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
             this.tb_password.Lighting = false;
             this.tb_password.LinearGradientPen = false;
-            this.tb_password.Location = new System.Drawing.Point(308, 258);
-            this.tb_password.Margin = new System.Windows.Forms.Padding(2);
+            this.tb_password.Location = new System.Drawing.Point(411, 318);
+            this.tb_password.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_password.Name = "tb_password";
             this.tb_password.Password = true;
             this.tb_password.PenWidth = 15;
             this.tb_password.RGB = false;
             this.tb_password.Rounding = true;
             this.tb_password.RoundingInt = 60;
-            this.tb_password.Size = new System.Drawing.Size(134, 31);
+            this.tb_password.Size = new System.Drawing.Size(179, 38);
             this.tb_password.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             this.tb_password.TabIndex = 9;
             this.tb_password.Tag = "Cyber";
@@ -188,36 +184,36 @@
             this.tb_password.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             this.tb_password.Timer_RGB = 300;
             // 
-            // tb_ursername
+            // tb_username
             // 
-            this.tb_ursername.Alpha = 20;
-            this.tb_ursername.BackColor = System.Drawing.Color.Transparent;
-            this.tb_ursername.Background_WidthPen = 3F;
-            this.tb_ursername.BackgroundPen = true;
-            this.tb_ursername.ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.tb_ursername.ColorBackground_Pen = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
-            this.tb_ursername.ColorLighting = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
-            this.tb_ursername.ColorPen_1 = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
-            this.tb_ursername.ColorPen_2 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
-            this.tb_ursername.CyberTextBoxStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
-            this.tb_ursername.Font = new System.Drawing.Font("Arial", 7F);
-            this.tb_ursername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
-            this.tb_ursername.Lighting = false;
-            this.tb_ursername.LinearGradientPen = false;
-            this.tb_ursername.Location = new System.Drawing.Point(308, 201);
-            this.tb_ursername.Margin = new System.Windows.Forms.Padding(2);
-            this.tb_ursername.Name = "tb_ursername";
-            this.tb_ursername.PenWidth = 15;
-            this.tb_ursername.RGB = false;
-            this.tb_ursername.Rounding = true;
-            this.tb_ursername.RoundingInt = 60;
-            this.tb_ursername.Size = new System.Drawing.Size(134, 31);
-            this.tb_ursername.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.tb_ursername.TabIndex = 10;
-            this.tb_ursername.Tag = "Cyber";
-            this.tb_ursername.TextButton = "";
-            this.tb_ursername.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.tb_ursername.Timer_RGB = 300;
+            this.tb_username.Alpha = 20;
+            this.tb_username.BackColor = System.Drawing.Color.Transparent;
+            this.tb_username.Background_WidthPen = 3F;
+            this.tb_username.BackgroundPen = true;
+            this.tb_username.ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.tb_username.ColorBackground_Pen = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
+            this.tb_username.ColorLighting = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
+            this.tb_username.ColorPen_1 = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
+            this.tb_username.ColorPen_2 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
+            this.tb_username.CyberTextBoxStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
+            this.tb_username.Font = new System.Drawing.Font("Arial", 9F);
+            this.tb_username.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
+            this.tb_username.Lighting = false;
+            this.tb_username.LinearGradientPen = false;
+            this.tb_username.Location = new System.Drawing.Point(411, 247);
+            this.tb_username.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tb_username.Name = "tb_username";
+            this.tb_username.PenWidth = 15;
+            this.tb_username.RGB = false;
+            this.tb_username.Rounding = true;
+            this.tb_username.RoundingInt = 60;
+            this.tb_username.Size = new System.Drawing.Size(179, 38);
+            this.tb_username.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            this.tb_username.TabIndex = 10;
+            this.tb_username.Tag = "Cyber";
+            this.tb_username.TextButton = "";
+            this.tb_username.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.tb_username.Timer_RGB = 300;
             // 
             // nightControlBox1
             // 
@@ -235,7 +231,7 @@
             this.nightControlBox1.EnableMinimizeButton = true;
             this.nightControlBox1.EnableMinimizeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
             this.nightControlBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.nightControlBox1.Location = new System.Drawing.Point(613, 0);
+            this.nightControlBox1.Location = new System.Drawing.Point(864, 0);
             this.nightControlBox1.MaximizeHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.nightControlBox1.MaximizeHoverForeColor = System.Drawing.Color.White;
             this.nightControlBox1.MinimizeHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -256,10 +252,10 @@
             this.checkBox1.Enable = true;
             this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.checkBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(125)))), ((int)(((byte)(132)))));
-            this.checkBox1.Location = new System.Drawing.Point(308, 302);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.checkBox1.Location = new System.Drawing.Point(411, 372);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(99, 16);
+            this.checkBox1.Size = new System.Drawing.Size(132, 16);
             this.checkBox1.TabIndex = 13;
             this.checkBox1.Text = "Ver password";
             this.checkBox1.CheckedChanged += new ReaLTaiizor.Controls.CheckBox.CheckedChangedEventHandler(this.checkBox1_CheckedChanged);
@@ -269,7 +265,7 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.panel1.Controls.Add(this.checkBox1);
             this.panel1.Controls.Add(this.nightControlBox1);
-            this.panel1.Controls.Add(this.tb_ursername);
+            this.panel1.Controls.Add(this.tb_username);
             this.panel1.Controls.Add(this.tb_password);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
@@ -278,22 +274,22 @@
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.btn_registar);
-            this.panel1.Location = new System.Drawing.Point(-2, -2);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Location = new System.Drawing.Point(-3, -2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(752, 493);
+            this.panel1.Size = new System.Drawing.Size(1003, 607);
             this.panel1.TabIndex = 4;
             // 
             // login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(750, 488);
+            this.ClientSize = new System.Drawing.Size(1000, 601);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
-            this.MaximumSize = new System.Drawing.Size(750, 488);
-            this.MinimumSize = new System.Drawing.Size(750, 488);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MaximumSize = new System.Drawing.Size(1000, 601);
+            this.MinimumSize = new System.Drawing.Size(1000, 601);
             this.Name = "login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "login";
@@ -315,7 +311,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private ReaLTaiizor.Controls.CyberTextBox tb_password;
-        private ReaLTaiizor.Controls.CyberTextBox tb_ursername;
+        private ReaLTaiizor.Controls.CyberTextBox tb_username;
         private ReaLTaiizor.Controls.CheckBox checkBox1;
         private System.Windows.Forms.Panel panel1;
         public ReaLTaiizor.Controls.NightControlBox nightControlBox1;
