@@ -59,7 +59,6 @@ namespace Projeto_620.FORMS
             if (sidebarExpand)
             {
                 pn_opcoes.Width -= 8;
-                // SE O NOME FOR MAIOR QUE AQUELE FODE O RESTO
                 lbl_ola.Location = new Point(lbl_ola.Location.X - 8, lbl_ola.Location.Y);
                 lbl_nome.Location = new Point(lbl_nome.Location.X - 8, lbl_nome.Location.Y);
                 if (pn_opcoes.Width <= 54)
@@ -202,6 +201,13 @@ namespace Projeto_620.FORMS
         {
             Form exercicios = new treino();
             exercicios.Show();
+            this.Close();
+        }
+
+        private void btn_food_Click(object sender, EventArgs e)
+        {
+            Form alimentacao = new alimentacao();
+            alimentacao.Show();
             this.Close();
         }
     }

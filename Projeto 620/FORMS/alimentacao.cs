@@ -29,7 +29,7 @@ namespace Projeto_620
             {
                 pn_opcoes.Width -= 10;
                 // SE O NOME FOR MAIOR QUE AQUELE FODE O RESTO
-                if (pn_opcoes.Width <= 50)
+                if (pn_opcoes.Width <= 60)
                 {
                     sidebarExpand = false;
                     sidebarTransition.Stop();
@@ -38,12 +38,18 @@ namespace Projeto_620
             else
             {
                 pn_opcoes.Width += 10;
-                if (pn_opcoes.Width >= 230)
+                if (pn_opcoes.Width >= 277)
                 {
                     sidebarExpand = true;
                     sidebarTransition.Stop();
                 }
             }
         }
+
+        private void btn_exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
     }
 }

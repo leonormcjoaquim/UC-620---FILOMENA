@@ -33,14 +33,14 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.pn_opcoes = new System.Windows.Forms.FlowLayoutPanel();
             this.btn_home = new System.Windows.Forms.Button();
+            this.btn_appoitments = new System.Windows.Forms.Button();
             this.btn_workouts = new System.Windows.Forms.Button();
             this.btn_food = new System.Windows.Forms.Button();
-            this.btn_appoitments = new System.Windows.Forms.Button();
             this.btn_pt = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.bt_logout = new System.Windows.Forms.Button();
             this.btn_exit = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
             this.pb_menu = new System.Windows.Forms.PictureBox();
             this.sidebarTransition = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
@@ -73,7 +73,7 @@
             this.pn_opcoes.Controls.Add(this.btn_exit);
             this.pn_opcoes.Location = new System.Drawing.Point(23, 62);
             this.pn_opcoes.Name = "pn_opcoes";
-            this.pn_opcoes.Size = new System.Drawing.Size(230, 496);
+            this.pn_opcoes.Size = new System.Drawing.Size(326, 496);
             this.pn_opcoes.TabIndex = 6;
             // 
             // btn_home
@@ -90,11 +90,29 @@
             this.btn_home.Location = new System.Drawing.Point(0, 0);
             this.btn_home.Margin = new System.Windows.Forms.Padding(0, 0, 0, 8);
             this.btn_home.Name = "btn_home";
-            this.btn_home.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
-            this.btn_home.Size = new System.Drawing.Size(226, 53);
+            this.btn_home.Size = new System.Drawing.Size(318, 53);
             this.btn_home.TabIndex = 7;
             this.btn_home.Text = "Home";
             this.btn_home.UseVisualStyleBackColor = false;
+            // 
+            // btn_appoitments
+            // 
+            this.btn_appoitments.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_appoitments.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_appoitments.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btn_appoitments.FlatAppearance.BorderSize = 2;
+            this.btn_appoitments.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_appoitments.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_appoitments.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btn_appoitments.Image = ((System.Drawing.Image)(resources.GetObject("btn_appoitments.Image")));
+            this.btn_appoitments.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_appoitments.Location = new System.Drawing.Point(0, 61);
+            this.btn_appoitments.Margin = new System.Windows.Forms.Padding(0, 0, 0, 8);
+            this.btn_appoitments.Name = "btn_appoitments";
+            this.btn_appoitments.Size = new System.Drawing.Size(318, 50);
+            this.btn_appoitments.TabIndex = 7;
+            this.btn_appoitments.Text = "Especialista";
+            this.btn_appoitments.UseVisualStyleBackColor = false;
             // 
             // btn_workouts
             // 
@@ -110,8 +128,7 @@
             this.btn_workouts.Location = new System.Drawing.Point(0, 119);
             this.btn_workouts.Margin = new System.Windows.Forms.Padding(0, 0, 0, 8);
             this.btn_workouts.Name = "btn_workouts";
-            this.btn_workouts.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
-            this.btn_workouts.Size = new System.Drawing.Size(226, 53);
+            this.btn_workouts.Size = new System.Drawing.Size(318, 53);
             this.btn_workouts.TabIndex = 7;
             this.btn_workouts.Text = "Exercicios";
             this.btn_workouts.UseVisualStyleBackColor = false;
@@ -130,31 +147,10 @@
             this.btn_food.Location = new System.Drawing.Point(0, 180);
             this.btn_food.Margin = new System.Windows.Forms.Padding(0, 0, 0, 8);
             this.btn_food.Name = "btn_food";
-            this.btn_food.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
-            this.btn_food.Size = new System.Drawing.Size(226, 53);
+            this.btn_food.Size = new System.Drawing.Size(318, 53);
             this.btn_food.TabIndex = 7;
             this.btn_food.Text = "Comida";
             this.btn_food.UseVisualStyleBackColor = false;
-            // 
-            // btn_appoitments
-            // 
-            this.btn_appoitments.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btn_appoitments.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btn_appoitments.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btn_appoitments.FlatAppearance.BorderSize = 2;
-            this.btn_appoitments.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_appoitments.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_appoitments.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btn_appoitments.Image = ((System.Drawing.Image)(resources.GetObject("btn_appoitments.Image")));
-            this.btn_appoitments.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_appoitments.Location = new System.Drawing.Point(0, 61);
-            this.btn_appoitments.Margin = new System.Windows.Forms.Padding(0, 0, 0, 8);
-            this.btn_appoitments.Name = "btn_appoitments";
-            this.btn_appoitments.Padding = new System.Windows.Forms.Padding(2, 0, 0, 0);
-            this.btn_appoitments.Size = new System.Drawing.Size(226, 50);
-            this.btn_appoitments.TabIndex = 7;
-            this.btn_appoitments.Text = "Especialista";
-            this.btn_appoitments.UseVisualStyleBackColor = false;
             // 
             // btn_pt
             // 
@@ -170,11 +166,29 @@
             this.btn_pt.Location = new System.Drawing.Point(0, 241);
             this.btn_pt.Margin = new System.Windows.Forms.Padding(0, 0, 0, 8);
             this.btn_pt.Name = "btn_pt";
-            this.btn_pt.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
-            this.btn_pt.Size = new System.Drawing.Size(226, 53);
+            this.btn_pt.Size = new System.Drawing.Size(318, 53);
             this.btn_pt.TabIndex = 7;
             this.btn_pt.Text = "Treino PT";
             this.btn_pt.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
+            this.button2.FlatAppearance.BorderSize = 2;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(0, 302);
+            this.button2.Margin = new System.Windows.Forms.Padding(0, 0, 0, 8);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(318, 52);
+            this.button2.TabIndex = 7;
+            this.button2.Text = "Motivação";
+            this.button2.UseVisualStyleBackColor = false;
             // 
             // bt_logout
             // 
@@ -190,8 +204,7 @@
             this.bt_logout.Location = new System.Drawing.Point(0, 362);
             this.bt_logout.Margin = new System.Windows.Forms.Padding(0, 0, 0, 8);
             this.bt_logout.Name = "bt_logout";
-            this.bt_logout.Padding = new System.Windows.Forms.Padding(2, 0, 0, 0);
-            this.bt_logout.Size = new System.Drawing.Size(226, 53);
+            this.bt_logout.Size = new System.Drawing.Size(318, 53);
             this.bt_logout.TabIndex = 7;
             this.bt_logout.Text = "Logout";
             this.bt_logout.UseVisualStyleBackColor = false;
@@ -210,11 +223,11 @@
             this.btn_exit.Location = new System.Drawing.Point(0, 423);
             this.btn_exit.Margin = new System.Windows.Forms.Padding(0, 0, 0, 8);
             this.btn_exit.Name = "btn_exit";
-            this.btn_exit.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btn_exit.Size = new System.Drawing.Size(226, 52);
+            this.btn_exit.Size = new System.Drawing.Size(318, 52);
             this.btn_exit.TabIndex = 7;
             this.btn_exit.Text = "Exit";
             this.btn_exit.UseVisualStyleBackColor = false;
+            this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
             // 
             // panel3
             // 
@@ -227,33 +240,15 @@
             this.panel3.Size = new System.Drawing.Size(1000, 56);
             this.panel3.TabIndex = 7;
             // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
-            this.button2.FlatAppearance.BorderSize = 2;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(0, 302);
-            this.button2.Margin = new System.Windows.Forms.Padding(0, 0, 0, 8);
-            this.button2.Name = "button2";
-            this.button2.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
-            this.button2.Size = new System.Drawing.Size(226, 52);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Motivação";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
             // pb_menu
             // 
+            this.pb_menu.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.pb_menu.Image = ((System.Drawing.Image)(resources.GetObject("pb_menu.Image")));
-            this.pb_menu.Location = new System.Drawing.Point(23, 18);
+            this.pb_menu.Location = new System.Drawing.Point(24, 18);
             this.pb_menu.Name = "pb_menu";
             this.pb_menu.Padding = new System.Windows.Forms.Padding(15, 5, 0, 0);
             this.pb_menu.Size = new System.Drawing.Size(51, 35);
+            this.pb_menu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb_menu.TabIndex = 8;
             this.pb_menu.TabStop = false;
             this.pb_menu.Click += new System.EventHandler(this.pb_menu_Click);
@@ -293,7 +288,7 @@
         private System.Windows.Forms.Button bt_logout;
         private System.Windows.Forms.Button btn_exit;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.PictureBox pb_menu;
         private System.Windows.Forms.Timer sidebarTransition;
+        private System.Windows.Forms.PictureBox pb_menu;
     }
 }

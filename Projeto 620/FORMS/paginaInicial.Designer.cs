@@ -252,6 +252,7 @@
             this.btn_food.TabIndex = 7;
             this.btn_food.Text = "Comida";
             this.btn_food.UseVisualStyleBackColor = false;
+            this.btn_food.Click += new System.EventHandler(this.btn_food_Click);
             this.btn_food.MouseHover += new System.EventHandler(this.btn_food_MouseHover);
             // 
             // panel7
