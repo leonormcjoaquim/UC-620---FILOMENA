@@ -8,6 +8,7 @@
     },
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{BBDC885C-2778-4D63-8C40-9A1FA2A80EA3}|Projeto 620\\Projeto 620.csproj|G:\\GitHub\\Projeto_UC00620\\UC-620---FILOMENA\\projeto 620\\forms\\registar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BBDC885C-2778-4D63-8C40-9A1FA2A80EA3}|Projeto 620\\Projeto 620.csproj|solutionrelative:projeto 620\\forms\\registar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -31,6 +32,12 @@
       "RelativeMoniker": "D:0:0:{BBDC885C-2778-4D63-8C40-9A1FA2A80EA3}|Projeto 620\\Projeto 620.csproj|solutionrelative:projeto 620\\forms\\paginainicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
+=======
+      "AbsoluteMoniker": "D:0:0:{BBDC885C-2778-4D63-8C40-9A1FA2A80EA3}|Projeto 620\\Projeto 620.csproj|A:\\ORGANIZAR\\Exercicios C#\\UC 620\\Projeto 620\\UC-620---FILOMENA\\projeto 620\\forms\\paginainicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BBDC885C-2778-4D63-8C40-9A1FA2A80EA3}|Projeto 620\\Projeto 620.csproj|solutionrelative:projeto 620\\forms\\paginainicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+>>>>>>> Stashed changes
       "AbsoluteMoniker": "D:0:0:{BBDC885C-2778-4D63-8C40-9A1FA2A80EA3}|Projeto 620\\Projeto 620.csproj|A:\\ORGANIZAR\\Exercicios C#\\UC 620\\Projeto 620\\UC-620---FILOMENA\\projeto 620\\forms\\alimentacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{BBDC885C-2778-4D63-8C40-9A1FA2A80EA3}|Projeto 620\\Projeto 620.csproj|solutionrelative:projeto 620\\forms\\alimentacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -58,6 +65,9 @@
           "DockedWidth": 155,
 =======
           "DockedWidth": 200,
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
           "SelectedChildIndex": 2,
           "Children": [
@@ -85,6 +95,19 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "alimentacao.Designer.cs",
+              "DocumentMoniker": "A:\\ORGANIZAR\\Exercicios C#\\UC 620\\Projeto 620\\UC-620---FILOMENA\\Projeto 620\\FORMS\\alimentacao.Designer.cs",
+              "RelativeDocumentMoniker": "Projeto 620\\FORMS\\alimentacao.Designer.cs",
+              "ToolTip": "A:\\ORGANIZAR\\Exercicios C#\\UC 620\\Projeto 620\\UC-620---FILOMENA\\Projeto 620\\FORMS\\alimentacao.Designer.cs",
+              "RelativeToolTip": "Projeto 620\\FORMS\\alimentacao.Designer.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAewDwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-17T18:56:48.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "alimentacao.cs",
               "DocumentMoniker": "A:\\ORGANIZAR\\Exercicios C#\\UC 620\\Projeto 620\\UC-620---FILOMENA\\Projeto 620\\FORMS\\alimentacao.cs",
@@ -92,6 +115,9 @@
               "ToolTip": "A:\\ORGANIZAR\\Exercicios C#\\UC 620\\Projeto 620\\UC-620---FILOMENA\\Projeto 620\\FORMS\\alimentacao.cs",
               "RelativeToolTip": "Projeto 620\\FORMS\\alimentacao.cs",
               "ViewState": "AgIAABcAAAAAAAAAAAD4vygAAAAqAAAAAAAAAA==",
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-17T16:57:39.909Z",
@@ -145,6 +171,7 @@
             {
               "$type": "Document",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
               "DocumentIndex": 0,
               "Title": "registar.cs [Design]",
               "DocumentMoniker": "G:\\GitHub\\Projeto_UC00620\\UC-620---FILOMENA\\Projeto 620\\FORMS\\registar.cs",
@@ -177,6 +204,8 @@
               "ToolTip": "G:\\GitHub\\Projeto_UC00620\\UC-620---FILOMENA\\Projeto 620\\FORMS\\paginaInicial.cs [Design]",
               "RelativeToolTip": "Projeto 620\\FORMS\\paginaInicial.cs [Design]",
 =======
+=======
+>>>>>>> Stashed changes
               "DocumentIndex": 4,
               "Title": "paginaInicial.cs",
               "DocumentMoniker": "A:\\ORGANIZAR\\Exercicios C#\\UC 620\\Projeto 620\\UC-620---FILOMENA\\Projeto 620\\FORMS\\paginaInicial.cs",
@@ -184,6 +213,9 @@
               "ToolTip": "A:\\ORGANIZAR\\Exercicios C#\\UC 620\\Projeto 620\\UC-620---FILOMENA\\Projeto 620\\FORMS\\paginaInicial.cs",
               "RelativeToolTip": "Projeto 620\\FORMS\\paginaInicial.cs",
               "ViewState": "AgIAADIAAAAAAAAAAAAMwEoAAAAqAAAAAAAAAA==",
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-17T01:33:38.223Z",
