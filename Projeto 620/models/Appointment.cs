@@ -9,7 +9,10 @@ namespace Projeto_620.models
     internal class Appointment : Marcacao
     {
 
-        public Appointment() { }
+        public Appointment(string tipo, DateTime data, string especialidade)
+         : base(tipo, data, especialidade)
+        {
+        }
 
         public override void marcarConsulta()
         {
