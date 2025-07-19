@@ -69,6 +69,12 @@
     <Compile Include="FORMS\login.Designer.cs">
       <DependentUpon>login.cs</DependentUpon>
     </Compile>
+    <Compile Include="FORMS\motivacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\motivacao.Designer.cs">
+      <DependentUpon>motivacao.cs</DependentUpon>
+    </Compile>
     <Compile Include="FORMS\paginaInicial.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +110,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FORMS\login.resx">
       <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\motivacao.resx">
+      <DependentUpon>motivacao.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FORMS\paginaInicial.resx">
       <DependentUpon>paginaInicial.cs</DependentUpon>
