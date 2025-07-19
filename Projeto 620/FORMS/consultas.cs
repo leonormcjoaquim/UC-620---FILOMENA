@@ -8,12 +8,12 @@ using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 using Projeto_620.models;
-<<<<<<< Updated upstream
-=======
+
 using Projeto_620.utils;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
->>>>>>> Stashed changes
+
 
 namespace Projeto_620.FORMS
 {
@@ -131,20 +131,6 @@ namespace Projeto_620.FORMS
                 return;
             }
             string tipoMarcacao = cbb_tipo.Text;
-            if (tipoMarcacao == "Especialista")
-            {
-
-            }
-            else if (tipoMarcacao == "Personal Trainer")
-            {
-
-            }
-            else
-            {
-                MessageBox.Show("Erro!");
-            }
-<<<<<<< Updated upstream
-=======
 
             string username = "root"; //ALTERAR PRECISAMOS DE UMA GLOBAL VARIABLE
             XDocument doc;
@@ -158,7 +144,20 @@ namespace Projeto_620.FORMS
                 consultas = new XElement("Consultas");
                 user.Add(consultas);
             }
+            Marcacao marcacao;
+            string tipo_Marcacao = cbb_tipo.Text;
+            DateTime dataMarcacao = data_caixa.Value;
+            string especialidade = cbb_especialidades.Text;
 
+            if (tipoMarcacao == "Especialista")
+                marcacao = new Appointment(tipo_Marcacao, dataMarcacao, especialidade);
+            else if (tipoMarcacao == "Treino PT")
+                marcacao = new TreinoPT(tipoMarcacao, dataMarcacao, especialidade);
+            else
+            {
+                MessageBox.Show("Tipo de marcação inválido!");
+                return;
+            }
             XElement novaConsulta = new XElement("Consulta",
                 new XElement("TipoMarcacao", marcacao.TipoMarcacao),
                 new XElement("DataMarcacao", marcacao.DataMarcacao.ToString("yyyy-MM-dd")),
@@ -169,7 +168,7 @@ namespace Projeto_620.FORMS
             doc.Save(caminho);
 
             MessageBox.Show("Sucesso");
->>>>>>> Stashed changes
+
         }
 
         private void btn_filtrar_Click(object sender, EventArgs e)

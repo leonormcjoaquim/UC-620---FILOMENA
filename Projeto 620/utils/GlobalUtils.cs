@@ -33,7 +33,7 @@ namespace Projeto_620.utils
 
     }
 
-    public enum EstadoMarcacao
+    public enum TipoRefeicao
     {
         
     }

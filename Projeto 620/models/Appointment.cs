@@ -11,7 +11,13 @@ namespace Projeto_620.models
     {
 
         public Appointment(string tipo, DateTime data, string especialidade)
+<<<<<<< HEAD
         : base(tipo, data, especialidade) { }
+=======
+         : base(tipo, data, especialidade)
+        {
+        }
+>>>>>>> TestarAntesDeEnviar
 
         public override void marcarConsulta()
         {

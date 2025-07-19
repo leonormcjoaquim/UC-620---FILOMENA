@@ -62,7 +62,7 @@
             // 
             this.pb_menu.Image = ((System.Drawing.Image)(resources.GetObject("pb_menu.Image")));
             this.pb_menu.Location = new System.Drawing.Point(2, 10);
-            this.pb_menu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pb_menu.Margin = new System.Windows.Forms.Padding(2);
             this.pb_menu.Name = "pb_menu";
             this.pb_menu.Padding = new System.Windows.Forms.Padding(11, 4, 0, 0);
             this.pb_menu.Size = new System.Drawing.Size(38, 28);
@@ -80,7 +80,7 @@
             this.panel1.Controls.Add(this.pb_menu);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(750, 41);
             this.panel1.TabIndex = 4;
@@ -100,7 +100,7 @@
             this.nightControlBox1.EnableMaximizeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
             this.nightControlBox1.EnableMinimizeButton = true;
             this.nightControlBox1.EnableMinimizeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
-            this.nightControlBox1.Location = new System.Drawing.Point(646, 0);
+            this.nightControlBox1.Location = new System.Drawing.Point(611, 0);
             this.nightControlBox1.MaximizeHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.nightControlBox1.MaximizeHoverForeColor = System.Drawing.Color.White;
             this.nightControlBox1.MinimizeHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -114,7 +114,7 @@
             // 
             this.pan_color.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.pan_color.Location = new System.Drawing.Point(45, 43);
-            this.pan_color.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pan_color.Margin = new System.Windows.Forms.Padding(2);
             this.pan_color.Name = "pan_color";
             this.pan_color.Size = new System.Drawing.Size(705, 448);
             this.pan_color.TabIndex = 6;
@@ -123,7 +123,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(60, 7);
+            this.label1.Location = new System.Drawing.Point(44, 8);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(68, 30);
@@ -138,7 +138,7 @@
             // pb_foto
             // 
             this.pb_foto.Location = new System.Drawing.Point(427, 237);
-            this.pb_foto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pb_foto.Margin = new System.Windows.Forms.Padding(2);
             this.pb_foto.Name = "pb_foto";
             this.pb_foto.Size = new System.Drawing.Size(301, 219);
             this.pb_foto.TabIndex = 6;
@@ -164,7 +164,7 @@
             this.probar_exercicio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(63)))), ((int)(((byte)(70)))));
             this.probar_exercicio.Hover = false;
             this.probar_exercicio.Location = new System.Drawing.Point(588, 115);
-            this.probar_exercicio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.probar_exercicio.Margin = new System.Windows.Forms.Padding(2);
             this.probar_exercicio.Name = "probar_exercicio";
             this.probar_exercicio.Progress = 50;
             this.probar_exercicio.Size = new System.Drawing.Size(126, 35);
@@ -203,7 +203,7 @@
             this.probar_calorias.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(63)))), ((int)(((byte)(70)))));
             this.probar_calorias.Hover = false;
             this.probar_calorias.Location = new System.Drawing.Point(588, 174);
-            this.probar_calorias.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.probar_calorias.Margin = new System.Windows.Forms.Padding(2);
             this.probar_calorias.Name = "probar_calorias";
             this.probar_calorias.Progress = 50;
             this.probar_calorias.Size = new System.Drawing.Size(126, 35);
@@ -245,7 +245,7 @@
             this.pn_opcoes.Controls.Add(this.bt_logout);
             this.pn_opcoes.Controls.Add(this.btn_exit);
             this.pn_opcoes.Location = new System.Drawing.Point(2, 43);
-            this.pn_opcoes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pn_opcoes.Margin = new System.Windows.Forms.Padding(2);
             this.pn_opcoes.Name = "pn_opcoes";
             this.pn_opcoes.Size = new System.Drawing.Size(38, 448);
             this.pn_opcoes.TabIndex = 16;
@@ -407,7 +407,7 @@
             this.Controls.Add(this.pb_foto);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximumSize = new System.Drawing.Size(750, 488);
             this.MinimumSize = new System.Drawing.Size(750, 488);
             this.Name = "paginaInicial";
