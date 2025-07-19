@@ -56,3 +56,4 @@ G:\GitHub\Projeto_UC00620\UC-620---FILOMENA\Projeto 620\obj\Debug\Projeto_620.FO
 G:\GitHub\Projeto_UC00620\UC-620---FILOMENA\Projeto 620\obj\Debug\Projeto .D8456F9E.Up2Date
 G:\GitHub\Projeto_UC00620\UC-620---FILOMENA\Projeto 620\obj\Debug\Projeto_620.FORMS.consultas.resources
 A:\ORGANIZAR\Exercicios C#\UC 620\Projeto 620\UC-620---FILOMENA\Projeto 620\obj\Debug\Projeto_620.FORMS.consultas.resources
+G:\GitHub\Projeto_UC00620\UC-620---FILOMENA\Projeto 620\obj\Debug\Projeto_620.FORMS.motivacao.resources

@@ -7,8 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Projeto_620.models;
-using Projeto_620.FORMS;
 
 namespace Projeto_620.FORMS
 {
