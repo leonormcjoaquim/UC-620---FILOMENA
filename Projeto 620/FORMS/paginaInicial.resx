@@ -174,6 +174,7 @@
         1qoC3FePy1txoj5T49h6fHTUPeBM/aG+q4lfAtbtRtVinD41AAAAAElFTkSuQmCC
 </value>
   </data>
+<<<<<<< Updated upstream
   <data name="btn_appoitments.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
@@ -202,6 +203,19 @@
         R19Icn24kJrgB3Aic2yLSMfFROIqfgo8d4FV4SpollGS3Nf9KvWEIlcncBB4FDor/q7XtwSwv2670cye
         lRaSIWkyVN17+r+G8eTNVq77AbkvaVtDt4zQnc1rPYiisruuTht8BM5mvQxJD0N/Iq/1IHqNn0G3hDm/
         r1lnK0TnNI7ltR7E3xc/2Lf/GcsKcQevt6uB30iIjqL7M0dPAAAAAElFTkSuQmCC
+=======
+  <data name="button2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAS
+        cQAAEnEB89x6jgAAAahJREFUSEu1lb8rhlEUx/UmGSQZDPIHyB9glskgGfwBBhkMMhjNMhlkMEnvYJDe
+        JJlkMhkMMksGSQZJknw/R6fufbru+9P78qlbp+ec53zPvc9zz+nqSjCzHmDazA4k3QNPwDkwZWalJK5k
+        ZhOSzoBn4BbYD3Hdac4CMxsAKsCnZQAfwJaZ9YUi1oD3OnFlj8uT9wLHQBpcZQNHksrAV+GsgaSK5ywE
+        gFVPkiTq2PZdxuSDwF0Q/zOAR2DEBWZ8y2kVjcgrbWIvuMB6DUdDu9VlZnsu4F/9XwBOXGA/dzix6k5s
+        SacusBkfRkczu9UVj2iu2X/dAYsu0A/c5J5Ydbu2pAdgON6FSUlvMSjZYrv2m5nNpq2iBKz8xVF5LwOW
+        0uZYiEjazl/IyY8itUOBGz8Sp3inlLRbY8st2ZJ26rbrSPjoh0VpLeKtvqpN1yOIXORJnPxYHEmXPk/y
+        PA0BhoCrWkeR2sB18Tv+FjMb9XFYlJwhyUflWP7erwDGgdeYNNnBq/vy+LYIM8MTRoEXH/B5XNuEi7gQ
+        hroP+/k8pmOCyLLP76pb2oBvz7FwqSl6ukkAAAAASUVORK5CYII=
+>>>>>>> Stashed changes
 </value>
   </data>
   <data name="bt_logout.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

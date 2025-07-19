@@ -13,7 +13,7 @@ namespace Projeto_620.utils
         public static List<User> users = new List<User>();
         public static List<Alimentacao> alimentos = new List<Alimentacao>();
         public static List<Exercicio> exercicios = new List<Exercicio>();
-        public static List<consultas> consultas = new List<consultas>();
+        public static List<Appoitments> consultas = new List<Appoitments>();
         public static List<TreinoPT> treinoPTs = new List<TreinoPT>();
 
     }

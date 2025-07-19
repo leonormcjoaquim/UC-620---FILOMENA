@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Projeto_620.models;
+using Projeto_620.FORMS;
 
 namespace Projeto_620.FORMS
 {
@@ -70,5 +72,36 @@ namespace Projeto_620.FORMS
             form.Show();
             this.Close();
         }
+<<<<<<< Updated upstream
+=======
+
+        private void btn_appoitments_Click(object sender, EventArgs e)
+        {
+            Form consulta = new consultas();
+            consulta.Show();
+            this.Close();
+        }
+
+        private void btn_home_Click(object sender, EventArgs e)
+        {
+            Form paginaInicio = new paginaInicial();
+            paginaInicio.Show();
+            this.Close();
+        }
+
+        private void btn_workouts_Click(object sender, EventArgs e)
+        {
+            Form work = new treino();
+            work.Show();
+            this.Close();
+        }
+
+        private void btn_food_Click(object sender, EventArgs e)
+        {
+            Form alimento = new alimentacao();
+            alimento.Show();
+            this.Close();
+        }
+>>>>>>> Stashed changes
     }
 }
