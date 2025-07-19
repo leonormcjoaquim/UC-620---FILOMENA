@@ -4,9 +4,11 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Projeto_620.models;
 
 namespace Projeto_620.FORMS
 {
@@ -16,6 +18,8 @@ namespace Projeto_620.FORMS
         {
             InitializeComponent();
         }
+
+
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -110,6 +114,30 @@ namespace Projeto_620.FORMS
         private void btn_exit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btn_marcar_consulta_Click(object sender, EventArgs e)
+        {
+            if (cbb_tipo.SelectedIndex == -1 || cbb_especialidades.SelectedIndex == -1)
+            {
+                MessageBox.Show("Erros!");
+                cbb_especialidades.SelectedIndex = 0;
+                cbb_tipo.SelectedIndex = 0;
+                return;
+            }
+            string tipoMarcacao = cbb_tipo.Text;
+            if (tipoMarcacao == "Especialista")
+            {
+
+            }
+            else if (tipoMarcacao == "Personal Trainer")
+            {
+
+            }
+            else
+            {
+                MessageBox.Show("Erro!");
+            }
         }
     }
 }

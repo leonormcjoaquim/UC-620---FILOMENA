@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace Projeto_620.models
 {
-    internal class TreinoPT
+    internal class TreinoPT : Marcacao
     {
+        public TreinoPT() { }
+
+        public override void marcarConsulta()
+        {
+        }
     }
 }
