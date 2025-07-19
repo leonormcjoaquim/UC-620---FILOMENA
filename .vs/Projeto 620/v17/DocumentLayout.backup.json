@@ -3,6 +3,7 @@
   "WorkspaceRootPath": "G:\\GitHub\\Projeto_UC00620\\UC-620---FILOMENA\\",
   "Documents": [
     {
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{BBDC885C-2778-4D63-8C40-9A1FA2A80EA3}|Projeto 620\\Projeto 620.csproj|g:\\github\\projeto_uc00620\\uc-620---filomena\\projeto 620\\forms\\alimentacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{BBDC885C-2778-4D63-8C40-9A1FA2A80EA3}|Projeto 620\\Projeto 620.csproj|solutionrelative:projeto 620\\forms\\alimentacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -33,6 +34,26 @@
     {
       "AbsoluteMoniker": "D:0:0:{BBDC885C-2778-4D63-8C40-9A1FA2A80EA3}|Projeto 620\\Projeto 620.csproj|g:\\github\\projeto_uc00620\\uc-620---filomena\\projeto 620\\forms\\motivacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BBDC885C-2778-4D63-8C40-9A1FA2A80EA3}|Projeto 620\\Projeto 620.csproj|solutionrelative:projeto 620\\forms\\motivacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{BBDC885C-2778-4D63-8C40-9A1FA2A80EA3}|Projeto 620\\Projeto 620.csproj|a:\\organizar\\exercicios c#\\uc 620\\projeto 620\\uc-620---filomena\\projeto 620\\models\\marcacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBDC885C-2778-4D63-8C40-9A1FA2A80EA3}|Projeto 620\\Projeto 620.csproj|solutionrelative:projeto 620\\models\\marcacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBDC885C-2778-4D63-8C40-9A1FA2A80EA3}|Projeto 620\\Projeto 620.csproj|a:\\organizar\\exercicios c#\\uc 620\\projeto 620\\uc-620---filomena\\projeto 620\\models\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBDC885C-2778-4D63-8C40-9A1FA2A80EA3}|Projeto 620\\Projeto 620.csproj|solutionrelative:projeto 620\\models\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBDC885C-2778-4D63-8C40-9A1FA2A80EA3}|Projeto 620\\Projeto 620.csproj|a:\\organizar\\exercicios c#\\uc 620\\projeto 620\\uc-620---filomena\\projeto 620\\models\\treinopt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBDC885C-2778-4D63-8C40-9A1FA2A80EA3}|Projeto 620\\Projeto 620.csproj|solutionrelative:projeto 620\\models\\treinopt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBDC885C-2778-4D63-8C40-9A1FA2A80EA3}|Projeto 620\\Projeto 620.csproj|a:\\organizar\\exercicios c#\\uc 620\\projeto 620\\uc-620---filomena\\projeto 620\\forms\\consultas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBDC885C-2778-4D63-8C40-9A1FA2A80EA3}|Projeto 620\\Projeto 620.csproj|solutionrelative:projeto 620\\forms\\consultas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBDC885C-2778-4D63-8C40-9A1FA2A80EA3}|Projeto 620\\Projeto 620.csproj|a:\\organizar\\exercicios c#\\uc 620\\projeto 620\\uc-620---filomena\\projeto 620\\forms\\consultas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BBDC885C-2778-4D63-8C40-9A1FA2A80EA3}|Projeto 620\\Projeto 620.csproj|solutionrelative:projeto 620\\forms\\consultas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+>>>>>>> Stashed changes
     }
   ],
   "DocumentGroupContainers": [
@@ -41,8 +62,13 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
+<<<<<<< Updated upstream
           "DockedWidth": 306,
           "SelectedChildIndex": 2,
+=======
+          "DockedWidth": 304,
+          "SelectedChildIndex": 4,
+>>>>>>> Stashed changes
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,6 +80,7 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 0,
               "Title": "alimentacao.cs [Design]",
               "DocumentMoniker": "G:\\GitHub\\Projeto_UC00620\\UC-620---FILOMENA\\Projeto 620\\FORMS\\alimentacao.cs",
@@ -63,10 +90,23 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-19T18:31:08.054Z",
               "EditorCaption": " [Design]"
+=======
+              "DocumentIndex": 2,
+              "Title": "TreinoPT.cs",
+              "DocumentMoniker": "A:\\ORGANIZAR\\Exercicios C#\\UC 620\\Projeto 620\\UC-620---FILOMENA\\Projeto 620\\models\\TreinoPT.cs",
+              "RelativeDocumentMoniker": "Projeto 620\\models\\TreinoPT.cs",
+              "ToolTip": "A:\\ORGANIZAR\\Exercicios C#\\UC 620\\Projeto 620\\UC-620---FILOMENA\\Projeto 620\\models\\TreinoPT.cs",
+              "RelativeToolTip": "Projeto 620\\models\\TreinoPT.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-19T19:24:33.736Z",
+              "EditorCaption": ""
+>>>>>>> Stashed changes
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+<<<<<<< Updated upstream
               "Title": "consultas.cs [Design]",
               "DocumentMoniker": "G:\\GitHub\\Projeto_UC00620\\UC-620---FILOMENA\\Projeto 620\\FORMS\\consultas.cs",
               "RelativeDocumentMoniker": "Projeto 620\\FORMS\\consultas.cs",
@@ -135,10 +175,21 @@
               "ViewState": "AgIAADEAAAAAAAAAAAAAAD8AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-19T18:30:32.579Z",
+=======
+              "Title": "Appointment.cs",
+              "DocumentMoniker": "A:\\ORGANIZAR\\Exercicios C#\\UC 620\\Projeto 620\\UC-620---FILOMENA\\Projeto 620\\models\\Appointment.cs",
+              "RelativeDocumentMoniker": "Projeto 620\\models\\Appointment.cs",
+              "ToolTip": "A:\\ORGANIZAR\\Exercicios C#\\UC 620\\Projeto 620\\UC-620---FILOMENA\\Projeto 620\\models\\Appointment.cs",
+              "RelativeToolTip": "Projeto 620\\models\\Appointment.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-19T18:55:20.758Z",
+>>>>>>> Stashed changes
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 3,
               "Title": "motivacao.cs [Design]",
               "DocumentMoniker": "G:\\GitHub\\Projeto_UC00620\\UC-620---FILOMENA\\Projeto 620\\FORMS\\motivacao.cs",
@@ -147,6 +198,48 @@
               "RelativeToolTip": "Projeto 620\\FORMS\\motivacao.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-19T18:30:33.201Z",
+=======
+              "DocumentIndex": 0,
+              "Title": "Marcacao.cs",
+              "DocumentMoniker": "A:\\ORGANIZAR\\Exercicios C#\\UC 620\\Projeto 620\\UC-620---FILOMENA\\Projeto 620\\models\\Marcacao.cs",
+              "RelativeDocumentMoniker": "Projeto 620\\models\\Marcacao.cs",
+              "ToolTip": "A:\\ORGANIZAR\\Exercicios C#\\UC 620\\Projeto 620\\UC-620---FILOMENA\\Projeto 620\\models\\Marcacao.cs",
+              "RelativeToolTip": "Projeto 620\\models\\Marcacao.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-19T19:07:28.297Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 308,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "consultas.cs",
+              "DocumentMoniker": "A:\\ORGANIZAR\\Exercicios C#\\UC 620\\Projeto 620\\UC-620---FILOMENA\\Projeto 620\\FORMS\\consultas.cs",
+              "RelativeDocumentMoniker": "Projeto 620\\FORMS\\consultas.cs",
+              "ToolTip": "A:\\ORGANIZAR\\Exercicios C#\\UC 620\\Projeto 620\\UC-620---FILOMENA\\Projeto 620\\FORMS\\consultas.cs",
+              "RelativeToolTip": "Projeto 620\\FORMS\\consultas.cs",
+              "ViewState": "AgIAAHUAAAAAAAAAAAD4v4wAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-19T19:03:54.923Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "consultas.cs [Design]",
+              "DocumentMoniker": "A:\\ORGANIZAR\\Exercicios C#\\UC 620\\Projeto 620\\UC-620---FILOMENA\\Projeto 620\\FORMS\\consultas.cs",
+              "RelativeDocumentMoniker": "Projeto 620\\FORMS\\consultas.cs",
+              "ToolTip": "A:\\ORGANIZAR\\Exercicios C#\\UC 620\\Projeto 620\\UC-620---FILOMENA\\Projeto 620\\FORMS\\consultas.cs [Design]",
+              "RelativeToolTip": "Projeto 620\\FORMS\\consultas.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-19T18:53:31.88Z",
+>>>>>>> Stashed changes
               "EditorCaption": " [Design]"
             }
           ]
