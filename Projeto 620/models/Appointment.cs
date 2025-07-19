@@ -17,5 +17,9 @@ namespace Projeto_620.models
         {
             MessageBox.Show("Consulta com Especialista Marcada com Sucesso");
         }
+        public override string ToString()
+        {
+            return $"{TipoMarcacao} - {EspecialidadeMarcacao} em {DataMarcacao:dd/MM/yyyy}";
+        }
     }
 }
