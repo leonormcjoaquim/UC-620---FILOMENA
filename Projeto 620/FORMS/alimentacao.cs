@@ -48,17 +48,6 @@ namespace Projeto_620
             }
         }
 
-        private void btn_exit_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void bt_logout_MouseClick(object sender, MouseEventArgs e)
-        {
-            Form formLogin = new login();
-            formLogin.Show();
-            this.Close();
-        }
 
         private void btn_home_Click(object sender, EventArgs e)
         {
@@ -67,5 +56,44 @@ namespace Projeto_620
             this.Close();
         }
 
+        private void btn_appoitments_Click(object sender, EventArgs e)
+        {
+            Form consulta = new consultas();
+            consulta.Show();
+            this.Close();
+        }
+
+        private void btn_workouts_Click(object sender, EventArgs e)
+        {
+            Form workout = new treino();
+            workout.Show();
+            this.Close();
+        }
+
+        private void btn_food_Click(object sender, EventArgs e)
+        {
+            Form comida = new alimentacao();
+            comida.Show();
+            this.Close();
+        }
+
+        private void btn_motivacao_Click(object sender, EventArgs e)
+        {
+            Form motiva = new motivacao();
+            motiva.Show();
+            this.Close();
+        }
+
+        private void bt_logout_Click(object sender, EventArgs e)
+        {
+            Form log = new login();
+            log.Show();
+            this.Close();
+        }
+
+        private void btn_exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

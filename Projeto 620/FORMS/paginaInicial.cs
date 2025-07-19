@@ -47,12 +47,7 @@ namespace Projeto_620.FORMS
         }
         bool menuExpand = false;
 
- 
 
-        private void btn_exit_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
         bool sidebarExpand = false;
         private void sidebarTransition_Tick(object sender, EventArgs e)
         {
@@ -112,14 +107,6 @@ namespace Projeto_620.FORMS
             bt_logout.Cursor = Cursors.Hand;
         }
 
-        private void bt_logout_Click(object sender, EventArgs e)
-        {
-            // NÃO ESTÁ A FECHAR AQUI TAMBEM
-            Form login = new login();
-            login.Show();
-            this.Close();
-        }
-
         private void bt_logout_MouseMove(object sender, MouseEventArgs e)
         {
             bt_logout.Cursor = Cursors.Hand;
@@ -150,10 +137,6 @@ namespace Projeto_620.FORMS
             btn_appoitments.Cursor = Cursors.Hand;
         }
 
-        private void btn_pt_MouseHover(object sender, EventArgs e)
-        {
-            btn_pt.Cursor = Cursors.Hand;
-        }
 
         Random rnd = new Random();
         private void MostrarImagemAleatoria()
@@ -197,38 +180,45 @@ namespace Projeto_620.FORMS
             }
         }
 
+
+        private void btn_appoitments_Click(object sender, EventArgs e)
+        {
+            Form consulta = new consultas();
+            consulta.Show();
+            this.Close();
+        }
+
         private void btn_workouts_Click(object sender, EventArgs e)
         {
-            Form exercicios = new treino();
-            exercicios.Show();
+            Form workout = new treino();
+            workout.Show();
             this.Close();
         }
 
         private void btn_food_Click(object sender, EventArgs e)
         {
-            Form alimentacao = new alimentacao();
-            alimentacao.Show();
+            Form comida = new alimentacao();
+            comida.Show();
             this.Close();
         }
 
-        private void btn_exit_Click_2(object sender, EventArgs e)
+        private void btn_motivacao_Click(object sender, EventArgs e)
         {
+            Form motiva = new motivacao();
+            motiva.Show();
             this.Close();
+        }
+
+        private void bt_logout_Click(object sender, EventArgs e)
+        {
+            Form log = new login();
+            log.Show();
+            this.Close();
+        }
+
+        private void btn_exit_Click(object sender, EventArgs e)
+        {
             Application.Exit();
-        }
-
-        private void bt_logout_Click_1(object sender, EventArgs e)
-        {
-            Form loginForm = new login();
-            loginForm.Show();
-            this.Close();
-        }
-
-        private void btn_home_Click_1(object sender, EventArgs e)
-        {
-            Form home = new paginaInicial();
-            home.Show();
-            this.Close();
         }
     }
 }

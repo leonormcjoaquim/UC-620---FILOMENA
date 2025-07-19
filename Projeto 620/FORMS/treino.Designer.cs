@@ -39,8 +39,7 @@
             this.btn_appoitments = new System.Windows.Forms.Button();
             this.btn_workouts = new System.Windows.Forms.Button();
             this.btn_food = new System.Windows.Forms.Button();
-            this.btn_pt = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btn_motivacao = new System.Windows.Forms.Button();
             this.bt_logout = new System.Windows.Forms.Button();
             this.btn_exit = new System.Windows.Forms.Button();
             this.sidebarTransition = new System.Windows.Forms.Timer(this.components);
@@ -53,7 +52,7 @@
             // btn_sair
             // 
             this.btn_sair.Location = new System.Drawing.Point(479, 303);
-            this.btn_sair.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_sair.Margin = new System.Windows.Forms.Padding(2);
             this.btn_sair.Name = "btn_sair";
             this.btn_sair.Size = new System.Drawing.Size(91, 46);
             this.btn_sair.TabIndex = 0;
@@ -67,9 +66,9 @@
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.pn_opcoes);
             this.panel1.Location = new System.Drawing.Point(0, 1);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(750, 488);
+            this.panel1.Size = new System.Drawing.Size(750, 487);
             this.panel1.TabIndex = 1;
             // 
             // panel3
@@ -79,7 +78,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(750, 41);
             this.panel3.TabIndex = 8;
@@ -89,7 +88,7 @@
             this.pb_menu.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.pb_menu.Image = ((System.Drawing.Image)(resources.GetObject("pb_menu.Image")));
             this.pb_menu.Location = new System.Drawing.Point(2, 9);
-            this.pb_menu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pb_menu.Margin = new System.Windows.Forms.Padding(2);
             this.pb_menu.Name = "pb_menu";
             this.pb_menu.Padding = new System.Windows.Forms.Padding(11, 4, 0, 0);
             this.pb_menu.Size = new System.Drawing.Size(38, 28);
@@ -106,12 +105,11 @@
             this.pn_opcoes.Controls.Add(this.btn_appoitments);
             this.pn_opcoes.Controls.Add(this.btn_workouts);
             this.pn_opcoes.Controls.Add(this.btn_food);
-            this.pn_opcoes.Controls.Add(this.btn_pt);
-            this.pn_opcoes.Controls.Add(this.button2);
+            this.pn_opcoes.Controls.Add(this.btn_motivacao);
             this.pn_opcoes.Controls.Add(this.bt_logout);
             this.pn_opcoes.Controls.Add(this.btn_exit);
             this.pn_opcoes.Location = new System.Drawing.Point(0, 46);
-            this.pn_opcoes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pn_opcoes.Margin = new System.Windows.Forms.Padding(2);
             this.pn_opcoes.Name = "pn_opcoes";
             this.pn_opcoes.Size = new System.Drawing.Size(38, 443);
             this.pn_opcoes.TabIndex = 7;
@@ -134,6 +132,7 @@
             this.btn_home.TabIndex = 7;
             this.btn_home.Text = "Home";
             this.btn_home.UseVisualStyleBackColor = false;
+            this.btn_home.Click += new System.EventHandler(this.btn_home_Click);
             // 
             // btn_appoitments
             // 
@@ -173,6 +172,7 @@
             this.btn_workouts.TabIndex = 7;
             this.btn_workouts.Text = "Exercicios";
             this.btn_workouts.UseVisualStyleBackColor = false;
+            this.btn_workouts.Click += new System.EventHandler(this.btn_workouts_Click);
             // 
             // btn_food
             // 
@@ -192,44 +192,27 @@
             this.btn_food.TabIndex = 7;
             this.btn_food.Text = "Comida";
             this.btn_food.UseVisualStyleBackColor = false;
+            this.btn_food.Click += new System.EventHandler(this.btn_food_Click);
             // 
-            // btn_pt
+            // btn_motivacao
             // 
-            this.btn_pt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btn_pt.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btn_pt.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
-            this.btn_pt.FlatAppearance.BorderSize = 2;
-            this.btn_pt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_pt.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_pt.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btn_pt.Image = ((System.Drawing.Image)(resources.GetObject("btn_pt.Image")));
-            this.btn_pt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_pt.Location = new System.Drawing.Point(0, 194);
-            this.btn_pt.Margin = new System.Windows.Forms.Padding(0, 0, 0, 6);
-            this.btn_pt.Name = "btn_pt";
-            this.btn_pt.Size = new System.Drawing.Size(238, 43);
-            this.btn_pt.TabIndex = 7;
-            this.btn_pt.Text = "Treino PT";
-            this.btn_pt.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
-            this.button2.FlatAppearance.BorderSize = 2;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(0, 243);
-            this.button2.Margin = new System.Windows.Forms.Padding(0, 0, 0, 6);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(238, 42);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Motivação";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btn_motivacao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_motivacao.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_motivacao.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
+            this.btn_motivacao.FlatAppearance.BorderSize = 2;
+            this.btn_motivacao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_motivacao.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_motivacao.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btn_motivacao.Image = ((System.Drawing.Image)(resources.GetObject("btn_motivacao.Image")));
+            this.btn_motivacao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_motivacao.Location = new System.Drawing.Point(0, 194);
+            this.btn_motivacao.Margin = new System.Windows.Forms.Padding(0, 0, 0, 6);
+            this.btn_motivacao.Name = "btn_motivacao";
+            this.btn_motivacao.Size = new System.Drawing.Size(238, 42);
+            this.btn_motivacao.TabIndex = 7;
+            this.btn_motivacao.Text = "Motivação";
+            this.btn_motivacao.UseVisualStyleBackColor = false;
+            this.btn_motivacao.Click += new System.EventHandler(this.btn_motivacao_Click);
             // 
             // bt_logout
             // 
@@ -242,7 +225,7 @@
             this.bt_logout.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.bt_logout.Image = ((System.Drawing.Image)(resources.GetObject("bt_logout.Image")));
             this.bt_logout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bt_logout.Location = new System.Drawing.Point(0, 291);
+            this.bt_logout.Location = new System.Drawing.Point(0, 242);
             this.bt_logout.Margin = new System.Windows.Forms.Padding(0, 0, 0, 6);
             this.bt_logout.Name = "bt_logout";
             this.bt_logout.Size = new System.Drawing.Size(238, 43);
@@ -262,7 +245,7 @@
             this.btn_exit.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btn_exit.Image = ((System.Drawing.Image)(resources.GetObject("btn_exit.Image")));
             this.btn_exit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_exit.Location = new System.Drawing.Point(0, 340);
+            this.btn_exit.Location = new System.Drawing.Point(0, 291);
             this.btn_exit.Margin = new System.Windows.Forms.Padding(0, 0, 0, 6);
             this.btn_exit.Name = "btn_exit";
             this.btn_exit.Size = new System.Drawing.Size(238, 42);
@@ -286,8 +269,9 @@
             this.Controls.Add(this.btn_sair);
             this.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "treino";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "treino";
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
@@ -306,8 +290,7 @@
         private System.Windows.Forms.Button btn_appoitments;
         private System.Windows.Forms.Button btn_workouts;
         private System.Windows.Forms.Button btn_food;
-        private System.Windows.Forms.Button btn_pt;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btn_motivacao;
         private System.Windows.Forms.Button bt_logout;
         private System.Windows.Forms.Button btn_exit;
         private System.Windows.Forms.Panel panel3;
