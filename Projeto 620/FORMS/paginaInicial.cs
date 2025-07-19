@@ -94,7 +94,7 @@ namespace Projeto_620.FORMS
             btn_logout.Cursor = Cursors.Hand;
         }
 
-<<<<<<< Updated upstream
+
         private void bt_logout_Click(object sender, EventArgs e)
         {
             // NÃO ESTÁ A FECHAR AQUI TAMBEM
@@ -117,24 +117,6 @@ namespace Projeto_620.FORMS
         {
             pb_menu.Cursor = Cursors.Hand;
         }
-=======
->>>>>>> Stashed changes
-
-        private void btn_workouts_MouseHover(object sender, EventArgs e)
-        {
-            btn_workouts.Cursor = Cursors.Hand;
-        }
-
-        private void btn_food_MouseHover(object sender, EventArgs e)
-        {
-            btn_food.Cursor = Cursors.Hand;
-        }
-
-        private void btn_appoitments_MouseHover(object sender, EventArgs e)
-        {
-            btn_appoitments.Cursor = Cursors.Hand;
-        }
-
 
         Random rnd = new Random();
         private void MostrarImagemAleatoria()
@@ -191,8 +173,6 @@ namespace Projeto_620.FORMS
             alimentacao.Show();
             this.Close();
         }
-<<<<<<< Updated upstream
-=======
 
         private void btn_exit_Click(object sender, EventArgs e)
         {
@@ -207,21 +187,19 @@ namespace Projeto_620.FORMS
             this.Close();
         }
 
-         private void bt_logout_Click(object sender, EventArgs e)
-        {
-            Form form = new login();
-            form.Show();
-            this.Close();
-        }
+        // private void bt_logout_Click(object sender, EventArgs e)
+        //{
+        //    Form form = new login();
+        //    form.Show();
+        //    this.Close();
+        //}
 
-        private void btn_appoitments_Click(object sender, EventArgs e)
-        {
-            Form consulta = new consultas();
-            consulta.Show();
-            this.Close();
-        }
+        //private void btn_appoitments_Click(object sender, EventArgs e)
+        //{
+        //    Form consulta = new consultas();
+        //    consulta.Show();
+        //    this.Close();
+        //}
 
-         
->>>>>>> Stashed changes
     }
 }

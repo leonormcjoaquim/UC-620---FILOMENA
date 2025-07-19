@@ -94,7 +94,6 @@
             this.btn_home.TabIndex = 7;
             this.btn_home.Text = "Home";
             this.btn_home.UseVisualStyleBackColor = false;
-            this.btn_home.Click += new System.EventHandler(this.btn_home_Click);
             // 
             // btn_appoitments
             // 
@@ -114,11 +113,7 @@
             this.btn_appoitments.TabIndex = 7;
             this.btn_appoitments.Text = "Especialista";
             this.btn_appoitments.UseVisualStyleBackColor = false;
-<<<<<<< Updated upstream
-            this.btn_appoitments.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btn_appoitments_MouseClick);
-=======
-            this.btn_appoitments.Click += new System.EventHandler(this.btn_appoitments_Click);
->>>>>>> Stashed changes
+
             // 
             // btn_workouts
             // 
@@ -138,7 +133,6 @@
             this.btn_workouts.TabIndex = 7;
             this.btn_workouts.Text = "Exercicios";
             this.btn_workouts.UseVisualStyleBackColor = false;
-            this.btn_workouts.Click += new System.EventHandler(this.btn_workouts_Click);
             // 
             // btn_food
             // 
@@ -158,7 +152,6 @@
             this.btn_food.TabIndex = 7;
             this.btn_food.Text = "Comida";
             this.btn_food.UseVisualStyleBackColor = false;
-            this.btn_food.Click += new System.EventHandler(this.btn_food_Click);
             // 
             // button2
             // 
