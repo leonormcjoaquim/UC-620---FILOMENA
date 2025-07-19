@@ -18,7 +18,7 @@ namespace Projeto_620
         public registar()
         {
             InitializeComponent();
-            this.StartPosition = FormStartPosition.CenterScreen; 
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void pb_foto_Click(object sender, EventArgs e)
@@ -98,8 +98,7 @@ namespace Projeto_620
                                 new XElement("password", password),
                                 new XElement("objetivo", objetivo),
                                 new XElement("altura", altura),
-                                new XElement("peso", peso),
-                                new XElement("objetivo", objetivo));
+                                new XElement("peso", peso));
 
             // adicionar o utilizador novo ao documento XML
             doc.Root.Add(novoUser);

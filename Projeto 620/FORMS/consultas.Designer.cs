@@ -1,6 +1,6 @@
 ﻿namespace Projeto_620.FORMS
 {
-    partial class btn_sair
+    partial class consultas
     {
         /// <summary>
         /// Required designer variable.

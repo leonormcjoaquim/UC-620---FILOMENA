@@ -70,5 +70,12 @@ namespace Projeto_620.FORMS
             form.Show();
             this.Close();
         }
+
+        private void btn_appoitments_Click(object sender, EventArgs e)
+        {
+            Form consulta = new consultas();
+            consulta.Show();
+            this.Close();
+        }
     }
 }

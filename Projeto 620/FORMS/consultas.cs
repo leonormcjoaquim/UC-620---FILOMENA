@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Projeto_620.FORMS
 {
-    public partial class btn_sair : Form
+    public partial class consultas : Form
     {
-        public btn_sair()
+        public consultas()
         {
             InitializeComponent();
         }

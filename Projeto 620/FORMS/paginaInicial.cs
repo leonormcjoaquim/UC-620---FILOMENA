@@ -223,5 +223,10 @@ namespace Projeto_620.FORMS
             loginForm.Show();
             this.Close();
         }
+
+        private void btn_home_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
