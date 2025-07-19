@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Projeto_620.models
 {
-    internal class Appoitments
+    internal class consultas
     {
     }
 }

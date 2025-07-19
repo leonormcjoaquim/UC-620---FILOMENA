@@ -39,6 +39,7 @@
             this.btn_appoitments = new System.Windows.Forms.Button();
             this.btn_workouts = new System.Windows.Forms.Button();
             this.btn_food = new System.Windows.Forms.Button();
+            this.btn_pt = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.bt_logout = new System.Windows.Forms.Button();
             this.btn_exit = new System.Windows.Forms.Button();
@@ -51,14 +52,10 @@
             // 
             // btn_sair
             // 
-<<<<<<< Updated upstream
-            this.btn_sair.Location = new System.Drawing.Point(639, 373);
-=======
             this.btn_sair.Location = new System.Drawing.Point(479, 303);
-            this.btn_sair.Margin = new System.Windows.Forms.Padding(2);
->>>>>>> Stashed changes
+            this.btn_sair.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_sair.Name = "btn_sair";
-            this.btn_sair.Size = new System.Drawing.Size(121, 57);
+            this.btn_sair.Size = new System.Drawing.Size(91, 46);
             this.btn_sair.TabIndex = 0;
             this.btn_sair.Text = "Sair";
             this.btn_sair.UseVisualStyleBackColor = true;
@@ -70,14 +67,9 @@
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.pn_opcoes);
             this.panel1.Location = new System.Drawing.Point(0, 1);
-<<<<<<< Updated upstream
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1000, 601);
-=======
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(751, 488);
->>>>>>> Stashed changes
+            this.panel1.Size = new System.Drawing.Size(750, 488);
             this.panel1.TabIndex = 1;
             // 
             // panel3
@@ -87,29 +79,20 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel3.Location = new System.Drawing.Point(0, 0);
-<<<<<<< Updated upstream
+            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1000, 56);
-=======
-            this.panel3.Margin = new System.Windows.Forms.Padding(2);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(751, 41);
->>>>>>> Stashed changes
+            this.panel3.Size = new System.Drawing.Size(750, 41);
             this.panel3.TabIndex = 8;
             // 
             // pb_menu
             // 
             this.pb_menu.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.pb_menu.Image = ((System.Drawing.Image)(resources.GetObject("pb_menu.Image")));
-<<<<<<< Updated upstream
-            this.pb_menu.Location = new System.Drawing.Point(3, 11);
-=======
             this.pb_menu.Location = new System.Drawing.Point(2, 9);
-            this.pb_menu.Margin = new System.Windows.Forms.Padding(2);
->>>>>>> Stashed changes
+            this.pb_menu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pb_menu.Name = "pb_menu";
-            this.pb_menu.Padding = new System.Windows.Forms.Padding(15, 5, 0, 0);
-            this.pb_menu.Size = new System.Drawing.Size(51, 35);
+            this.pb_menu.Padding = new System.Windows.Forms.Padding(11, 4, 0, 0);
+            this.pb_menu.Size = new System.Drawing.Size(38, 28);
             this.pb_menu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb_menu.TabIndex = 8;
             this.pb_menu.TabStop = false;
@@ -123,17 +106,14 @@
             this.pn_opcoes.Controls.Add(this.btn_appoitments);
             this.pn_opcoes.Controls.Add(this.btn_workouts);
             this.pn_opcoes.Controls.Add(this.btn_food);
+            this.pn_opcoes.Controls.Add(this.btn_pt);
             this.pn_opcoes.Controls.Add(this.button2);
             this.pn_opcoes.Controls.Add(this.bt_logout);
             this.pn_opcoes.Controls.Add(this.btn_exit);
-<<<<<<< Updated upstream
-            this.pn_opcoes.Location = new System.Drawing.Point(0, 59);
-=======
             this.pn_opcoes.Location = new System.Drawing.Point(0, 46);
-            this.pn_opcoes.Margin = new System.Windows.Forms.Padding(2);
->>>>>>> Stashed changes
+            this.pn_opcoes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pn_opcoes.Name = "pn_opcoes";
-            this.pn_opcoes.Size = new System.Drawing.Size(52, 542);
+            this.pn_opcoes.Size = new System.Drawing.Size(38, 443);
             this.pn_opcoes.TabIndex = 7;
             // 
             // btn_home
@@ -148,13 +128,12 @@
             this.btn_home.Image = ((System.Drawing.Image)(resources.GetObject("btn_home.Image")));
             this.btn_home.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_home.Location = new System.Drawing.Point(0, 0);
-            this.btn_home.Margin = new System.Windows.Forms.Padding(0, 0, 0, 8);
+            this.btn_home.Margin = new System.Windows.Forms.Padding(0, 0, 0, 6);
             this.btn_home.Name = "btn_home";
-            this.btn_home.Size = new System.Drawing.Size(318, 53);
+            this.btn_home.Size = new System.Drawing.Size(238, 43);
             this.btn_home.TabIndex = 7;
             this.btn_home.Text = "Home";
             this.btn_home.UseVisualStyleBackColor = false;
-            this.btn_home.Click += new System.EventHandler(this.btn_home_Click);
             // 
             // btn_appoitments
             // 
@@ -167,13 +146,14 @@
             this.btn_appoitments.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btn_appoitments.Image = ((System.Drawing.Image)(resources.GetObject("btn_appoitments.Image")));
             this.btn_appoitments.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_appoitments.Location = new System.Drawing.Point(0, 61);
-            this.btn_appoitments.Margin = new System.Windows.Forms.Padding(0, 0, 0, 8);
+            this.btn_appoitments.Location = new System.Drawing.Point(0, 49);
+            this.btn_appoitments.Margin = new System.Windows.Forms.Padding(0, 0, 0, 6);
             this.btn_appoitments.Name = "btn_appoitments";
-            this.btn_appoitments.Size = new System.Drawing.Size(318, 50);
+            this.btn_appoitments.Size = new System.Drawing.Size(238, 41);
             this.btn_appoitments.TabIndex = 7;
             this.btn_appoitments.Text = "Especialista";
             this.btn_appoitments.UseVisualStyleBackColor = false;
+            this.btn_appoitments.Click += new System.EventHandler(this.btn_appoitments_Click);
             // 
             // btn_workouts
             // 
@@ -186,14 +166,13 @@
             this.btn_workouts.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btn_workouts.Image = ((System.Drawing.Image)(resources.GetObject("btn_workouts.Image")));
             this.btn_workouts.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_workouts.Location = new System.Drawing.Point(0, 119);
-            this.btn_workouts.Margin = new System.Windows.Forms.Padding(0, 0, 0, 8);
+            this.btn_workouts.Location = new System.Drawing.Point(0, 96);
+            this.btn_workouts.Margin = new System.Windows.Forms.Padding(0, 0, 0, 6);
             this.btn_workouts.Name = "btn_workouts";
-            this.btn_workouts.Size = new System.Drawing.Size(318, 53);
+            this.btn_workouts.Size = new System.Drawing.Size(238, 43);
             this.btn_workouts.TabIndex = 7;
             this.btn_workouts.Text = "Exercicios";
             this.btn_workouts.UseVisualStyleBackColor = false;
-            this.btn_workouts.Click += new System.EventHandler(this.btn_workouts_Click);
             // 
             // btn_food
             // 
@@ -206,14 +185,13 @@
             this.btn_food.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btn_food.Image = ((System.Drawing.Image)(resources.GetObject("btn_food.Image")));
             this.btn_food.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_food.Location = new System.Drawing.Point(0, 180);
-            this.btn_food.Margin = new System.Windows.Forms.Padding(0, 0, 0, 8);
+            this.btn_food.Location = new System.Drawing.Point(0, 145);
+            this.btn_food.Margin = new System.Windows.Forms.Padding(0, 0, 0, 6);
             this.btn_food.Name = "btn_food";
-            this.btn_food.Size = new System.Drawing.Size(318, 53);
+            this.btn_food.Size = new System.Drawing.Size(238, 43);
             this.btn_food.TabIndex = 7;
             this.btn_food.Text = "Comida";
             this.btn_food.UseVisualStyleBackColor = false;
-<<<<<<< Updated upstream
             // 
             // btn_pt
             // 
@@ -226,16 +204,13 @@
             this.btn_pt.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btn_pt.Image = ((System.Drawing.Image)(resources.GetObject("btn_pt.Image")));
             this.btn_pt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_pt.Location = new System.Drawing.Point(0, 241);
-            this.btn_pt.Margin = new System.Windows.Forms.Padding(0, 0, 0, 8);
+            this.btn_pt.Location = new System.Drawing.Point(0, 194);
+            this.btn_pt.Margin = new System.Windows.Forms.Padding(0, 0, 0, 6);
             this.btn_pt.Name = "btn_pt";
-            this.btn_pt.Size = new System.Drawing.Size(318, 53);
+            this.btn_pt.Size = new System.Drawing.Size(238, 43);
             this.btn_pt.TabIndex = 7;
             this.btn_pt.Text = "Treino PT";
             this.btn_pt.UseVisualStyleBackColor = false;
-=======
-            this.btn_food.Click += new System.EventHandler(this.btn_food_Click);
->>>>>>> Stashed changes
             // 
             // button2
             // 
@@ -248,15 +223,10 @@
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-<<<<<<< Updated upstream
-            this.button2.Location = new System.Drawing.Point(0, 302);
-            this.button2.Margin = new System.Windows.Forms.Padding(0, 0, 0, 8);
-=======
-            this.button2.Location = new System.Drawing.Point(0, 194);
+            this.button2.Location = new System.Drawing.Point(0, 243);
             this.button2.Margin = new System.Windows.Forms.Padding(0, 0, 0, 6);
->>>>>>> Stashed changes
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(318, 52);
+            this.button2.Size = new System.Drawing.Size(238, 42);
             this.button2.TabIndex = 7;
             this.button2.Text = "Motivação";
             this.button2.UseVisualStyleBackColor = false;
@@ -272,15 +242,10 @@
             this.bt_logout.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.bt_logout.Image = ((System.Drawing.Image)(resources.GetObject("bt_logout.Image")));
             this.bt_logout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-<<<<<<< Updated upstream
-            this.bt_logout.Location = new System.Drawing.Point(0, 362);
-            this.bt_logout.Margin = new System.Windows.Forms.Padding(0, 0, 0, 8);
-=======
-            this.bt_logout.Location = new System.Drawing.Point(0, 242);
+            this.bt_logout.Location = new System.Drawing.Point(0, 291);
             this.bt_logout.Margin = new System.Windows.Forms.Padding(0, 0, 0, 6);
->>>>>>> Stashed changes
             this.bt_logout.Name = "bt_logout";
-            this.bt_logout.Size = new System.Drawing.Size(318, 53);
+            this.bt_logout.Size = new System.Drawing.Size(238, 43);
             this.bt_logout.TabIndex = 7;
             this.bt_logout.Text = "Logout";
             this.bt_logout.UseVisualStyleBackColor = false;
@@ -297,15 +262,10 @@
             this.btn_exit.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btn_exit.Image = ((System.Drawing.Image)(resources.GetObject("btn_exit.Image")));
             this.btn_exit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-<<<<<<< Updated upstream
-            this.btn_exit.Location = new System.Drawing.Point(0, 423);
-            this.btn_exit.Margin = new System.Windows.Forms.Padding(0, 0, 0, 8);
-=======
-            this.btn_exit.Location = new System.Drawing.Point(0, 291);
+            this.btn_exit.Location = new System.Drawing.Point(0, 340);
             this.btn_exit.Margin = new System.Windows.Forms.Padding(0, 0, 0, 6);
->>>>>>> Stashed changes
             this.btn_exit.Name = "btn_exit";
-            this.btn_exit.Size = new System.Drawing.Size(318, 52);
+            this.btn_exit.Size = new System.Drawing.Size(238, 42);
             this.btn_exit.TabIndex = 7;
             this.btn_exit.Text = "Exit";
             this.btn_exit.UseVisualStyleBackColor = false;
@@ -319,19 +279,15 @@
             // 
             // treino
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1000, 600);
+            this.ClientSize = new System.Drawing.Size(750, 488);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btn_sair);
             this.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-<<<<<<< Updated upstream
-=======
-            this.Margin = new System.Windows.Forms.Padding(2);
->>>>>>> Stashed changes
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "treino";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "treino";
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
@@ -350,6 +306,7 @@
         private System.Windows.Forms.Button btn_appoitments;
         private System.Windows.Forms.Button btn_workouts;
         private System.Windows.Forms.Button btn_food;
+        private System.Windows.Forms.Button btn_pt;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button bt_logout;
         private System.Windows.Forms.Button btn_exit;

@@ -88,7 +88,7 @@
       <DependentUpon>treino.cs</DependentUpon>
     </Compile>
     <Compile Include="models\Alimentacao.cs" />
-    <Compile Include="models\Appoitments.cs" />
+    <Compile Include="models\Consulta.cs" />
     <Compile Include="models\Exercicio.cs" />
     <Compile Include="models\Marcacao.cs" />
     <Compile Include="models\TreinoPT.cs" />
