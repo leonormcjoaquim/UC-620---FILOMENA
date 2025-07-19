@@ -27,5 +27,10 @@ namespace Projeto_620.models
         }
 
         public abstract void marcarConsulta();
+
+        public override string ToString()
+        {
+            return $"{TipoMarcacao} - {EspecialidadeMarcacao} em {DataMarcacao:yyyy-MM-dd}";
+        }
     }
 }

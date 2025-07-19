@@ -53,6 +53,10 @@
             this.cbb_tipo = new System.Windows.Forms.ComboBox();
             this.tab_pages = new ReaLTaiizor.Child.Metro.MetroTabPage();
             this.list_box = new System.Windows.Forms.ListBox();
+            this.cbb_tipo_consulta = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.btn_filtrar = new ReaLTaiizor.Controls.CyberButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_menu)).BeginInit();
             this.pn_opcoes.SuspendLayout();
@@ -305,7 +309,7 @@
             this.tab_marcar_consultas.Location = new System.Drawing.Point(51, 50);
             this.tab_marcar_consultas.MCursor = System.Windows.Forms.Cursors.Hand;
             this.tab_marcar_consultas.Name = "tab_marcar_consultas";
-            this.tab_marcar_consultas.SelectedIndex = 0;
+            this.tab_marcar_consultas.SelectedIndex = 1;
             this.tab_marcar_consultas.SelectedTextColor = System.Drawing.Color.White;
             this.tab_marcar_consultas.Size = new System.Drawing.Size(947, 550);
             this.tab_marcar_consultas.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
@@ -459,6 +463,10 @@
             // tab_pages
             // 
             this.tab_pages.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.tab_pages.Controls.Add(this.btn_filtrar);
+            this.tab_pages.Controls.Add(this.label4);
+            this.tab_pages.Controls.Add(this.label2);
+            this.tab_pages.Controls.Add(this.cbb_tipo_consulta);
             this.tab_pages.Controls.Add(this.list_box);
             this.tab_pages.Font = null;
             this.tab_pages.ImageIndex = 0;
@@ -479,11 +487,89 @@
             // 
             this.list_box.FormattingEnabled = true;
             this.list_box.ItemHeight = 20;
-            this.list_box.Location = new System.Drawing.Point(173, 76);
+            this.list_box.Location = new System.Drawing.Point(321, 76);
             this.list_box.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.list_box.Name = "list_box";
             this.list_box.Size = new System.Drawing.Size(569, 304);
             this.list_box.TabIndex = 0;
+            // 
+            // cbb_tipo_consulta
+            // 
+            this.cbb_tipo_consulta.FormattingEnabled = true;
+            this.cbb_tipo_consulta.Items.AddRange(new object[] {
+            "",
+            "Especialista",
+            "Treino PT",
+            "Todas"});
+            this.cbb_tipo_consulta.Location = new System.Drawing.Point(32, 140);
+            this.cbb_tipo_consulta.Name = "cbb_tipo_consulta";
+            this.cbb_tipo_consulta.Size = new System.Drawing.Size(240, 28);
+            this.cbb_tipo_consulta.TabIndex = 1;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2.Location = new System.Drawing.Point(25, 28);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(123, 41);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Filtros: ";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label4.Location = new System.Drawing.Point(27, 108);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(176, 28);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Tipo de Consulta:";
+            // 
+            // btn_filtrar
+            // 
+            this.btn_filtrar.Alpha = 20;
+            this.btn_filtrar.BackColor = System.Drawing.Color.Transparent;
+            this.btn_filtrar.Background = true;
+            this.btn_filtrar.Background_WidthPen = 4F;
+            this.btn_filtrar.BackgroundPen = true;
+            this.btn_filtrar.ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
+            this.btn_filtrar.ColorBackground_1 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
+            this.btn_filtrar.ColorBackground_2 = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(63)))), ((int)(((byte)(86)))));
+            this.btn_filtrar.ColorBackground_Pen = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
+            this.btn_filtrar.ColorLighting = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
+            this.btn_filtrar.ColorPen_1 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
+            this.btn_filtrar.ColorPen_2 = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(63)))), ((int)(((byte)(86)))));
+            this.btn_filtrar.CyberButtonStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
+            this.btn_filtrar.Effect_1 = true;
+            this.btn_filtrar.Effect_1_ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
+            this.btn_filtrar.Effect_1_Transparency = 25;
+            this.btn_filtrar.Effect_2 = true;
+            this.btn_filtrar.Effect_2_ColorBackground = System.Drawing.Color.White;
+            this.btn_filtrar.Effect_2_Transparency = 20;
+            this.btn_filtrar.Font = new System.Drawing.Font("Arial", 11F);
+            this.btn_filtrar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
+            this.btn_filtrar.Lighting = false;
+            this.btn_filtrar.LinearGradient_Background = false;
+            this.btn_filtrar.LinearGradientPen = false;
+            this.btn_filtrar.Location = new System.Drawing.Point(60, 223);
+            this.btn_filtrar.Name = "btn_filtrar";
+            this.btn_filtrar.PenWidth = 15;
+            this.btn_filtrar.Rounding = true;
+            this.btn_filtrar.RoundingInt = 70;
+            this.btn_filtrar.Size = new System.Drawing.Size(162, 49);
+            this.btn_filtrar.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            this.btn_filtrar.TabIndex = 6;
+            this.btn_filtrar.Tag = "Cyber";
+            this.btn_filtrar.TextButton = "Procurar";
+            this.btn_filtrar.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.btn_filtrar.Timer_Effect_1 = 5;
+            this.btn_filtrar.Timer_RGB = 300;
+            this.btn_filtrar.Click += new System.EventHandler(this.btn_filtrar_Click);
             // 
             // consultas
             // 
@@ -507,6 +593,7 @@
             this.metroTabPage1.ResumeLayout(false);
             this.metroTabPage1.PerformLayout();
             this.tab_pages.ResumeLayout(false);
+            this.tab_pages.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -537,5 +624,9 @@
         private System.Windows.Forms.ComboBox cbb_especialidades;
         private System.Windows.Forms.Label lbl_especialidade;
         private System.Windows.Forms.Label lbl_data;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox cbb_tipo_consulta;
+        private System.Windows.Forms.Label label4;
+        private ReaLTaiizor.Controls.CyberButton btn_filtrar;
     }
 }

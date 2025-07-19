@@ -9,6 +9,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Projeto_620.models;
+<<<<<<< Updated upstream
+=======
+using Projeto_620.utils;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
+>>>>>>> Stashed changes
 
 namespace Projeto_620.FORMS
 {
@@ -110,7 +115,7 @@ namespace Projeto_620.FORMS
             log.Show();
             this.Close();
         }
-
+        string caminho = @"C:\cometudoperdetudo\users.xml";
         private void btn_exit_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -137,6 +142,81 @@ namespace Projeto_620.FORMS
             else
             {
                 MessageBox.Show("Erro!");
+            }
+<<<<<<< Updated upstream
+=======
+
+            string username = "root"; //ALTERAR PRECISAMOS DE UMA GLOBAL VARIABLE
+            XDocument doc;
+            doc = XDocument.Load(caminho);
+            var user = doc.Root.Elements("user")
+            .FirstOrDefault(x => (string)x.Element("username") == username); // muito gepeto
+
+            var consultas = user.Element("Consultas");
+            if (consultas == null)
+            {
+                consultas = new XElement("Consultas");
+                user.Add(consultas);
+            }
+
+            XElement novaConsulta = new XElement("Consulta",
+                new XElement("TipoMarcacao", marcacao.TipoMarcacao),
+                new XElement("DataMarcacao", marcacao.DataMarcacao.ToString("yyyy-MM-dd")),
+                new XElement("Especialidade", marcacao.EspecialidadeMarcacao));
+
+            consultas.Add(novaConsulta);
+
+            doc.Save(caminho);
+
+            MessageBox.Show("Sucesso");
+>>>>>>> Stashed changes
+        }
+
+        private void btn_filtrar_Click(object sender, EventArgs e)
+        {
+            list_box.Items.Clear();
+            XDocument doc;
+            doc = XDocument.Load(caminho);
+
+            // AQUI VÊ COMPARA O USER PARA IRBUSCAR CONSULTAR
+            string username = "root"; //ALTERAR TUDO 
+            var user = doc.Root.Elements("user")
+                .FirstOrDefault(x => (string)x.Element("username") == username);
+
+            // Aqui vê se tem consultas já marcadas
+            var consultas = user.Element("Consultas");
+            if (consultas == null)
+            {
+                consultas = new XElement("Consultas");
+                user.Add(consultas);
+                doc.Save(caminho);
+            }
+            if (!consultas.Elements("Consulta").Any())
+            {
+                MessageBox.Show("Ainda não marcou nenhuma consulta!");
+                return;
+            }
+
+            string filtroTipo = cbb_tipo_consulta.SelectedItem.ToString();
+
+            foreach (var consulta in consultas.Elements("Consulta"))
+            {
+                string tipo = (string)consulta.Element("TipoMarcacao");
+                string especialidade = (string)consulta.Element("Especialidade");
+                DateTime data = DateTime.Parse((string)consulta.Element("DataMarcacao"));
+
+                if (filtroTipo != "Todas" && tipo != filtroTipo)
+                    continue;
+
+                Marcacao m;
+                if (tipo == "Especialista")
+                    m = new Appointment(tipo, data, especialidade);
+                else if (tipo == "Treino PT")
+                    m = new TreinoPT(tipo, data, especialidade);
+                else
+                    continue;
+
+                list_box.Items.Add(m);
             }
         }
     }
