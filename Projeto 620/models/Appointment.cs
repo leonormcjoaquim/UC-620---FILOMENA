@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace Projeto_620.models
 {
-    internal class Appointment
+    internal class Appointment : Marcacao
     {
+
+        public Appointment() { }
+
+        public override void marcarConsulta()
+        {
+
+        }
     }
 }
