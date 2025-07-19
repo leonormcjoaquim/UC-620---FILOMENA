@@ -8,7 +8,10 @@ namespace Projeto_620.models
 {
     internal class TreinoPT : Marcacao
     {
-        public TreinoPT() { }
+        public TreinoPT(string tipo, DateTime data, string especialidade)
+         : base(tipo, data, especialidade)
+        {
+        }
 
         public override void marcarConsulta()
         {
