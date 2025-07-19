@@ -67,18 +67,12 @@ namespace Projeto_620
             this.Close();
         }
 
-<<<<<<< Updated upstream
-        private void btn_appoitments_MouseClick(object sender, MouseEventArgs e)
-        {
-            Form marcacao = new consultas(); 
-            marcacao.Show();
-=======
-        private void btn_appoitments_Click(object sender, EventArgs e)
-        {
-            Form consulta = new consultas();
-            consulta.Show();
-            this.Close();
-        }
+        //private void btn_appoitments_Click(object sender, EventArgs e)
+        //{
+        //    Form consulta = new consultas();
+        //    consulta.Show();
+        //    this.Close();
+        //}
 
         private void btn_home_Click(object sender, EventArgs e)
         {
@@ -98,7 +92,6 @@ namespace Projeto_620
         {
             Form alimento = new alimentacao();
             alimento.Show();
->>>>>>> Stashed changes
             this.Close();
         }
     }
