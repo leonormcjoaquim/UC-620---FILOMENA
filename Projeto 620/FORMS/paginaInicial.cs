@@ -8,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Projeto_620.models;
+using Projeto_620.FORMS;
 
 namespace Projeto_620.FORMS
 {
@@ -30,29 +32,14 @@ namespace Projeto_620.FORMS
            Application.Exit();
         }
 
-        private void pb_menu_MouseEnter(object sender, EventArgs e)
-        {
-            Cursor = Cursors.Hand;
-        }
-
         private void pb_menu_MouseHover(object sender, EventArgs e)
         {
             Cursor = Cursors.Hand;
         }
 
-        private void pb_menu_MouseLeave(object sender, EventArgs e)
-        {
-            Cursor = Cursors.Default;
-
-        }
         bool menuExpand = false;
 
  
-
-        private void btn_exit_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
         bool sidebarExpand = false;
         private void sidebarTransition_Tick(object sender, EventArgs e)
         {
@@ -85,12 +72,7 @@ namespace Projeto_620.FORMS
             sidebarTransition.Start();
         }
 
-        private void btn_exit_Click_1(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void btn_exit_MouseHover_1(object sender, EventArgs e)
+        private void btn_exit_MouseHover(object sender, EventArgs e)
         {
             btn_exit.Cursor = Cursors.Hand;
         }
@@ -109,8 +91,9 @@ namespace Projeto_620.FORMS
 
         private void bt_logout_MouseHover(object sender, EventArgs e)
         {
-            bt_logout.Cursor = Cursors.Hand;
+            btn_logout.Cursor = Cursors.Hand;
         }
+
 
         private void bt_logout_Click(object sender, EventArgs e)
         {
@@ -122,7 +105,7 @@ namespace Projeto_620.FORMS
 
         private void bt_logout_MouseMove(object sender, MouseEventArgs e)
         {
-            bt_logout.Cursor = Cursors.Hand;
+            btn_logout.Cursor = Cursors.Hand;
         }
 
         private void btn_exit_MouseMove(object sender, MouseEventArgs e)
@@ -133,26 +116,6 @@ namespace Projeto_620.FORMS
         private void pb_menu_MouseHover_1(object sender, EventArgs e)
         {
             pb_menu.Cursor = Cursors.Hand;
-        }
-
-        private void btn_workouts_MouseHover(object sender, EventArgs e)
-        {
-            btn_workouts.Cursor = Cursors.Hand;
-        }
-
-        private void btn_food_MouseHover(object sender, EventArgs e)
-        {
-            btn_food.Cursor = Cursors.Hand;
-        }
-
-        private void btn_appoitments_MouseHover(object sender, EventArgs e)
-        {
-            btn_appoitments.Cursor = Cursors.Hand;
-        }
-
-        private void btn_pt_MouseHover(object sender, EventArgs e)
-        {
-            btn_pt.Cursor = Cursors.Hand;
         }
 
         Random rnd = new Random();
@@ -211,7 +174,7 @@ namespace Projeto_620.FORMS
             this.Close();
         }
 
-        private void btn_exit_Click_2(object sender, EventArgs e)
+        private void btn_exit_Click(object sender, EventArgs e)
         {
             this.Close();
             Application.Exit();
@@ -224,9 +187,19 @@ namespace Projeto_620.FORMS
             this.Close();
         }
 
-        private void btn_home_Click_1(object sender, EventArgs e)
-        {
+        // private void bt_logout_Click(object sender, EventArgs e)
+        //{
+        //    Form form = new login();
+        //    form.Show();
+        //    this.Close();
+        //}
 
-        }
+        //private void btn_appoitments_Click(object sender, EventArgs e)
+        //{
+        //    Form consulta = new consultas();
+        //    consulta.Show();
+        //    this.Close();
+        //}
+
     }
 }
