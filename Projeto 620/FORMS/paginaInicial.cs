@@ -109,7 +109,7 @@ namespace Projeto_620.FORMS
 
         private void bt_logout_MouseHover(object sender, EventArgs e)
         {
-            btn_logout.Cursor = Cursors.Hand;
+            bt_logout.Cursor = Cursors.Hand;
         }
 
         private void bt_logout_Click(object sender, EventArgs e)
@@ -122,7 +122,7 @@ namespace Projeto_620.FORMS
 
         private void bt_logout_MouseMove(object sender, MouseEventArgs e)
         {
-            btn_logout.Cursor = Cursors.Hand;
+            bt_logout.Cursor = Cursors.Hand;
         }
 
         private void btn_exit_MouseMove(object sender, MouseEventArgs e)
@@ -208,6 +208,19 @@ namespace Projeto_620.FORMS
         {
             Form alimentacao = new alimentacao();
             alimentacao.Show();
+            this.Close();
+        }
+
+        private void btn_exit_Click_2(object sender, EventArgs e)
+        {
+            this.Close();
+            Application.Exit();
+        }
+
+        private void bt_logout_Click_1(object sender, EventArgs e)
+        {
+            Form loginForm = new login();
+            loginForm.Show();
             this.Close();
         }
     }

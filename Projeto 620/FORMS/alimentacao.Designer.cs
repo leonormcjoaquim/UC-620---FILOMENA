@@ -114,7 +114,6 @@
             this.btn_appoitments.TabIndex = 7;
             this.btn_appoitments.Text = "Especialista";
             this.btn_appoitments.UseVisualStyleBackColor = false;
-            this.btn_appoitments.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btn_appoitments_MouseClick);
             // 
             // btn_workouts
             // 

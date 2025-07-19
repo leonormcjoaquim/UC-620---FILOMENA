@@ -67,11 +67,5 @@ namespace Projeto_620
             this.Close();
         }
 
-        private void btn_appoitments_MouseClick(object sender, MouseEventArgs e)
-        {
-            Form marcacao = new consultas(); 
-            marcacao.Show();
-            this.Close();
-        }
     }
 }

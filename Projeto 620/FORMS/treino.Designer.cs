@@ -78,7 +78,7 @@
             this.panel3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1000, 56);
+            this.panel3.Size = new System.Drawing.Size(1000, 50);
             this.panel3.TabIndex = 8;
             // 
             // pb_menu
@@ -106,9 +106,9 @@
             this.pn_opcoes.Controls.Add(this.button2);
             this.pn_opcoes.Controls.Add(this.bt_logout);
             this.pn_opcoes.Controls.Add(this.btn_exit);
-            this.pn_opcoes.Location = new System.Drawing.Point(0, 59);
+            this.pn_opcoes.Location = new System.Drawing.Point(0, 56);
             this.pn_opcoes.Name = "pn_opcoes";
-            this.pn_opcoes.Size = new System.Drawing.Size(52, 542);
+            this.pn_opcoes.Size = new System.Drawing.Size(50, 545);
             this.pn_opcoes.TabIndex = 7;
             // 
             // btn_home
