@@ -8,7 +8,9 @@ using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 using Projeto_620.models;
+using Projeto_620.utils;
 
 namespace Projeto_620.FORMS
 {
@@ -121,23 +123,53 @@ namespace Projeto_620.FORMS
             if (cbb_tipo.SelectedIndex == -1 || cbb_especialidades.SelectedIndex == -1)
             {
                 MessageBox.Show("Erros!");
-                cbb_especialidades.SelectedIndex = 0;
-                cbb_tipo.SelectedIndex = 0;
+                cbb_especialidades.SelectedIndex = -1;
+                cbb_tipo.SelectedIndex = -1;
                 return;
             }
             string tipoMarcacao = cbb_tipo.Text;
+            DateTime dataMarcacao = DateTime.Now;
+            string especialidade = cbb_especialidades.Text;
+            Marcacao marcacao;
             if (tipoMarcacao == "Especialista")
             {
+                marcacao = new Appointment(tipoMarcacao, dataMarcacao, especialidade);
 
             }
             else if (tipoMarcacao == "Personal Trainer")
             {
-
+                marcacao = new TreinoPT(tipoMarcacao, dataMarcacao, especialidade);
             }
             else
             {
                 MessageBox.Show("Erro!");
+                return;
             }
+
+            string caminho = @"C:\cometudoperdetudo\users.xml";
+            string username = "root"; //ALTERAR PRECISAMOS DE UMA GLOBAL VARIABLE
+            XDocument doc;
+            doc = XDocument.Load(caminho);
+            var user = doc.Root.Elements("user")
+            .FirstOrDefault(x => (string)x.Element("username") == username); // muito gepeto
+
+            var consultas = user.Element("Consultas");
+            if (consultas == null)
+            {
+                consultas = new XElement("Consultas");
+                user.Add(consultas);
+            }
+
+            XElement novaConsulta = new XElement("Consulta",
+                new XElement("TipoMarcacao", marcacao.TipoMarcacao),
+                new XElement("DataMarcacao", marcacao.DataMarcacao.ToString("yyyy-MM-dd")),
+                new XElement("Especialidade", marcacao.EspecialidadeMarcacao));
+
+            consultas.Add(novaConsulta);
+
+            doc.Save(caminho);
+
+            MessageBox.Show("Sucesso");
         }
     }
 }

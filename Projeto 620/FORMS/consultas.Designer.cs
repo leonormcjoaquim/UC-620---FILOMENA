@@ -387,8 +387,9 @@
             // 
             // cbb_especialidades
             // 
-            this.cbb_especialidades.Enabled = false;
             this.cbb_especialidades.FormattingEnabled = true;
+            this.cbb_especialidades.Items.AddRange(new object[] {
+            "testar"});
             this.cbb_especialidades.Location = new System.Drawing.Point(417, 290);
             this.cbb_especialidades.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbb_especialidades.Name = "cbb_especialidades";
@@ -399,7 +400,6 @@
             // 
             this.lbl_especialidade.AutoSize = true;
             this.lbl_especialidade.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_especialidade.Enabled = false;
             this.lbl_especialidade.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_especialidade.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.lbl_especialidade.Location = new System.Drawing.Point(213, 290);
