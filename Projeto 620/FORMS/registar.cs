@@ -66,8 +66,14 @@ namespace Projeto_620
             string objetivo = cbb_objectives.SelectedItem.ToString();
             string altura_box = tb_height.Text;
             string peso_box = tb_weight.Text;
+            int idade;
+            string email = tb_email.Text;
 
-
+            if (!int.TryParse(tb_idade.Text, out idade) && idade <= 0)
+            {
+                MessageBox.Show("Valor inserido na idade inválida!");
+                return;
+            }
 
             if (!double.TryParse(tb_weight.Text, out double peso) && peso <= 0)
             {
@@ -99,6 +105,8 @@ namespace Projeto_620
                                         new XElement("username", username),
                                         new XElement("nome", nome),
                                         new XElement("password", password),
+                                        new XElement("idade", idade),
+                                        new XElement("email", email),
                                         new XElement("objetivo", objetivo),
                                         new XElement("altura", altura),
                                         new XElement("peso", peso)));
@@ -112,9 +120,6 @@ namespace Projeto_620
             // ALTERAR PARA UMA MENSAGEM MAIS 'NITA
             MessageBox.Show("Utilizador criado com sucesso!");
 
-
-            Form novologin = new login();
-            novologin.Show();
             this.Close();
         }
 
