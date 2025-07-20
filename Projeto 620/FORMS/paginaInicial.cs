@@ -20,7 +20,7 @@ namespace Projeto_620.FORMS
         public paginaInicial()
         {
             InitializeComponent();
-            lbl_nome.Text = GlobalUtils.username;
+            AtualizarBarraCalorias();
         }
 
         private void btn_logout_Click(object sender, EventArgs e)
@@ -240,16 +240,16 @@ namespace Projeto_620.FORMS
                 case "Sedentário":
                     fatorAtividade = 1.2;
                     break;
-                case "Levemente ativo":
+                case "Exercício leve 1–3 dias/semana":
                     fatorAtividade = 1.375;
                     break;
-                case "Moderadamente ativo":
+                case "Exercício moderado 3–5 dias/semana":
                     fatorAtividade = 1.55;
                     break;
-                case "Muito ativo":
+                case "Exercício intenso 6–7 dias/semana":
                     fatorAtividade = 1.725;
                     break;
-                case "Extremamente ativo":
+                case "Treinos muito intensos ou 2x por dia":
                     fatorAtividade = 1.9;
                     break;
                 default:
@@ -260,6 +260,13 @@ namespace Projeto_620.FORMS
             double calorias = taxaMetabolica * fatorAtividade;
             GlobalUtils.caloriasObjetivo = (int)Math.Round(calorias);
             probar_calorias.Maximum = GlobalUtils.caloriasObjetivo;
+            label4.Text = calorias.ToString();
+        }
+        private void AtualizarBarraCalorias()
+        {
+            probar_calorias.Maximum = GlobalUtils.caloriasObjetivo;
+            int valor = Math.Min(GlobalUtils.caloriasConsumidas, GlobalUtils.caloriasObjetivo);
+            probar_calorias.Value = Math.Max(0, valor);
         }
     }
 }

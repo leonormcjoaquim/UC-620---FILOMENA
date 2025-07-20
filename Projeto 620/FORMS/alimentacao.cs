@@ -127,6 +127,7 @@ namespace Projeto_620
             Alimentacao refeicao = new Alimentacao(nomeComida, calorias, tipoSelecionado);
 
             utilizador.Alimentacao.Add(refeicao);
+            GlobalUtils.caloriasConsumidas += calorias;
 
             //XDocument doc = XDocument.Load(GlobalUtils.caminho);
 

@@ -58,6 +58,7 @@
             this.btn_calorias = new ReaLTaiizor.Controls.CyberButton();
             this.probar_calorias = new System.Windows.Forms.ProgressBar();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pb_menu)).BeginInit();
             this.panel1.SuspendLayout();
             this.pn_opcoes.SuspendLayout();
@@ -372,9 +373,9 @@
             this.cbb_sexo.Items.AddRange(new object[] {
             "Masculino",
             "Feminino"});
-            this.cbb_sexo.Location = new System.Drawing.Point(706, 362);
+            this.cbb_sexo.Location = new System.Drawing.Point(724, 362);
             this.cbb_sexo.Name = "cbb_sexo";
-            this.cbb_sexo.Size = new System.Drawing.Size(264, 24);
+            this.cbb_sexo.Size = new System.Drawing.Size(246, 24);
             this.cbb_sexo.TabIndex = 18;
             // 
             // label2
@@ -393,7 +394,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.Control;
-            this.label3.Location = new System.Drawing.Point(501, 427);
+            this.label3.Location = new System.Drawing.Point(485, 427);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(206, 31);
             this.label3.TabIndex = 21;
@@ -408,9 +409,9 @@
             "Exercício moderado 3–5 dias/semana",
             "Exercício intenso 6–7 dias/semana",
             "Treinos muito intensos ou 2x por dia"});
-            this.cbb_tipo_atividade.Location = new System.Drawing.Point(706, 434);
+            this.cbb_tipo_atividade.Location = new System.Drawing.Point(724, 434);
             this.cbb_tipo_atividade.Name = "cbb_tipo_atividade";
-            this.cbb_tipo_atividade.Size = new System.Drawing.Size(264, 24);
+            this.cbb_tipo_atividade.Size = new System.Drawing.Size(246, 24);
             this.cbb_tipo_atividade.TabIndex = 20;
             // 
             // btn_calorias
@@ -470,12 +471,23 @@
             this.progressBar1.TabIndex = 24;
             this.progressBar1.Value = 50;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label4.Location = new System.Drawing.Point(518, 97);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(40, 16);
+            this.label4.TabIndex = 25;
+            this.label4.Text = "afafaf";
+            // 
             // paginaInicial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ClientSize = new System.Drawing.Size(1000, 601);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.probar_calorias);
             this.Controls.Add(this.btn_calorias);
@@ -538,5 +550,6 @@
         private ReaLTaiizor.Controls.CyberButton btn_calorias;
         private System.Windows.Forms.ProgressBar probar_calorias;
         private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.Label label4;
     }
 }
