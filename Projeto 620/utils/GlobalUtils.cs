@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Projeto_620.models;
+using Projeto_620.FORMS;
 
 namespace Projeto_620.utils
 {
@@ -11,31 +12,48 @@ namespace Projeto_620.utils
     {
 
         public static List<User> users = new List<User>();
-        public static List<Alimentacao> alimentos = new List<Alimentacao>();
-        public static List<Exercicio> exercicios = new List<Exercicio>();
-        public static List<Appointment> consultas = new List<Appointment>();
-        public static List<TreinoPT> treinoPTs = new List<TreinoPT>();
+
+
+        public static string username = "";
+        public static string caminho = @"C:\cometudoperdetudo\users.xml";
+
 
     }
 
     public enum TipoMarcacao
     {
-
+        Especialista,
+        Treino_PT
     }
 
     public enum Especialidade
     {
-
+        PersonalTrainer,
+        Nutricionista,
+        Fisioterapeuta,
+        Endocrinologista,
+        Psicologo,
+        Cardiologista,
+        Ortopedista
     }
 
     public enum TipoTreino
     {
-
+        Cardio,
+        Forca,
+        HIIT,
+        Flexibilidade,
+        Funcional,
+        Yoga,
+        Pilates
     }
 
     public enum TipoRefeicao
     {
-        
+        PequenoAlmoco,
+        Almoco,
+        Jantar,
+        Snack
     }
 
 

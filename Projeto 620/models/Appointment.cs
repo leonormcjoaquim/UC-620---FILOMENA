@@ -3,25 +3,29 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+<<<<<<< Updated upstream
+=======
 using System.Windows.Forms;
+using Projeto_620.utils;
+>>>>>>> Stashed changes
 
 namespace Projeto_620.models
 {
     internal class Appointment : Marcacao
     {
 
+<<<<<<< Updated upstream
         public Appointment(string tipo, DateTime data, string especialidade)
-<<<<<<< HEAD
-        : base(tipo, data, especialidade) { }
-=======
          : base(tipo, data, especialidade)
         {
         }
->>>>>>> TestarAntesDeEnviar
+=======
+        public Appointment(string tipo, DateTime data, string especialidade): base(tipo, data, especialidade) { }
+>>>>>>> Stashed changes
 
         public override void marcarConsulta()
         {
-            MessageBox.Show("Consulta com Especialista Marcada com Sucesso");
+
         }
         public override string ToString()
         {
