@@ -66,16 +66,17 @@ namespace Projeto_620
             string objetivo = cbb_objectives.SelectedItem.ToString();
             string altura_box = tb_height.Text;
             string peso_box = tb_weight.Text;
-            string caminho = @"C:\cometudoperdetudo\users.xml";
 
-            if(!int.TryParse(altura_box, out int altura))
+
+
+            if (!double.TryParse(tb_weight.Text, out double peso) && peso <= 0)
             {
-                MessageBox.Show("Número inserido na altura é inválido");
+                MessageBox.Show("Valor inserido no peso inválido! Tente com virgula");
                 return;
             }
-            if (!int.TryParse(peso_box, out int peso))
+            if (!double.TryParse(tb_height.Text, out double altura) && altura <= 0)
             {
-                MessageBox.Show("Número inserido no peso é inválido");
+                MessageBox.Show("Valor inserido na altura inválido! Tente com virgula");
                 return;
             }
 
@@ -90,31 +91,34 @@ namespace Projeto_620
             // doc.Save(caminho);
 
             // Um género de abrir documento para trabalharmos com ele
-            XDocument doc = XDocument.Load(caminho);
+            XDocument doc = XDocument.Load(GlobalUtils.caminho);
 
             // aqui sim colocamos os dados novos no documento - VER AULA 15 JULHO - PACHECO
             XElement novoUser = new XElement("user",
-                                new XElement("username", username),
-                                new XElement("nome", nome),
-                                new XElement("password", password),
-                                new XElement("objetivo", objetivo),
-                                new XElement("altura", altura),
-                                new XElement("peso", peso));
+                                    new XElement("Dados",
+                                        new XElement("username", username),
+                                        new XElement("nome", nome),
+                                        new XElement("password", password),
+                                        new XElement("objetivo", objetivo),
+                                        new XElement("altura", altura),
+                                        new XElement("peso", peso)));
 
             // adicionar o utilizador novo ao documento XML
             doc.Root.Add(novoUser);
 
             // guardar o documento XML atualizado
-            doc.Save(caminho);
+            doc.Save(GlobalUtils.caminho);
 
             // ALTERAR PARA UMA MENSAGEM MAIS 'NITA
             MessageBox.Show("Utilizador criado com sucesso!");
 
 
-            Form loginPagina = new login();
+            login.Show();
             loginPagina.Show();
             this.Close();
         }
+
+        
 
         private void btn_voltar_Click(object sender, EventArgs e)
         {
@@ -123,9 +127,19 @@ namespace Projeto_620
 
         private void btn_calculoIMC_Click(object sender, EventArgs e)
         {
-            double peso = double.Parse(tb_weight.Text);
 
-            double altura = double.Parse(tb_height.Text);
+            if (!double.TryParse(tb_weight.Text, out double peso) && peso <= 0)
+            {
+                MessageBox.Show("Valor inserido no peso inválido! Tente com virgula");
+                return;
+            }
+            if (!double.TryParse(tb_height.Text, out double altura) && altura <= 0)
+            {
+                MessageBox.Show("Valor inserido na altura inválido! Tente com virgula");
+                return;
+            }
+
+
 
             double imc = peso / (altura * altura);
 
