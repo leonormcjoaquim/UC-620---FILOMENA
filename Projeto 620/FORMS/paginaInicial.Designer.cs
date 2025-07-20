@@ -37,10 +37,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.sidebarTransition = new System.Windows.Forms.Timer(this.components);
             this.bigLabel1 = new ReaLTaiizor.Controls.BigLabel();
-            this.probar_exercicio = new ReaLTaiizor.Controls.LostProgressBar();
             this.bigLabel2 = new ReaLTaiizor.Controls.BigLabel();
             this.bigLabel3 = new ReaLTaiizor.Controls.BigLabel();
-            this.probar_calorias = new ReaLTaiizor.Controls.LostProgressBar();
             this.lbl_ola = new System.Windows.Forms.Label();
             this.lbl_nome = new System.Windows.Forms.Label();
             this.pn_opcoes = new System.Windows.Forms.FlowLayoutPanel();
@@ -53,6 +51,13 @@
             this.btn_exit = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.ficheiro = new System.Windows.Forms.OpenFileDialog();
+            this.cbb_sexo = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.cbb_tipo_atividade = new System.Windows.Forms.ComboBox();
+            this.btn_calorias = new ReaLTaiizor.Controls.CyberButton();
+            this.probar_calorias = new System.Windows.Forms.ProgressBar();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             ((System.ComponentModel.ISupportInitialize)(this.pb_menu)).BeginInit();
             this.panel1.SuspendLayout();
             this.pn_opcoes.SuspendLayout();
@@ -141,24 +146,11 @@
             this.bigLabel1.BackColor = System.Drawing.Color.Transparent;
             this.bigLabel1.Font = new System.Drawing.Font("Segoe UI", 25F);
             this.bigLabel1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.bigLabel1.Location = new System.Drawing.Point(685, 99);
+            this.bigLabel1.Location = new System.Drawing.Point(672, 99);
             this.bigLabel1.Name = "bigLabel1";
             this.bigLabel1.Size = new System.Drawing.Size(201, 57);
             this.bigLabel1.TabIndex = 7;
             this.bigLabel1.Text = "Objetivos";
-            // 
-            // probar_exercicio
-            // 
-            this.probar_exercicio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.probar_exercicio.Color = System.Drawing.Color.DodgerBlue;
-            this.probar_exercicio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(63)))), ((int)(((byte)(70)))));
-            this.probar_exercicio.Hover = false;
-            this.probar_exercicio.Location = new System.Drawing.Point(799, 177);
-            this.probar_exercicio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.probar_exercicio.Name = "probar_exercicio";
-            this.probar_exercicio.Progress = 50;
-            this.probar_exercicio.Size = new System.Drawing.Size(168, 43);
-            this.probar_exercicio.TabIndex = 8;
             // 
             // bigLabel2
             // 
@@ -166,7 +158,7 @@
             this.bigLabel2.BackColor = System.Drawing.Color.Transparent;
             this.bigLabel2.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bigLabel2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.bigLabel2.Location = new System.Drawing.Point(578, 177);
+            this.bigLabel2.Location = new System.Drawing.Point(500, 177);
             this.bigLabel2.Name = "bigLabel2";
             this.bigLabel2.Size = new System.Drawing.Size(200, 38);
             this.bigLabel2.TabIndex = 9;
@@ -178,24 +170,11 @@
             this.bigLabel3.BackColor = System.Drawing.Color.Transparent;
             this.bigLabel3.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bigLabel3.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.bigLabel3.Location = new System.Drawing.Point(578, 245);
+            this.bigLabel3.Location = new System.Drawing.Point(571, 271);
             this.bigLabel3.Name = "bigLabel3";
             this.bigLabel3.Size = new System.Drawing.Size(120, 38);
             this.bigLabel3.TabIndex = 10;
             this.bigLabel3.Text = "Calorias:";
-            // 
-            // probar_calorias
-            // 
-            this.probar_calorias.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.probar_calorias.Color = System.Drawing.Color.DodgerBlue;
-            this.probar_calorias.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(63)))), ((int)(((byte)(70)))));
-            this.probar_calorias.Hover = false;
-            this.probar_calorias.Location = new System.Drawing.Point(799, 245);
-            this.probar_calorias.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.probar_calorias.Name = "probar_calorias";
-            this.probar_calorias.Progress = 50;
-            this.probar_calorias.Size = new System.Drawing.Size(168, 43);
-            this.probar_calorias.TabIndex = 11;
             // 
             // lbl_ola
             // 
@@ -204,7 +183,7 @@
             this.lbl_ola.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lbl_ola.Location = new System.Drawing.Point(81, 61);
             this.lbl_ola.Name = "lbl_ola";
-            this.lbl_ola.Size = new System.Drawing.Size(90, 52);
+            this.lbl_ola.Size = new System.Drawing.Size(89, 51);
             this.lbl_ola.TabIndex = 14;
             this.lbl_ola.Text = "Olá";
             // 
@@ -379,7 +358,7 @@
             // 
             this.pictureBox1.Location = new System.Drawing.Point(90, 134);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(247, 269);
+            this.pictureBox1.Size = new System.Drawing.Size(213, 229);
             this.pictureBox1.TabIndex = 17;
             this.pictureBox1.TabStop = false;
             // 
@@ -387,20 +366,129 @@
             // 
             this.ficheiro.FileName = "openFileDialog1";
             // 
+            // cbb_sexo
+            // 
+            this.cbb_sexo.FormattingEnabled = true;
+            this.cbb_sexo.Items.AddRange(new object[] {
+            "Masculino",
+            "Feminino"});
+            this.cbb_sexo.Location = new System.Drawing.Point(706, 362);
+            this.cbb_sexo.Name = "cbb_sexo";
+            this.cbb_sexo.Size = new System.Drawing.Size(264, 24);
+            this.cbb_sexo.TabIndex = 18;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.Control;
+            this.label2.Location = new System.Drawing.Point(624, 353);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(67, 31);
+            this.label2.TabIndex = 19;
+            this.label2.Text = "Sexo:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.Control;
+            this.label3.Location = new System.Drawing.Point(501, 427);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(206, 31);
+            this.label3.TabIndex = 21;
+            this.label3.Text = "Tipo de Atividade: ";
+            // 
+            // cbb_tipo_atividade
+            // 
+            this.cbb_tipo_atividade.FormattingEnabled = true;
+            this.cbb_tipo_atividade.Items.AddRange(new object[] {
+            "Pouco ou nenhum exercício",
+            "Exercício leve 1–3 dias/semana",
+            "Exercício moderado 3–5 dias/semana",
+            "Exercício intenso 6–7 dias/semana",
+            "Treinos muito intensos ou 2x por dia"});
+            this.cbb_tipo_atividade.Location = new System.Drawing.Point(706, 434);
+            this.cbb_tipo_atividade.Name = "cbb_tipo_atividade";
+            this.cbb_tipo_atividade.Size = new System.Drawing.Size(264, 24);
+            this.cbb_tipo_atividade.TabIndex = 20;
+            // 
+            // btn_calorias
+            // 
+            this.btn_calorias.Alpha = 20;
+            this.btn_calorias.BackColor = System.Drawing.Color.Transparent;
+            this.btn_calorias.Background = true;
+            this.btn_calorias.Background_WidthPen = 4F;
+            this.btn_calorias.BackgroundPen = true;
+            this.btn_calorias.ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
+            this.btn_calorias.ColorBackground_1 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
+            this.btn_calorias.ColorBackground_2 = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(63)))), ((int)(((byte)(86)))));
+            this.btn_calorias.ColorBackground_Pen = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
+            this.btn_calorias.ColorLighting = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
+            this.btn_calorias.ColorPen_1 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
+            this.btn_calorias.ColorPen_2 = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(63)))), ((int)(((byte)(86)))));
+            this.btn_calorias.CyberButtonStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
+            this.btn_calorias.Effect_1 = true;
+            this.btn_calorias.Effect_1_ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
+            this.btn_calorias.Effect_1_Transparency = 25;
+            this.btn_calorias.Effect_2 = true;
+            this.btn_calorias.Effect_2_ColorBackground = System.Drawing.Color.White;
+            this.btn_calorias.Effect_2_Transparency = 20;
+            this.btn_calorias.Font = new System.Drawing.Font("Arial", 11F);
+            this.btn_calorias.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
+            this.btn_calorias.Lighting = false;
+            this.btn_calorias.LinearGradient_Background = false;
+            this.btn_calorias.LinearGradientPen = false;
+            this.btn_calorias.Location = new System.Drawing.Point(747, 523);
+            this.btn_calorias.Name = "btn_calorias";
+            this.btn_calorias.PenWidth = 15;
+            this.btn_calorias.Rounding = true;
+            this.btn_calorias.RoundingInt = 70;
+            this.btn_calorias.Size = new System.Drawing.Size(191, 53);
+            this.btn_calorias.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            this.btn_calorias.TabIndex = 22;
+            this.btn_calorias.Tag = "Cyber";
+            this.btn_calorias.TextButton = "Calcular Calorias";
+            this.btn_calorias.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.btn_calorias.Timer_Effect_1 = 5;
+            this.btn_calorias.Timer_RGB = 300;
+            this.btn_calorias.Click += new System.EventHandler(this.btn_calorias_Click);
+            // 
+            // probar_calorias
+            // 
+            this.probar_calorias.Location = new System.Drawing.Point(706, 270);
+            this.probar_calorias.Name = "probar_calorias";
+            this.probar_calorias.Size = new System.Drawing.Size(264, 39);
+            this.probar_calorias.TabIndex = 23;
+            this.probar_calorias.Value = 50;
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.Location = new System.Drawing.Point(706, 177);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(264, 43);
+            this.progressBar1.TabIndex = 24;
+            this.progressBar1.Value = 50;
+            // 
             // paginaInicial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ClientSize = new System.Drawing.Size(1000, 601);
+            this.Controls.Add(this.progressBar1);
+            this.Controls.Add(this.probar_calorias);
+            this.Controls.Add(this.btn_calorias);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.cbb_tipo_atividade);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.cbb_sexo);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pn_opcoes);
             this.Controls.Add(this.lbl_nome);
             this.Controls.Add(this.lbl_ola);
-            this.Controls.Add(this.probar_calorias);
             this.Controls.Add(this.bigLabel3);
             this.Controls.Add(this.bigLabel2);
-            this.Controls.Add(this.probar_exercicio);
             this.Controls.Add(this.bigLabel1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -428,10 +516,8 @@
         private System.Windows.Forms.Timer sidebarTransition;
         private System.Windows.Forms.Panel pan_color;
         private ReaLTaiizor.Controls.BigLabel bigLabel1;
-        private ReaLTaiizor.Controls.LostProgressBar probar_exercicio;
         protected internal ReaLTaiizor.Controls.BigLabel bigLabel2;
         protected internal ReaLTaiizor.Controls.BigLabel bigLabel3;
-        private ReaLTaiizor.Controls.LostProgressBar probar_calorias;
         private System.Windows.Forms.Label lbl_ola;
         private System.Windows.Forms.Label lbl_nome;
         private ReaLTaiizor.Controls.NightControlBox nightControlBox1;
@@ -445,5 +531,12 @@
         private System.Windows.Forms.Button btn_exit;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.OpenFileDialog ficheiro;
+        private System.Windows.Forms.ComboBox cbb_sexo;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox cbb_tipo_atividade;
+        private ReaLTaiizor.Controls.CyberButton btn_calorias;
+        private System.Windows.Forms.ProgressBar probar_calorias;
+        private System.Windows.Forms.ProgressBar progressBar1;
     }
 }

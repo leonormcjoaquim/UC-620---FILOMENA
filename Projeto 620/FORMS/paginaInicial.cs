@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using Projeto_620.FORMS;
 using Projeto_620.models;
 using Projeto_620.utils;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Projeto_620.FORMS
 {
@@ -207,6 +208,58 @@ namespace Projeto_620.FORMS
             User utilizador = GlobalUtils.users.FirstOrDefault(u => u.Username == GlobalUtils.username);
             GlobalUtils.GuardarXML(utilizador);
             Application.Exit();
+        }
+
+        private void btn_calorias_Click(object sender, EventArgs e)
+        {
+            User utilizador = GlobalUtils.users.FirstOrDefault(u => u.Username == GlobalUtils.username);
+            string tipoAtividade = cbb_tipo_atividade.Text;
+            string sexo = cbb_sexo.Text;
+            double peso = utilizador.Peso;
+            double altura = utilizador.Altura * 100;
+            int idade = utilizador.Idade;
+
+            double taxaMetabolica;
+            if (sexo == "Masculino")
+            {
+                taxaMetabolica = 88.362 + (13.397 * peso) + (4.799 * altura) - (5.677 * idade);
+            }
+            else if (sexo == "Feminino")
+            {
+                taxaMetabolica = 447.593 + (9.247 * peso) + (3.098 * altura) - (4.330 * idade);
+            }
+            else
+            {
+                MessageBox.Show("Tem de selecionar uma das opções disponíveis");
+                return;
+            }
+
+            double fatorAtividade;
+            switch (tipoAtividade)
+            {
+                case "Sedentário":
+                    fatorAtividade = 1.2;
+                    break;
+                case "Levemente ativo":
+                    fatorAtividade = 1.375;
+                    break;
+                case "Moderadamente ativo":
+                    fatorAtividade = 1.55;
+                    break;
+                case "Muito ativo":
+                    fatorAtividade = 1.725;
+                    break;
+                case "Extremamente ativo":
+                    fatorAtividade = 1.9;
+                    break;
+                default:
+                    MessageBox.Show("Tem de selecionar uma opção válida no campo 'Tipo de Atividade'.");
+                    return;
+            }
+
+            double calorias = taxaMetabolica * fatorAtividade;
+            GlobalUtils.caloriasObjetivo = (int)Math.Round(calorias);
+            probar_calorias.Maximum = GlobalUtils.caloriasObjetivo;
         }
     }
 }
