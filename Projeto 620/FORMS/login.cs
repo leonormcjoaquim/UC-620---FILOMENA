@@ -72,16 +72,14 @@ namespace Projeto_620.FORMS
 
         private void btn_login_MouseClick(object sender, MouseEventArgs e)
         {
-            // PARA TESTES
-            //melhorar esta textbox 
-            MessageBox.Show("Login efetuado com sucesso!");
-            Form paginaInicial = new paginaInicial();
-            paginaInicial.Show();
-            this.Hide();
+            //// PARA TESTES
+            ////melhorar esta textbox
+            //MessageBox.Show("Login efetuado com sucesso!");
+            //Form paginaInicial = new paginaInicial();
+            //paginaInicial.Show();
+            //this.Hide();
 
-            /*
             tb_username.Focus();
-            string caminho = @"C:\cometudoperdetudo\users.xml";
             string username = tb_username.TextButton; // textButton devido à framework que estamos a usar não ter a propriedade text para este elemento
             string password = tb_password.TextButton;
 
@@ -91,8 +89,6 @@ namespace Projeto_620.FORMS
                 //melhorar esta textbox
                 MessageBox.Show("Por favor, preencha todos os campos.");
 
-               // AQUI ERA BOM LIMPAR AS TEXTBOXES MAS NAO DESCOBRI AINDA COMO
-
                 tb_username.TextButton = string.Empty;
                 tb_password.TextButton = string.Empty;
 
@@ -100,10 +96,10 @@ namespace Projeto_620.FORMS
             }
 
             // vê todos os users no ficheiro xml e compara se existe ou nao aquele login 
-            XDocument doc = XDocument.Load(caminho);
-            bool userExists = doc.Descendants("user").Where(x =>
-                                x.Element("username")?.Value == username &&
-                                x.Element("password")?.Value == password).Any();
+            XDocument doc = XDocument.Load(GlobalUtils.caminho);
+            bool userExists = doc.Root.Elements("user").Descendants("Dados").Any(x =>x.Element("username")?.Value == username &&x.Element("password")?.Value == password);
+
+            GlobalUtils.username = username;
 
             // if userexists == true
             if (!userExists)
@@ -119,17 +115,121 @@ namespace Projeto_620.FORMS
             {
                 //melhorar esta textbox 
                 MessageBox.Show("Login efetuado com sucesso!");
+                XmlToList();
                 Form paginaInicial = new paginaInicial();
                 paginaInicial.Show();
                 this.Hide();
             }
-            */
-           
+
+
         }
 
-        private void btn_login_Click_1(object sender, EventArgs e)
+        public void XmlToList()
         {
+            XDocument doc = XDocument.Load(GlobalUtils.caminho);
 
+            var dados = doc.Root.Elements("user").Select(x => x.Element("Dados")).FirstOrDefault(d => d != null && (string)d.Element("username") == GlobalUtils.username);
+
+            var user = doc.Root.Elements("user").FirstOrDefault(x => (string)x.Element("Dados")?.Element("username") == GlobalUtils.username);
+
+
+
+            string username = (string)dados.Element("username");
+            string nome = (string)dados.Element("nome");
+            string password = (string)dados.Element("password");
+            string email = (string)dados.Element("email");
+            int idade = (int)dados.Element("idade");
+            double altura = (double)dados.Element("altura");
+            double peso = (double)dados.Element("peso");
+
+            // -- Consultas --
+            List<Marcacao> marcacoes = new List<Marcacao>();
+            var consultas = user.Element("Consultas")?.Elements("Consulta");
+
+            if (consultas != null)
+            {
+                foreach (var consulta in consultas)
+                {
+                    string tipo = (string)consulta.Element("TipoMarcacao");
+                    DateTime data = DateTime.Parse((string)consulta.Element("DataMarcacao"));
+                    string especialidade = (string)consulta.Element("Especialidade");
+
+                    Marcacao novaMarcacao = null;
+
+                    switch (tipo)
+                    {
+                        case "Especialista":
+                            novaMarcacao = new Appointment(tipo, data, especialidade);
+                            break;
+
+                        case "Treino_PT":  // para prevenir variantes
+                            novaMarcacao = new TreinoPT(tipo, data, especialidade);
+                            break;
+
+                        default:
+                            MessageBox.Show($"Tipo de marcação desconhecido: {tipo}");
+                            continue;
+                    }
+
+                    marcacoes.Add(novaMarcacao);
+                }
+            }
+
+            // -- Alimentação --
+            List<Alimentacao> alimentacoes = new List<Alimentacao>();
+            var alimentos = user.Element("Alimentacoes")?.Elements();
+            if (alimentos != null)
+            {
+                foreach (var refeicao in alimentos)
+                {
+                    string nomeComida = (string)refeicao.Element("NomeComida");
+                    int calorias = int.Parse(refeicao.Element("Calorias").Value);
+                    string tipoRefeicaoStr = (string)refeicao.Element("TipoRefeicao");
+                    DateTime data = DateTime.Parse((string)refeicao.Element("Data"));
+
+                    if (!Enum.TryParse(tipoRefeicaoStr, true, out TipoRefeicao tipoRefeicao))
+                    {
+                        MessageBox.Show($"Tipo de refeição desconhecido: {tipoRefeicaoStr}");
+                        continue;
+                    }
+
+                    var ali = new Alimentacao(nomeComida, calorias, tipoRefeicao)
+                    {
+                        Data_Comida = data
+                    };
+
+                    alimentacoes.Add(ali);
+                }
+            }
+
+            // ---------- Treinos ----------
+            List<Exercicio> exercicios = new List<Exercicio>();
+            var treinos = user.Element("Treinos")?.Elements("Treino");
+            if (treinos != null)
+            {
+                foreach (var exercicio in treinos)
+                {
+                    string nomeTreino = (string)exercicio.Element("NomeTreino");
+                    string tipoStr = (string)exercicio.Element("TipoExercicio");
+                    int duracao = int.Parse(exercicio.Element("Duracao").Value);
+                    int calorias = int.Parse(exercicio.Element("CaloriasQueimadas").Value);
+                    DateTime data = DateTime.Parse((string)exercicio.Element("Data"));
+
+                    if (!Enum.TryParse(tipoStr, true, out TipoTreino tipoTreino))
+                    {
+                        MessageBox.Show($"Tipo de treino desconhecido: {tipoStr}");
+                        continue;
+                    }
+
+                    exercicios.Add(new Exercicio(nomeTreino, tipoTreino, duracao, calorias, data));
+                }
+            }
+
+            // CRIAR OBJETO USER
+
+            User utilizador = new User(nome, username, password, email, idade, altura, peso, marcacoes, alimentacoes, exercicios);
+            GlobalUtils.users.Add(utilizador);
         }
+
     }
 }

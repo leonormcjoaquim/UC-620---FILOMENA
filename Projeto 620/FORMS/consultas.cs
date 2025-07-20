@@ -234,7 +234,6 @@ namespace Projeto_620.FORMS
 
         private void form_Load(object sender, EventArgs e)
         {
-            cbb_especialidades.DataSource = Enum.GetValues(typeof(Especialidade));
             cbb_tipo.DataSource = Enum.GetValues(typeof(TipoMarcacao));
         }
 
@@ -242,11 +241,17 @@ namespace Projeto_620.FORMS
         {
             if(cbb_tipo.SelectedItem.ToString() == "Treino_PT")
             {
-                cbb_especialidades.Enabled = false;
-                cbb_especialidades.Text = "Treino_PT";
-            } else
+                cbb_especialidades.Enabled = true;
+                lbl_especialidade.Visible = false;
+                lbl_tipo.Visible = true;
+                cbb_especialidades.DataSource = Enum.GetValues(typeof(TipoTreino));
+            } 
+            else
             {
                 cbb_especialidades.Enabled = true;
+                lbl_especialidade.Visible = true;
+                lbl_tipo.Visible = false;
+                cbb_especialidades.DataSource = Enum.GetValues(typeof(Especialidade));
             }
         }
 
