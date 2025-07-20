@@ -214,6 +214,8 @@ namespace Projeto_620.FORMS
 
         private void bt_logout_Click(object sender, EventArgs e)
         {
+            User utilizador = GlobalUtils.users.FirstOrDefault(u => u.Username == GlobalUtils.username);
+            GlobalUtils.GuardarXML(utilizador);
             Form log = new login();
             log.Show();
             this.Close();
@@ -221,6 +223,8 @@ namespace Projeto_620.FORMS
 
         private void btn_exit_Click(object sender, EventArgs e)
         {
+            User utilizador = GlobalUtils.users.FirstOrDefault(u => u.Username == GlobalUtils.username);
+            GlobalUtils.GuardarXML(utilizador);
             Application.Exit();
         }
     }
