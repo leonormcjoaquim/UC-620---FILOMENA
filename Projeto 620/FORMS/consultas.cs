@@ -250,9 +250,14 @@ namespace Projeto_620.FORMS
                 cbb_especialidades.DataSource = Enum.GetValues(typeof(TipoTreino));
             } else
             {
-                cbb_especialidades.Enabled = true;
                 lbl_tipo_treino.Visible = false;
                 lbl_especialidade.Visible = true;
+                cbb_especialidades.Enabled = true;
+<<<<<<< Updated upstream
+                lbl_tipo_treino.Visible = false;
+                lbl_especialidade.Visible = true;
+=======
+>>>>>>> Stashed changes
                 cbb_especialidades.DataSource = Enum.GetValues(typeof(Especialidade));
             }
         }

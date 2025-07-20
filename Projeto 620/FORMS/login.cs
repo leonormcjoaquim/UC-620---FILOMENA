@@ -230,6 +230,10 @@ namespace Projeto_620.FORMS
             User utilizador = new User(nome, username, password, email, idade, altura, peso, marcacoes, alimentacoes, exercicios);
             GlobalUtils.users.Add(utilizador);
         }
+<<<<<<< Updated upstream
  
+=======
+
+>>>>>>> Stashed changes
     }
 }

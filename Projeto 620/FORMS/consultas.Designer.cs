@@ -120,7 +120,11 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             this.label1.Location = new System.Drawing.Point(60, 7);
+=======
+            this.label1.Location = new System.Drawing.Point(52, 6);
+>>>>>>> Stashed changes
 =======
             this.label1.Location = new System.Drawing.Point(52, 6);
 >>>>>>> Stashed changes
@@ -335,7 +339,10 @@
             // 
             this.metroTabPage1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
             this.metroTabPage1.Controls.Add(this.lbl_tipo_treino);
             this.metroTabPage1.Controls.Add(this.data_caixa);
 >>>>>>> Stashed changes
@@ -367,6 +374,11 @@
             // 
             this.data_caixa.Location = new System.Drawing.Point(322, 144);
             this.data_caixa.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+<<<<<<< Updated upstream
+=======
+            this.data_caixa.MaxDate = new System.DateTime(2026, 7, 25, 23, 59, 0, 0);
+            this.data_caixa.MinDate = new System.DateTime(2025, 7, 25, 23, 59, 59, 0);
+>>>>>>> Stashed changes
             this.data_caixa.Name = "data_caixa";
             this.data_caixa.TabIndex = 8;
             // 
@@ -398,7 +410,11 @@
             this.btn_marcar_consulta.LinearGradient_Background = false;
             this.btn_marcar_consulta.LinearGradientPen = false;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             this.btn_marcar_consulta.Location = new System.Drawing.Point(313, 332);
+=======
+            this.btn_marcar_consulta.Location = new System.Drawing.Point(250, 344);
+>>>>>>> Stashed changes
 =======
             this.btn_marcar_consulta.Location = new System.Drawing.Point(250, 344);
 >>>>>>> Stashed changes
@@ -408,7 +424,11 @@
             this.btn_marcar_consulta.Rounding = true;
             this.btn_marcar_consulta.RoundingInt = 70;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             this.btn_marcar_consulta.Size = new System.Drawing.Size(109, 50);
+=======
+            this.btn_marcar_consulta.Size = new System.Drawing.Size(156, 50);
+>>>>>>> Stashed changes
 =======
             this.btn_marcar_consulta.Size = new System.Drawing.Size(156, 50);
 >>>>>>> Stashed changes
@@ -427,6 +447,7 @@
             this.cbb_especialidades.FormattingEnabled = true;
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             this.cbb_especialidades.Location = new System.Drawing.Point(417, 290);
             this.cbb_especialidades.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 =======
@@ -435,6 +456,12 @@
 >>>>>>> Stashed changes
             this.cbb_especialidades.Name = "cbb_especialidades";
             this.cbb_especialidades.Size = new System.Drawing.Size(223, 24);
+=======
+            this.cbb_especialidades.Location = new System.Drawing.Point(322, 82);
+            this.cbb_especialidades.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbb_especialidades.Name = "cbb_especialidades";
+            this.cbb_especialidades.Size = new System.Drawing.Size(198, 24);
+>>>>>>> Stashed changes
 =======
             this.cbb_especialidades.Location = new System.Drawing.Point(322, 82);
             this.cbb_especialidades.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
@@ -450,9 +477,13 @@
             this.lbl_especialidade.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_especialidade.ForeColor = System.Drawing.SystemColors.ButtonFace;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             this.lbl_especialidade.Location = new System.Drawing.Point(160, 236);
 =======
             this.lbl_especialidade.Location = new System.Drawing.Point(166, 82);
+>>>>>>> Stashed changes
+=======
+            this.lbl_especialidade.Location = new System.Drawing.Point(160, 82);
 >>>>>>> Stashed changes
             this.lbl_especialidade.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_especialidade.Name = "lbl_especialidade";
@@ -468,7 +499,11 @@
             this.lbl_data.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_data.ForeColor = System.Drawing.SystemColors.ButtonFace;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             this.lbl_data.Location = new System.Drawing.Point(130, 140);
+=======
+            this.lbl_data.Location = new System.Drawing.Point(130, 144);
+>>>>>>> Stashed changes
 =======
             this.lbl_data.Location = new System.Drawing.Point(130, 144);
 >>>>>>> Stashed changes
@@ -485,7 +520,11 @@
             this.lbl_cbb.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_cbb.ForeColor = System.Drawing.SystemColors.ButtonFace;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             this.lbl_cbb.Location = new System.Drawing.Point(133, 62);
+=======
+            this.lbl_cbb.Location = new System.Drawing.Point(133, 26);
+>>>>>>> Stashed changes
 =======
             this.lbl_cbb.Location = new System.Drawing.Point(133, 26);
 >>>>>>> Stashed changes
@@ -510,10 +549,17 @@
             // 
             this.cbb_tipo.FormattingEnabled = true;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             this.cbb_tipo.Location = new System.Drawing.Point(313, 64);
             this.cbb_tipo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbb_tipo.Name = "cbb_tipo";
             this.cbb_tipo.Size = new System.Drawing.Size(223, 24);
+=======
+            this.cbb_tipo.Location = new System.Drawing.Point(322, 28);
+            this.cbb_tipo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbb_tipo.Name = "cbb_tipo";
+            this.cbb_tipo.Size = new System.Drawing.Size(198, 24);
+>>>>>>> Stashed changes
 =======
             this.cbb_tipo.Location = new System.Drawing.Point(322, 28);
             this.cbb_tipo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
@@ -636,7 +682,11 @@
             this.list_box.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.list_box.Name = "list_box";
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             this.list_box.Size = new System.Drawing.Size(428, 244);
+=======
+            this.list_box.Size = new System.Drawing.Size(428, 228);
+>>>>>>> Stashed changes
 =======
             this.list_box.Size = new System.Drawing.Size(428, 228);
 >>>>>>> Stashed changes
@@ -653,12 +703,21 @@
             this.lbl_tipo_treino.BackColor = System.Drawing.Color.Transparent;
             this.lbl_tipo_treino.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_tipo_treino.ForeColor = System.Drawing.SystemColors.ButtonFace;
+<<<<<<< Updated upstream
             this.lbl_tipo_treino.Location = new System.Drawing.Point(191, 82);
             this.lbl_tipo_treino.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_tipo_treino.Name = "lbl_tipo_treino";
             this.lbl_tipo_treino.Size = new System.Drawing.Size(108, 25);
             this.lbl_tipo_treino.TabIndex = 9;
             this.lbl_tipo_treino.Text = "Tipo treino:";
+=======
+            this.lbl_tipo_treino.Location = new System.Drawing.Point(157, 82);
+            this.lbl_tipo_treino.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_tipo_treino.Name = "lbl_tipo_treino";
+            this.lbl_tipo_treino.Size = new System.Drawing.Size(139, 25);
+            this.lbl_tipo_treino.TabIndex = 9;
+            this.lbl_tipo_treino.Text = "Tipo de treino: ";
+>>>>>>> Stashed changes
             this.lbl_tipo_treino.Visible = false;
             // 
             // consultas
@@ -724,6 +783,9 @@
 =======
         private System.Windows.Forms.MonthCalendar data_caixa;
         private System.Windows.Forms.Label lbl_tipo_treino;
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     }
 }
