@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Projeto_620.FORMS;
+using Projeto_620.models;
+using Projeto_620.utils;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace Projeto_620.FORMS
 {
@@ -105,5 +109,131 @@ namespace Projeto_620.FORMS
         {
             Application.Exit();
         }
+
+        private void form_Load(object sender, EventArgs e)
+        {
+            cbb_tipoTreino.DataSource = Enum.GetValues(typeof(TipoTreino));
+            AtualizarListaTreinos();
+
+        }
+
+        private void btn_inserirTreino_Click(object sender, EventArgs e)
+        {
+            if (cbb_tipoTreino.SelectedIndex == -1 )
+            {
+                MessageBox.Show("Erro! Tem de ter o tipo de treino selecionado");
+                cbb_tipoTreino.SelectedIndex = -1;
+                return;
+            }
+
+            string nomeTreino = tb_nomeTreino.Text;
+            if (string.IsNullOrEmpty(nomeTreino))
+            {
+                MessageBox.Show("Erro! O nome de treino não pode estar vazio!");
+                return;
+            }
+
+
+            if (!int.TryParse(tb_duracaoTreino.Text, out int duracaoTreino) || duracaoTreino <= 0)
+            {
+                MessageBox.Show("Erro! Introduza uma duração válida.");
+                return;
+            }
+
+            if (!int.TryParse(tb_caloriasQueimadas.Text, out int caloriasQueimadas) || caloriasQueimadas <= 0)
+            {
+                MessageBox.Show("Erro! Introduza um valor de calorias válido.");
+                return;
+            }
+
+            TipoTreino tipoSelecionado = (TipoTreino)cbb_tipoTreino.SelectedItem;
+
+            XDocument doc = XDocument.Load(GlobalUtils.caminho);
+
+            GlobalUtils.username = "root"; //ALTERAR PRECISAMOS DE UMA GLOBAL VARIABLE
+
+            XElement user = doc.Descendants("user").FirstOrDefault(x => x.Element("username")?.Value == GlobalUtils.username);
+
+            if (user == null)
+            {
+                MessageBox.Show("Utilizador não encontrado!");
+                return;
+            }
+
+            XElement treinos = user.Element("Treinos");
+            if (treinos == null)
+            {
+                treinos = new XElement("Treinos");
+                user.Add(treinos);
+            }
+
+
+
+            XElement novoTreino = new XElement("Treino",
+                    new XElement("NomeTreino", nomeTreino),
+                    new XElement("TipoExercicio", tipoSelecionado.ToString()),
+                    new XElement("Duracao", duracaoTreino),
+                    new XElement("CaloriasQueimadas", caloriasQueimadas),
+                    new XElement("Data", DateTime.Now.ToString("s"))
+                );
+
+            treinos.Add(novoTreino);
+
+
+            doc.Save(GlobalUtils.caminho);
+
+            MessageBox.Show("Treino inserido com sucesso!");
+
+            AtualizarListaTreinos();
+
+            tb_nomeTreino.Clear();
+            tb_duracaoTreino.Clear();
+            tb_caloriasQueimadas.Clear();
+            cbb_tipoTreino.SelectedIndex = -1;
+        }
+
+        private void AtualizarListaTreinos()
+        {
+            lb_listaTreino.Items.Clear();
+
+            GlobalUtils.username = "root";
+
+            XDocument doc = XDocument.Load(GlobalUtils.caminho);
+
+            var user = doc.Root.Elements("user")
+                              .FirstOrDefault(x => x.Element("username")?.Value == GlobalUtils.username);
+
+            var treinos = user.Element("Treinos");
+
+            if (treinos == null)
+            {
+                treinos = new XElement("Treinos");
+                user.Add(treinos);
+                doc.Save(GlobalUtils.caminho); 
+            }
+            if (!treinos.Elements("Treino").Any())
+            {
+                MessageBox.Show("Sem treinos para mostrar, vamos a isso!");
+                return;
+            }
+
+            foreach (var trei in treinos.Elements("Treino"))
+            {
+                string nomeTreino = (string)trei.Element("NomeTreino");
+                string tipoExercicio = (string)trei.Element("TipoExercicio");
+                string duracao = (string)trei.Element("Duracao");
+                string calorias = (string)trei.Element("CaloriasQueimadas");
+                string data = (string)trei.Element("Data");
+
+                string linha = $"{nomeTreino} ({tipoExercicio}) - {calorias} kcal queimadas em {duracao} min, às {data}h";
+
+                lb_listaTreino.Items.Add(linha);
+
+            }
+
+
+        }
+
     }
+
 }

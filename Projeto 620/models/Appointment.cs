@@ -3,25 +3,26 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 using System.Windows.Forms;
+using Projeto_620.utils;
+
 
 namespace Projeto_620.models
 {
     internal class Appointment : Marcacao
     {
 
+
         public Appointment(string tipo, DateTime data, string especialidade)
-<<<<<<< HEAD
-        : base(tipo, data, especialidade) { }
-=======
          : base(tipo, data, especialidade)
         {
         }
->>>>>>> TestarAntesDeEnviar
+
 
         public override void marcarConsulta()
         {
-            MessageBox.Show("Consulta com Especialista Marcada com Sucesso");
+
         }
         public override string ToString()
         {
