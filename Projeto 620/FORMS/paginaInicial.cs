@@ -19,6 +19,7 @@ namespace Projeto_620.FORMS
         public paginaInicial()
         {
             InitializeComponent();
+            lbl_nome.Text = GlobalUtils.username;
         }
 
         private void btn_logout_Click(object sender, EventArgs e)
@@ -56,8 +57,8 @@ namespace Projeto_620.FORMS
             if (sidebarExpand)
             {
                 pn_opcoes.Width -= 10;
-                lbl_ola.Location = new Point(lbl_ola.Location.X - 8, lbl_ola.Location.Y);
-                lbl_nome.Location = new Point(lbl_nome.Location.X - 8, lbl_nome.Location.Y);
+                lbl_ola.Location = new Point(lbl_ola.Location.X - 10, lbl_ola.Location.Y);
+                lbl_nome.Location = new Point(lbl_nome.Location.X - 10, lbl_nome.Location.Y);
                 if (pn_opcoes.Width <= 45)
                 {
                     sidebarExpand = false;
@@ -67,8 +68,8 @@ namespace Projeto_620.FORMS
             else
             {
                 pn_opcoes.Width += 10;
-                lbl_ola.Location = new Point(lbl_ola.Location.X + 8, lbl_ola.Location.Y);
-                lbl_nome.Location = new Point(lbl_nome.Location.X + 8, lbl_nome.Location.Y);
+                lbl_ola.Location = new Point(lbl_ola.Location.X + 10, lbl_ola.Location.Y);
+                lbl_nome.Location = new Point(lbl_nome.Location.X + 10, lbl_nome.Location.Y);
                 if (pn_opcoes.Width >= 245)
                 {
                     sidebarExpand = true;
