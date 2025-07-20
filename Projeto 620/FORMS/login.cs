@@ -80,11 +80,11 @@ namespace Projeto_620.FORMS
             //this.Hide();
 
             tb_username.Focus();
-            GlobalUtils.username = tb_username.TextButton; // textButton devido à framework que estamos a usar não ter a propriedade text para este elemento
+            string username = tb_username.TextButton; // textButton devido à framework que estamos a usar não ter a propriedade text para este elemento
             string password = tb_password.TextButton;
 
             // Verifica se um dos campos está vazio
-            if (string.IsNullOrWhiteSpace(tb_username.TextButton) || string.IsNullOrWhiteSpace(password))
+            if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password))
             {
                 //melhorar esta textbox
                 MessageBox.Show("Por favor, preencha todos os campos.");
@@ -97,9 +97,9 @@ namespace Projeto_620.FORMS
 
             // vê todos os users no ficheiro xml e compara se existe ou nao aquele login 
             XDocument doc = XDocument.Load(GlobalUtils.caminho);
-            bool userExists = doc.Root.Elements("user").Descendants("Dados").Where(x =>
-                                x.Element("username")?.Value == GlobalUtils.username &&
-                                x.Element("password")?.Value == password).Any();
+            bool userExists = doc.Root.Elements("user").Descendants("Dados").Any(x =>x.Element("username")?.Value == username &&x.Element("password")?.Value == password);
+
+            GlobalUtils.username = username;
 
             // if userexists == true
             if (!userExists)
@@ -230,10 +230,6 @@ namespace Projeto_620.FORMS
             User utilizador = new User(nome, username, password, email, idade, altura, peso, marcacoes, alimentacoes, exercicios);
             GlobalUtils.users.Add(utilizador);
         }
-<<<<<<< Updated upstream
- 
-=======
 
->>>>>>> Stashed changes
     }
 }

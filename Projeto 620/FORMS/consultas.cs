@@ -137,7 +137,7 @@ namespace Projeto_620.FORMS
             XDocument doc;
             doc = XDocument.Load(GlobalUtils.caminho);
             var user = doc.Root.Elements("user")
-            .FirstOrDefault(x => (string)x.Element("username") == GlobalUtils.username);
+            .FirstOrDefault(x => (string)x.Element("username") == GlobalUtils.username); // muito gepeto
 
             var consultas = user.Element("Consultas");
             if (consultas == null)
@@ -170,8 +170,6 @@ namespace Projeto_620.FORMS
 
             MessageBox.Show("Sucesso");
 
-            cbb_especialidades.Enabled = false;
-
         }
 
         private void btn_filtrar_Click(object sender, EventArgs e)
@@ -184,7 +182,7 @@ namespace Projeto_620.FORMS
 
             // AQUI VÊ COMPARA O USER PARA IRBUSCAR CONSULTAR
             // PARA jÁ FICA ASSIM DEPOIS ALTERA-SE E JA SE FICA COM UMA IDEA DE COMO ALTERAR A VARIAVEL E USAR
-            //ALTERAR TUDO 
+            GlobalUtils.username = "root"; //ALTERAR TUDO 
             var user = doc.Root.Elements("user")
                 .FirstOrDefault(x => (string)x.Element("username") == GlobalUtils.username);
 
@@ -237,7 +235,6 @@ namespace Projeto_620.FORMS
         private void form_Load(object sender, EventArgs e)
         {
             cbb_tipo.DataSource = Enum.GetValues(typeof(TipoMarcacao));
-
         }
 
         private void cbb_tipo_SelectedIndexChanged(object sender, EventArgs e)
@@ -246,18 +243,14 @@ namespace Projeto_620.FORMS
             {
                 cbb_especialidades.Enabled = true;
                 lbl_especialidade.Visible = false;
-                lbl_tipo_treino.Visible = true;
+                lbl_tipo.Visible = true;
                 cbb_especialidades.DataSource = Enum.GetValues(typeof(TipoTreino));
-            } else
+            } 
+            else
             {
-                lbl_tipo_treino.Visible = false;
-                lbl_especialidade.Visible = true;
                 cbb_especialidades.Enabled = true;
-<<<<<<< Updated upstream
-                lbl_tipo_treino.Visible = false;
                 lbl_especialidade.Visible = true;
-=======
->>>>>>> Stashed changes
+                lbl_tipo.Visible = false;
                 cbb_especialidades.DataSource = Enum.GetValues(typeof(Especialidade));
             }
         }
