@@ -147,7 +147,7 @@ namespace Projeto_620.FORMS
             }
             Marcacao marcacao;
             string tipo_Marcacao = cbb_tipo.Text;
-            DateTime dataMarcacao = data_caixa.Value;
+            DateTime dataMarcacao = data_caixa.SelectionStart;
             string especialidade = cbb_especialidades.Text;
 
             if (tipoMarcacao == "Especialista")
@@ -262,7 +262,6 @@ namespace Projeto_620.FORMS
             if (sidebarExpand)
             {
                 pn_opcoes.Width -= 10;
-                // SE O NOME FOR MAIOR QUE AQUELE FODE O RESTO
                 if (pn_opcoes.Width <= 45)
                 {
                     sidebarExpand = false;
@@ -278,6 +277,11 @@ namespace Projeto_620.FORMS
                     sidebarTransition.Stop();
                 }
             }
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 
