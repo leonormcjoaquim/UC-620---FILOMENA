@@ -45,6 +45,7 @@
             this.btn_exit = new System.Windows.Forms.Button();
             this.tab_marcar_consultas = new ReaLTaiizor.Controls.MetroTabControl();
             this.metroTabPage1 = new ReaLTaiizor.Child.Metro.MetroTabPage();
+            this.data_caixa = new System.Windows.Forms.MonthCalendar();
             this.btn_marcar_consulta = new ReaLTaiizor.Controls.CyberButton();
             this.cbb_especialidades = new System.Windows.Forms.ComboBox();
             this.lbl_especialidade = new System.Windows.Forms.Label();
@@ -58,7 +59,6 @@
             this.cbb_tipo_consulta = new System.Windows.Forms.ComboBox();
             this.list_box = new System.Windows.Forms.ListBox();
             this.sidebarTransition = new System.Windows.Forms.Timer(this.components);
-            this.data_caixa = new System.Windows.Forms.MonthCalendar();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_menu)).BeginInit();
             this.pn_opcoes.SuspendLayout();
@@ -96,7 +96,7 @@
             this.nightControlBox1.EnableMaximizeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
             this.nightControlBox1.EnableMinimizeButton = true;
             this.nightControlBox1.EnableMinimizeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
-            this.nightControlBox1.Location = new System.Drawing.Point(815, 0);
+            this.nightControlBox1.Location = new System.Drawing.Point(861, 0);
             this.nightControlBox1.MaximizeHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.nightControlBox1.MaximizeHoverForeColor = System.Drawing.Color.White;
             this.nightControlBox1.MinimizeHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -118,7 +118,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(80, 9);
+            this.label1.Location = new System.Drawing.Point(69, 8);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(87, 38);
             this.label1.TabIndex = 4;
@@ -350,6 +350,12 @@
             this.metroTabPage1.ThemeName = "MetroDark";
             this.metroTabPage1.ToolTipText = null;
             // 
+            // data_caixa
+            // 
+            this.data_caixa.Location = new System.Drawing.Point(429, 177);
+            this.data_caixa.Name = "data_caixa";
+            this.data_caixa.TabIndex = 8;
+            // 
             // btn_marcar_consulta
             // 
             this.btn_marcar_consulta.Alpha = 20;
@@ -566,12 +572,6 @@
             // 
             this.sidebarTransition.Interval = 10;
             this.sidebarTransition.Tick += new System.EventHandler(this.sidebarTransition_Tick);
-            // 
-            // data_caixa
-            // 
-            this.data_caixa.Location = new System.Drawing.Point(429, 177);
-            this.data_caixa.Name = "data_caixa";
-            this.data_caixa.TabIndex = 8;
             // 
             // consultas
             // 

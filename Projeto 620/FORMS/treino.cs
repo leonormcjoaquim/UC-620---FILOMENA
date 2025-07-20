@@ -28,11 +28,6 @@ namespace Projeto_620.FORMS
             Login.Show();
         }
 
-        private void pb_menu_Click(object sender, EventArgs e)
-        {
-            sidebarTransition.Start();
-        }
-
         bool sidebarExpand = false;
 
         private void sidebarTransition_Tick(object sender, EventArgs e)
@@ -40,7 +35,6 @@ namespace Projeto_620.FORMS
             if (sidebarExpand)
             {
                 pn_opcoes.Width -= 10;
-                // SE O NOME FOR MAIOR QUE AQUELE FODE O RESTO
                 if (pn_opcoes.Width <= 45)
                 {
                     sidebarExpand = false;
@@ -230,10 +224,12 @@ namespace Projeto_620.FORMS
                 lb_listaTreino.Items.Add(linha);
 
             }
-
-
         }
 
+        private void pb_menu_Click_1(object sender, EventArgs e)
+        {
+            sidebarTransition.Start();
+        }
     }
 
 }

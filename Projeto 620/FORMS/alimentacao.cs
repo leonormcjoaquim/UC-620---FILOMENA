@@ -22,11 +22,6 @@ namespace Projeto_620
         }
 
         bool sidebarExpand = false;
-        private void pb_menu_Click(object sender, EventArgs e)
-        {
-            sidebarTransition.Start();
-        }
-
         private void sidebarTransition_Tick(object sender, EventArgs e)
         {
             if (sidebarExpand)
@@ -207,8 +202,11 @@ namespace Projeto_620
 
                 lb_listaRefeicao.Items.Add(linha);
             }
-            
         }
-        
+
+        private void pb_menu_Click_1(object sender, EventArgs e)
+        {
+            sidebarTransition.Start();
+        }
     }
 }
