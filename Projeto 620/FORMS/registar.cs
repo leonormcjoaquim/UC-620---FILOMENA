@@ -113,8 +113,8 @@ namespace Projeto_620
             MessageBox.Show("Utilizador criado com sucesso!");
 
 
-            login.Show();
-            loginPagina.Show();
+            Form novologin = new login();
+            novologin.Show();
             this.Close();
         }
 

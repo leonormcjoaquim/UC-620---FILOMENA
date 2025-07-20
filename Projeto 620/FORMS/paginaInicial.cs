@@ -19,7 +19,6 @@ namespace Projeto_620.FORMS
         public paginaInicial()
         {
             InitializeComponent();
-            MostrarImagemAleatoria();
         }
 
         private void btn_logout_Click(object sender, EventArgs e)
@@ -138,25 +137,6 @@ namespace Projeto_620.FORMS
         private void btn_appoitments_MouseHover(object sender, EventArgs e)
         {
             btn_appoitments.Cursor = Cursors.Hand;
-        }
-
-
-        Random rnd = new Random();
-        private void MostrarImagemAleatoria()
-        {
-            string pastaImagens = @"C:\cometudoperdetudo\imgs";
-            int numeroEscolhido = rnd.Next(1, 4); // temos 3 imagens agora, adicionar mais
-
-            string caminhoImagem = Path.Combine(pastaImagens, $"{numeroEscolhido}.jpeg");
-            if (File.Exists(caminhoImagem))
-            {
-                pb_foto.Image = Image.FromFile(caminhoImagem);
-                pb_foto.SizeMode = PictureBoxSizeMode.StretchImage; 
-            }
-            else
-            {
-                MessageBox.Show("Imagem não encontrada: " + caminhoImagem, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
         }
 
         private void nightControlBox1_MouseClick(object sender, MouseEventArgs e)
