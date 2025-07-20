@@ -142,39 +142,50 @@ namespace Projeto_620.FORMS
 
             TipoTreino tipoSelecionado = (TipoTreino)cbb_tipoTreino.SelectedItem;
 
-            XDocument doc = XDocument.Load(GlobalUtils.caminho);
+            Exercicio treino = new Exercicio(nomeTreino, tipoSelecionado, duracaoTreino, caloriasQueimadas, DateTime.Now);
 
-            GlobalUtils.username = "root"; //ALTERAR PRECISAMOS DE UMA GLOBAL VARIABLE
+            User utilizador = GlobalUtils.users.FirstOrDefault(u => u.Username == GlobalUtils.username);
 
-            XElement user = doc.Descendants("user").FirstOrDefault(x => x.Element("username")?.Value == GlobalUtils.username);
+            utilizador.Exercicios.Add(treino);
 
-            if (user == null)
-            {
-                MessageBox.Show("Utilizador não encontrado!");
-                return;
-            }
-
-            XElement treinos = user.Element("Treinos");
-            if (treinos == null)
-            {
-                treinos = new XElement("Treinos");
-                user.Add(treinos);
-            }
+            lb_listaTreino.Items.Clear();
+            lb_listaTreino.Items.Add(treino);
 
 
+            // -- Metodo Inicial sem utilização das classes --
+            //XDocument doc = XDocument.Load(GlobalUtils.caminho);
 
-            XElement novoTreino = new XElement("Treino",
-                    new XElement("NomeTreino", nomeTreino),
-                    new XElement("TipoExercicio", tipoSelecionado.ToString()),
-                    new XElement("Duracao", duracaoTreino),
-                    new XElement("CaloriasQueimadas", caloriasQueimadas),
-                    new XElement("Data", DateTime.Now.ToString("s"))
-                );
+            //GlobalUtils.username = "root"; //ALTERAR PRECISAMOS DE UMA GLOBAL VARIABLE
 
-            treinos.Add(novoTreino);
+            //XElement user = doc.Descendants("user").FirstOrDefault(x => x.Element("username")?.Value == GlobalUtils.username);
+
+            //if (user == null)
+            //{
+            //    MessageBox.Show("Utilizador não encontrado!");
+            //    return;
+            //}
+
+            //XElement treinos = user.Element("Treinos");
+            //if (treinos == null)
+            //{
+            //    treinos = new XElement("Treinos");
+            //    user.Add(treinos);
+            //}
 
 
-            doc.Save(GlobalUtils.caminho);
+
+            //XElement novoTreino = new XElement("Treino",
+            //        new XElement("NomeTreino", nomeTreino),
+            //        new XElement("TipoExercicio", tipoSelecionado.ToString()),
+            //        new XElement("Duracao", duracaoTreino),
+            //        new XElement("CaloriasQueimadas", caloriasQueimadas),
+            //        new XElement("Data", DateTime.Now.ToString("s"))
+            //    );
+
+            //treinos.Add(novoTreino);
+
+
+            //doc.Save(GlobalUtils.caminho);
 
             MessageBox.Show("Treino inserido com sucesso!");
 
@@ -188,41 +199,52 @@ namespace Projeto_620.FORMS
 
         private void AtualizarListaTreinos()
         {
+
+            // -- Metodo Inicial sem utilização das classes --
+            //lb_listaTreino.Items.Clear();
+
+            //GlobalUtils.username = "root";
+
+            //XDocument doc = XDocument.Load(GlobalUtils.caminho);
+
+            //var user = doc.Root.Elements("user")
+            //                  .FirstOrDefault(x => x.Element("username")?.Value == GlobalUtils.username);
+
+            //var treinos = user.Element("Treinos");
+
+            //if (treinos == null)
+            //{
+            //    treinos = new XElement("Treinos");
+            //    user.Add(treinos);
+            //    doc.Save(GlobalUtils.caminho); 
+            //}
+            //if (!treinos.Elements("Treino").Any())
+            //{
+            //    MessageBox.Show("Sem treinos para mostrar, vamos a isso!");
+            //    return;
+            //}
+
+            //foreach (var trei in treinos.Elements("Treino"))
+            //{
+            //    string nomeTreino = (string)trei.Element("NomeTreino");
+            //    string tipoExercicio = (string)trei.Element("TipoExercicio");
+            //    string duracao = (string)trei.Element("Duracao");
+            //    string calorias = (string)trei.Element("CaloriasQueimadas");
+            //    string data = (string)trei.Element("Data");
+
+            //    string linha = $"{nomeTreino} ({tipoExercicio}) - {calorias} kcal queimadas em {duracao} min, às {data}h";
+
+            //    lb_listaTreino.Items.Add(linha);
+
+            //}
+
+            User utilizador = GlobalUtils.users.FirstOrDefault(u => u.Username == GlobalUtils.username);
+
             lb_listaTreino.Items.Clear();
 
-            GlobalUtils.username = "root";
-
-            XDocument doc = XDocument.Load(GlobalUtils.caminho);
-
-            var user = doc.Root.Elements("user")
-                              .FirstOrDefault(x => x.Element("username")?.Value == GlobalUtils.username);
-
-            var treinos = user.Element("Treinos");
-
-            if (treinos == null)
+            foreach (Exercicio treino in utilizador.Exercicios)
             {
-                treinos = new XElement("Treinos");
-                user.Add(treinos);
-                doc.Save(GlobalUtils.caminho); 
-            }
-            if (!treinos.Elements("Treino").Any())
-            {
-                MessageBox.Show("Sem treinos para mostrar, vamos a isso!");
-                return;
-            }
-
-            foreach (var trei in treinos.Elements("Treino"))
-            {
-                string nomeTreino = (string)trei.Element("NomeTreino");
-                string tipoExercicio = (string)trei.Element("TipoExercicio");
-                string duracao = (string)trei.Element("Duracao");
-                string calorias = (string)trei.Element("CaloriasQueimadas");
-                string data = (string)trei.Element("Data");
-
-                string linha = $"{nomeTreino} ({tipoExercicio}) - {calorias} kcal queimadas em {duracao} min, às {data}h";
-
-                lb_listaTreino.Items.Add(linha);
-
+                lb_listaTreino.Items.Add(treino);
             }
         }
 

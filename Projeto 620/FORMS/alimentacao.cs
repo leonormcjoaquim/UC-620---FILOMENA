@@ -27,7 +27,7 @@ namespace Projeto_620
             if (sidebarExpand)
             {
                 pn_opcoes.Width -= 10;
-                // SE O NOME FOR MAIOR QUE AQUELE FODE O RESTO
+               
                 if (pn_opcoes.Width <= 45)
                 {
                     sidebarExpand = false;
@@ -51,6 +51,7 @@ namespace Projeto_620
             Form inicio = new paginaInicial();
             inicio.Show();
             this.Close();
+            
         }
 
         private void btn_appoitments_Click(object sender, EventArgs e)
@@ -97,7 +98,7 @@ namespace Projeto_620
         {
             if (cbb_tipoRefeicao.SelectedIndex == -1)
             {
-                MessageBox.Show("Erro! Tem de ter o tipo de treino selecionado");
+                MessageBox.Show("Erro! Tem de ter o tipo de alimentação selecionado");
                 cbb_tipoRefeicao.SelectedIndex = -1;
                 return;
             }
@@ -105,7 +106,7 @@ namespace Projeto_620
             string nomeComida = tb_nomeComida.Text;
             if (string.IsNullOrEmpty(nomeComida))
             {
-                MessageBox.Show("Erro! O nome de treino não pode estar vazio!");
+                MessageBox.Show("Erro! O nome da comida não pode estar vazio!");
                 return;
             }
 
@@ -117,38 +118,44 @@ namespace Projeto_620
             }
             TipoRefeicao tipoSelecionado = (TipoRefeicao)cbb_tipoRefeicao.SelectedItem;
 
-            XDocument doc = XDocument.Load(GlobalUtils.caminho);
+            User utilizador = GlobalUtils.users.FirstOrDefault(u => u.Username == GlobalUtils.username);
 
-            GlobalUtils.username = "root"; //ALTERAR PRECISAMOS DE UMA GLOBAL VARIABLE
+            Alimentacao refeicao = new Alimentacao(nomeComida, calorias, tipoSelecionado);
 
-            XElement user = doc.Descendants("user").FirstOrDefault(x => x.Element("username")?.Value == GlobalUtils.username);
+            utilizador.Alimentacao.Add(refeicao);
 
-            if (user == null)
-            {
-                MessageBox.Show("Utilizador não encontrado!");
-                return;
-            }
+            //XDocument doc = XDocument.Load(GlobalUtils.caminho);
 
-            XElement alimentacoes = user.Element("Alimentacoes");
-            if (alimentacoes == null)
-            {
-                alimentacoes = new XElement("Alimentacoes");
-                user.Add(alimentacoes);
-            }
+            //GlobalUtils.username = "root"; //ALTERAR PRECISAMOS DE UMA GLOBAL VARIABLE
 
+            //XElement user = doc.Descendants("user").FirstOrDefault(x => x.Element("username")?.Value == GlobalUtils.username);
 
+            //if (user == null)
+            //{
+            //    MessageBox.Show("Utilizador não encontrado!");
+            //    return;
+            //}
 
-            XElement novaRefeicao = new XElement("refeicao",
-                    new XElement("NomeComida", nomeComida),
-                    new XElement("TipoRefeicao", tipoSelecionado.ToString()),
-                    new XElement("Calorias", calorias),
-                    new XElement("Data", DateTime.Now.ToString("s"))
-                );
-
-            alimentacoes.Add(novaRefeicao);
+            //XElement alimentacoes = user.Element("Alimentacoes");
+            //if (alimentacoes == null)
+            //{
+            //    alimentacoes = new XElement("Alimentacoes");
+            //    user.Add(alimentacoes);
+            //}
 
 
-            doc.Save(GlobalUtils.caminho);
+
+            //XElement novaRefeicao = new XElement("refeicao",
+            //        new XElement("NomeComida", nomeComida),
+            //        new XElement("TipoRefeicao", tipoSelecionado.ToString()),
+            //        new XElement("Calorias", calorias),
+            //        new XElement("Data", DateTime.Now.ToString("s"))
+            //    );
+
+            //alimentacoes.Add(novaRefeicao);
+
+
+            //doc.Save(GlobalUtils.caminho);
 
             MessageBox.Show("Refeição inserida com sucesso!");
 
@@ -170,38 +177,45 @@ namespace Projeto_620
         {
             lb_listaRefeicao.Items.Clear();
 
-            GlobalUtils.username = "root";
+            User utilizador = GlobalUtils.users.FirstOrDefault(x => x.Username == GlobalUtils.username);
 
-            XDocument doc = XDocument.Load(GlobalUtils.caminho);
-
-            var user = doc.Root.Elements("user")
-                              .FirstOrDefault(x => x.Element("username")?.Value == GlobalUtils.username);
-
-            var refeicao = user.Element("Alimentacoes");
-
-            if (refeicao == null)
+            foreach(Alimentacao refeicao in utilizador.Alimentacao)
             {
-                refeicao = new XElement("Alimentacoes");
-                user.Add(refeicao);
-                doc.Save(GlobalUtils.caminho);
-            }
-            if (!refeicao.Elements("refeicao").Any())
-            {
-                MessageBox.Show("Sem refeições para mostrar, vamos a isso!");
-                return;
+                lb_listaRefeicao.Items.Add(refeicao);
             }
 
-            foreach (var alime in refeicao.Elements("refeicao"))
-            {
-                string nomeComida = (string)alime.Element("NomeComida");
-                string tipoRefeicao = (string)alime.Element("TipoRefeicao");
-                string calorias = (string)alime.Element("Calorias");
-                string data = (string)alime.Element("Data");
+            //lb_listaRefeicao.Items.Clear();
 
-                string linha = $"{nomeComida} ({tipoRefeicao}) - {calorias} kcal, {data}";
+            //XDocument doc = XDocument.Load(GlobalUtils.caminho);
 
-                lb_listaRefeicao.Items.Add(linha);
-            }
+            //var user = doc.Root.Elements("user")
+            //                  .FirstOrDefault(x => x.Element("username")?.Value == GlobalUtils.username);
+
+            //var refeicao = user.Element("Alimentacoes");
+
+            //if (refeicao == null)
+            //{
+            //    refeicao = new XElement("Alimentacoes");
+            //    user.Add(refeicao);
+            //    doc.Save(GlobalUtils.caminho);
+            //}
+            //if (!refeicao.Elements("refeicao").Any())
+            //{
+            //    MessageBox.Show("Sem refeições para mostrar, vamos a isso!");
+            //    return;
+            //}
+
+            //foreach (var alime in refeicao.Elements("refeicao"))
+            //{
+            //    string nomeComida = (string)alime.Element("NomeComida");
+            //    string tipoRefeicao = (string)alime.Element("TipoRefeicao");
+            //    string calorias = (string)alime.Element("Calorias");
+            //    string data = (string)alime.Element("Data");
+
+            //    string linha = $"{nomeComida} ({tipoRefeicao}) - {calorias} kcal, {data}";
+
+            //    lb_listaRefeicao.Items.Add(linha);
+            //}
         }
 
         private void pb_menu_Click_1(object sender, EventArgs e)
