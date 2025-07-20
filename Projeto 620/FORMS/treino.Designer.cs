@@ -42,7 +42,6 @@
             this.btn_exit = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.pb_metaTreino = new System.Windows.Forms.ProgressBar();
-            this.lb_listaTreino = new System.Windows.Forms.ListBox();
             this.btn_inserirTreino = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -58,8 +57,9 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.pb_menu = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.sidebarTransition = new System.Windows.Forms.Timer(this.components);
             this.panel4 = new System.Windows.Forms.Panel();
+            this.lb_listaTreino = new System.Windows.Forms.ListBox();
+            this.sidebarTransition = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             this.pn_opcoes.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -69,7 +69,7 @@
             // btn_sair
             // 
             this.btn_sair.Location = new System.Drawing.Point(479, 303);
-            this.btn_sair.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_sair.Margin = new System.Windows.Forms.Padding(2);
             this.btn_sair.Name = "btn_sair";
             this.btn_sair.Size = new System.Drawing.Size(91, 46);
             this.btn_sair.TabIndex = 0;
@@ -99,7 +99,7 @@
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.lb_listaTreino);
             this.panel1.Location = new System.Drawing.Point(0, 1);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(755, 492);
             this.panel1.TabIndex = 1;
@@ -116,7 +116,7 @@
             this.pn_opcoes.Controls.Add(this.bt_logout);
             this.pn_opcoes.Controls.Add(this.btn_exit);
             this.pn_opcoes.Location = new System.Drawing.Point(-1, 41);
-            this.pn_opcoes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pn_opcoes.Margin = new System.Windows.Forms.Padding(2);
             this.pn_opcoes.Name = "pn_opcoes";
             this.pn_opcoes.Size = new System.Drawing.Size(40, 338);
             this.pn_opcoes.TabIndex = 7;
@@ -280,22 +280,12 @@
             // 
             // pb_metaTreino
             // 
+            this.pb_metaTreino.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
             this.pb_metaTreino.Location = new System.Drawing.Point(510, 91);
+            this.pb_metaTreino.Maximum = 30;
             this.pb_metaTreino.Name = "pb_metaTreino";
             this.pb_metaTreino.Size = new System.Drawing.Size(179, 23);
             this.pb_metaTreino.TabIndex = 22;
-            // 
-            // lb_listaTreino
-            // 
-            this.lb_listaTreino.BackColor = System.Drawing.Color.LightGray;
-            this.lb_listaTreino.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lb_listaTreino.Font = new System.Drawing.Font("Segoe UI", 12.25F);
-            this.lb_listaTreino.FormattingEnabled = true;
-            this.lb_listaTreino.ItemHeight = 21;
-            this.lb_listaTreino.Location = new System.Drawing.Point(61, 276);
-            this.lb_listaTreino.Name = "lb_listaTreino";
-            this.lb_listaTreino.Size = new System.Drawing.Size(677, 191);
-            this.lb_listaTreino.TabIndex = 21;
             // 
             // btn_inserirTreino
             // 
@@ -433,7 +423,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(755, 41);
             this.panel3.TabIndex = 8;
@@ -442,7 +432,7 @@
             // 
             this.pb_menu.Image = ((System.Drawing.Image)(resources.GetObject("pb_menu.Image")));
             this.pb_menu.Location = new System.Drawing.Point(-5, 5);
-            this.pb_menu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pb_menu.Margin = new System.Windows.Forms.Padding(2);
             this.pb_menu.Name = "pb_menu";
             this.pb_menu.Padding = new System.Windows.Forms.Padding(11, 4, 0, 0);
             this.pb_menu.Size = new System.Drawing.Size(38, 28);
@@ -456,17 +446,12 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label2.Location = new System.Drawing.Point(56, 6);
+            this.label2.Location = new System.Drawing.Point(43, 6);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(77, 30);
             this.label2.TabIndex = 9;
             this.label2.Text = "Treino";
-            // 
-            // sidebarTransition
-            // 
-            this.sidebarTransition.Interval = 10;
-            this.sidebarTransition.Tick += new System.EventHandler(this.sidebarTransition_Tick);
             // 
             // panel4
             // 
@@ -477,6 +462,23 @@
             this.panel4.Size = new System.Drawing.Size(130, 5);
             this.panel4.TabIndex = 43;
             // 
+            // lb_listaTreino
+            // 
+            this.lb_listaTreino.BackColor = System.Drawing.Color.LightGray;
+            this.lb_listaTreino.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lb_listaTreino.Font = new System.Drawing.Font("Segoe UI", 12.25F);
+            this.lb_listaTreino.FormattingEnabled = true;
+            this.lb_listaTreino.ItemHeight = 21;
+            this.lb_listaTreino.Location = new System.Drawing.Point(61, 276);
+            this.lb_listaTreino.Name = "lb_listaTreino";
+            this.lb_listaTreino.Size = new System.Drawing.Size(677, 191);
+            this.lb_listaTreino.TabIndex = 21;
+            // 
+            // sidebarTransition
+            // 
+            this.sidebarTransition.Interval = 10;
+            this.sidebarTransition.Tick += new System.EventHandler(this.sidebarTransition_Tick);
+            // 
             // treino
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -486,7 +488,7 @@
             this.Controls.Add(this.btn_sair);
             this.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "treino";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "treino";

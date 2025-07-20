@@ -44,7 +44,7 @@ namespace Projeto_620.FORMS
             else
             {
                 pn_opcoes.Width += 10;
-                if (pn_opcoes.Width >= 245)
+                if (pn_opcoes.Width >= 240)
                 {
                     sidebarExpand = true;
                     sidebarTransition.Stop();
@@ -199,6 +199,7 @@ namespace Projeto_620.FORMS
             tb_duracaoTreino.Clear();
             tb_caloriasQueimadas.Clear();
             cbb_tipoTreino.SelectedIndex = -1;
+            pb_metaTreino.Increment(duracaoTreino);
         }
 
         private void AtualizarListaTreinos()

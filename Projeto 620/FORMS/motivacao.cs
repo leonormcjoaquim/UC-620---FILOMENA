@@ -132,7 +132,7 @@ namespace Projeto_620.FORMS
             {
                 pn_opcoes.Width -= 10;
                 
-                if (pn_opcoes.Width <= 50)
+                if (pn_opcoes.Width <= 45)
                 {
                     sidebarExpand = false;
                     sidebarTransition.Stop();
