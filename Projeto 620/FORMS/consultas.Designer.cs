@@ -353,6 +353,8 @@
             // data_caixa
             // 
             this.data_caixa.Location = new System.Drawing.Point(429, 177);
+            this.data_caixa.MaxDate = new System.DateTime(2026, 7, 25, 23, 59, 0, 0);
+            this.data_caixa.MinDate = new System.DateTime(2025, 7, 25, 23, 59, 59, 0);
             this.data_caixa.Name = "data_caixa";
             this.data_caixa.TabIndex = 8;
             // 
