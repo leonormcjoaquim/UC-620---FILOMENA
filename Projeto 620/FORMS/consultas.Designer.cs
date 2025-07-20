@@ -397,13 +397,13 @@
             // 
             this.cbb_especialidades.Enabled = false;
             this.cbb_especialidades.FormattingEnabled = true;
-<<<<<<< Updated upstream
+
             this.cbb_especialidades.Location = new System.Drawing.Point(417, 290);
             this.cbb_especialidades.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-=======
+
             this.cbb_especialidades.Location = new System.Drawing.Point(313, 236);
             this.cbb_especialidades.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
->>>>>>> Stashed changes
+
             this.cbb_especialidades.Name = "cbb_especialidades";
             this.cbb_especialidades.Size = new System.Drawing.Size(223, 24);
             this.cbb_especialidades.TabIndex = 5;
