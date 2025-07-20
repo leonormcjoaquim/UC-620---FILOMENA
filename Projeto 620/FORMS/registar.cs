@@ -68,6 +68,27 @@ namespace Projeto_620
             string peso_box = tb_weight.Text;
             int idade;
             string email = tb_email.Text;
+            
+            // Tivemos de Criar um ficheiro XML para guardar as informações dos utilizadores
+            // XDocument doc = new XDocument(new XElement("users"));
+            // doc.Save(caminho);
+
+            // Um género de abrir documento para trabalharmos com ele
+            XDocument doc = XDocument.Load(GlobalUtils.caminho);
+
+            if (username.Length <= 0 || username.Length > 20)
+            {
+                MessageBox.Show("Username só pode ter no máximo 20 caracteres");
+                return;
+            }
+            bool usernameExiste = doc.Descendants("user").Elements("Dados").Elements("username").Any(x => x.Value == username);
+
+            if (usernameExiste)
+            {
+                MessageBox.Show("Este username já existe. Por favor escolhe outro.");
+                tb_username.Text = string.Empty;
+                return;
+            }
 
             if (!int.TryParse(tb_idade.Text, out idade) && idade <= 0)
             {
@@ -92,12 +113,6 @@ namespace Projeto_620
                 MessageBox.Show("Erro! Tem de preencher todos os campos.");
                 return;
             }
-            // Tivemos de Criar um ficheiro XML para guardar as informações dos utilizadores
-            // XDocument doc = new XDocument(new XElement("users"));
-            // doc.Save(caminho);
-
-            // Um género de abrir documento para trabalharmos com ele
-            XDocument doc = XDocument.Load(GlobalUtils.caminho);
 
             // aqui sim colocamos os dados novos no documento - VER AULA 15 JULHO - PACHECO
             XElement novoUser = new XElement("user",
