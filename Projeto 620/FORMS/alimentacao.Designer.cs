@@ -31,6 +31,10 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(alimentacao));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.tb_caloriasTotal = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.tb_caloriasIngeridas = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.pn_opcoes = new System.Windows.Forms.FlowLayoutPanel();
             this.btn_home = new System.Windows.Forms.Button();
             this.btn_appoitments = new System.Windows.Forms.Button();
@@ -40,23 +44,19 @@
             this.bt_logout = new System.Windows.Forms.Button();
             this.btn_exit = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.pb_menu = new System.Windows.Forms.PictureBox();
-            this.sidebarTransition = new System.Windows.Forms.Timer(this.components);
             this.lb_listaRefeicao = new System.Windows.Forms.ListBox();
             this.btn_inserirRefeicao = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cbb_tipoRefeicao = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.tb_nomeComida = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.tb_calorias = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.tb_nomeComida = new System.Windows.Forms.TextBox();
-            this.cbb_tipoRefeicao = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.tb_caloriasIngeridas = new System.Windows.Forms.TextBox();
-            this.tb_caloriasTotal = new System.Windows.Forms.TextBox();
+            this.sidebarTransition = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             this.pn_opcoes.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -87,6 +87,44 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(753, 487);
             this.panel1.TabIndex = 0;
+            // 
+            // tb_caloriasTotal
+            // 
+            this.tb_caloriasTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.tb_caloriasTotal.Location = new System.Drawing.Point(50, 343);
+            this.tb_caloriasTotal.Name = "tb_caloriasTotal";
+            this.tb_caloriasTotal.Size = new System.Drawing.Size(151, 26);
+            this.tb_caloriasTotal.TabIndex = 41;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.72F);
+            this.label8.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label8.Location = new System.Drawing.Point(258, 314);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(77, 20);
+            this.label8.TabIndex = 40;
+            this.label8.Text = "Ingeridas";
+            // 
+            // tb_caloriasIngeridas
+            // 
+            this.tb_caloriasIngeridas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.tb_caloriasIngeridas.Location = new System.Drawing.Point(221, 343);
+            this.tb_caloriasIngeridas.Name = "tb_caloriasIngeridas";
+            this.tb_caloriasIngeridas.Size = new System.Drawing.Size(151, 26);
+            this.tb_caloriasIngeridas.TabIndex = 39;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.72F);
+            this.label6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label6.Location = new System.Drawing.Point(61, 314);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(128, 20);
+            this.label6.TabIndex = 38;
+            this.label6.Text = "N. total a ingerir";
             // 
             // pn_opcoes
             // 
@@ -258,6 +296,18 @@
             this.panel3.Size = new System.Drawing.Size(753, 46);
             this.panel3.TabIndex = 7;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label2.Location = new System.Drawing.Point(45, 7);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(100, 30);
+            this.label2.TabIndex = 39;
+            this.label2.Text = "Refeição";
+            // 
             // pb_menu
             // 
             this.pb_menu.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -271,11 +321,6 @@
             this.pb_menu.TabIndex = 8;
             this.pb_menu.TabStop = false;
             this.pb_menu.Click += new System.EventHandler(this.pb_menu_Click);
-            // 
-            // sidebarTransition
-            // 
-            this.sidebarTransition.Interval = 10;
-            this.sidebarTransition.Tick += new System.EventHandler(this.sidebarTransition_Tick);
             // 
             // lb_listaRefeicao
             // 
@@ -295,6 +340,27 @@
             this.btn_inserirRefeicao.TabIndex = 35;
             this.btn_inserirRefeicao.Text = "Inserir";
             this.btn_inserirRefeicao.UseVisualStyleBackColor = true;
+            this.btn_inserirRefeicao.Click += new System.EventHandler(this.btn_inserirRefeicao_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(113, 65);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(162, 25);
+            this.label1.TabIndex = 24;
+            this.label1.Text = "Inserir Refeição";
+            // 
+            // cbb_tipoRefeicao
+            // 
+            this.cbb_tipoRefeicao.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F);
+            this.cbb_tipoRefeicao.FormattingEnabled = true;
+            this.cbb_tipoRefeicao.Location = new System.Drawing.Point(231, 118);
+            this.cbb_tipoRefeicao.Name = "cbb_tipoRefeicao";
+            this.cbb_tipoRefeicao.Size = new System.Drawing.Size(211, 30);
+            this.cbb_tipoRefeicao.TabIndex = 25;
             // 
             // label7
             // 
@@ -306,6 +372,36 @@
             this.label7.Size = new System.Drawing.Size(68, 15);
             this.label7.TabIndex = 33;
             this.label7.Text = "(à escolha)";
+            // 
+            // tb_nomeComida
+            // 
+            this.tb_nomeComida.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F);
+            this.tb_nomeComida.Location = new System.Drawing.Point(231, 159);
+            this.tb_nomeComida.Name = "tb_nomeComida";
+            this.tb_nomeComida.Size = new System.Drawing.Size(211, 27);
+            this.tb_nomeComida.TabIndex = 26;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.72F);
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label3.Location = new System.Drawing.Point(79, 121);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(152, 24);
+            this.label3.TabIndex = 27;
+            this.label3.Text = "Tipo de refeição:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.72F);
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label4.Location = new System.Drawing.Point(71, 162);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(160, 24);
+            this.label4.TabIndex = 28;
+            this.label4.Text = "Nome da comida:";
             // 
             // label5
             // 
@@ -326,105 +422,10 @@
             this.tb_calorias.Size = new System.Drawing.Size(211, 27);
             this.tb_calorias.TabIndex = 29;
             // 
-            // label4
+            // sidebarTransition
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.72F);
-            this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label4.Location = new System.Drawing.Point(71, 162);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(160, 24);
-            this.label4.TabIndex = 28;
-            this.label4.Text = "Nome da comida:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.72F);
-            this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label3.Location = new System.Drawing.Point(79, 121);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(152, 24);
-            this.label3.TabIndex = 27;
-            this.label3.Text = "Tipo de refeição:";
-            // 
-            // tb_nomeComida
-            // 
-            this.tb_nomeComida.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F);
-            this.tb_nomeComida.Location = new System.Drawing.Point(231, 159);
-            this.tb_nomeComida.Name = "tb_nomeComida";
-            this.tb_nomeComida.Size = new System.Drawing.Size(211, 27);
-            this.tb_nomeComida.TabIndex = 26;
-            // 
-            // cbb_tipoRefeicao
-            // 
-            this.cbb_tipoRefeicao.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F);
-            this.cbb_tipoRefeicao.FormattingEnabled = true;
-            this.cbb_tipoRefeicao.Location = new System.Drawing.Point(231, 118);
-            this.cbb_tipoRefeicao.Name = "cbb_tipoRefeicao";
-            this.cbb_tipoRefeicao.Size = new System.Drawing.Size(211, 30);
-            this.cbb_tipoRefeicao.TabIndex = 25;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(113, 65);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(162, 25);
-            this.label1.TabIndex = 24;
-            this.label1.Text = "Inserir Refeição";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label2.Location = new System.Drawing.Point(45, 7);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 30);
-            this.label2.TabIndex = 39;
-            this.label2.Text = "Refeição";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.72F);
-            this.label6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label6.Location = new System.Drawing.Point(61, 314);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(128, 20);
-            this.label6.TabIndex = 38;
-            this.label6.Text = "N. total a ingerir";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.72F);
-            this.label8.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label8.Location = new System.Drawing.Point(258, 314);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(77, 20);
-            this.label8.TabIndex = 40;
-            this.label8.Text = "Ingeridas";
-            // 
-            // tb_caloriasIngeridas
-            // 
-            this.tb_caloriasIngeridas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.tb_caloriasIngeridas.Location = new System.Drawing.Point(221, 343);
-            this.tb_caloriasIngeridas.Name = "tb_caloriasIngeridas";
-            this.tb_caloriasIngeridas.Size = new System.Drawing.Size(151, 26);
-            this.tb_caloriasIngeridas.TabIndex = 39;
-            // 
-            // tb_caloriasTotal
-            // 
-            this.tb_caloriasTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.tb_caloriasTotal.Location = new System.Drawing.Point(50, 343);
-            this.tb_caloriasTotal.Name = "tb_caloriasTotal";
-            this.tb_caloriasTotal.Size = new System.Drawing.Size(151, 26);
-            this.tb_caloriasTotal.TabIndex = 41;
+            this.sidebarTransition.Interval = 10;
+            this.sidebarTransition.Tick += new System.EventHandler(this.sidebarTransition_Tick);
             // 
             // alimentacao
             // 
@@ -436,6 +437,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "alimentacao";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Load += new System.EventHandler(this.Form_load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.pn_opcoes.ResumeLayout(false);
@@ -458,7 +460,6 @@
         private System.Windows.Forms.Button bt_logout;
         private System.Windows.Forms.Button btn_exit;
         private System.Windows.Forms.Button btn_motivacao;
-        private System.Windows.Forms.Timer sidebarTransition;
         private System.Windows.Forms.PictureBox pb_menu;
         private System.Windows.Forms.ListBox lb_listaRefeicao;
         private System.Windows.Forms.Button btn_inserirRefeicao;
@@ -475,5 +476,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox tb_caloriasIngeridas;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Timer sidebarTransition;
     }
 }

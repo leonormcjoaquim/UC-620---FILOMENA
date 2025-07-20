@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Projeto_620.utils;
 
 namespace Projeto_620.models
 {
@@ -15,9 +16,9 @@ namespace Projeto_620.models
         public int Idade { get; set; }
         public int Altura { get; set; }
         public double Peso { get; set; }
-        public List<Marcacao> Marcacao { get; set; }
-        public List<Alimentacao> Alimentacao { get; set; }
-        public List<Exercicio> Exercicio { get; set; }
+        public List<Marcacao> Marcacao { get; set; } = new List<Marcacao>();
+        public List<Alimentacao> Alimentacao { get; set; } = new List<Alimentacao>();
+        public List<Exercicio> Exercicios { get; set; } = new List<Exercicio>();
 
 
 
@@ -40,7 +41,7 @@ namespace Projeto_620.models
 
         public void AdicionarTreino(Exercicio exercicio)
         {
-            Exercicio.Add(exercicio);
+            Exercicios.Add(exercicio);
             Console.WriteLine("Treino adicionado.");
         }
 

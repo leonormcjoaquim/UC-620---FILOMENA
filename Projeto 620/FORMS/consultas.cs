@@ -9,9 +9,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
+using Projeto_620.FORMS;
 using Projeto_620.models;
-
 using Projeto_620.utils;
+
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 
@@ -115,7 +116,7 @@ namespace Projeto_620.FORMS
             log.Show();
             this.Close();
         }
-        string caminho = @"C:\cometudoperdetudo\users.xml";
+        //string caminho = @"C:\cometudoperdetudo\users.xml";
         private void btn_exit_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -126,17 +127,17 @@ namespace Projeto_620.FORMS
             if (cbb_tipo.SelectedIndex == -1 || cbb_especialidades.SelectedIndex == -1)
             {
                 MessageBox.Show("Erros!");
-                cbb_especialidades.SelectedIndex = 0;
-                cbb_tipo.SelectedIndex = 0;
+                cbb_especialidades.SelectedIndex = -1;
+                cbb_tipo.SelectedIndex = -1;
                 return;
             }
             string tipoMarcacao = cbb_tipo.Text;
 
-            string username = "root"; //ALTERAR PRECISAMOS DE UMA GLOBAL VARIABLE
+            GlobalUtils.username = "root"; //ALTERAR PRECISAMOS DE UMA GLOBAL VARIABLE
             XDocument doc;
-            doc = XDocument.Load(caminho);
+            doc = XDocument.Load(GlobalUtils.caminho);
             var user = doc.Root.Elements("user")
-            .FirstOrDefault(x => (string)x.Element("username") == username); // muito gepeto
+            .FirstOrDefault(x => (string)x.Element("username") == GlobalUtils.username); // muito gepeto
 
             var consultas = user.Element("Consultas");
             if (consultas == null)
@@ -151,7 +152,7 @@ namespace Projeto_620.FORMS
 
             if (tipoMarcacao == "Especialista")
                 marcacao = new Appointment(tipo_Marcacao, dataMarcacao, especialidade);
-            else if (tipoMarcacao == "Treino PT")
+            else if (tipoMarcacao == "Treino_PT")
                 marcacao = new TreinoPT(tipoMarcacao, dataMarcacao, especialidade);
             else
             {
@@ -165,7 +166,7 @@ namespace Projeto_620.FORMS
 
             consultas.Add(novaConsulta);
 
-            doc.Save(caminho);
+            doc.Save(GlobalUtils.caminho);
 
             MessageBox.Show("Sucesso");
 
@@ -175,12 +176,15 @@ namespace Projeto_620.FORMS
         {
             list_box.Items.Clear();
             XDocument doc;
-            doc = XDocument.Load(caminho);
+            doc = XDocument.Load(GlobalUtils.caminho);
+
+            
 
             // AQUI VÊ COMPARA O USER PARA IRBUSCAR CONSULTAR
-            string username = "root"; //ALTERAR TUDO 
+            // PARA jÁ FICA ASSIM DEPOIS ALTERA-SE E JA SE FICA COM UMA IDEA DE COMO ALTERAR A VARIAVEL E USAR
+            GlobalUtils.username = "root"; //ALTERAR TUDO 
             var user = doc.Root.Elements("user")
-                .FirstOrDefault(x => (string)x.Element("username") == username);
+                .FirstOrDefault(x => (string)x.Element("username") == GlobalUtils.username);
 
             // Aqui vê se tem consultas já marcadas
             var consultas = user.Element("Consultas");
@@ -188,11 +192,18 @@ namespace Projeto_620.FORMS
             {
                 consultas = new XElement("Consultas");
                 user.Add(consultas);
-                doc.Save(caminho);
+                doc.Save(GlobalUtils.caminho);
             }
             if (!consultas.Elements("Consulta").Any())
             {
                 MessageBox.Show("Ainda não marcou nenhuma consulta!");
+                return;
+            }
+
+
+            if (cbb_tipo_consulta.SelectedItem == null)
+            {
+                MessageBox.Show("Erro! Para filtrar tem de escolher um tipo de consulta!");
                 return;
             }
 
@@ -210,13 +221,64 @@ namespace Projeto_620.FORMS
                 Marcacao m;
                 if (tipo == "Especialista")
                     m = new Appointment(tipo, data, especialidade);
-                else if (tipo == "Treino PT")
+                else if (tipo == "Treino_PT")
                     m = new TreinoPT(tipo, data, especialidade);
                 else
                     continue;
 
                 list_box.Items.Add(m);
+
+            }
+                cbb_tipo_consulta.SelectedIndex = -1;
+        }
+
+        private void form_Load(object sender, EventArgs e)
+        {
+            cbb_especialidades.DataSource = Enum.GetValues(typeof(Especialidade));
+            cbb_tipo.DataSource = Enum.GetValues(typeof(TipoMarcacao));
+        }
+
+        private void cbb_tipo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(cbb_tipo.SelectedItem.ToString() == "Treino_PT")
+            {
+                cbb_especialidades.Enabled = false;
+                cbb_especialidades.Text = "Treino_PT";
+            } else
+            {
+                cbb_especialidades.Enabled = true;
+            }
+        }
+
+        private void pb_menu_Click(object sender, EventArgs e)
+        {
+            sidebarTransition.Start();
+        }
+
+        bool sidebarExpand = false;
+
+        private void sidebarTransition_Tick(object sender, EventArgs e)
+        {
+            if (sidebarExpand)
+            {
+                pn_opcoes.Width -= 10;
+                // SE O NOME FOR MAIOR QUE AQUELE FODE O RESTO
+                if (pn_opcoes.Width <= 45)
+                {
+                    sidebarExpand = false;
+                    sidebarTransition.Stop();
+                }
+            }
+            else
+            {
+                pn_opcoes.Width += 10;
+                if (pn_opcoes.Width >= 245)
+                {
+                    sidebarExpand = true;
+                    sidebarTransition.Stop();
+                }
             }
         }
     }
+
 }
