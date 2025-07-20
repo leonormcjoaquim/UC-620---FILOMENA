@@ -36,7 +36,6 @@
             this.pan_color = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.sidebarTransition = new System.Windows.Forms.Timer(this.components);
-            this.pb_foto = new System.Windows.Forms.PictureBox();
             this.bigLabel1 = new ReaLTaiizor.Controls.BigLabel();
             this.probar_exercicio = new ReaLTaiizor.Controls.LostProgressBar();
             this.bigLabel2 = new ReaLTaiizor.Controls.BigLabel();
@@ -54,7 +53,6 @@
             this.btn_exit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pb_menu)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_foto)).BeginInit();
             this.pn_opcoes.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -133,15 +131,6 @@
             // 
             this.sidebarTransition.Interval = 10;
             this.sidebarTransition.Tick += new System.EventHandler(this.sidebarTransition_Tick);
-            // 
-            // pb_foto
-            // 
-            this.pb_foto.Location = new System.Drawing.Point(569, 292);
-            this.pb_foto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pb_foto.Name = "pb_foto";
-            this.pb_foto.Size = new System.Drawing.Size(401, 270);
-            this.pb_foto.TabIndex = 6;
-            this.pb_foto.TabStop = false;
             // 
             // bigLabel1
             // 
@@ -246,7 +235,7 @@
             // 
             // btn_home
             // 
-            this.btn_home.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_home.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
             this.btn_home.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btn_home.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlLightLight;
             this.btn_home.FlatAppearance.BorderSize = 2;
@@ -266,7 +255,7 @@
             // 
             // btn_appoitments
             // 
-            this.btn_appoitments.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_appoitments.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
             this.btn_appoitments.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btn_appoitments.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlLightLight;
             this.btn_appoitments.FlatAppearance.BorderSize = 2;
@@ -286,7 +275,7 @@
             // 
             // btn_workouts
             // 
-            this.btn_workouts.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_workouts.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
             this.btn_workouts.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btn_workouts.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlLightLight;
             this.btn_workouts.FlatAppearance.BorderSize = 2;
@@ -306,7 +295,7 @@
             // 
             // btn_food
             // 
-            this.btn_food.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_food.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
             this.btn_food.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btn_food.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlLightLight;
             this.btn_food.FlatAppearance.BorderSize = 2;
@@ -326,7 +315,7 @@
             // 
             // btn_motivacao
             // 
-            this.btn_motivacao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_motivacao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
             this.btn_motivacao.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btn_motivacao.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.btn_motivacao.FlatAppearance.BorderSize = 2;
@@ -346,7 +335,7 @@
             // 
             // bt_logout
             // 
-            this.bt_logout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.bt_logout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
             this.bt_logout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.bt_logout.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlLightLight;
             this.bt_logout.FlatAppearance.BorderSize = 2;
@@ -366,7 +355,7 @@
             // 
             // btn_exit
             // 
-            this.btn_exit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_exit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
             this.btn_exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btn_exit.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.btn_exit.FlatAppearance.BorderSize = 2;
@@ -398,7 +387,6 @@
             this.Controls.Add(this.bigLabel2);
             this.Controls.Add(this.probar_exercicio);
             this.Controls.Add(this.bigLabel1);
-            this.Controls.Add(this.pb_foto);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -410,7 +398,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pb_menu)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_foto)).EndInit();
             this.pn_opcoes.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -423,7 +410,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Timer sidebarTransition;
         private System.Windows.Forms.Panel pan_color;
-        private System.Windows.Forms.PictureBox pb_foto;
         private ReaLTaiizor.Controls.BigLabel bigLabel1;
         private ReaLTaiizor.Controls.LostProgressBar probar_exercicio;
         protected internal ReaLTaiizor.Controls.BigLabel bigLabel2;

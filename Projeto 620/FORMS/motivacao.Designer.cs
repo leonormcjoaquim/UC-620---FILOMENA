@@ -80,7 +80,7 @@
             this.nightControlBox1.EnableMaximizeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
             this.nightControlBox1.EnableMinimizeButton = true;
             this.nightControlBox1.EnableMinimizeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
-            this.nightControlBox1.Location = new System.Drawing.Point(857, 4);
+            this.nightControlBox1.Location = new System.Drawing.Point(861, 0);
             this.nightControlBox1.MaximizeHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.nightControlBox1.MaximizeHoverForeColor = System.Drawing.Color.White;
             this.nightControlBox1.MinimizeHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -140,7 +140,7 @@
             // 
             // btn_home
             // 
-            this.btn_home.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_home.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
             this.btn_home.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btn_home.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlLightLight;
             this.btn_home.FlatAppearance.BorderSize = 2;
@@ -161,7 +161,7 @@
             // 
             // btn_appoitments
             // 
-            this.btn_appoitments.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_appoitments.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
             this.btn_appoitments.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btn_appoitments.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlLightLight;
             this.btn_appoitments.FlatAppearance.BorderSize = 2;
@@ -182,7 +182,7 @@
             // 
             // btn_workouts
             // 
-            this.btn_workouts.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_workouts.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
             this.btn_workouts.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btn_workouts.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlLightLight;
             this.btn_workouts.FlatAppearance.BorderSize = 2;
@@ -202,7 +202,7 @@
             // 
             // btn_food
             // 
-            this.btn_food.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_food.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
             this.btn_food.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btn_food.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlLightLight;
             this.btn_food.FlatAppearance.BorderSize = 2;
@@ -223,7 +223,7 @@
             // 
             // btn_motivacao
             // 
-            this.btn_motivacao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_motivacao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
             this.btn_motivacao.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btn_motivacao.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.btn_motivacao.FlatAppearance.BorderSize = 2;
@@ -244,7 +244,7 @@
             // 
             // bt_logout
             // 
-            this.bt_logout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.bt_logout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
             this.bt_logout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.bt_logout.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlLightLight;
             this.bt_logout.FlatAppearance.BorderSize = 2;
@@ -265,7 +265,7 @@
             // 
             // btn_exit
             // 
-            this.btn_exit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_exit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
             this.btn_exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btn_exit.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.btn_exit.FlatAppearance.BorderSize = 2;
