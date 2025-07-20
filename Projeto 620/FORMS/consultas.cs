@@ -1,19 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Security.Policy;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
-using Projeto_620.FORMS;
 using Projeto_620.models;
 using Projeto_620.utils;
-
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 
 namespace Projeto_620.FORMS
@@ -131,105 +122,56 @@ namespace Projeto_620.FORMS
                 cbb_tipo.SelectedIndex = -1;
                 return;
             }
+            var user = GlobalUtils.users.FirstOrDefault(x => x.Username == GlobalUtils.username);
             string tipoMarcacao = cbb_tipo.Text;
-
-            GlobalUtils.username = "root"; //ALTERAR PRECISAMOS DE UMA GLOBAL VARIABLE
-            XDocument doc;
-            doc = XDocument.Load(GlobalUtils.caminho);
-            var user = doc.Root.Elements("user")
-            .FirstOrDefault(x => (string)x.Element("username") == GlobalUtils.username); // muito gepeto
-
-            var consultas = user.Element("Consultas");
-            if (consultas == null)
-            {
-                consultas = new XElement("Consultas");
-                user.Add(consultas);
-            }
-            Marcacao marcacao;
-            string tipo_Marcacao = cbb_tipo.Text;
             DateTime dataMarcacao = data_caixa.SelectionStart;
             string especialidade = cbb_especialidades.Text;
-
-            if (tipoMarcacao == "Especialista")
-                marcacao = new Appointment(tipo_Marcacao, dataMarcacao, especialidade);
-            else if (tipoMarcacao == "Treino_PT")
-                marcacao = new TreinoPT(tipoMarcacao, dataMarcacao, especialidade);
+            Marcacao novaMarcacao;
+            List<Marcacao> marcacoes = user.Marcacao;
+            if (tipoMarcacao == "Treino_PT")
+            {
+                novaMarcacao = new TreinoPT(tipoMarcacao, dataMarcacao, especialidade);
+            }
             else
             {
-                MessageBox.Show("Tipo de marcação inválido!");
-                return;
+                novaMarcacao = new Appointment(tipoMarcacao, dataMarcacao, especialidade);
             }
-            XElement novaConsulta = new XElement("Consulta",
-                new XElement("TipoMarcacao", marcacao.TipoMarcacao),
-                new XElement("DataMarcacao", marcacao.DataMarcacao.ToString("yyyy-MM-dd")),
-                new XElement("Especialidade", marcacao.EspecialidadeMarcacao));
-
-            consultas.Add(novaConsulta);
-
-            doc.Save(GlobalUtils.caminho);
+            user.Marcacao.Add(novaMarcacao);
 
             MessageBox.Show("Sucesso");
-
         }
 
         private void btn_filtrar_Click(object sender, EventArgs e)
         {
             list_box.Items.Clear();
-            XDocument doc;
-            doc = XDocument.Load(GlobalUtils.caminho);
 
-            
-
-            // AQUI VÊ COMPARA O USER PARA IRBUSCAR CONSULTAR
-            // PARA jÁ FICA ASSIM DEPOIS ALTERA-SE E JA SE FICA COM UMA IDEA DE COMO ALTERAR A VARIAVEL E USAR
-            GlobalUtils.username = "root"; //ALTERAR TUDO 
-            var user = doc.Root.Elements("user")
-                .FirstOrDefault(x => (string)x.Element("username") == GlobalUtils.username);
-
+            var user = GlobalUtils.users.FirstOrDefault(x => x.Username == GlobalUtils.username);
             // Aqui vê se tem consultas já marcadas
-            var consultas = user.Element("Consultas");
-            if (consultas == null)
-            {
-                consultas = new XElement("Consultas");
-                user.Add(consultas);
-                doc.Save(GlobalUtils.caminho);
-            }
-            if (!consultas.Elements("Consulta").Any())
+            
+            if (user.Marcacao == null || !user.Marcacao.Any())
             {
                 MessageBox.Show("Ainda não marcou nenhuma consulta!");
                 return;
             }
 
-
-            if (cbb_tipo_consulta.SelectedItem == null)
+            if (cbb_tipo_consulta.SelectedIndex == -1)
             {
-                MessageBox.Show("Erro! Para filtrar tem de escolher um tipo de consulta!");
+                MessageBox.Show("Tem de selecionar uma opção!");
                 return;
             }
-
             string filtroTipo = cbb_tipo_consulta.SelectedItem.ToString();
 
-            foreach (var consulta in consultas.Elements("Consulta"))
+            list_box.Items.Clear(); // Limpar lista antes de adicionar novos itens
+
+            foreach (var m in user.Marcacao)
             {
-                string tipo = (string)consulta.Element("TipoMarcacao");
-                string especialidade = (string)consulta.Element("Especialidade");
-                DateTime data = DateTime.Parse((string)consulta.Element("DataMarcacao"));
-
-                if (filtroTipo != "Todas" && tipo != filtroTipo)
-                    continue;
-
-                Marcacao m;
-                if (tipo == "Especialista")
-                    m = new Appointment(tipo, data, especialidade);
-                else if (tipo == "Treino_PT")
-                    m = new TreinoPT(tipo, data, especialidade);
-                else
+                if (filtroTipo != "Todas" && m.TipoMarcacao != filtroTipo)
                     continue;
 
                 list_box.Items.Add(m);
-
             }
-                cbb_tipo_consulta.SelectedIndex = -1;
+
+            cbb_tipo_consulta.SelectedIndex = -1;
         }
 
         private void form_Load(object sender, EventArgs e)
