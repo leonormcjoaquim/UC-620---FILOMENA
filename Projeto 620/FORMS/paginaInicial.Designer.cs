@@ -36,7 +36,6 @@
             this.pan_color = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.sidebarTransition = new System.Windows.Forms.Timer(this.components);
-            this.pb_foto = new System.Windows.Forms.PictureBox();
             this.bigLabel1 = new ReaLTaiizor.Controls.BigLabel();
             this.probar_exercicio = new ReaLTaiizor.Controls.LostProgressBar();
             this.bigLabel2 = new ReaLTaiizor.Controls.BigLabel();
@@ -54,7 +53,6 @@
             this.btn_exit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pb_menu)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_foto)).BeginInit();
             this.pn_opcoes.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -133,15 +131,6 @@
             // 
             this.sidebarTransition.Interval = 10;
             this.sidebarTransition.Tick += new System.EventHandler(this.sidebarTransition_Tick);
-            // 
-            // pb_foto
-            // 
-            this.pb_foto.Location = new System.Drawing.Point(569, 292);
-            this.pb_foto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pb_foto.Name = "pb_foto";
-            this.pb_foto.Size = new System.Drawing.Size(401, 270);
-            this.pb_foto.TabIndex = 6;
-            this.pb_foto.TabStop = false;
             // 
             // bigLabel1
             // 
@@ -398,7 +387,6 @@
             this.Controls.Add(this.bigLabel2);
             this.Controls.Add(this.probar_exercicio);
             this.Controls.Add(this.bigLabel1);
-            this.Controls.Add(this.pb_foto);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -410,7 +398,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pb_menu)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_foto)).EndInit();
             this.pn_opcoes.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -423,7 +410,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Timer sidebarTransition;
         private System.Windows.Forms.Panel pan_color;
-        private System.Windows.Forms.PictureBox pb_foto;
         private ReaLTaiizor.Controls.BigLabel bigLabel1;
         private ReaLTaiizor.Controls.LostProgressBar probar_exercicio;
         protected internal ReaLTaiizor.Controls.BigLabel bigLabel2;
