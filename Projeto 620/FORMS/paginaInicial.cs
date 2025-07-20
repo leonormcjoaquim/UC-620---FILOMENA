@@ -56,10 +56,10 @@ namespace Projeto_620.FORMS
         {
             if (sidebarExpand)
             {
-                pn_opcoes.Width -= 8;
+                pn_opcoes.Width -= 10;
                 lbl_ola.Location = new Point(lbl_ola.Location.X - 8, lbl_ola.Location.Y);
                 lbl_nome.Location = new Point(lbl_nome.Location.X - 8, lbl_nome.Location.Y);
-                if (pn_opcoes.Width <= 54)
+                if (pn_opcoes.Width <= 45)
                 {
                     sidebarExpand = false;
                     sidebarTransition.Stop();
@@ -67,10 +67,10 @@ namespace Projeto_620.FORMS
             }
             else
             {
-                pn_opcoes.Width += 8;
+                pn_opcoes.Width += 10;
                 lbl_ola.Location = new Point(lbl_ola.Location.X + 8, lbl_ola.Location.Y);
                 lbl_nome.Location = new Point(lbl_nome.Location.X + 8, lbl_nome.Location.Y);
-                if (pn_opcoes.Width >= 165)
+                if (pn_opcoes.Width >= 245)
                 {
                     sidebarExpand = true;
                     sidebarTransition.Stop();

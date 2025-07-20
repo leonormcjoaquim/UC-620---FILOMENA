@@ -120,5 +120,31 @@ namespace Projeto_620
         {
             this.Close();
         }
+
+        private void btn_calculoIMC_Click(object sender, EventArgs e)
+        {
+            double peso = double.Parse(tb_weight.Text);
+
+            double altura = double.Parse(tb_height.Text);
+
+            double imc = peso / (altura * altura);
+
+            if (imc < 18.5)
+            {
+                lbl_resultado_IMC.Text = $"O IMC é: {imc:F2}. Está abaixo do peso normal.";
+            }
+            else if (imc >= 18.5 && imc <= 24.9)
+            {
+                lbl_resultado_IMC.Text = $"O IMC é: {imc:F2}. Está no peso perfeito!";
+            }
+            else if (imc > 24.9 && imc <= 29.9)
+            {
+                lbl_resultado_IMC.Text = $"O IMC é: {imc:F2}. Está com excesso de peso.";
+            }
+            else
+            {
+                lbl_resultado_IMC.Text = $"O IMC é: {imc:F2}. Está obeso.";
+            }
+        }       
     }
 }
