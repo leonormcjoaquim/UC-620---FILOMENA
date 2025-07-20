@@ -28,7 +28,6 @@ namespace Projeto_620.utils
 
     public enum Especialidade
     {
-        PersonalTrainer,
         Nutricionista,
         Fisioterapeuta,
         Endocrinologista,

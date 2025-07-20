@@ -14,13 +14,36 @@ namespace Projeto_620.models
         public string Password { get; set; }
         public string Email { get; set; }
         public int Idade { get; set; }
-        public int Altura { get; set; }
+        public double Altura { get; set; }
         public double Peso { get; set; }
         public List<Marcacao> Marcacao { get; set; } = new List<Marcacao>();
         public List<Alimentacao> Alimentacao { get; set; } = new List<Alimentacao>();
         public List<Exercicio> Exercicios { get; set; } = new List<Exercicio>();
 
+        public User(string nome, string username, string password, string email, int idade, double altura, double peso, List<Marcacao> marcacao, List<Alimentacao> alimentacao, List<Exercicio> exercicios)
+        {
+            Nome = nome;
+            Username = username;
+            Password = password;
+            Email = email;
+            Idade = idade;
+            Altura = altura;
+            Peso = peso;
+            Marcacao = marcacao;
+            Alimentacao = alimentacao;
+            Exercicios = exercicios;
+        }
 
+        public User(string nome, string username, string password, string email, int idade, double altura, double peso)
+        {
+            Nome = nome;
+            Username = username;
+            Password = password;
+            Email = email;
+            Idade = idade;
+            Altura = altura;
+            Peso = peso;
+        }
 
         public bool Login(string username, string password)
         {

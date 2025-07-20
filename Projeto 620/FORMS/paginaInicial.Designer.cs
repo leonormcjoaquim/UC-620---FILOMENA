@@ -36,7 +36,6 @@
             this.pan_color = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.sidebarTransition = new System.Windows.Forms.Timer(this.components);
-            this.pb_foto = new System.Windows.Forms.PictureBox();
             this.bigLabel1 = new ReaLTaiizor.Controls.BigLabel();
             this.probar_exercicio = new ReaLTaiizor.Controls.LostProgressBar();
             this.bigLabel2 = new ReaLTaiizor.Controls.BigLabel();
@@ -54,7 +53,6 @@
             this.btn_exit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pb_menu)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_foto)).BeginInit();
             this.pn_opcoes.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -62,7 +60,11 @@
             // 
             this.pb_menu.Image = ((System.Drawing.Image)(resources.GetObject("pb_menu.Image")));
             this.pb_menu.Location = new System.Drawing.Point(2, 10);
+<<<<<<< Updated upstream
             this.pb_menu.Margin = new System.Windows.Forms.Padding(2);
+=======
+            this.pb_menu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+>>>>>>> Stashed changes
             this.pb_menu.Name = "pb_menu";
             this.pb_menu.Padding = new System.Windows.Forms.Padding(11, 4, 0, 0);
             this.pb_menu.Size = new System.Drawing.Size(38, 28);
@@ -80,7 +82,11 @@
             this.panel1.Controls.Add(this.pb_menu);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+<<<<<<< Updated upstream
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
+=======
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+>>>>>>> Stashed changes
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(750, 41);
             this.panel1.TabIndex = 4;
@@ -100,7 +106,11 @@
             this.nightControlBox1.EnableMaximizeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
             this.nightControlBox1.EnableMinimizeButton = true;
             this.nightControlBox1.EnableMinimizeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
+<<<<<<< Updated upstream
             this.nightControlBox1.Location = new System.Drawing.Point(611, 0);
+=======
+            this.nightControlBox1.Location = new System.Drawing.Point(646, 0);
+>>>>>>> Stashed changes
             this.nightControlBox1.MaximizeHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.nightControlBox1.MaximizeHoverForeColor = System.Drawing.Color.White;
             this.nightControlBox1.MinimizeHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -114,7 +124,11 @@
             // 
             this.pan_color.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.pan_color.Location = new System.Drawing.Point(45, 43);
+<<<<<<< Updated upstream
             this.pan_color.Margin = new System.Windows.Forms.Padding(2);
+=======
+            this.pan_color.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+>>>>>>> Stashed changes
             this.pan_color.Name = "pan_color";
             this.pan_color.Size = new System.Drawing.Size(705, 448);
             this.pan_color.TabIndex = 6;
@@ -135,6 +149,7 @@
             this.sidebarTransition.Interval = 10;
             this.sidebarTransition.Tick += new System.EventHandler(this.sidebarTransition_Tick);
             // 
+<<<<<<< Updated upstream
             // pb_foto
             // 
             this.pb_foto.Location = new System.Drawing.Point(427, 237);
@@ -144,6 +159,8 @@
             this.pb_foto.TabIndex = 6;
             this.pb_foto.TabStop = false;
             // 
+=======
+>>>>>>> Stashed changes
             // bigLabel1
             // 
             this.bigLabel1.AutoSize = true;
@@ -164,7 +181,11 @@
             this.probar_exercicio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(63)))), ((int)(((byte)(70)))));
             this.probar_exercicio.Hover = false;
             this.probar_exercicio.Location = new System.Drawing.Point(588, 115);
+<<<<<<< Updated upstream
             this.probar_exercicio.Margin = new System.Windows.Forms.Padding(2);
+=======
+            this.probar_exercicio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+>>>>>>> Stashed changes
             this.probar_exercicio.Name = "probar_exercicio";
             this.probar_exercicio.Progress = 50;
             this.probar_exercicio.Size = new System.Drawing.Size(126, 35);
@@ -203,7 +224,11 @@
             this.probar_calorias.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(63)))), ((int)(((byte)(70)))));
             this.probar_calorias.Hover = false;
             this.probar_calorias.Location = new System.Drawing.Point(588, 174);
+<<<<<<< Updated upstream
             this.probar_calorias.Margin = new System.Windows.Forms.Padding(2);
+=======
+            this.probar_calorias.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+>>>>>>> Stashed changes
             this.probar_calorias.Name = "probar_calorias";
             this.probar_calorias.Progress = 50;
             this.probar_calorias.Size = new System.Drawing.Size(126, 35);
@@ -214,7 +239,11 @@
             this.lbl_ola.AutoSize = true;
             this.lbl_ola.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_ola.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+<<<<<<< Updated upstream
             this.lbl_ola.Location = new System.Drawing.Point(304, 56);
+=======
+            this.lbl_ola.Location = new System.Drawing.Point(47, 48);
+>>>>>>> Stashed changes
             this.lbl_ola.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_ola.Name = "lbl_ola";
             this.lbl_ola.Size = new System.Drawing.Size(98, 55);
@@ -226,7 +255,11 @@
             this.lbl_nome.AutoSize = true;
             this.lbl_nome.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_nome.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+<<<<<<< Updated upstream
             this.lbl_nome.Location = new System.Drawing.Point(392, 56);
+=======
+            this.lbl_nome.Location = new System.Drawing.Point(137, 48);
+>>>>>>> Stashed changes
             this.lbl_nome.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_nome.Name = "lbl_nome";
             this.lbl_nome.Size = new System.Drawing.Size(128, 55);
@@ -244,10 +277,18 @@
             this.pn_opcoes.Controls.Add(this.btn_motivacao);
             this.pn_opcoes.Controls.Add(this.bt_logout);
             this.pn_opcoes.Controls.Add(this.btn_exit);
+<<<<<<< Updated upstream
             this.pn_opcoes.Location = new System.Drawing.Point(2, 43);
             this.pn_opcoes.Margin = new System.Windows.Forms.Padding(2);
             this.pn_opcoes.Name = "pn_opcoes";
             this.pn_opcoes.Size = new System.Drawing.Size(38, 448);
+=======
+            this.pn_opcoes.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pn_opcoes.Location = new System.Drawing.Point(0, 41);
+            this.pn_opcoes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pn_opcoes.Name = "pn_opcoes";
+            this.pn_opcoes.Size = new System.Drawing.Size(38, 447);
+>>>>>>> Stashed changes
             this.pn_opcoes.TabIndex = 16;
             // 
             // btn_home
@@ -404,10 +445,13 @@
             this.Controls.Add(this.bigLabel2);
             this.Controls.Add(this.probar_exercicio);
             this.Controls.Add(this.bigLabel1);
-            this.Controls.Add(this.pb_foto);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+<<<<<<< Updated upstream
             this.Margin = new System.Windows.Forms.Padding(2);
+=======
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+>>>>>>> Stashed changes
             this.MaximumSize = new System.Drawing.Size(750, 488);
             this.MinimumSize = new System.Drawing.Size(750, 488);
             this.Name = "paginaInicial";
@@ -416,7 +460,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pb_menu)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_foto)).EndInit();
             this.pn_opcoes.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -429,7 +472,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Timer sidebarTransition;
         private System.Windows.Forms.Panel pan_color;
-        private System.Windows.Forms.PictureBox pb_foto;
         private ReaLTaiizor.Controls.BigLabel bigLabel1;
         private ReaLTaiizor.Controls.LostProgressBar probar_exercicio;
         protected internal ReaLTaiizor.Controls.BigLabel bigLabel2;
