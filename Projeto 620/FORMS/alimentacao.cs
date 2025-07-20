@@ -192,7 +192,7 @@ namespace Projeto_620
             }
             if (!refeicao.Elements("refeicao").Any())
             {
-                MessageBox.Show("Sem treinos para mostrar, vamos a isso!");
+                MessageBox.Show("Sem refeições para mostrar, vamos a isso!");
                 return;
             }
 
