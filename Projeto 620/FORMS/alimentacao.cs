@@ -208,5 +208,10 @@ namespace Projeto_620
         {
             sidebarTransition.Start();
         }
+
+        private void pn_opcoes_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
