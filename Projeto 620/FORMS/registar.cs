@@ -69,6 +69,7 @@ namespace Projeto_620
             int idade;
             string email = tb_email.Text;
             string sexo = cbb_sexo.SelectedItem.ToString();
+            int caloriasObjetivo;
 
             // Tivemos de Criar um ficheiro XML para guardar as informações dos utilizadores
             // XDocument doc = new XDocument(new XElement("users"));
@@ -92,6 +93,12 @@ namespace Projeto_620
             }
 
             if (!int.TryParse(tb_idade.Text, out idade) && idade <= 0)
+            {
+                MessageBox.Show("Valor inserido na idade inválida!", "Erro!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (!int.TryParse(tb_calorias.Text, out caloriasObjetivo) && caloriasObjetivo <= 0)
             {
                 MessageBox.Show("Valor inserido na idade inválida!", "Erro!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
@@ -121,6 +128,7 @@ namespace Projeto_620
                                         new XElement("nome", nome),
                                         new XElement("password", password),
                                         new XElement("sexo", sexo),
+                                        new XElement("calorias", caloriasObjetivo),
                                         new XElement("idade", idade),
                                         new XElement("email", email),
                                         new XElement("objetivo", objetivo),

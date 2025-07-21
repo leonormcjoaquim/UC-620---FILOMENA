@@ -55,6 +55,8 @@
             this.lbl_email = new ReaLTaiizor.Controls.NightLabel();
             this.lbl_sexo = new ReaLTaiizor.Controls.NightLabel();
             this.cbb_sexo = new ReaLTaiizor.Controls.PoisonComboBox();
+            this.nightLabel8 = new ReaLTaiizor.Controls.NightLabel();
+            this.tb_calorias = new ReaLTaiizor.Controls.SmallTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pb_foto)).BeginInit();
             this.SuspendLayout();
             // 
@@ -89,7 +91,7 @@
             this.tb_nome.CustomBGColor = System.Drawing.Color.White;
             this.tb_nome.Font = new System.Drawing.Font("Tahoma", 11F);
             this.tb_nome.ForeColor = System.Drawing.Color.DimGray;
-            this.tb_nome.Location = new System.Drawing.Point(136, 100);
+            this.tb_nome.Location = new System.Drawing.Point(136, 103);
             this.tb_nome.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_nome.MaxLength = 32767;
             this.tb_nome.Multiline = false;
@@ -108,7 +110,7 @@
             this.tb_username.CustomBGColor = System.Drawing.Color.White;
             this.tb_username.Font = new System.Drawing.Font("Tahoma", 11F);
             this.tb_username.ForeColor = System.Drawing.Color.DimGray;
-            this.tb_username.Location = new System.Drawing.Point(136, 208);
+            this.tb_username.Location = new System.Drawing.Point(144, 164);
             this.tb_username.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_username.MaxLength = 32767;
             this.tb_username.Multiline = false;
@@ -126,7 +128,7 @@
             this.nightLabel2.BackColor = System.Drawing.Color.Transparent;
             this.nightLabel2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nightLabel2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.nightLabel2.Location = new System.Drawing.Point(11, 213);
+            this.nightLabel2.Location = new System.Drawing.Point(19, 164);
             this.nightLabel2.Name = "nightLabel2";
             this.nightLabel2.Size = new System.Drawing.Size(111, 28);
             this.nightLabel2.TabIndex = 5;
@@ -139,7 +141,7 @@
             this.tb_password.CustomBGColor = System.Drawing.Color.White;
             this.tb_password.Font = new System.Drawing.Font("Tahoma", 11F);
             this.tb_password.ForeColor = System.Drawing.Color.DimGray;
-            this.tb_password.Location = new System.Drawing.Point(136, 255);
+            this.tb_password.Location = new System.Drawing.Point(144, 221);
             this.tb_password.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_password.MaxLength = 32767;
             this.tb_password.Multiline = false;
@@ -157,7 +159,7 @@
             this.nightLabel3.BackColor = System.Drawing.Color.Transparent;
             this.nightLabel3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nightLabel3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.nightLabel3.Location = new System.Drawing.Point(15, 260);
+            this.nightLabel3.Location = new System.Drawing.Point(23, 226);
             this.nightLabel3.Name = "nightLabel3";
             this.nightLabel3.Size = new System.Drawing.Size(106, 28);
             this.nightLabel3.TabIndex = 7;
@@ -169,7 +171,7 @@
             this.nightLabel4.BackColor = System.Drawing.Color.Transparent;
             this.nightLabel4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nightLabel4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.nightLabel4.Location = new System.Drawing.Point(19, 367);
+            this.nightLabel4.Location = new System.Drawing.Point(23, 350);
             this.nightLabel4.Name = "nightLabel4";
             this.nightLabel4.Size = new System.Drawing.Size(98, 28);
             this.nightLabel4.TabIndex = 9;
@@ -238,7 +240,7 @@
             "Perder Peso",
             "Ganhar Massa Muscular",
             "Ganhar Peso"});
-            this.cbb_objectives.Location = new System.Drawing.Point(136, 367);
+            this.cbb_objectives.Location = new System.Drawing.Point(144, 348);
             this.cbb_objectives.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbb_objectives.Name = "cbb_objectives";
             this.cbb_objectives.Size = new System.Drawing.Size(228, 30);
@@ -425,13 +427,13 @@
             this.tb_idade.CustomBGColor = System.Drawing.Color.White;
             this.tb_idade.Font = new System.Drawing.Font("Tahoma", 11F);
             this.tb_idade.ForeColor = System.Drawing.Color.DimGray;
-            this.tb_idade.Location = new System.Drawing.Point(136, 154);
+            this.tb_idade.Location = new System.Drawing.Point(478, 179);
             this.tb_idade.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_idade.MaxLength = 32767;
             this.tb_idade.Multiline = false;
             this.tb_idade.Name = "tb_idade";
             this.tb_idade.ReadOnly = false;
-            this.tb_idade.Size = new System.Drawing.Size(228, 33);
+            this.tb_idade.Size = new System.Drawing.Size(157, 33);
             this.tb_idade.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
             this.tb_idade.TabIndex = 2;
             this.tb_idade.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
@@ -443,7 +445,7 @@
             this.lbl_idade.BackColor = System.Drawing.Color.Transparent;
             this.lbl_idade.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_idade.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbl_idade.Location = new System.Drawing.Point(47, 154);
+            this.lbl_idade.Location = new System.Drawing.Point(403, 184);
             this.lbl_idade.Name = "lbl_idade";
             this.lbl_idade.Size = new System.Drawing.Size(69, 28);
             this.lbl_idade.TabIndex = 23;
@@ -456,7 +458,7 @@
             this.tb_email.CustomBGColor = System.Drawing.Color.White;
             this.tb_email.Font = new System.Drawing.Font("Tahoma", 11F);
             this.tb_email.ForeColor = System.Drawing.Color.DimGray;
-            this.tb_email.Location = new System.Drawing.Point(136, 310);
+            this.tb_email.Location = new System.Drawing.Point(144, 282);
             this.tb_email.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_email.MaxLength = 32767;
             this.tb_email.Multiline = false;
@@ -474,7 +476,7 @@
             this.lbl_email.BackColor = System.Drawing.Color.Transparent;
             this.lbl_email.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_email.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbl_email.Location = new System.Drawing.Point(43, 315);
+            this.lbl_email.Location = new System.Drawing.Point(48, 287);
             this.lbl_email.Name = "lbl_email";
             this.lbl_email.Size = new System.Drawing.Size(69, 28);
             this.lbl_email.TabIndex = 25;
@@ -502,9 +504,41 @@
             this.cbb_sexo.Location = new System.Drawing.Point(478, 103);
             this.cbb_sexo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbb_sexo.Name = "cbb_sexo";
-            this.cbb_sexo.Size = new System.Drawing.Size(137, 30);
+            this.cbb_sexo.Size = new System.Drawing.Size(157, 30);
             this.cbb_sexo.TabIndex = 9;
             this.cbb_sexo.UseSelectable = true;
+            // 
+            // nightLabel8
+            // 
+            this.nightLabel8.AutoSize = true;
+            this.nightLabel8.BackColor = System.Drawing.Color.Transparent;
+            this.nightLabel8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nightLabel8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.nightLabel8.Location = new System.Drawing.Point(388, 259);
+            this.nightLabel8.Name = "nightLabel8";
+            this.nightLabel8.Size = new System.Drawing.Size(104, 56);
+            this.nightLabel8.TabIndex = 28;
+            this.nightLabel8.Text = "Calorias \r\nObjetivo: ";
+            this.nightLabel8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // tb_calorias
+            // 
+            this.tb_calorias.BackColor = System.Drawing.Color.Transparent;
+            this.tb_calorias.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+            this.tb_calorias.CustomBGColor = System.Drawing.Color.White;
+            this.tb_calorias.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.tb_calorias.ForeColor = System.Drawing.Color.DimGray;
+            this.tb_calorias.Location = new System.Drawing.Point(510, 282);
+            this.tb_calorias.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tb_calorias.MaxLength = 32767;
+            this.tb_calorias.Multiline = false;
+            this.tb_calorias.Name = "tb_calorias";
+            this.tb_calorias.ReadOnly = false;
+            this.tb_calorias.Size = new System.Drawing.Size(125, 33);
+            this.tb_calorias.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+            this.tb_calorias.TabIndex = 29;
+            this.tb_calorias.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
+            this.tb_calorias.UseSystemPasswordChar = false;
             // 
             // registar
             // 
@@ -512,6 +546,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ClientSize = new System.Drawing.Size(1000, 601);
+            this.Controls.Add(this.tb_calorias);
+            this.Controls.Add(this.nightLabel8);
             this.Controls.Add(this.cbb_sexo);
             this.Controls.Add(this.lbl_sexo);
             this.Controls.Add(this.tb_email);
@@ -579,5 +615,7 @@
         private ReaLTaiizor.Controls.NightLabel lbl_email;
         private ReaLTaiizor.Controls.NightLabel lbl_sexo;
         private ReaLTaiizor.Controls.PoisonComboBox cbb_sexo;
+        private ReaLTaiizor.Controls.NightLabel nightLabel8;
+        private ReaLTaiizor.Controls.SmallTextBox tb_calorias;
     }
 }

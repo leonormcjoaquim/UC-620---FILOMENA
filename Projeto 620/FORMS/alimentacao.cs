@@ -29,7 +29,7 @@ namespace Projeto_620
             lbl_perder.Visible = false;
             lbl_normal.Visible = false;
             lbl_objetivo.Visible = true;
-            lbl_objetivo.Text = GlobalUtils.caloriasObjetivo.ToString("0");
+            lbl_objetivo.Text = utilizador.Calorias.ToString();
             
 
         }
@@ -44,9 +44,9 @@ namespace Projeto_620
 
             int caloriasHoje = caloriasPorDia.ContainsKey(hoje) ? caloriasPorDia[hoje] : 0;
 
-            probar_calorias.Maximum = GlobalUtils.caloriasObjetivo;
+            probar_calorias.Maximum = utilizador.Calorias;
             lbl_caloriasIngeridas.Text = caloriasHoje.ToString();
-            probar_calorias.Value = Math.Min(caloriasHoje, GlobalUtils.caloriasObjetivo);
+            probar_calorias.Value = Math.Min(caloriasHoje, utilizador.Calorias);
         }
 
         bool sidebarExpand = false;
@@ -155,7 +155,6 @@ namespace Projeto_620
             Alimentacao refeicao = new Alimentacao(nomeComida, calorias, tipoSelecionado);
 
             utilizador.Alimentacao.Add(refeicao);
-            GlobalUtils.caloriasConsumidas += calorias;
 
             //XDocument doc = XDocument.Load(GlobalUtils.caminho);
 
@@ -359,7 +358,7 @@ namespace Projeto_620
             }
 
             double calorias = taxaMetabolica * fatorAtividade;
-            lbl_normal.Text = calorias.ToString();
+            lbl_normal.Text = $"{calorias:0}";
             double perder = calorias - 300;
             lbl_perder.Text = $"{calorias - 500:0} a {calorias - 300:0}";
             lbl_ganhar.Text = $"{calorias + 300:0} a {calorias + 500:0}";
@@ -373,16 +372,17 @@ namespace Projeto_620
 
         private void btn_atualizarCaloriasObjetivo_Click(object sender, EventArgs e)
         {
-            int calorias;
-            if (int.TryParse(tb_atualizarCalorias.Text, out calorias))
+            User utilizador = GlobalUtils.users.FirstOrDefault(x => x.Username == GlobalUtils.username);
+
+            if (int.TryParse(tb_atualizarCalorias.Text, out int calorias))
             {
-                GlobalUtils.caloriasObjetivo = calorias;
+                utilizador.Calorias = calorias;
             }
             else
             {
                 MessageBox.Show("Valor inválido. Introduz um número inteiro.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            lbl_objetivo.Text = GlobalUtils.caloriasObjetivo.ToString();
+            lbl_objetivo.Text = utilizador.Calorias.ToString();
             AtualizarBarraCalorias();
             tb_atualizarCalorias.Text = string.Empty;
         }
