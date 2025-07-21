@@ -381,6 +381,7 @@
             this.btn_inserirRefeicao.TabIndex = 51;
             this.btn_inserirRefeicao.Text = "Inserir";
             this.btn_inserirRefeicao.UseVisualStyleBackColor = false;
+            this.btn_inserirRefeicao.Click += new System.EventHandler(this.btn_inserirRefeicao_Click);
             // 
             // label1
             // 
@@ -695,6 +696,7 @@
             this.btn_atualizarCaloriasObjetivo.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             this.btn_atualizarCaloriasObjetivo.Timer_Effect_1 = 5;
             this.btn_atualizarCaloriasObjetivo.Timer_RGB = 300;
+            this.btn_atualizarCaloriasObjetivo.Click += new System.EventHandler(this.btn_atualizarCaloriasObjetivo_Click);
             // 
             // probar_calorias
             // 
@@ -745,6 +747,7 @@
             this.btn_calorias.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             this.btn_calorias.Timer_Effect_1 = 5;
             this.btn_calorias.Timer_RGB = 300;
+            this.btn_calorias.Click += new System.EventHandler(this.btn_calorias_Click);
             // 
             // cbb_tipo_atividade
             // 

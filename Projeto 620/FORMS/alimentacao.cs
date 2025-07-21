@@ -35,7 +35,7 @@ namespace Projeto_620
         {
             probar_calorias.Maximum = GlobalUtils.caloriasObjetivo;
             int valor = Math.Min(GlobalUtils.caloriasConsumidas, GlobalUtils.caloriasObjetivo);
-            probar_calorias.Value = Math.Max(0, valor);
+            probar_calorias.Value = valor;
         }
 
         bool sidebarExpand = false;

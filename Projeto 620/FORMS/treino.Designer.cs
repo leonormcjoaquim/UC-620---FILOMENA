@@ -29,18 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(treino));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(treino));
             this.btn_sair = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tipoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.duracaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.caloriasQueimadasDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.exercicioBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.pn_opcoes = new System.Windows.Forms.FlowLayoutPanel();
             this.btn_home = new System.Windows.Forms.Button();
             this.btn_appoitments = new System.Windows.Forms.Button();
@@ -49,6 +42,8 @@
             this.btn_motivacao = new System.Windows.Forms.Button();
             this.bt_logout = new System.Windows.Forms.Button();
             this.btn_exit = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.exercicioBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.btn_inserirTreino = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -69,10 +64,15 @@
             this.userBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.alimentacaoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.exercicioBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tipoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.duracaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.caloriasQueimadasDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
+            this.pn_opcoes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.exercicioBindingSource1)).BeginInit();
-            this.pn_opcoes.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_menu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userBindingSource)).BeginInit();
@@ -115,93 +115,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1007, 606);
             this.panel1.TabIndex = 1;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.nomeDataGridViewTextBoxColumn,
-            this.tipoDataGridViewTextBoxColumn,
-            this.duracaoDataGridViewTextBoxColumn,
-            this.caloriasQueimadasDataGridViewTextBoxColumn,
-            this.dataDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.exercicioBindingSource1;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 10.75F);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView1.Location = new System.Drawing.Point(81, 340);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(903, 245);
-            this.dataGridView1.TabIndex = 44;
-            // 
-            // nomeDataGridViewTextBoxColumn
-            // 
-            this.nomeDataGridViewTextBoxColumn.DataPropertyName = "Nome";
-            this.nomeDataGridViewTextBoxColumn.HeaderText = "Nome";
-            this.nomeDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
-            this.nomeDataGridViewTextBoxColumn.ReadOnly = true;
-            this.nomeDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // tipoDataGridViewTextBoxColumn
-            // 
-            this.tipoDataGridViewTextBoxColumn.DataPropertyName = "Tipo";
-            this.tipoDataGridViewTextBoxColumn.HeaderText = "Tipo";
-            this.tipoDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.tipoDataGridViewTextBoxColumn.Name = "tipoDataGridViewTextBoxColumn";
-            this.tipoDataGridViewTextBoxColumn.ReadOnly = true;
-            this.tipoDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // duracaoDataGridViewTextBoxColumn
-            // 
-            this.duracaoDataGridViewTextBoxColumn.DataPropertyName = "Duracao";
-            this.duracaoDataGridViewTextBoxColumn.HeaderText = "Duracao";
-            this.duracaoDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.duracaoDataGridViewTextBoxColumn.Name = "duracaoDataGridViewTextBoxColumn";
-            this.duracaoDataGridViewTextBoxColumn.ReadOnly = true;
-            this.duracaoDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // caloriasQueimadasDataGridViewTextBoxColumn
-            // 
-            this.caloriasQueimadasDataGridViewTextBoxColumn.DataPropertyName = "CaloriasQueimadas";
-            this.caloriasQueimadasDataGridViewTextBoxColumn.HeaderText = "CaloriasQueimadas";
-            this.caloriasQueimadasDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.caloriasQueimadasDataGridViewTextBoxColumn.Name = "caloriasQueimadasDataGridViewTextBoxColumn";
-            this.caloriasQueimadasDataGridViewTextBoxColumn.ReadOnly = true;
-            this.caloriasQueimadasDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // dataDataGridViewTextBoxColumn
-            // 
-            this.dataDataGridViewTextBoxColumn.DataPropertyName = "Data";
-            this.dataDataGridViewTextBoxColumn.HeaderText = "Data";
-            this.dataDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.dataDataGridViewTextBoxColumn.Name = "dataDataGridViewTextBoxColumn";
-            this.dataDataGridViewTextBoxColumn.ReadOnly = true;
-            this.dataDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // exercicioBindingSource1
-            // 
-            this.exercicioBindingSource1.DataSource = typeof(Projeto_620.models.Exercicio);
             // 
             // pn_opcoes
             // 
@@ -367,6 +280,49 @@
             this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
             this.btn_exit.MouseHover += new System.EventHandler(this.btn_exit_MouseHover);
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.nomeDataGridViewTextBoxColumn,
+            this.tipoDataGridViewTextBoxColumn,
+            this.duracaoDataGridViewTextBoxColumn,
+            this.caloriasQueimadasDataGridViewTextBoxColumn,
+            this.dataDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.exercicioBindingSource1;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 10.75F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridView1.Location = new System.Drawing.Point(81, 340);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.ControlDark;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.Size = new System.Drawing.Size(903, 245);
+            this.dataGridView1.TabIndex = 44;
+            // 
+            // exercicioBindingSource1
+            // 
+            this.exercicioBindingSource1.DataSource = typeof(Projeto_620.models.Exercicio);
+            // 
             // btn_inserirTreino
             // 
             this.btn_inserirTreino.BackColor = System.Drawing.Color.LightGray;
@@ -376,7 +332,7 @@
             this.btn_inserirTreino.Font = new System.Drawing.Font("Segoe UI", 14.25F);
             this.btn_inserirTreino.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btn_inserirTreino.Location = new System.Drawing.Point(736, 229);
-            this.btn_inserirTreino.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_inserirTreino.Margin = new System.Windows.Forms.Padding(4);
             this.btn_inserirTreino.Name = "btn_inserirTreino";
             this.btn_inserirTreino.Size = new System.Drawing.Size(127, 79);
             this.btn_inserirTreino.TabIndex = 20;
@@ -424,7 +380,7 @@
             this.tb_caloriasQueimadas.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_caloriasQueimadas.Font = new System.Drawing.Font("Segoe UI", 14.25F);
             this.tb_caloriasQueimadas.Location = new System.Drawing.Point(301, 267);
-            this.tb_caloriasQueimadas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_caloriasQueimadas.Margin = new System.Windows.Forms.Padding(4);
             this.tb_caloriasQueimadas.Name = "tb_caloriasQueimadas";
             this.tb_caloriasQueimadas.Size = new System.Drawing.Size(281, 39);
             this.tb_caloriasQueimadas.TabIndex = 16;
@@ -446,7 +402,7 @@
             this.tb_duracaoTreino.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_duracaoTreino.Font = new System.Drawing.Font("Segoe UI", 14.25F);
             this.tb_duracaoTreino.Location = new System.Drawing.Point(301, 220);
-            this.tb_duracaoTreino.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_duracaoTreino.Margin = new System.Windows.Forms.Padding(4);
             this.tb_duracaoTreino.Name = "tb_duracaoTreino";
             this.tb_duracaoTreino.Size = new System.Drawing.Size(281, 39);
             this.tb_duracaoTreino.TabIndex = 14;
@@ -479,7 +435,7 @@
             this.tb_nomeTreino.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_nomeTreino.Font = new System.Drawing.Font("Segoe UI", 14.25F);
             this.tb_nomeTreino.Location = new System.Drawing.Point(301, 172);
-            this.tb_nomeTreino.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_nomeTreino.Margin = new System.Windows.Forms.Padding(4);
             this.tb_nomeTreino.Name = "tb_nomeTreino";
             this.tb_nomeTreino.Size = new System.Drawing.Size(281, 39);
             this.tb_nomeTreino.TabIndex = 11;
@@ -491,7 +447,7 @@
             this.cbb_tipoTreino.Font = new System.Drawing.Font("Segoe UI", 14.25F);
             this.cbb_tipoTreino.FormattingEnabled = true;
             this.cbb_tipoTreino.Location = new System.Drawing.Point(301, 122);
-            this.cbb_tipoTreino.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbb_tipoTreino.Margin = new System.Windows.Forms.Padding(4);
             this.cbb_tipoTreino.Name = "cbb_tipoTreino";
             this.cbb_tipoTreino.Size = new System.Drawing.Size(280, 40);
             this.cbb_tipoTreino.TabIndex = 10;
@@ -549,7 +505,7 @@
             this.panel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel4.BackgroundImage")));
             this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel4.Location = new System.Drawing.Point(315, 95);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(173, 6);
             this.panel4.TabIndex = 43;
@@ -571,6 +527,52 @@
             // 
             this.exercicioBindingSource.DataSource = typeof(Projeto_620.models.Exercicio);
             // 
+            // nomeDataGridViewTextBoxColumn
+            // 
+            this.nomeDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.nomeDataGridViewTextBoxColumn.DataPropertyName = "Nome";
+            this.nomeDataGridViewTextBoxColumn.HeaderText = "Nome";
+            this.nomeDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
+            this.nomeDataGridViewTextBoxColumn.ReadOnly = true;
+            this.nomeDataGridViewTextBoxColumn.Width = 73;
+            // 
+            // tipoDataGridViewTextBoxColumn
+            // 
+            this.tipoDataGridViewTextBoxColumn.DataPropertyName = "Tipo";
+            this.tipoDataGridViewTextBoxColumn.HeaderText = "Tipo";
+            this.tipoDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.tipoDataGridViewTextBoxColumn.Name = "tipoDataGridViewTextBoxColumn";
+            this.tipoDataGridViewTextBoxColumn.ReadOnly = true;
+            this.tipoDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // duracaoDataGridViewTextBoxColumn
+            // 
+            this.duracaoDataGridViewTextBoxColumn.DataPropertyName = "Duracao";
+            this.duracaoDataGridViewTextBoxColumn.HeaderText = "Duracao";
+            this.duracaoDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.duracaoDataGridViewTextBoxColumn.Name = "duracaoDataGridViewTextBoxColumn";
+            this.duracaoDataGridViewTextBoxColumn.ReadOnly = true;
+            this.duracaoDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // caloriasQueimadasDataGridViewTextBoxColumn
+            // 
+            this.caloriasQueimadasDataGridViewTextBoxColumn.DataPropertyName = "CaloriasQueimadas";
+            this.caloriasQueimadasDataGridViewTextBoxColumn.HeaderText = "CaloriasQueimadas";
+            this.caloriasQueimadasDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.caloriasQueimadasDataGridViewTextBoxColumn.Name = "caloriasQueimadasDataGridViewTextBoxColumn";
+            this.caloriasQueimadasDataGridViewTextBoxColumn.ReadOnly = true;
+            this.caloriasQueimadasDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // dataDataGridViewTextBoxColumn
+            // 
+            this.dataDataGridViewTextBoxColumn.DataPropertyName = "Data";
+            this.dataDataGridViewTextBoxColumn.HeaderText = "Data";
+            this.dataDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.dataDataGridViewTextBoxColumn.Name = "dataDataGridViewTextBoxColumn";
+            this.dataDataGridViewTextBoxColumn.ReadOnly = true;
+            this.dataDataGridViewTextBoxColumn.Width = 125;
+            // 
             // treino
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -587,9 +589,9 @@
             this.Load += new System.EventHandler(this.form_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.pn_opcoes.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.exercicioBindingSource1)).EndInit();
-            this.pn_opcoes.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_menu)).EndInit();
@@ -633,11 +635,11 @@
         private System.Windows.Forms.BindingSource userBindingSource;
         private System.Windows.Forms.BindingSource exercicioBindingSource;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.BindingSource exercicioBindingSource1;
         private System.Windows.Forms.DataGridViewTextBoxColumn nomeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn tipoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn duracaoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn caloriasQueimadasDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource exercicioBindingSource1;
     }
 }
