@@ -57,6 +57,7 @@
             this.cbb_sexo = new ReaLTaiizor.Controls.PoisonComboBox();
             this.nightLabel8 = new ReaLTaiizor.Controls.NightLabel();
             this.tb_calorias = new ReaLTaiizor.Controls.SmallTextBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pb_foto)).BeginInit();
             this.SuspendLayout();
             // 
@@ -528,7 +529,7 @@
             this.tb_calorias.CustomBGColor = System.Drawing.Color.White;
             this.tb_calorias.Font = new System.Drawing.Font("Tahoma", 11F);
             this.tb_calorias.ForeColor = System.Drawing.Color.DimGray;
-            this.tb_calorias.Location = new System.Drawing.Point(510, 282);
+            this.tb_calorias.Location = new System.Drawing.Point(510, 270);
             this.tb_calorias.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_calorias.MaxLength = 32767;
             this.tb_calorias.Multiline = false;
@@ -540,12 +541,25 @@
             this.tb_calorias.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
             this.tb_calorias.UseSystemPasswordChar = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label1.Location = new System.Drawing.Point(477, 315);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(186, 32);
+            this.label1.TabIndex = 30;
+            this.label1.Text = "Pode colocar 0 \r\nse não tiver a certeza do valor";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // registar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ClientSize = new System.Drawing.Size(1000, 601);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.tb_calorias);
             this.Controls.Add(this.nightLabel8);
             this.Controls.Add(this.cbb_sexo);
@@ -617,5 +631,6 @@
         private ReaLTaiizor.Controls.PoisonComboBox cbb_sexo;
         private ReaLTaiizor.Controls.NightLabel nightLabel8;
         private ReaLTaiizor.Controls.SmallTextBox tb_calorias;
+        private System.Windows.Forms.Label label1;
     }
 }

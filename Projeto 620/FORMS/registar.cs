@@ -98,7 +98,7 @@ namespace Projeto_620
                 return;
             }
 
-            if (!int.TryParse(tb_calorias.Text, out caloriasObjetivo) && caloriasObjetivo <= 0)
+            if (!int.TryParse(tb_calorias.Text, out caloriasObjetivo) && caloriasObjetivo < 0)
             {
                 MessageBox.Show("Valor inserido na idade inválida!", "Erro!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
