@@ -315,7 +315,7 @@
             this.tabs_comida.Location = new System.Drawing.Point(58, 50);
             this.tabs_comida.MCursor = System.Windows.Forms.Cursors.Hand;
             this.tabs_comida.Name = "tabs_comida";
-            this.tabs_comida.SelectedIndex = 0;
+            this.tabs_comida.SelectedIndex = 1;
             this.tabs_comida.SelectedTextColor = System.Drawing.Color.White;
             this.tabs_comida.Size = new System.Drawing.Size(943, 550);
             this.tabs_comida.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
@@ -326,6 +326,7 @@
             this.tabs_comida.ThemeAuthor = "Taiizor";
             this.tabs_comida.ThemeName = "MetroDark";
             this.tabs_comida.UnselectedTextColor = System.Drawing.Color.Gray;
+            this.tabs_comida.SelectedIndexChanged += new System.EventHandler(this.tabs_comida_SelectedIndexChanged);
             // 
             // metroTabPage1
             // 
@@ -700,10 +701,10 @@
             // 
             // probar_calorias
             // 
-            this.probar_calorias.Location = new System.Drawing.Point(146, 97);
+            this.probar_calorias.Location = new System.Drawing.Point(277, 100);
             this.probar_calorias.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.probar_calorias.Name = "probar_calorias";
-            this.probar_calorias.Size = new System.Drawing.Size(291, 36);
+            this.probar_calorias.Size = new System.Drawing.Size(301, 36);
             this.probar_calorias.TabIndex = 31;
             this.probar_calorias.Value = 50;
             // 
@@ -760,10 +761,10 @@
             "Exercício moderado 3–5 dias/semana",
             "Exercício intenso 6–7 dias/semana",
             "Treinos muito intensos ou 2x por dia"});
-            this.cbb_tipo_atividade.Location = new System.Drawing.Point(235, 164);
+            this.cbb_tipo_atividade.Location = new System.Drawing.Point(229, 166);
             this.cbb_tipo_atividade.Margin = new System.Windows.Forms.Padding(4);
             this.cbb_tipo_atividade.Name = "cbb_tipo_atividade";
-            this.cbb_tipo_atividade.Size = new System.Drawing.Size(202, 28);
+            this.cbb_tipo_atividade.Size = new System.Drawing.Size(349, 28);
             this.cbb_tipo_atividade.TabIndex = 28;
             // 
             // bigLabel3
@@ -772,11 +773,11 @@
             this.bigLabel3.BackColor = System.Drawing.Color.Transparent;
             this.bigLabel3.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bigLabel3.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.bigLabel3.Location = new System.Drawing.Point(24, 97);
+            this.bigLabel3.Location = new System.Drawing.Point(20, 98);
             this.bigLabel3.Name = "bigLabel3";
-            this.bigLabel3.Size = new System.Drawing.Size(120, 38);
+            this.bigLabel3.Size = new System.Drawing.Size(251, 38);
             this.bigLabel3.TabIndex = 27;
-            this.bigLabel3.Text = "Calorias:";
+            this.bigLabel3.Text = "Calorias Progresso:";
             // 
             // label6
             // 

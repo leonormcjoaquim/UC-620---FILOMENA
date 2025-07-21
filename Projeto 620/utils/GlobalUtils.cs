@@ -20,8 +20,8 @@ namespace Projeto_620.utils
 
         public static string username = "";
         public static string caminho = @"C:\cometudoperdetudo\users.xml";
-        public static int caloriasObjetivo;
-        public static int caloriasConsumidas;
+        public static int caloriasObjetivo = 2200;
+        public static int caloriasConsumidas = 0;
 
         public static void GuardarXML(User utilizador)
         {

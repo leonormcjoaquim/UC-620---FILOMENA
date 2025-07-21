@@ -33,9 +33,17 @@ namespace Projeto_620
         }
         private void AtualizarBarraCalorias()
         {
+            User utilizador = GlobalUtils.users.FirstOrDefault(x => x.Username == GlobalUtils.username);
+
+            var caloriasPorDia = utilizador.Alimentacao.GroupBy(a => a.Data_Comida.Date).ToDictionary(
+                                   x => x.Key.ToString("yyyy-MM-dd"),g => g.Sum(a => a.Calorias));
+
+            string hoje = DateTime.Now.ToString("yyyy-MM-dd");
+
+            int caloriasHoje = caloriasPorDia.ContainsKey(hoje) ? caloriasPorDia[hoje] : 0;
+
             probar_calorias.Maximum = GlobalUtils.caloriasObjetivo;
-            int valor = Math.Min(GlobalUtils.caloriasConsumidas, GlobalUtils.caloriasObjetivo);
-            probar_calorias.Value = valor;
+            probar_calorias.Value = Math.Min(caloriasHoje, GlobalUtils.caloriasObjetivo);
         }
 
         bool sidebarExpand = false;
@@ -186,6 +194,7 @@ namespace Projeto_620
             cbb_tipoRefeicao.SelectedIndex = -1;
 
             AtualizarListaRefeicoes();
+            AtualizarBarraCalorias();
         
         }
 
@@ -375,6 +384,17 @@ namespace Projeto_620
                 MessageBox.Show("Valor inválido. Introduz um número inteiro.");
             }
             lbl_objetivo.Text = GlobalUtils.caloriasObjetivo.ToString();
+        }
+
+        private void tabs_comida_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            lbl_tituloGanhar.Visible = false;
+            lbl_tituloperder.Visible = false;
+            lbl_tituloManter.Visible = false;
+            lbl_ganhar.Visible = false;
+            lbl_perder.Visible = false;
+            lbl_normal.Visible = false;
+            lbl_objetivo.Visible = true;
         }
     }
 }
