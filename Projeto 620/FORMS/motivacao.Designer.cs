@@ -281,6 +281,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pb_foto);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "motivacao";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

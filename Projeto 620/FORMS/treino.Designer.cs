@@ -43,6 +43,11 @@
             this.bt_logout = new System.Windows.Forms.Button();
             this.btn_exit = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tipoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.duracaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.caloriasQueimadasDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.exercicioBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.btn_inserirTreino = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
@@ -64,11 +69,6 @@
             this.userBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.alimentacaoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.exercicioBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tipoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.duracaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.caloriasQueimadasDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             this.pn_opcoes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -319,6 +319,52 @@
             this.dataGridView1.Size = new System.Drawing.Size(903, 245);
             this.dataGridView1.TabIndex = 44;
             // 
+            // nomeDataGridViewTextBoxColumn
+            // 
+            this.nomeDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.nomeDataGridViewTextBoxColumn.DataPropertyName = "Nome";
+            this.nomeDataGridViewTextBoxColumn.HeaderText = "Nome";
+            this.nomeDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
+            this.nomeDataGridViewTextBoxColumn.ReadOnly = true;
+            this.nomeDataGridViewTextBoxColumn.Width = 73;
+            // 
+            // tipoDataGridViewTextBoxColumn
+            // 
+            this.tipoDataGridViewTextBoxColumn.DataPropertyName = "Tipo";
+            this.tipoDataGridViewTextBoxColumn.HeaderText = "Tipo";
+            this.tipoDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.tipoDataGridViewTextBoxColumn.Name = "tipoDataGridViewTextBoxColumn";
+            this.tipoDataGridViewTextBoxColumn.ReadOnly = true;
+            this.tipoDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // duracaoDataGridViewTextBoxColumn
+            // 
+            this.duracaoDataGridViewTextBoxColumn.DataPropertyName = "Duracao";
+            this.duracaoDataGridViewTextBoxColumn.HeaderText = "Duracao";
+            this.duracaoDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.duracaoDataGridViewTextBoxColumn.Name = "duracaoDataGridViewTextBoxColumn";
+            this.duracaoDataGridViewTextBoxColumn.ReadOnly = true;
+            this.duracaoDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // caloriasQueimadasDataGridViewTextBoxColumn
+            // 
+            this.caloriasQueimadasDataGridViewTextBoxColumn.DataPropertyName = "CaloriasQueimadas";
+            this.caloriasQueimadasDataGridViewTextBoxColumn.HeaderText = "CaloriasQueimadas";
+            this.caloriasQueimadasDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.caloriasQueimadasDataGridViewTextBoxColumn.Name = "caloriasQueimadasDataGridViewTextBoxColumn";
+            this.caloriasQueimadasDataGridViewTextBoxColumn.ReadOnly = true;
+            this.caloriasQueimadasDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // dataDataGridViewTextBoxColumn
+            // 
+            this.dataDataGridViewTextBoxColumn.DataPropertyName = "Data";
+            this.dataDataGridViewTextBoxColumn.HeaderText = "Data";
+            this.dataDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.dataDataGridViewTextBoxColumn.Name = "dataDataGridViewTextBoxColumn";
+            this.dataDataGridViewTextBoxColumn.ReadOnly = true;
+            this.dataDataGridViewTextBoxColumn.Width = 125;
+            // 
             // exercicioBindingSource1
             // 
             this.exercicioBindingSource1.DataSource = typeof(Projeto_620.models.Exercicio);
@@ -527,52 +573,6 @@
             // 
             this.exercicioBindingSource.DataSource = typeof(Projeto_620.models.Exercicio);
             // 
-            // nomeDataGridViewTextBoxColumn
-            // 
-            this.nomeDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.nomeDataGridViewTextBoxColumn.DataPropertyName = "Nome";
-            this.nomeDataGridViewTextBoxColumn.HeaderText = "Nome";
-            this.nomeDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
-            this.nomeDataGridViewTextBoxColumn.ReadOnly = true;
-            this.nomeDataGridViewTextBoxColumn.Width = 73;
-            // 
-            // tipoDataGridViewTextBoxColumn
-            // 
-            this.tipoDataGridViewTextBoxColumn.DataPropertyName = "Tipo";
-            this.tipoDataGridViewTextBoxColumn.HeaderText = "Tipo";
-            this.tipoDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.tipoDataGridViewTextBoxColumn.Name = "tipoDataGridViewTextBoxColumn";
-            this.tipoDataGridViewTextBoxColumn.ReadOnly = true;
-            this.tipoDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // duracaoDataGridViewTextBoxColumn
-            // 
-            this.duracaoDataGridViewTextBoxColumn.DataPropertyName = "Duracao";
-            this.duracaoDataGridViewTextBoxColumn.HeaderText = "Duracao";
-            this.duracaoDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.duracaoDataGridViewTextBoxColumn.Name = "duracaoDataGridViewTextBoxColumn";
-            this.duracaoDataGridViewTextBoxColumn.ReadOnly = true;
-            this.duracaoDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // caloriasQueimadasDataGridViewTextBoxColumn
-            // 
-            this.caloriasQueimadasDataGridViewTextBoxColumn.DataPropertyName = "CaloriasQueimadas";
-            this.caloriasQueimadasDataGridViewTextBoxColumn.HeaderText = "CaloriasQueimadas";
-            this.caloriasQueimadasDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.caloriasQueimadasDataGridViewTextBoxColumn.Name = "caloriasQueimadasDataGridViewTextBoxColumn";
-            this.caloriasQueimadasDataGridViewTextBoxColumn.ReadOnly = true;
-            this.caloriasQueimadasDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // dataDataGridViewTextBoxColumn
-            // 
-            this.dataDataGridViewTextBoxColumn.DataPropertyName = "Data";
-            this.dataDataGridViewTextBoxColumn.HeaderText = "Data";
-            this.dataDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.dataDataGridViewTextBoxColumn.Name = "dataDataGridViewTextBoxColumn";
-            this.dataDataGridViewTextBoxColumn.ReadOnly = true;
-            this.dataDataGridViewTextBoxColumn.Width = 125;
-            // 
             // treino
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -582,6 +582,7 @@
             this.Controls.Add(this.btn_sair);
             this.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "treino";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

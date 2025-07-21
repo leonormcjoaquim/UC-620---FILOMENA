@@ -57,6 +57,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.lb_listaRefeicao = new System.Windows.Forms.ListBox();
             this.calculadora = new ReaLTaiizor.Child.Metro.MetroTabPage();
+            this.lbl_caloriasIngeridas = new System.Windows.Forms.Label();
+            this.bigLabel1 = new ReaLTaiizor.Controls.BigLabel();
             this.lbl_objetivo = new System.Windows.Forms.Label();
             this.lbl_objetivo_calorias = new ReaLTaiizor.Controls.BigLabel();
             this.lbl_perder = new System.Windows.Forms.Label();
@@ -74,8 +76,6 @@
             this.bigLabel3 = new ReaLTaiizor.Controls.BigLabel();
             this.label6 = new System.Windows.Forms.Label();
             this.lbl_calculadora = new ReaLTaiizor.Controls.BigLabel();
-            this.lbl_caloriasIngeridas = new System.Windows.Forms.Label();
-            this.bigLabel1 = new ReaLTaiizor.Controls.BigLabel();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_menu)).BeginInit();
             this.pn_opcoes.SuspendLayout();
@@ -301,7 +301,7 @@
             this.panel1.Location = new System.Drawing.Point(-3, 1);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1004, 599);
+            this.panel1.Size = new System.Drawing.Size(1004, 601);
             this.panel1.TabIndex = 0;
             // 
             // tabs_comida
@@ -536,6 +536,30 @@
             this.calculadora.ThemeAuthor = "Taiizor";
             this.calculadora.ThemeName = "MetroDark";
             this.calculadora.ToolTipText = null;
+            // 
+            // lbl_caloriasIngeridas
+            // 
+            this.lbl_caloriasIngeridas.AutoSize = true;
+            this.lbl_caloriasIngeridas.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_caloriasIngeridas.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_caloriasIngeridas.ForeColor = System.Drawing.SystemColors.Control;
+            this.lbl_caloriasIngeridas.Location = new System.Drawing.Point(854, 98);
+            this.lbl_caloriasIngeridas.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_caloriasIngeridas.Name = "lbl_caloriasIngeridas";
+            this.lbl_caloriasIngeridas.Size = new System.Drawing.Size(0, 28);
+            this.lbl_caloriasIngeridas.TabIndex = 47;
+            // 
+            // bigLabel1
+            // 
+            this.bigLabel1.AutoSize = true;
+            this.bigLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.bigLabel1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bigLabel1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.bigLabel1.Location = new System.Drawing.Point(605, 91);
+            this.bigLabel1.Name = "bigLabel1";
+            this.bigLabel1.Size = new System.Drawing.Size(249, 38);
+            this.bigLabel1.TabIndex = 46;
+            this.bigLabel1.Text = "Calorias Ingeridas: ";
             // 
             // lbl_objetivo
             // 
@@ -809,30 +833,6 @@
             this.lbl_calculadora.TabIndex = 26;
             this.lbl_calculadora.Text = "Calculadora Calórica";
             // 
-            // lbl_caloriasIngeridas
-            // 
-            this.lbl_caloriasIngeridas.AutoSize = true;
-            this.lbl_caloriasIngeridas.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_caloriasIngeridas.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_caloriasIngeridas.ForeColor = System.Drawing.SystemColors.Control;
-            this.lbl_caloriasIngeridas.Location = new System.Drawing.Point(854, 98);
-            this.lbl_caloriasIngeridas.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbl_caloriasIngeridas.Name = "lbl_caloriasIngeridas";
-            this.lbl_caloriasIngeridas.Size = new System.Drawing.Size(0, 28);
-            this.lbl_caloriasIngeridas.TabIndex = 47;
-            // 
-            // bigLabel1
-            // 
-            this.bigLabel1.AutoSize = true;
-            this.bigLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.bigLabel1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bigLabel1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.bigLabel1.Location = new System.Drawing.Point(605, 91);
-            this.bigLabel1.Name = "bigLabel1";
-            this.bigLabel1.Size = new System.Drawing.Size(249, 38);
-            this.bigLabel1.TabIndex = 46;
-            this.bigLabel1.Text = "Calorias Ingeridas: ";
-            // 
             // alimentacao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -840,6 +840,7 @@
             this.ClientSize = new System.Drawing.Size(1000, 601);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "alimentacao";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

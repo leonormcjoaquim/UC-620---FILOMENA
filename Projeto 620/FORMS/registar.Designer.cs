@@ -538,6 +538,7 @@
             this.Controls.Add(this.nightLabel1);
             this.Controls.Add(this.headerLabel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximumSize = new System.Drawing.Size(3413, 1713);
             this.MinimumSize = new System.Drawing.Size(1000, 601);
