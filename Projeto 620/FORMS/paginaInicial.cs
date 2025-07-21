@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Projeto_620.FORMS;
+using Projeto_620.models;
+using Projeto_620.utils;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,9 +11,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Projeto_620.FORMS;
-using Projeto_620.models;
-using Projeto_620.utils;
+using System.Windows.Forms.DataVisualization.Charting;
+using System.Xml.Linq;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Projeto_620.FORMS
@@ -20,7 +22,9 @@ namespace Projeto_620.FORMS
         public paginaInicial()
         {
             InitializeComponent();
-            lbl_ola.Text = "Olá @" + GlobalUtils.username;
+            CarregarGraficoTreinos();
+            EstilizarGrafico();
+            lbl_ola.Text = "Olá " + GlobalUtils.username;
         }
 
         private void btn_logout_Click(object sender, EventArgs e)
@@ -245,7 +249,7 @@ namespace Projeto_620.FORMS
             }
             else if (!int.TryParse(tb_idade.Text, out int idadeV) || idadeV <= 0 || idadeV >= 140)
             {
-                MessageBox.Show("Tem de colocar um numero válido na idade");
+                MessageBox.Show("Tem de colocar um numero válido na idade", "Erro!", MessageBoxButtons.OK, MessageBoxIcon.Warning); ;
                 return;
             }
             else
@@ -259,7 +263,7 @@ namespace Projeto_620.FORMS
             }
             else if (!double.TryParse(tb_altura.Text, out double alturaV) || alturaV < 0)
             {
-                MessageBox.Show("Tem de colocar uma altura válida!");
+                MessageBox.Show("Tem de colocar uma altura válida!", "Erro!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             else
@@ -273,7 +277,7 @@ namespace Projeto_620.FORMS
             }
             else if (!double.TryParse(tb_peso.Text, out double pesoV) || pesoV <= 0)
             {
-                MessageBox.Show("Tem de colocar um peso válido!");
+                MessageBox.Show("Tem de colocar um peso válido!", "Erro!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             } else
             {
@@ -281,9 +285,107 @@ namespace Projeto_620.FORMS
             }
 
 
-            MessageBox.Show("Dados alterados com sucesso!");
+            MessageBox.Show("Dados alterados com sucesso!", "Sucesso!", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
 
+        }
+
+        public void CarregarGraficoTreinos()
+        {
+            User utilizador = GlobalUtils.users.FirstOrDefault(u => u.Username == GlobalUtils.username);
+
+            chartTreinos.Series.Clear();
+            chartTreinos.ChartAreas.Clear();
+
+            chartTreinos.ChartAreas.Add("MainArea");
+            Series serie = new Series("Calorias")
+            {
+                ChartType = SeriesChartType.Column,
+                IsValueShownAsLabel = true
+            };
+
+            foreach (var treino in utilizador.Exercicios)
+            {
+                serie.Points.AddXY(treino.Nome, treino.CaloriasQueimadas);
+            }
+
+            chartTreinos.Titles.Add("Calorias Queimadas por Treino");
+            chartTreinos.ChartAreas[0].AxisX.Title = "Treino";
+            chartTreinos.ChartAreas[0].AxisY.Title = "Kcal";
+
+            chartTreinos.Series.Add(serie);
+        }
+
+        public void EstilizarGrafico()
+        {
+
+            User utilizador = GlobalUtils.users.FirstOrDefault(u => u.Username == GlobalUtils.username);
+
+            //Data de hoje
+            DateTime hoje = DateTime.Today;
+
+            // calcula o início da semana (segunda-feira)
+            int diferencaDias = (int)hoje.DayOfWeek - 1;
+            if (diferencaDias < 0) diferencaDias = 6; // caso seja domingo
+            DateTime inicioSemana = hoje.AddDays(-diferencaDias);
+
+            // fim da semana (domingo)
+            DateTime fimSemana = inicioSemana.AddDays(6);
+
+            var treinosDaSemana = utilizador.Exercicios.Where(x => x.Data.Date >= inicioSemana && x.Data.Date <= fimSemana);
+
+            // Limpa estilos anteriores
+            chartTreinos.Series.Clear();
+            chartTreinos.ChartAreas.Clear();
+            chartTreinos.Titles.Clear();
+            chartTreinos.Legends.Clear();
+
+
+            // Area grafico
+            var area = new ChartArea("MainArea");
+            area.BackColor = Color.Transparent;
+            area.AxisX.LabelStyle.ForeColor = Color.White;
+            area.AxisY.LabelStyle.ForeColor = Color.White;
+            area.AxisX.MajorGrid.LineColor = Color.White;
+            area.AxisY.MajorGrid.LineColor = Color.White;
+            area.AxisX.LineColor = Color.White;
+            area.AxisY.LineColor = Color.White;
+            
+            chartTreinos.ChartAreas.Add(area);
+
+            var serie = new Series("Calorias")
+            {
+                ChartType = SeriesChartType.Column,
+                Color = Color.DeepSkyBlue,
+                IsValueShownAsLabel = true,
+                LabelForeColor = Color.White
+            };
+
+            foreach (var treino in treinosDaSemana)
+            {
+                
+                serie.Points.AddXY(treino.Nome, treino.CaloriasQueimadas);
+            }
+
+            chartTreinos.Series.Add(serie);
+
+            // Legenda
+            var legenda = new Legend();
+            legenda.ForeColor = Color.White;
+            legenda.BackColor = Color.Transparent;
+            chartTreinos.Legends.Add(legenda);
+
+            // Título
+            var titulo1 = new Title($"Calorias da Semana: {inicioSemana:dd/MM} a {fimSemana:dd/MM}");
+            var titulo2 = new Title("Calorias Queimadas por Treino");
+            titulo1.ForeColor = Color.White;
+            titulo2.ForeColor = Color.White;
+            chartTreinos.Titles.Add(titulo1);
+            chartTreinos.Titles.Add(titulo2);
+
+            // Fundo do gráfico
+            chartTreinos.BackColor = Color.Transparent;
+            chartTreinos.BorderlineColor = Color.White;
         }
     }
 }

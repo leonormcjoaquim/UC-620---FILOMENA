@@ -130,7 +130,7 @@ namespace Projeto_620
         {
             if (cbb_tipoRefeicao.SelectedIndex == -1)
             {
-                MessageBox.Show("Erro! Tem de ter o tipo de alimentação selecionado");
+                MessageBox.Show("Tem de ter o tipo de alimentação selecionado", "Warning!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 cbb_tipoRefeicao.SelectedIndex = -1;
                 return;
             }
@@ -138,14 +138,14 @@ namespace Projeto_620
             string nomeComida = tb_nomeComida.Text;
             if (string.IsNullOrEmpty(nomeComida))
             {
-                MessageBox.Show("Erro! O nome da comida não pode estar vazio!");
+                MessageBox.Show("O nome da comida não pode estar vazio!", "Warning!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
 
             if (!int.TryParse(tb_calorias.Text, out int calorias) || calorias <= 0)
             {
-                MessageBox.Show("Erro! Introduza um valor de calorias válido.");
+                MessageBox.Show("Introduza um valor de calorias válido.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             TipoRefeicao tipoSelecionado = (TipoRefeicao)cbb_tipoRefeicao.SelectedItem;
@@ -190,7 +190,7 @@ namespace Projeto_620
 
             //doc.Save(GlobalUtils.caminho);
 
-            MessageBox.Show("Refeição inserida com sucesso!");
+            MessageBox.Show("Refeição inserida com sucesso!", "Tá Certo!", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             tb_calorias.Clear();
             tb_nomeComida.Clear();
@@ -331,7 +331,7 @@ namespace Projeto_620
             }
             else
             {
-                MessageBox.Show("Tem de selecionar uma das opções disponíveis");
+                MessageBox.Show("Tem de selecionar uma das opções disponíveis", "Warning!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -354,7 +354,7 @@ namespace Projeto_620
                     fatorAtividade = 1.9;
                     break;
                 default:
-                    MessageBox.Show("Tem de selecionar uma opção válida no campo 'Tipo de Atividade'.");
+                    MessageBox.Show("Tem de selecionar uma opção válida no campo 'Tipo de Atividade'.", "Warning!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
             }
 
@@ -380,7 +380,7 @@ namespace Projeto_620
             }
             else
             {
-                MessageBox.Show("Valor inválido. Introduz um número inteiro.");
+                MessageBox.Show("Valor inválido. Introduz um número inteiro.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             lbl_objetivo.Text = GlobalUtils.caloriasObjetivo.ToString();
             AtualizarBarraCalorias();
