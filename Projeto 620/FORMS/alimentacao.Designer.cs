@@ -74,6 +74,8 @@
             this.bigLabel3 = new ReaLTaiizor.Controls.BigLabel();
             this.label6 = new System.Windows.Forms.Label();
             this.lbl_calculadora = new ReaLTaiizor.Controls.BigLabel();
+            this.lbl_caloriasIngeridas = new System.Windows.Forms.Label();
+            this.bigLabel1 = new ReaLTaiizor.Controls.BigLabel();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_menu)).BeginInit();
             this.pn_opcoes.SuspendLayout();
@@ -501,6 +503,8 @@
             // calculadora
             // 
             this.calculadora.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.calculadora.Controls.Add(this.lbl_caloriasIngeridas);
+            this.calculadora.Controls.Add(this.bigLabel1);
             this.calculadora.Controls.Add(this.lbl_objetivo);
             this.calculadora.Controls.Add(this.lbl_objetivo_calorias);
             this.calculadora.Controls.Add(this.lbl_perder);
@@ -539,7 +543,7 @@
             this.lbl_objetivo.BackColor = System.Drawing.Color.Transparent;
             this.lbl_objetivo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_objetivo.ForeColor = System.Drawing.SystemColors.Control;
-            this.lbl_objetivo.Location = new System.Drawing.Point(862, 44);
+            this.lbl_objetivo.Location = new System.Drawing.Point(854, 173);
             this.lbl_objetivo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_objetivo.Name = "lbl_objetivo";
             this.lbl_objetivo.Size = new System.Drawing.Size(0, 28);
@@ -551,7 +555,7 @@
             this.lbl_objetivo_calorias.BackColor = System.Drawing.Color.Transparent;
             this.lbl_objetivo_calorias.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_objetivo_calorias.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lbl_objetivo_calorias.Location = new System.Drawing.Point(612, 37);
+            this.lbl_objetivo_calorias.Location = new System.Drawing.Point(608, 163);
             this.lbl_objetivo_calorias.Name = "lbl_objetivo_calorias";
             this.lbl_objetivo_calorias.Size = new System.Drawing.Size(232, 38);
             this.lbl_objetivo_calorias.TabIndex = 44;
@@ -563,7 +567,7 @@
             this.lbl_perder.BackColor = System.Drawing.Color.Transparent;
             this.lbl_perder.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_perder.ForeColor = System.Drawing.SystemColors.Control;
-            this.lbl_perder.Location = new System.Drawing.Point(759, 96);
+            this.lbl_perder.Location = new System.Drawing.Point(192, 305);
             this.lbl_perder.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_perder.Name = "lbl_perder";
             this.lbl_perder.Size = new System.Drawing.Size(0, 28);
@@ -576,7 +580,7 @@
             this.lbl_ganhar.BackColor = System.Drawing.Color.Transparent;
             this.lbl_ganhar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_ganhar.ForeColor = System.Drawing.SystemColors.Control;
-            this.lbl_ganhar.Location = new System.Drawing.Point(759, 216);
+            this.lbl_ganhar.Location = new System.Drawing.Point(192, 425);
             this.lbl_ganhar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_ganhar.Name = "lbl_ganhar";
             this.lbl_ganhar.Size = new System.Drawing.Size(0, 28);
@@ -589,7 +593,7 @@
             this.lbl_normal.BackColor = System.Drawing.Color.Transparent;
             this.lbl_normal.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_normal.ForeColor = System.Drawing.SystemColors.Control;
-            this.lbl_normal.Location = new System.Drawing.Point(759, 155);
+            this.lbl_normal.Location = new System.Drawing.Point(192, 364);
             this.lbl_normal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_normal.Name = "lbl_normal";
             this.lbl_normal.Size = new System.Drawing.Size(0, 28);
@@ -602,7 +606,7 @@
             this.lbl_tituloGanhar.BackColor = System.Drawing.Color.Transparent;
             this.lbl_tituloGanhar.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_tituloGanhar.ForeColor = System.Drawing.SystemColors.Control;
-            this.lbl_tituloGanhar.Location = new System.Drawing.Point(578, 213);
+            this.lbl_tituloGanhar.Location = new System.Drawing.Point(11, 422);
             this.lbl_tituloGanhar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_tituloGanhar.Name = "lbl_tituloGanhar";
             this.lbl_tituloGanhar.Size = new System.Drawing.Size(173, 31);
@@ -616,7 +620,7 @@
             this.lbl_tituloManter.BackColor = System.Drawing.Color.Transparent;
             this.lbl_tituloManter.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_tituloManter.ForeColor = System.Drawing.SystemColors.Control;
-            this.lbl_tituloManter.Location = new System.Drawing.Point(605, 153);
+            this.lbl_tituloManter.Location = new System.Drawing.Point(38, 362);
             this.lbl_tituloManter.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_tituloManter.Name = "lbl_tituloManter";
             this.lbl_tituloManter.Size = new System.Drawing.Size(146, 31);
@@ -630,7 +634,7 @@
             this.lbl_tituloperder.BackColor = System.Drawing.Color.Transparent;
             this.lbl_tituloperder.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_tituloperder.ForeColor = System.Drawing.SystemColors.Control;
-            this.lbl_tituloperder.Location = new System.Drawing.Point(613, 93);
+            this.lbl_tituloperder.Location = new System.Drawing.Point(46, 302);
             this.lbl_tituloperder.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_tituloperder.Name = "lbl_tituloperder";
             this.lbl_tituloperder.Size = new System.Drawing.Size(138, 31);
@@ -640,7 +644,7 @@
             // 
             // tb_atualizarCalorias
             // 
-            this.tb_atualizarCalorias.Location = new System.Drawing.Point(294, 344);
+            this.tb_atualizarCalorias.Location = new System.Drawing.Point(774, 251);
             this.tb_atualizarCalorias.Name = "tb_atualizarCalorias";
             this.tb_atualizarCalorias.Size = new System.Drawing.Size(155, 26);
             this.tb_atualizarCalorias.TabIndex = 37;
@@ -651,11 +655,12 @@
             this.lbl_atualizar.BackColor = System.Drawing.Color.Transparent;
             this.lbl_atualizar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_atualizar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lbl_atualizar.Location = new System.Drawing.Point(8, 338);
+            this.lbl_atualizar.Location = new System.Drawing.Point(580, 233);
             this.lbl_atualizar.Name = "lbl_atualizar";
-            this.lbl_atualizar.Size = new System.Drawing.Size(271, 28);
+            this.lbl_atualizar.Size = new System.Drawing.Size(174, 56);
             this.lbl_atualizar.TabIndex = 36;
-            this.lbl_atualizar.Text = "Atualizar Objetivo Calorias:";
+            this.lbl_atualizar.Text = "Atualizar \r\nObjetivo Calorias";
+            this.lbl_atualizar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btn_atualizarCaloriasObjetivo
             // 
@@ -683,7 +688,7 @@
             this.btn_atualizarCaloriasObjetivo.Lighting = false;
             this.btn_atualizarCaloriasObjetivo.LinearGradient_Background = false;
             this.btn_atualizarCaloriasObjetivo.LinearGradientPen = false;
-            this.btn_atualizarCaloriasObjetivo.Location = new System.Drawing.Point(179, 388);
+            this.btn_atualizarCaloriasObjetivo.Location = new System.Drawing.Point(663, 333);
             this.btn_atualizarCaloriasObjetivo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_atualizarCaloriasObjetivo.Name = "btn_atualizarCaloriasObjetivo";
             this.btn_atualizarCaloriasObjetivo.PenWidth = 15;
@@ -804,6 +809,30 @@
             this.lbl_calculadora.TabIndex = 26;
             this.lbl_calculadora.Text = "Calculadora Calórica";
             // 
+            // lbl_caloriasIngeridas
+            // 
+            this.lbl_caloriasIngeridas.AutoSize = true;
+            this.lbl_caloriasIngeridas.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_caloriasIngeridas.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_caloriasIngeridas.ForeColor = System.Drawing.SystemColors.Control;
+            this.lbl_caloriasIngeridas.Location = new System.Drawing.Point(854, 98);
+            this.lbl_caloriasIngeridas.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_caloriasIngeridas.Name = "lbl_caloriasIngeridas";
+            this.lbl_caloriasIngeridas.Size = new System.Drawing.Size(0, 28);
+            this.lbl_caloriasIngeridas.TabIndex = 47;
+            // 
+            // bigLabel1
+            // 
+            this.bigLabel1.AutoSize = true;
+            this.bigLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.bigLabel1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bigLabel1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.bigLabel1.Location = new System.Drawing.Point(605, 91);
+            this.bigLabel1.Name = "bigLabel1";
+            this.bigLabel1.Size = new System.Drawing.Size(249, 38);
+            this.bigLabel1.TabIndex = 46;
+            this.bigLabel1.Text = "Calorias Ingeridas: ";
+            // 
             // alimentacao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -874,5 +903,7 @@
         protected internal ReaLTaiizor.Controls.BigLabel bigLabel3;
         private System.Windows.Forms.Label label6;
         private ReaLTaiizor.Controls.BigLabel lbl_calculadora;
+        private System.Windows.Forms.Label lbl_caloriasIngeridas;
+        protected internal ReaLTaiizor.Controls.BigLabel bigLabel1;
     }
 }

@@ -18,6 +18,7 @@ namespace Projeto_620
     {
         public alimentacao()
         {
+            User utilizador = GlobalUtils.users.FirstOrDefault(x => x.Username == GlobalUtils.username);
             this.BackColor = Color.FromArgb(30, 30, 30);
             InitializeComponent();
             AtualizarBarraCalorias();
@@ -29,6 +30,7 @@ namespace Projeto_620
             lbl_normal.Visible = false;
             lbl_objetivo.Visible = true;
             lbl_objetivo.Text = GlobalUtils.caloriasObjetivo.ToString("0");
+            
 
         }
         private void AtualizarBarraCalorias()
@@ -43,6 +45,7 @@ namespace Projeto_620
             int caloriasHoje = caloriasPorDia.ContainsKey(hoje) ? caloriasPorDia[hoje] : 0;
 
             probar_calorias.Maximum = GlobalUtils.caloriasObjetivo;
+            lbl_caloriasIngeridas.Text = caloriasHoje.ToString();
             probar_calorias.Value = Math.Min(caloriasHoje, GlobalUtils.caloriasObjetivo);
         }
 
@@ -356,11 +359,8 @@ namespace Projeto_620
             }
 
             double calorias = taxaMetabolica * fatorAtividade;
-            GlobalUtils.caloriasObjetivo = (int)Math.Round(calorias);
-            probar_calorias.Maximum = GlobalUtils.caloriasObjetivo;
             lbl_normal.Text = calorias.ToString();
             double perder = calorias - 300;
-            lbl_normal.Text = GlobalUtils.caloriasObjetivo.ToString();
             lbl_perder.Text = $"{calorias - 500:0} a {calorias - 300:0}";
             lbl_ganhar.Text = $"{calorias + 300:0} a {calorias + 500:0}";
             lbl_perder.Visible = true;
@@ -369,7 +369,6 @@ namespace Projeto_620
             lbl_tituloGanhar.Visible = true;
             lbl_tituloManter.Visible = true;
             lbl_tituloperder.Visible = true;
-            lbl_objetivo.Text = GlobalUtils.caloriasObjetivo.ToString();
         }
 
         private void btn_atualizarCaloriasObjetivo_Click(object sender, EventArgs e)
@@ -384,6 +383,8 @@ namespace Projeto_620
                 MessageBox.Show("Valor inválido. Introduz um número inteiro.");
             }
             lbl_objetivo.Text = GlobalUtils.caloriasObjetivo.ToString();
+            AtualizarBarraCalorias();
+            tb_atualizarCalorias.Text = string.Empty;
         }
 
         private void tabs_comida_SelectedIndexChanged(object sender, EventArgs e)
