@@ -152,8 +152,8 @@ namespace Projeto_620.FORMS
 
             utilizador.Exercicios.Add(treino);
 
-            lb_listaTreino.Items.Clear();
-            lb_listaTreino.Items.Add(treino);
+            //lb_listaTreino.Items.Clear();
+            //lb_listaTreino.Items.Add(treino);
 
 
             // -- Metodo Inicial sem utilização das classes --
@@ -199,7 +199,9 @@ namespace Projeto_620.FORMS
             tb_duracaoTreino.Clear();
             tb_caloriasQueimadas.Clear();
             cbb_tipoTreino.SelectedIndex = -1;
-            pb_metaTreino.Increment(duracaoTreino);
+
+            dataGridView1.DataSource = null; 
+            dataGridView1.DataSource = utilizador.Exercicios;
         }
 
         private void AtualizarListaTreinos()
@@ -245,12 +247,16 @@ namespace Projeto_620.FORMS
 
             User utilizador = GlobalUtils.users.FirstOrDefault(u => u.Username == GlobalUtils.username);
 
-            lb_listaTreino.Items.Clear();
+            //lb_listaTreino.Items.Clear();
 
-            foreach (Exercicio treino in utilizador.Exercicios)
-            {
-                lb_listaTreino.Items.Add(treino);
-            }
+            //foreach (Exercicio treino in utilizador.Exercicios)
+            //{
+            //    lb_listaTreino.Items.Add(treino);
+                
+            //}
+
+            dataGridView1.DataSource = null; // limpa antes para forçar o refresh
+            dataGridView1.DataSource = utilizador.Exercicios;
         }
 
         private void pb_menu_Click_1(object sender, EventArgs e)

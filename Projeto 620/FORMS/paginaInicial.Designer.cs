@@ -69,7 +69,7 @@
             // 
             this.pb_menu.Image = ((System.Drawing.Image)(resources.GetObject("pb_menu.Image")));
             this.pb_menu.Location = new System.Drawing.Point(-5, 6);
-            this.pb_menu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pb_menu.Margin = new System.Windows.Forms.Padding(2);
             this.pb_menu.Name = "pb_menu";
             this.pb_menu.Padding = new System.Windows.Forms.Padding(11, 4, 0, 0);
             this.pb_menu.Size = new System.Drawing.Size(38, 28);
@@ -87,7 +87,7 @@
             this.panel1.Controls.Add(this.pb_menu);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(750, 41);
             this.panel1.TabIndex = 4;
@@ -107,7 +107,7 @@
             this.nightControlBox1.EnableMaximizeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
             this.nightControlBox1.EnableMinimizeButton = true;
             this.nightControlBox1.EnableMinimizeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
-            this.nightControlBox1.Location = new System.Drawing.Point(646, 0);
+            this.nightControlBox1.Location = new System.Drawing.Point(611, 0);
             this.nightControlBox1.MaximizeHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.nightControlBox1.MaximizeHoverForeColor = System.Drawing.Color.White;
             this.nightControlBox1.MinimizeHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -121,7 +121,7 @@
             // 
             this.pan_color.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.pan_color.Location = new System.Drawing.Point(45, 43);
-            this.pan_color.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pan_color.Margin = new System.Windows.Forms.Padding(2);
             this.pan_color.Name = "pan_color";
             this.pan_color.Size = new System.Drawing.Size(705, 448);
             this.pan_color.TabIndex = 6;
@@ -215,7 +215,7 @@
             this.pn_opcoes.Controls.Add(this.bt_logout);
             this.pn_opcoes.Controls.Add(this.btn_exit);
             this.pn_opcoes.Location = new System.Drawing.Point(0, 43);
-            this.pn_opcoes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pn_opcoes.Margin = new System.Windows.Forms.Padding(2);
             this.pn_opcoes.Name = "pn_opcoes";
             this.pn_opcoes.Size = new System.Drawing.Size(38, 338);
             this.pn_opcoes.TabIndex = 16;
@@ -363,7 +363,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Location = new System.Drawing.Point(68, 109);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(160, 186);
             this.pictureBox1.TabIndex = 17;
@@ -381,16 +381,9 @@
             this.cbb_sexo.Items.AddRange(new object[] {
             "Masculino",
             "Feminino"});
-<<<<<<< Updated upstream
-            this.cbb_sexo.Location = new System.Drawing.Point(724, 362);
-            this.cbb_sexo.Name = "cbb_sexo";
-            this.cbb_sexo.Size = new System.Drawing.Size(246, 24);
-=======
             this.cbb_sexo.Location = new System.Drawing.Point(530, 294);
-            this.cbb_sexo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbb_sexo.Name = "cbb_sexo";
-            this.cbb_sexo.Size = new System.Drawing.Size(199, 21);
->>>>>>> Stashed changes
+            this.cbb_sexo.Size = new System.Drawing.Size(201, 21);
             this.cbb_sexo.TabIndex = 18;
             // 
             // label2
@@ -398,7 +391,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.Control;
-            this.label2.Location = new System.Drawing.Point(476, 290);
+            this.label2.Location = new System.Drawing.Point(473, 290);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(56, 25);
@@ -410,12 +403,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.Control;
-<<<<<<< Updated upstream
-            this.label3.Location = new System.Drawing.Point(485, 427);
-=======
-            this.label3.Location = new System.Drawing.Point(370, 350);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
->>>>>>> Stashed changes
+            this.label3.Location = new System.Drawing.Point(370, 340);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(163, 25);
             this.label3.TabIndex = 21;
@@ -432,16 +420,9 @@
             "Exercício moderado 3–5 dias/semana",
             "Exercício intenso 6–7 dias/semana",
             "Treinos muito intensos ou 2x por dia"});
-<<<<<<< Updated upstream
-            this.cbb_tipo_atividade.Location = new System.Drawing.Point(724, 434);
+            this.cbb_tipo_atividade.Location = new System.Drawing.Point(530, 343);
             this.cbb_tipo_atividade.Name = "cbb_tipo_atividade";
-            this.cbb_tipo_atividade.Size = new System.Drawing.Size(246, 24);
-=======
-            this.cbb_tipo_atividade.Location = new System.Drawing.Point(530, 353);
-            this.cbb_tipo_atividade.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.cbb_tipo_atividade.Name = "cbb_tipo_atividade";
-            this.cbb_tipo_atividade.Size = new System.Drawing.Size(199, 21);
->>>>>>> Stashed changes
+            this.cbb_tipo_atividade.Size = new System.Drawing.Size(201, 21);
             this.cbb_tipo_atividade.TabIndex = 20;
             // 
             // btn_calorias
@@ -471,7 +452,7 @@
             this.btn_calorias.LinearGradient_Background = false;
             this.btn_calorias.LinearGradientPen = false;
             this.btn_calorias.Location = new System.Drawing.Point(560, 425);
-            this.btn_calorias.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_calorias.Margin = new System.Windows.Forms.Padding(2);
             this.btn_calorias.Name = "btn_calorias";
             this.btn_calorias.PenWidth = 15;
             this.btn_calorias.Rounding = true;
@@ -489,7 +470,7 @@
             // probar_calorias
             // 
             this.probar_calorias.Location = new System.Drawing.Point(530, 219);
-            this.probar_calorias.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.probar_calorias.Margin = new System.Windows.Forms.Padding(2);
             this.probar_calorias.Name = "probar_calorias";
             this.probar_calorias.Size = new System.Drawing.Size(198, 32);
             this.probar_calorias.TabIndex = 23;
@@ -498,7 +479,7 @@
             // progressBar1
             // 
             this.progressBar1.Location = new System.Drawing.Point(530, 144);
-            this.progressBar1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.progressBar1.Margin = new System.Windows.Forms.Padding(2);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(198, 35);
             this.progressBar1.TabIndex = 24;
@@ -510,7 +491,7 @@
             this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label4.Location = new System.Drawing.Point(518, 97);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(40, 16);
+            this.label4.Size = new System.Drawing.Size(34, 13);
             this.label4.TabIndex = 25;
             this.label4.Text = "afafaf";
             // 
@@ -519,12 +500,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-<<<<<<< Updated upstream
-            this.ClientSize = new System.Drawing.Size(1000, 601);
-            this.Controls.Add(this.label4);
-=======
             this.ClientSize = new System.Drawing.Size(750, 488);
->>>>>>> Stashed changes
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.probar_calorias);
             this.Controls.Add(this.btn_calorias);
@@ -538,11 +515,11 @@
             this.Controls.Add(this.bigLabel2);
             this.Controls.Add(this.bigLabel1);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
+            this.Controls.Add(this.label3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximumSize = new System.Drawing.Size(750, 488);
             this.MinimumSize = new System.Drawing.Size(750, 488);
             this.Name = "paginaInicial";

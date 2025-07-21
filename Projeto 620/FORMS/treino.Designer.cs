@@ -30,6 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(treino));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btn_sair = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pn_opcoes = new System.Windows.Forms.FlowLayoutPanel();
@@ -40,8 +42,6 @@
             this.btn_motivacao = new System.Windows.Forms.Button();
             this.bt_logout = new System.Windows.Forms.Button();
             this.btn_exit = new System.Windows.Forms.Button();
-            this.label9 = new System.Windows.Forms.Label();
-            this.pb_metaTreino = new System.Windows.Forms.ProgressBar();
             this.btn_inserirTreino = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -58,12 +58,26 @@
             this.pb_menu = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.lb_listaTreino = new System.Windows.Forms.ListBox();
             this.sidebarTransition = new System.Windows.Forms.Timer(this.components);
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tipoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.duracaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.caloriasQueimadasDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.exercicioBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.userBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.alimentacaoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.exercicioBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel1.SuspendLayout();
             this.pn_opcoes.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_menu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.exercicioBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.alimentacaoBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.exercicioBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_sair
@@ -80,9 +94,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.panel1.Controls.Add(this.dataGridView1);
             this.panel1.Controls.Add(this.pn_opcoes);
-            this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.pb_metaTreino);
             this.panel1.Controls.Add(this.btn_inserirTreino);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label7);
@@ -97,7 +110,6 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel4);
-            this.panel1.Controls.Add(this.lb_listaTreino);
             this.panel1.Location = new System.Drawing.Point(0, 1);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
@@ -268,25 +280,6 @@
             this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
             this.btn_exit.MouseHover += new System.EventHandler(this.btn_exit_MouseHover);
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.72F);
-            this.label9.Location = new System.Drawing.Point(466, 64);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(260, 24);
-            this.label9.TabIndex = 23;
-            this.label9.Text = "Progresso para meta definida:";
-            // 
-            // pb_metaTreino
-            // 
-            this.pb_metaTreino.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
-            this.pb_metaTreino.Location = new System.Drawing.Point(510, 91);
-            this.pb_metaTreino.Maximum = 30;
-            this.pb_metaTreino.Name = "pb_metaTreino";
-            this.pb_metaTreino.Size = new System.Drawing.Size(179, 23);
-            this.pb_metaTreino.TabIndex = 22;
-            // 
             // btn_inserirTreino
             // 
             this.btn_inserirTreino.BackColor = System.Drawing.Color.LightGray;
@@ -295,7 +288,7 @@
             this.btn_inserirTreino.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_inserirTreino.Font = new System.Drawing.Font("Segoe UI", 14.25F);
             this.btn_inserirTreino.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btn_inserirTreino.Location = new System.Drawing.Point(559, 143);
+            this.btn_inserirTreino.Location = new System.Drawing.Point(552, 186);
             this.btn_inserirTreino.Name = "btn_inserirTreino";
             this.btn_inserirTreino.Size = new System.Drawing.Size(95, 64);
             this.btn_inserirTreino.TabIndex = 20;
@@ -462,22 +455,97 @@
             this.panel4.Size = new System.Drawing.Size(130, 5);
             this.panel4.TabIndex = 43;
             // 
-            // lb_listaTreino
-            // 
-            this.lb_listaTreino.BackColor = System.Drawing.Color.LightGray;
-            this.lb_listaTreino.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lb_listaTreino.Font = new System.Drawing.Font("Segoe UI", 12.25F);
-            this.lb_listaTreino.FormattingEnabled = true;
-            this.lb_listaTreino.ItemHeight = 21;
-            this.lb_listaTreino.Location = new System.Drawing.Point(61, 276);
-            this.lb_listaTreino.Name = "lb_listaTreino";
-            this.lb_listaTreino.Size = new System.Drawing.Size(677, 191);
-            this.lb_listaTreino.TabIndex = 21;
-            // 
             // sidebarTransition
             // 
             this.sidebarTransition.Interval = 10;
             this.sidebarTransition.Tick += new System.EventHandler(this.sidebarTransition_Tick);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.nomeDataGridViewTextBoxColumn,
+            this.tipoDataGridViewTextBoxColumn,
+            this.duracaoDataGridViewTextBoxColumn,
+            this.caloriasQueimadasDataGridViewTextBoxColumn,
+            this.dataDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.exercicioBindingSource1;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 10.75F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridView1.Location = new System.Drawing.Point(61, 276);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridView1.Size = new System.Drawing.Size(677, 199);
+            this.dataGridView1.TabIndex = 44;
+            // 
+            // nomeDataGridViewTextBoxColumn
+            // 
+            this.nomeDataGridViewTextBoxColumn.DataPropertyName = "Nome";
+            this.nomeDataGridViewTextBoxColumn.HeaderText = "Nome";
+            this.nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
+            this.nomeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // tipoDataGridViewTextBoxColumn
+            // 
+            this.tipoDataGridViewTextBoxColumn.DataPropertyName = "Tipo";
+            this.tipoDataGridViewTextBoxColumn.HeaderText = "Tipo";
+            this.tipoDataGridViewTextBoxColumn.Name = "tipoDataGridViewTextBoxColumn";
+            this.tipoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // duracaoDataGridViewTextBoxColumn
+            // 
+            this.duracaoDataGridViewTextBoxColumn.DataPropertyName = "Duracao";
+            this.duracaoDataGridViewTextBoxColumn.HeaderText = "Duracao";
+            this.duracaoDataGridViewTextBoxColumn.Name = "duracaoDataGridViewTextBoxColumn";
+            this.duracaoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // caloriasQueimadasDataGridViewTextBoxColumn
+            // 
+            this.caloriasQueimadasDataGridViewTextBoxColumn.DataPropertyName = "CaloriasQueimadas";
+            this.caloriasQueimadasDataGridViewTextBoxColumn.HeaderText = "CaloriasQueimadas";
+            this.caloriasQueimadasDataGridViewTextBoxColumn.Name = "caloriasQueimadasDataGridViewTextBoxColumn";
+            this.caloriasQueimadasDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // dataDataGridViewTextBoxColumn
+            // 
+            this.dataDataGridViewTextBoxColumn.DataPropertyName = "Data";
+            this.dataDataGridViewTextBoxColumn.HeaderText = "Data";
+            this.dataDataGridViewTextBoxColumn.Name = "dataDataGridViewTextBoxColumn";
+            this.dataDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // exercicioBindingSource1
+            // 
+            this.exercicioBindingSource1.DataSource = typeof(Projeto_620.models.Exercicio);
+            // 
+            // userBindingSource
+            // 
+            this.userBindingSource.DataSource = typeof(Projeto_620.models.User);
+            // 
+            // alimentacaoBindingSource
+            // 
+            this.alimentacaoBindingSource.DataSource = typeof(Projeto_620.models.Alimentacao);
+            // 
+            // exercicioBindingSource
+            // 
+            this.exercicioBindingSource.DataSource = typeof(Projeto_620.models.Exercicio);
             // 
             // treino
             // 
@@ -499,6 +567,11 @@
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_menu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.exercicioBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.alimentacaoBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.exercicioBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -525,9 +598,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox tb_duracaoTreino;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ProgressBar pb_metaTreino;
-        private System.Windows.Forms.ListBox lb_listaTreino;
         private System.Windows.Forms.Button btn_inserirTreino;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
@@ -535,5 +605,15 @@
         private System.Windows.Forms.TextBox tb_caloriasQueimadas;
         private System.Windows.Forms.PictureBox pb_menu;
         private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.BindingSource alimentacaoBindingSource;
+        private System.Windows.Forms.BindingSource userBindingSource;
+        private System.Windows.Forms.BindingSource exercicioBindingSource;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nomeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tipoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn duracaoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn caloriasQueimadasDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource exercicioBindingSource1;
     }
 }
