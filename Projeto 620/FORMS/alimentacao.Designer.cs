@@ -293,8 +293,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.panel1.Controls.Add(this.tabs_comida);
             this.panel1.Controls.Add(this.pn_opcoes);
+            this.panel1.Controls.Add(this.tabs_comida);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Location = new System.Drawing.Point(-3, 1);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -312,19 +312,19 @@
             this.tabs_comida.ControlsVisible = true;
             this.tabs_comida.IsDerivedStyle = true;
             this.tabs_comida.ItemSize = new System.Drawing.Size(100, 38);
-            this.tabs_comida.Location = new System.Drawing.Point(58, 51);
+            this.tabs_comida.Location = new System.Drawing.Point(58, 50);
             this.tabs_comida.MCursor = System.Windows.Forms.Cursors.Hand;
             this.tabs_comida.Name = "tabs_comida";
             this.tabs_comida.SelectedIndex = 0;
-            this.tabs_comida.SelectedTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.tabs_comida.SelectedTextColor = System.Drawing.Color.White;
             this.tabs_comida.Size = new System.Drawing.Size(943, 550);
             this.tabs_comida.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.tabs_comida.Speed = 100;
-            this.tabs_comida.Style = ReaLTaiizor.Enum.Metro.Style.Light;
+            this.tabs_comida.Style = ReaLTaiizor.Enum.Metro.Style.Dark;
             this.tabs_comida.StyleManager = null;
             this.tabs_comida.TabIndex = 9;
             this.tabs_comida.ThemeAuthor = "Taiizor";
-            this.tabs_comida.ThemeName = "MetroLight";
+            this.tabs_comida.ThemeName = "MetroDark";
             this.tabs_comida.UnselectedTextColor = System.Drawing.Color.Gray;
             // 
             // metroTabPage1
@@ -348,12 +348,12 @@
             this.metroTabPage1.Location = new System.Drawing.Point(4, 42);
             this.metroTabPage1.Name = "metroTabPage1";
             this.metroTabPage1.Size = new System.Drawing.Size(935, 504);
-            this.metroTabPage1.Style = ReaLTaiizor.Enum.Metro.Style.Light;
+            this.metroTabPage1.Style = ReaLTaiizor.Enum.Metro.Style.Dark;
             this.metroTabPage1.StyleManager = null;
             this.metroTabPage1.TabIndex = 0;
             this.metroTabPage1.Text = "Alimentação";
             this.metroTabPage1.ThemeAuthor = "Taiizor";
-            this.metroTabPage1.ThemeName = "MetroLight";
+            this.metroTabPage1.ThemeName = "MetroDark";
             this.metroTabPage1.ToolTipText = null;
             // 
             // panel2
@@ -523,12 +523,12 @@
             this.calculadora.Location = new System.Drawing.Point(4, 42);
             this.calculadora.Name = "calculadora";
             this.calculadora.Size = new System.Drawing.Size(935, 504);
-            this.calculadora.Style = ReaLTaiizor.Enum.Metro.Style.Light;
+            this.calculadora.Style = ReaLTaiizor.Enum.Metro.Style.Dark;
             this.calculadora.StyleManager = null;
             this.calculadora.TabIndex = 1;
             this.calculadora.Text = "Calculadora Calórica";
             this.calculadora.ThemeAuthor = "Taiizor";
-            this.calculadora.ThemeName = "MetroLight";
+            this.calculadora.ThemeName = "MetroDark";
             this.calculadora.ToolTipText = null;
             // 
             // lbl_objetivo
