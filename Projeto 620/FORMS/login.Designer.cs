@@ -58,7 +58,7 @@
             this.btn_registar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_registar.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
             this.btn_registar.Location = new System.Drawing.Point(308, 419);
-            this.btn_registar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_registar.Margin = new System.Windows.Forms.Padding(2);
             this.btn_registar.Name = "btn_registar";
             this.btn_registar.PressedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.btn_registar.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
@@ -74,7 +74,7 @@
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(-17, 184);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(250, 307);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -87,7 +87,7 @@
             this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox2.Location = new System.Drawing.Point(430, 247);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(321, 242);
             this.pictureBox2.TabIndex = 2;
@@ -119,7 +119,7 @@
             this.btn_login.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_login.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
             this.btn_login.Location = new System.Drawing.Point(499, 201);
-            this.btn_login.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_login.Margin = new System.Windows.Forms.Padding(2);
             this.btn_login.Name = "btn_login";
             this.btn_login.PressedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.btn_login.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
@@ -172,7 +172,7 @@
             this.tb_password.Lighting = false;
             this.tb_password.LinearGradientPen = false;
             this.tb_password.Location = new System.Drawing.Point(308, 258);
-            this.tb_password.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tb_password.Margin = new System.Windows.Forms.Padding(2);
             this.tb_password.Name = "tb_password";
             this.tb_password.Password = true;
             this.tb_password.PenWidth = 15;
@@ -204,7 +204,7 @@
             this.tb_username.Lighting = false;
             this.tb_username.LinearGradientPen = false;
             this.tb_username.Location = new System.Drawing.Point(308, 201);
-            this.tb_username.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tb_username.Margin = new System.Windows.Forms.Padding(2);
             this.tb_username.Name = "tb_username";
             this.tb_username.PenWidth = 15;
             this.tb_username.RGB = false;
@@ -234,7 +234,7 @@
             this.nightControlBox1.EnableMinimizeButton = true;
             this.nightControlBox1.EnableMinimizeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
             this.nightControlBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.nightControlBox1.Location = new System.Drawing.Point(648, 0);
+            this.nightControlBox1.Location = new System.Drawing.Point(613, 0);
             this.nightControlBox1.MaximizeHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.nightControlBox1.MaximizeHoverForeColor = System.Drawing.Color.White;
             this.nightControlBox1.MinimizeHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -256,7 +256,7 @@
             this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.checkBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(125)))), ((int)(((byte)(132)))));
             this.checkBox1.Location = new System.Drawing.Point(318, 303);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(2);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(124, 16);
             this.checkBox1.TabIndex = 3;
@@ -278,7 +278,7 @@
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.btn_registar);
             this.panel1.Location = new System.Drawing.Point(-2, -2);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(752, 493);
             this.panel1.TabIndex = 4;
@@ -290,7 +290,7 @@
             this.ClientSize = new System.Drawing.Size(750, 488);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximumSize = new System.Drawing.Size(750, 488);
             this.MinimumSize = new System.Drawing.Size(750, 488);
             this.Name = "login";

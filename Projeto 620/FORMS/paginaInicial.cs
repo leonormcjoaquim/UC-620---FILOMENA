@@ -49,8 +49,6 @@ namespace Projeto_620.FORMS
             Cursor = Cursors.Default;
 
         }
-        bool menuExpand = false;
-
 
         bool sidebarExpand = false;
         private void sidebarTransition_Tick(object sender, EventArgs e)
