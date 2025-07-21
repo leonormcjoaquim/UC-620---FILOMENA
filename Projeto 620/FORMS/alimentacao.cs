@@ -102,7 +102,7 @@ namespace Projeto_620
         {
             if (cbb_tipoRefeicao.SelectedIndex == -1)
             {
-                MessageBox.Show("Erro! Tem de ter o tipo de alimentação selecionado");
+                MessageBox.Show("Tem de ter o tipo de alimentação selecionado", "Warning!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 cbb_tipoRefeicao.SelectedIndex = -1;
                 return;
             }
@@ -110,14 +110,14 @@ namespace Projeto_620
             string nomeComida = tb_nomeComida.Text;
             if (string.IsNullOrEmpty(nomeComida))
             {
-                MessageBox.Show("Erro! O nome da comida não pode estar vazio!");
+                MessageBox.Show("O nome da comida não pode estar vazio!", "Warning!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
 
             if (!int.TryParse(tb_calorias.Text, out int calorias) || calorias <= 0)
             {
-                MessageBox.Show("Erro! Introduza um valor de calorias válido.");
+                MessageBox.Show("Introduza um valor de calorias válido.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             TipoRefeicao tipoSelecionado = (TipoRefeicao)cbb_tipoRefeicao.SelectedItem;
@@ -162,7 +162,7 @@ namespace Projeto_620
 
             //doc.Save(GlobalUtils.caminho);
 
-            MessageBox.Show("Refeição inserida com sucesso!");
+            MessageBox.Show("Refeição inserida com sucesso!", "Tá Certo!", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             tb_calorias.Clear();
             tb_nomeComida.Clear();
@@ -277,5 +277,99 @@ namespace Projeto_620
         {
             pb_menu.Cursor = Cursors.Hand;
         }
+<<<<<<< Updated upstream
+=======
+
+        private void metroTabControl1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_calorias_Click(object sender, EventArgs e)
+        {
+            User utilizador = GlobalUtils.users.FirstOrDefault(u => u.Username == GlobalUtils.username);
+            string tipoAtividade = cbb_tipo_atividade.Text;
+            string sexo = utilizador.Sexo;
+            double peso = utilizador.Peso;
+            double altura = utilizador.Altura * 100;
+            int idade = utilizador.Idade;
+            double taxaMetabolica;
+            if (sexo == "Masculino")
+            {
+                taxaMetabolica = 88.362 + (13.397 * peso) + (4.799 * altura) - (5.677 * idade);
+            }
+            else if (sexo == "Feminino")
+            {
+                taxaMetabolica = 447.593 + (9.247 * peso) + (3.098 * altura) - (4.330 * idade);
+            }
+            else
+            {
+                MessageBox.Show("Tem de selecionar uma das opções disponíveis", "Warning!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            double fatorAtividade;
+            switch (tipoAtividade)
+            {
+                case "Sedentário":
+                    fatorAtividade = 1.2;
+                    break;
+                case "Exercício leve 1–3 dias/semana":
+                    fatorAtividade = 1.375;
+                    break;
+                case "Exercício moderado 3–5 dias/semana":
+                    fatorAtividade = 1.55;
+                    break;
+                case "Exercício intenso 6–7 dias/semana":
+                    fatorAtividade = 1.725;
+                    break;
+                case "Treinos muito intensos ou 2x por dia":
+                    fatorAtividade = 1.9;
+                    break;
+                default:
+                    MessageBox.Show("Tem de selecionar uma opção válida no campo 'Tipo de Atividade'.", "Warning!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+            }
+
+            double calorias = taxaMetabolica * fatorAtividade;
+            lbl_normal.Text = calorias.ToString();
+            double perder = calorias - 300;
+            lbl_perder.Text = $"{calorias - 500:0} a {calorias - 300:0}";
+            lbl_ganhar.Text = $"{calorias + 300:0} a {calorias + 500:0}";
+            lbl_perder.Visible = true;
+            lbl_ganhar.Visible = true;
+            lbl_normal.Visible = true;
+            lbl_tituloGanhar.Visible = true;
+            lbl_tituloManter.Visible = true;
+            lbl_tituloperder.Visible = true;
+        }
+
+        private void btn_atualizarCaloriasObjetivo_Click(object sender, EventArgs e)
+        {
+            int calorias;
+            if (int.TryParse(tb_atualizarCalorias.Text, out calorias))
+            {
+                GlobalUtils.caloriasObjetivo = calorias;
+            }
+            else
+            {
+                MessageBox.Show("Valor inválido. Introduz um número inteiro.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            lbl_objetivo.Text = GlobalUtils.caloriasObjetivo.ToString();
+            AtualizarBarraCalorias();
+            tb_atualizarCalorias.Text = string.Empty;
+        }
+
+        private void tabs_comida_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            lbl_tituloGanhar.Visible = false;
+            lbl_tituloperder.Visible = false;
+            lbl_tituloManter.Visible = false;
+            lbl_ganhar.Visible = false;
+            lbl_perder.Visible = false;
+            lbl_normal.Visible = false;
+            lbl_objetivo.Visible = true;
+        }
+>>>>>>> Stashed changes
     }
 }

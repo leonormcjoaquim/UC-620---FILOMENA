@@ -392,6 +392,7 @@
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.pn_opcoes);
             this.panel1.Controls.Add(this.panel3);
+<<<<<<< Updated upstream
             this.panel1.Controls.Add(this.btn_inserirRefeicao);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.cbb_tipoRefeicao);
@@ -409,23 +410,544 @@
             this.panel1.Size = new System.Drawing.Size(753, 487);
             this.panel1.TabIndex = 0;
             // 
+=======
+            this.panel1.Location = new System.Drawing.Point(-2, 1);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(753, 488);
+            this.panel1.TabIndex = 0;
+            // 
+            // tabs_comida
+            // 
+            this.tabs_comida.AnimateEasingType = ReaLTaiizor.Enum.Metro.EasingType.CubeOut;
+            this.tabs_comida.AnimateTime = 200;
+            this.tabs_comida.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.tabs_comida.Controls.Add(this.metroTabPage1);
+            this.tabs_comida.Controls.Add(this.calculadora);
+            this.tabs_comida.ControlsVisible = true;
+            this.tabs_comida.IsDerivedStyle = true;
+            this.tabs_comida.ItemSize = new System.Drawing.Size(100, 38);
+            this.tabs_comida.Location = new System.Drawing.Point(44, 41);
+            this.tabs_comida.MCursor = System.Windows.Forms.Cursors.Hand;
+            this.tabs_comida.Name = "tabs_comida";
+            this.tabs_comida.SelectedIndex = 0;
+            this.tabs_comida.SelectedTextColor = System.Drawing.Color.White;
+            this.tabs_comida.Size = new System.Drawing.Size(707, 447);
+            this.tabs_comida.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
+            this.tabs_comida.Speed = 100;
+            this.tabs_comida.Style = ReaLTaiizor.Enum.Metro.Style.Dark;
+            this.tabs_comida.StyleManager = null;
+            this.tabs_comida.TabIndex = 9;
+            this.tabs_comida.ThemeAuthor = "Taiizor";
+            this.tabs_comida.ThemeName = "MetroDark";
+            this.tabs_comida.UnselectedTextColor = System.Drawing.Color.Gray;
+            this.tabs_comida.SelectedIndexChanged += new System.EventHandler(this.tabs_comida_SelectedIndexChanged);
+            // 
+            // metroTabPage1
+            // 
+            this.metroTabPage1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.metroTabPage1.Controls.Add(this.panel2);
+            this.metroTabPage1.Controls.Add(this.btn_inserirRefeicao);
+            this.metroTabPage1.Controls.Add(this.label1);
+            this.metroTabPage1.Controls.Add(this.cbb_tipoRefeicao);
+            this.metroTabPage1.Controls.Add(this.label7);
+            this.metroTabPage1.Controls.Add(this.tb_nomeComida);
+            this.metroTabPage1.Controls.Add(this.label3);
+            this.metroTabPage1.Controls.Add(this.label4);
+            this.metroTabPage1.Controls.Add(this.tb_calorias);
+            this.metroTabPage1.Controls.Add(this.label5);
+            this.metroTabPage1.Controls.Add(this.lb_listaRefeicao);
+            this.metroTabPage1.Font = null;
+            this.metroTabPage1.ImageIndex = 0;
+            this.metroTabPage1.ImageKey = null;
+            this.metroTabPage1.IsDerivedStyle = true;
+            this.metroTabPage1.Location = new System.Drawing.Point(4, 42);
+            this.metroTabPage1.Name = "metroTabPage1";
+            this.metroTabPage1.Size = new System.Drawing.Size(699, 401);
+            this.metroTabPage1.Style = ReaLTaiizor.Enum.Metro.Style.Dark;
+            this.metroTabPage1.StyleManager = null;
+            this.metroTabPage1.TabIndex = 0;
+            this.metroTabPage1.Text = "Alimentação";
+            this.metroTabPage1.ThemeAuthor = "Taiizor";
+            this.metroTabPage1.ThemeName = "MetroDark";
+            this.metroTabPage1.ToolTipText = null;
+            // 
+>>>>>>> Stashed changes
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+<<<<<<< Updated upstream
             this.panel2.Location = new System.Drawing.Point(659, 46);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(81, 66);
             this.panel2.TabIndex = 41;
+=======
+            this.panel2.Location = new System.Drawing.Point(613, 2);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(81, 66);
+            this.panel2.TabIndex = 53;
+>>>>>>> Stashed changes
             // 
             // panel4
             // 
+<<<<<<< Updated upstream
             this.panel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel4.BackgroundImage")));
             this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel4.Location = new System.Drawing.Point(118, 91);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(148, 5);
             this.panel4.TabIndex = 42;
+=======
+            this.btn_inserirRefeicao.BackColor = System.Drawing.Color.LightGray;
+            this.btn_inserirRefeicao.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btn_inserirRefeicao.FlatAppearance.BorderSize = 5;
+            this.btn_inserirRefeicao.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_inserirRefeicao.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_inserirRefeicao.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btn_inserirRefeicao.Location = new System.Drawing.Point(497, 89);
+            this.btn_inserirRefeicao.Name = "btn_inserirRefeicao";
+            this.btn_inserirRefeicao.Size = new System.Drawing.Size(95, 64);
+            this.btn_inserirRefeicao.TabIndex = 51;
+            this.btn_inserirRefeicao.Text = "Inserir";
+            this.btn_inserirRefeicao.UseVisualStyleBackColor = false;
+            this.btn_inserirRefeicao.Click += new System.EventHandler(this.btn_inserirRefeicao_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(68, 6);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(160, 28);
+            this.label1.TabIndex = 43;
+            this.label1.Text = "Inserir Refeição";
+            // 
+            // cbb_tipoRefeicao
+            // 
+            this.cbb_tipoRefeicao.BackColor = System.Drawing.Color.LightGray;
+            this.cbb_tipoRefeicao.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.cbb_tipoRefeicao.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbb_tipoRefeicao.FormattingEnabled = true;
+            this.cbb_tipoRefeicao.Location = new System.Drawing.Point(185, 65);
+            this.cbb_tipoRefeicao.Name = "cbb_tipoRefeicao";
+            this.cbb_tipoRefeicao.Size = new System.Drawing.Size(211, 33);
+            this.cbb_tipoRefeicao.TabIndex = 44;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label7.Location = new System.Drawing.Point(402, 115);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(64, 15);
+            this.label7.TabIndex = 50;
+            this.label7.Text = "(à escolha)";
+            // 
+            // tb_nomeComida
+            // 
+            this.tb_nomeComida.BackColor = System.Drawing.Color.LightGray;
+            this.tb_nomeComida.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tb_nomeComida.Font = new System.Drawing.Font("Segoe UI", 14.25F);
+            this.tb_nomeComida.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.tb_nomeComida.Location = new System.Drawing.Point(185, 106);
+            this.tb_nomeComida.Name = "tb_nomeComida";
+            this.tb_nomeComida.Size = new System.Drawing.Size(211, 33);
+            this.tb_nomeComida.TabIndex = 45;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label3.Location = new System.Drawing.Point(35, 68);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(152, 25);
+            this.label3.TabIndex = 46;
+            this.label3.Text = "Tipo de refeição:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label4.Location = new System.Drawing.Point(28, 111);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(160, 25);
+            this.label4.TabIndex = 47;
+            this.label4.Text = "Nome da comida:";
+            // 
+            // tb_calorias
+            // 
+            this.tb_calorias.BackColor = System.Drawing.Color.LightGray;
+            this.tb_calorias.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tb_calorias.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_calorias.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.tb_calorias.Location = new System.Drawing.Point(185, 145);
+            this.tb_calorias.Name = "tb_calorias";
+            this.tb_calorias.Size = new System.Drawing.Size(211, 33);
+            this.tb_calorias.TabIndex = 48;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label5.Location = new System.Drawing.Point(104, 150);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(84, 25);
+            this.label5.TabIndex = 49;
+            this.label5.Text = "Calorias:";
+            // 
+            // lb_listaRefeicao
+            // 
+            this.lb_listaRefeicao.BackColor = System.Drawing.Color.LightGray;
+            this.lb_listaRefeicao.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lb_listaRefeicao.Font = new System.Drawing.Font("Segoe UI", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_listaRefeicao.FormattingEnabled = true;
+            this.lb_listaRefeicao.ItemHeight = 21;
+            this.lb_listaRefeicao.Location = new System.Drawing.Point(4, 210);
+            this.lb_listaRefeicao.Name = "lb_listaRefeicao";
+            this.lb_listaRefeicao.Size = new System.Drawing.Size(692, 191);
+            this.lb_listaRefeicao.TabIndex = 52;
+            // 
+            // calculadora
+            // 
+            this.calculadora.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.calculadora.Controls.Add(this.lbl_caloriasIngeridas);
+            this.calculadora.Controls.Add(this.bigLabel1);
+            this.calculadora.Controls.Add(this.lbl_objetivo);
+            this.calculadora.Controls.Add(this.lbl_objetivo_calorias);
+            this.calculadora.Controls.Add(this.lbl_perder);
+            this.calculadora.Controls.Add(this.lbl_ganhar);
+            this.calculadora.Controls.Add(this.lbl_normal);
+            this.calculadora.Controls.Add(this.lbl_tituloGanhar);
+            this.calculadora.Controls.Add(this.lbl_tituloManter);
+            this.calculadora.Controls.Add(this.lbl_tituloperder);
+            this.calculadora.Controls.Add(this.tb_atualizarCalorias);
+            this.calculadora.Controls.Add(this.lbl_atualizar);
+            this.calculadora.Controls.Add(this.btn_atualizarCaloriasObjetivo);
+            this.calculadora.Controls.Add(this.probar_calorias);
+            this.calculadora.Controls.Add(this.btn_calorias);
+            this.calculadora.Controls.Add(this.cbb_tipo_atividade);
+            this.calculadora.Controls.Add(this.bigLabel3);
+            this.calculadora.Controls.Add(this.label6);
+            this.calculadora.Controls.Add(this.lbl_calculadora);
+            this.calculadora.Font = null;
+            this.calculadora.ImageIndex = 0;
+            this.calculadora.ImageKey = null;
+            this.calculadora.IsDerivedStyle = true;
+            this.calculadora.Location = new System.Drawing.Point(4, 42);
+            this.calculadora.Name = "calculadora";
+            this.calculadora.Size = new System.Drawing.Size(699, 401);
+            this.calculadora.Style = ReaLTaiizor.Enum.Metro.Style.Dark;
+            this.calculadora.StyleManager = null;
+            this.calculadora.TabIndex = 1;
+            this.calculadora.Text = "Calculadora Calórica";
+            this.calculadora.ThemeAuthor = "Taiizor";
+            this.calculadora.ThemeName = "MetroDark";
+            this.calculadora.ToolTipText = null;
+            // 
+            // lbl_caloriasIngeridas
+            // 
+            this.lbl_caloriasIngeridas.AutoSize = true;
+            this.lbl_caloriasIngeridas.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_caloriasIngeridas.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_caloriasIngeridas.ForeColor = System.Drawing.SystemColors.Control;
+            this.lbl_caloriasIngeridas.Location = new System.Drawing.Point(640, 80);
+            this.lbl_caloriasIngeridas.Name = "lbl_caloriasIngeridas";
+            this.lbl_caloriasIngeridas.Size = new System.Drawing.Size(0, 21);
+            this.lbl_caloriasIngeridas.TabIndex = 47;
+            // 
+            // bigLabel1
+            // 
+            this.bigLabel1.AutoSize = true;
+            this.bigLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.bigLabel1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bigLabel1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.bigLabel1.Location = new System.Drawing.Point(454, 74);
+            this.bigLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bigLabel1.Name = "bigLabel1";
+            this.bigLabel1.Size = new System.Drawing.Size(195, 30);
+            this.bigLabel1.TabIndex = 46;
+            this.bigLabel1.Text = "Calorias Ingeridas: ";
+            // 
+            // lbl_objetivo
+            // 
+            this.lbl_objetivo.AutoSize = true;
+            this.lbl_objetivo.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_objetivo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_objetivo.ForeColor = System.Drawing.SystemColors.Control;
+            this.lbl_objetivo.Location = new System.Drawing.Point(640, 141);
+            this.lbl_objetivo.Name = "lbl_objetivo";
+            this.lbl_objetivo.Size = new System.Drawing.Size(0, 21);
+            this.lbl_objetivo.TabIndex = 45;
+            // 
+            // lbl_objetivo_calorias
+            // 
+            this.lbl_objetivo_calorias.AutoSize = true;
+            this.lbl_objetivo_calorias.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_objetivo_calorias.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_objetivo_calorias.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lbl_objetivo_calorias.Location = new System.Drawing.Point(456, 132);
+            this.lbl_objetivo_calorias.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_objetivo_calorias.Name = "lbl_objetivo_calorias";
+            this.lbl_objetivo_calorias.Size = new System.Drawing.Size(183, 30);
+            this.lbl_objetivo_calorias.TabIndex = 44;
+            this.lbl_objetivo_calorias.Text = "Calorias Objetivo:";
+            // 
+            // lbl_perder
+            // 
+            this.lbl_perder.AutoSize = true;
+            this.lbl_perder.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_perder.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_perder.ForeColor = System.Drawing.SystemColors.Control;
+            this.lbl_perder.Location = new System.Drawing.Point(144, 248);
+            this.lbl_perder.Name = "lbl_perder";
+            this.lbl_perder.Size = new System.Drawing.Size(0, 21);
+            this.lbl_perder.TabIndex = 41;
+            this.lbl_perder.Visible = false;
+            // 
+            // lbl_ganhar
+            // 
+            this.lbl_ganhar.AutoSize = true;
+            this.lbl_ganhar.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_ganhar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_ganhar.ForeColor = System.Drawing.SystemColors.Control;
+            this.lbl_ganhar.Location = new System.Drawing.Point(144, 345);
+            this.lbl_ganhar.Name = "lbl_ganhar";
+            this.lbl_ganhar.Size = new System.Drawing.Size(0, 21);
+            this.lbl_ganhar.TabIndex = 43;
+            this.lbl_ganhar.Visible = false;
+            // 
+            // lbl_normal
+            // 
+            this.lbl_normal.AutoSize = true;
+            this.lbl_normal.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_normal.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_normal.ForeColor = System.Drawing.SystemColors.Control;
+            this.lbl_normal.Location = new System.Drawing.Point(144, 296);
+            this.lbl_normal.Name = "lbl_normal";
+            this.lbl_normal.Size = new System.Drawing.Size(0, 21);
+            this.lbl_normal.TabIndex = 42;
+            this.lbl_normal.Visible = false;
+            // 
+            // lbl_tituloGanhar
+            // 
+            this.lbl_tituloGanhar.AutoSize = true;
+            this.lbl_tituloGanhar.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_tituloGanhar.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_tituloGanhar.ForeColor = System.Drawing.SystemColors.Control;
+            this.lbl_tituloGanhar.Location = new System.Drawing.Point(8, 343);
+            this.lbl_tituloGanhar.Name = "lbl_tituloGanhar";
+            this.lbl_tituloGanhar.Size = new System.Drawing.Size(143, 25);
+            this.lbl_tituloGanhar.TabIndex = 40;
+            this.lbl_tituloGanhar.Text = "Aumentar Peso:";
+            this.lbl_tituloGanhar.Visible = false;
+            // 
+            // lbl_tituloManter
+            // 
+            this.lbl_tituloManter.AutoSize = true;
+            this.lbl_tituloManter.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_tituloManter.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_tituloManter.ForeColor = System.Drawing.SystemColors.Control;
+            this.lbl_tituloManter.Location = new System.Drawing.Point(28, 294);
+            this.lbl_tituloManter.Name = "lbl_tituloManter";
+            this.lbl_tituloManter.Size = new System.Drawing.Size(121, 25);
+            this.lbl_tituloManter.TabIndex = 39;
+            this.lbl_tituloManter.Text = "Manter Peso:";
+            this.lbl_tituloManter.Visible = false;
+            // 
+            // lbl_tituloperder
+            // 
+            this.lbl_tituloperder.AutoSize = true;
+            this.lbl_tituloperder.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_tituloperder.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_tituloperder.ForeColor = System.Drawing.SystemColors.Control;
+            this.lbl_tituloperder.Location = new System.Drawing.Point(34, 245);
+            this.lbl_tituloperder.Name = "lbl_tituloperder";
+            this.lbl_tituloperder.Size = new System.Drawing.Size(115, 25);
+            this.lbl_tituloperder.TabIndex = 38;
+            this.lbl_tituloperder.Text = "Perder Peso:";
+            this.lbl_tituloperder.Visible = false;
+            // 
+            // tb_atualizarCalorias
+            // 
+            this.tb_atualizarCalorias.Location = new System.Drawing.Point(580, 204);
+            this.tb_atualizarCalorias.Margin = new System.Windows.Forms.Padding(2);
+            this.tb_atualizarCalorias.Name = "tb_atualizarCalorias";
+            this.tb_atualizarCalorias.Size = new System.Drawing.Size(117, 23);
+            this.tb_atualizarCalorias.TabIndex = 37;
+            // 
+            // lbl_atualizar
+            // 
+            this.lbl_atualizar.AutoSize = true;
+            this.lbl_atualizar.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_atualizar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_atualizar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lbl_atualizar.Location = new System.Drawing.Point(435, 189);
+            this.lbl_atualizar.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_atualizar.Name = "lbl_atualizar";
+            this.lbl_atualizar.Size = new System.Drawing.Size(141, 42);
+            this.lbl_atualizar.TabIndex = 36;
+            this.lbl_atualizar.Text = "Atualizar \r\nObjetivo Calorias";
+            this.lbl_atualizar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btn_atualizarCaloriasObjetivo
+            // 
+            this.btn_atualizarCaloriasObjetivo.Alpha = 20;
+            this.btn_atualizarCaloriasObjetivo.BackColor = System.Drawing.Color.Transparent;
+            this.btn_atualizarCaloriasObjetivo.Background = true;
+            this.btn_atualizarCaloriasObjetivo.Background_WidthPen = 4F;
+            this.btn_atualizarCaloriasObjetivo.BackgroundPen = true;
+            this.btn_atualizarCaloriasObjetivo.ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
+            this.btn_atualizarCaloriasObjetivo.ColorBackground_1 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
+            this.btn_atualizarCaloriasObjetivo.ColorBackground_2 = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(63)))), ((int)(((byte)(86)))));
+            this.btn_atualizarCaloriasObjetivo.ColorBackground_Pen = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
+            this.btn_atualizarCaloriasObjetivo.ColorLighting = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
+            this.btn_atualizarCaloriasObjetivo.ColorPen_1 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
+            this.btn_atualizarCaloriasObjetivo.ColorPen_2 = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(63)))), ((int)(((byte)(86)))));
+            this.btn_atualizarCaloriasObjetivo.CyberButtonStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
+            this.btn_atualizarCaloriasObjetivo.Effect_1 = true;
+            this.btn_atualizarCaloriasObjetivo.Effect_1_ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
+            this.btn_atualizarCaloriasObjetivo.Effect_1_Transparency = 25;
+            this.btn_atualizarCaloriasObjetivo.Effect_2 = true;
+            this.btn_atualizarCaloriasObjetivo.Effect_2_ColorBackground = System.Drawing.Color.White;
+            this.btn_atualizarCaloriasObjetivo.Effect_2_Transparency = 20;
+            this.btn_atualizarCaloriasObjetivo.Font = new System.Drawing.Font("Arial", 11F);
+            this.btn_atualizarCaloriasObjetivo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
+            this.btn_atualizarCaloriasObjetivo.Lighting = false;
+            this.btn_atualizarCaloriasObjetivo.LinearGradient_Background = false;
+            this.btn_atualizarCaloriasObjetivo.LinearGradientPen = false;
+            this.btn_atualizarCaloriasObjetivo.Location = new System.Drawing.Point(497, 271);
+            this.btn_atualizarCaloriasObjetivo.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_atualizarCaloriasObjetivo.Name = "btn_atualizarCaloriasObjetivo";
+            this.btn_atualizarCaloriasObjetivo.PenWidth = 15;
+            this.btn_atualizarCaloriasObjetivo.Rounding = true;
+            this.btn_atualizarCaloriasObjetivo.RoundingInt = 70;
+            this.btn_atualizarCaloriasObjetivo.Size = new System.Drawing.Size(143, 48);
+            this.btn_atualizarCaloriasObjetivo.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            this.btn_atualizarCaloriasObjetivo.TabIndex = 35;
+            this.btn_atualizarCaloriasObjetivo.Tag = "Cyber";
+            this.btn_atualizarCaloriasObjetivo.TextButton = "Atualizar Objetivo";
+            this.btn_atualizarCaloriasObjetivo.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.btn_atualizarCaloriasObjetivo.Timer_Effect_1 = 5;
+            this.btn_atualizarCaloriasObjetivo.Timer_RGB = 300;
+            this.btn_atualizarCaloriasObjetivo.Click += new System.EventHandler(this.btn_atualizarCaloriasObjetivo_Click);
+            // 
+            // probar_calorias
+            // 
+            this.probar_calorias.Location = new System.Drawing.Point(208, 81);
+            this.probar_calorias.Margin = new System.Windows.Forms.Padding(2);
+            this.probar_calorias.Name = "probar_calorias";
+            this.probar_calorias.Size = new System.Drawing.Size(226, 29);
+            this.probar_calorias.TabIndex = 31;
+            this.probar_calorias.Value = 50;
+            // 
+            // btn_calorias
+            // 
+            this.btn_calorias.Alpha = 20;
+            this.btn_calorias.BackColor = System.Drawing.Color.Transparent;
+            this.btn_calorias.Background = true;
+            this.btn_calorias.Background_WidthPen = 4F;
+            this.btn_calorias.BackgroundPen = true;
+            this.btn_calorias.ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
+            this.btn_calorias.ColorBackground_1 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
+            this.btn_calorias.ColorBackground_2 = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(63)))), ((int)(((byte)(86)))));
+            this.btn_calorias.ColorBackground_Pen = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
+            this.btn_calorias.ColorLighting = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
+            this.btn_calorias.ColorPen_1 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
+            this.btn_calorias.ColorPen_2 = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(63)))), ((int)(((byte)(86)))));
+            this.btn_calorias.CyberButtonStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
+            this.btn_calorias.Effect_1 = true;
+            this.btn_calorias.Effect_1_ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
+            this.btn_calorias.Effect_1_Transparency = 25;
+            this.btn_calorias.Effect_2 = true;
+            this.btn_calorias.Effect_2_ColorBackground = System.Drawing.Color.White;
+            this.btn_calorias.Effect_2_Transparency = 20;
+            this.btn_calorias.Font = new System.Drawing.Font("Arial", 11F);
+            this.btn_calorias.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
+            this.btn_calorias.Lighting = false;
+            this.btn_calorias.LinearGradient_Background = false;
+            this.btn_calorias.LinearGradientPen = false;
+            this.btn_calorias.Location = new System.Drawing.Point(110, 187);
+            this.btn_calorias.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_calorias.Name = "btn_calorias";
+            this.btn_calorias.PenWidth = 15;
+            this.btn_calorias.Rounding = true;
+            this.btn_calorias.RoundingInt = 70;
+            this.btn_calorias.Size = new System.Drawing.Size(143, 43);
+            this.btn_calorias.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            this.btn_calorias.TabIndex = 30;
+            this.btn_calorias.Tag = "Cyber";
+            this.btn_calorias.TextButton = "Calcular Calorias";
+            this.btn_calorias.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.btn_calorias.Timer_Effect_1 = 5;
+            this.btn_calorias.Timer_RGB = 300;
+            this.btn_calorias.Click += new System.EventHandler(this.btn_calorias_Click);
+            // 
+            // cbb_tipo_atividade
+            // 
+            this.cbb_tipo_atividade.BackColor = System.Drawing.Color.LightGray;
+            this.cbb_tipo_atividade.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.cbb_tipo_atividade.FormattingEnabled = true;
+            this.cbb_tipo_atividade.Items.AddRange(new object[] {
+            "Pouco ou nenhum exercício",
+            "Exercício leve 1–3 dias/semana",
+            "Exercício moderado 3–5 dias/semana",
+            "Exercício intenso 6–7 dias/semana",
+            "Treinos muito intensos ou 2x por dia"});
+            this.cbb_tipo_atividade.Location = new System.Drawing.Point(172, 135);
+            this.cbb_tipo_atividade.Name = "cbb_tipo_atividade";
+            this.cbb_tipo_atividade.Size = new System.Drawing.Size(263, 24);
+            this.cbb_tipo_atividade.TabIndex = 28;
+            // 
+            // bigLabel3
+            // 
+            this.bigLabel3.AutoSize = true;
+            this.bigLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.bigLabel3.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bigLabel3.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.bigLabel3.Location = new System.Drawing.Point(15, 80);
+            this.bigLabel3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bigLabel3.Name = "bigLabel3";
+            this.bigLabel3.Size = new System.Drawing.Size(197, 30);
+            this.bigLabel3.TabIndex = 27;
+            this.bigLabel3.Text = "Calorias Progresso:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.Control;
+            this.label6.Location = new System.Drawing.Point(16, 130);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(163, 25);
+            this.label6.TabIndex = 29;
+            this.label6.Text = "Tipo de Atividade:";
+            // 
+            // lbl_calculadora
+            // 
+            this.lbl_calculadora.AutoSize = true;
+            this.lbl_calculadora.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_calculadora.Font = new System.Drawing.Font("Segoe UI", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_calculadora.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lbl_calculadora.Location = new System.Drawing.Point(6, 19);
+            this.lbl_calculadora.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_calculadora.Name = "lbl_calculadora";
+            this.lbl_calculadora.Size = new System.Drawing.Size(335, 45);
+            this.lbl_calculadora.TabIndex = 26;
+            this.lbl_calculadora.Text = "Calculadora Calórica";
+>>>>>>> Stashed changes
             // 
             // alimentacao
             // 
@@ -434,6 +956,10 @@
             this.ClientSize = new System.Drawing.Size(750, 488);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+<<<<<<< Updated upstream
+=======
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+>>>>>>> Stashed changes
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "alimentacao";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

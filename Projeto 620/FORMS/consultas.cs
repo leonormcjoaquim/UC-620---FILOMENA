@@ -121,7 +121,7 @@ namespace Projeto_620.FORMS
         {
             if (cbb_tipo.SelectedIndex == -1 || cbb_especialidades.SelectedIndex == -1)
             {
-                MessageBox.Show("Erros!");
+                MessageBox.Show("Por favor escolha valores nas ComboBoxes!", "Erro!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 cbb_especialidades.SelectedIndex = -1;
                 cbb_tipo.SelectedIndex = -1;
                 return;
@@ -142,7 +142,7 @@ namespace Projeto_620.FORMS
             }
             user.Marcacao.Add(novaMarcacao);
 
-            MessageBox.Show("Sucesso");
+            MessageBox.Show("Marcação feita com sucesso.", "Sucesso!", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void btn_filtrar_Click(object sender, EventArgs e)
@@ -154,13 +154,13 @@ namespace Projeto_620.FORMS
             
             if (user.Marcacao == null || !user.Marcacao.Any())
             {
-                MessageBox.Show("Ainda não marcou nenhuma consulta!");
+                MessageBox.Show("Ainda não marcou nenhuma consulta!", "Erro!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             if (cbb_tipo_consulta.SelectedIndex == -1)
             {
-                MessageBox.Show("Tem de selecionar uma opção!");
+                MessageBox.Show("Tem de selecionar uma opção!", "Warning!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             string filtroTipo = cbb_tipo_consulta.SelectedItem.ToString();

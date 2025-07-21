@@ -30,6 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(paginaInicial));
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.pb_menu = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.nightControlBox1 = new ReaLTaiizor.Controls.NightControlBox();
@@ -59,17 +62,32 @@
             this.probar_calorias = new System.Windows.Forms.ProgressBar();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.label4 = new System.Windows.Forms.Label();
+<<<<<<< Updated upstream
             ((System.ComponentModel.ISupportInitialize)(this.pb_menu)).BeginInit();
             this.panel1.SuspendLayout();
             this.pn_opcoes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+=======
+            this.tb_peso = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.cyberButton1 = new ReaLTaiizor.Controls.CyberButton();
+            this.chartTreinos = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_menu)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.pn_opcoes.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chartTreinos)).BeginInit();
+>>>>>>> Stashed changes
             this.SuspendLayout();
             // 
             // pb_menu
             // 
             this.pb_menu.Image = ((System.Drawing.Image)(resources.GetObject("pb_menu.Image")));
             this.pb_menu.Location = new System.Drawing.Point(-5, 6);
+<<<<<<< Updated upstream
             this.pb_menu.Margin = new System.Windows.Forms.Padding(2);
+=======
+            this.pb_menu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+>>>>>>> Stashed changes
             this.pb_menu.Name = "pb_menu";
             this.pb_menu.Padding = new System.Windows.Forms.Padding(11, 4, 0, 0);
             this.pb_menu.Size = new System.Drawing.Size(38, 28);
@@ -87,7 +105,11 @@
             this.panel1.Controls.Add(this.pb_menu);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+<<<<<<< Updated upstream
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
+=======
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+>>>>>>> Stashed changes
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(750, 41);
             this.panel1.TabIndex = 4;
@@ -121,7 +143,11 @@
             // 
             this.pan_color.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.pan_color.Location = new System.Drawing.Point(45, 43);
+<<<<<<< Updated upstream
             this.pan_color.Margin = new System.Windows.Forms.Padding(2);
+=======
+            this.pan_color.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+>>>>>>> Stashed changes
             this.pan_color.Name = "pan_color";
             this.pan_color.Size = new System.Drawing.Size(705, 448);
             this.pan_color.TabIndex = 6;
@@ -186,10 +212,17 @@
             this.lbl_ola.AutoSize = true;
             this.lbl_ola.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_ola.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+<<<<<<< Updated upstream
             this.lbl_ola.Location = new System.Drawing.Point(61, 50);
             this.lbl_ola.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_ola.Name = "lbl_ola";
             this.lbl_ola.Size = new System.Drawing.Size(71, 39);
+=======
+            this.lbl_ola.Location = new System.Drawing.Point(46, 48);
+            this.lbl_ola.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_ola.Name = "lbl_ola";
+            this.lbl_ola.Size = new System.Drawing.Size(74, 39);
+>>>>>>> Stashed changes
             this.lbl_ola.TabIndex = 14;
             this.lbl_ola.Text = "Olá";
             // 
@@ -215,7 +248,11 @@
             this.pn_opcoes.Controls.Add(this.bt_logout);
             this.pn_opcoes.Controls.Add(this.btn_exit);
             this.pn_opcoes.Location = new System.Drawing.Point(0, 43);
+<<<<<<< Updated upstream
             this.pn_opcoes.Margin = new System.Windows.Forms.Padding(2);
+=======
+            this.pn_opcoes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+>>>>>>> Stashed changes
             this.pn_opcoes.Name = "pn_opcoes";
             this.pn_opcoes.Size = new System.Drawing.Size(38, 338);
             this.pn_opcoes.TabIndex = 16;
@@ -375,6 +412,7 @@
             // 
             // cbb_sexo
             // 
+<<<<<<< Updated upstream
             this.cbb_sexo.BackColor = System.Drawing.Color.LightGray;
             this.cbb_sexo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.cbb_sexo.FormattingEnabled = true;
@@ -385,10 +423,31 @@
             this.cbb_sexo.Name = "cbb_sexo";
             this.cbb_sexo.Size = new System.Drawing.Size(201, 21);
             this.cbb_sexo.TabIndex = 18;
+=======
+            this.lbl_atualizarPeso.AutoSize = true;
+            this.lbl_atualizarPeso.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.lbl_atualizarPeso.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lbl_atualizarPeso.Location = new System.Drawing.Point(522, 175);
+            this.lbl_atualizarPeso.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_atualizarPeso.Name = "lbl_atualizarPeso";
+            this.lbl_atualizarPeso.Size = new System.Drawing.Size(51, 21);
+            this.lbl_atualizarPeso.TabIndex = 37;
+            this.lbl_atualizarPeso.Text = "Idade:";
+            // 
+            // tb_idade
+            // 
+            this.tb_idade.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.tb_idade.Location = new System.Drawing.Point(572, 172);
+            this.tb_idade.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tb_idade.Name = "tb_idade";
+            this.tb_idade.Size = new System.Drawing.Size(148, 29);
+            this.tb_idade.TabIndex = 38;
+>>>>>>> Stashed changes
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+<<<<<<< Updated upstream
             this.label2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.Control;
             this.label2.Location = new System.Drawing.Point(473, 290);
@@ -397,10 +456,30 @@
             this.label2.Size = new System.Drawing.Size(56, 25);
             this.label2.TabIndex = 19;
             this.label2.Text = "Sexo:";
+=======
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label2.Location = new System.Drawing.Point(534, 71);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(181, 30);
+            this.label2.TabIndex = 39;
+            this.label2.Text = "Atualizar dados:";
+            // 
+            // tb_nome
+            // 
+            this.tb_nome.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.tb_nome.Location = new System.Drawing.Point(572, 126);
+            this.tb_nome.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tb_nome.Name = "tb_nome";
+            this.tb_nome.Size = new System.Drawing.Size(148, 29);
+            this.tb_nome.TabIndex = 41;
+>>>>>>> Stashed changes
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+<<<<<<< Updated upstream
             this.label3.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.Control;
             this.label3.Location = new System.Drawing.Point(370, 340);
@@ -408,9 +487,20 @@
             this.label3.Size = new System.Drawing.Size(163, 25);
             this.label3.TabIndex = 21;
             this.label3.Text = "Tipo de Atividade:";
+=======
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label3.Location = new System.Drawing.Point(517, 129);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(56, 21);
+            this.label3.TabIndex = 40;
+            this.label3.Text = "Nome:";
+>>>>>>> Stashed changes
             // 
             // cbb_tipo_atividade
             // 
+<<<<<<< Updated upstream
             this.cbb_tipo_atividade.BackColor = System.Drawing.Color.LightGray;
             this.cbb_tipo_atividade.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.cbb_tipo_atividade.FormattingEnabled = true;
@@ -484,16 +574,116 @@
             this.progressBar1.Size = new System.Drawing.Size(198, 35);
             this.progressBar1.TabIndex = 24;
             this.progressBar1.Value = 50;
+=======
+            this.tb_altura.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.tb_altura.Location = new System.Drawing.Point(572, 216);
+            this.tb_altura.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tb_altura.Name = "tb_altura";
+            this.tb_altura.Size = new System.Drawing.Size(148, 29);
+            this.tb_altura.TabIndex = 43;
+>>>>>>> Stashed changes
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+<<<<<<< Updated upstream
             this.label4.Location = new System.Drawing.Point(518, 97);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(34, 13);
             this.label4.TabIndex = 25;
             this.label4.Text = "afafaf";
+=======
+            this.label4.Location = new System.Drawing.Point(519, 219);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(55, 21);
+            this.label4.TabIndex = 42;
+            this.label4.Text = "Altura:";
+            // 
+            // tb_peso
+            // 
+            this.tb_peso.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.tb_peso.Location = new System.Drawing.Point(572, 258);
+            this.tb_peso.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tb_peso.Name = "tb_peso";
+            this.tb_peso.Size = new System.Drawing.Size(148, 29);
+            this.tb_peso.TabIndex = 45;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.label5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label5.Location = new System.Drawing.Point(528, 261);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(45, 21);
+            this.label5.TabIndex = 44;
+            this.label5.Text = "Peso:";
+            // 
+            // cyberButton1
+            // 
+            this.cyberButton1.Alpha = 20;
+            this.cyberButton1.BackColor = System.Drawing.Color.Transparent;
+            this.cyberButton1.Background = true;
+            this.cyberButton1.Background_WidthPen = 4F;
+            this.cyberButton1.BackgroundPen = true;
+            this.cyberButton1.ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
+            this.cyberButton1.ColorBackground_1 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
+            this.cyberButton1.ColorBackground_2 = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(63)))), ((int)(((byte)(86)))));
+            this.cyberButton1.ColorBackground_Pen = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
+            this.cyberButton1.ColorLighting = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
+            this.cyberButton1.ColorPen_1 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
+            this.cyberButton1.ColorPen_2 = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(63)))), ((int)(((byte)(86)))));
+            this.cyberButton1.CyberButtonStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
+            this.cyberButton1.Effect_1 = true;
+            this.cyberButton1.Effect_1_ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
+            this.cyberButton1.Effect_1_Transparency = 25;
+            this.cyberButton1.Effect_2 = true;
+            this.cyberButton1.Effect_2_ColorBackground = System.Drawing.Color.White;
+            this.cyberButton1.Effect_2_Transparency = 20;
+            this.cyberButton1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cyberButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
+            this.cyberButton1.Lighting = false;
+            this.cyberButton1.LinearGradient_Background = false;
+            this.cyberButton1.LinearGradientPen = false;
+            this.cyberButton1.Location = new System.Drawing.Point(584, 309);
+            this.cyberButton1.Name = "cyberButton1";
+            this.cyberButton1.PenWidth = 15;
+            this.cyberButton1.Rounding = true;
+            this.cyberButton1.RoundingInt = 70;
+            this.cyberButton1.Size = new System.Drawing.Size(119, 43);
+            this.cyberButton1.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            this.cyberButton1.TabIndex = 46;
+            this.cyberButton1.Tag = "Cyber";
+            this.cyberButton1.TextButton = "Atualizar";
+            this.cyberButton1.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.cyberButton1.Timer_Effect_1 = 5;
+            this.cyberButton1.Timer_RGB = 300;
+            this.cyberButton1.Click += new System.EventHandler(this.cyberButton1_Click);
+>>>>>>> Stashed changes
+            // 
+            // chartTreinos
+            // 
+            this.chartTreinos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.chartTreinos.BackImageAlignment = System.Windows.Forms.DataVisualization.Charting.ChartImageAlignmentStyle.Center;
+            this.chartTreinos.BorderlineColor = System.Drawing.Color.Transparent;
+            this.chartTreinos.BorderSkin.BackColor = System.Drawing.Color.Transparent;
+            chartArea1.Name = "ChartArea1";
+            this.chartTreinos.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chartTreinos.Legends.Add(legend1);
+            this.chartTreinos.Location = new System.Drawing.Point(59, 90);
+            this.chartTreinos.Name = "chartTreinos";
+            this.chartTreinos.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chartTreinos.Series.Add(series1);
+            this.chartTreinos.Size = new System.Drawing.Size(458, 395);
+            this.chartTreinos.TabIndex = 47;
+            this.chartTreinos.Text = "chart1";
             // 
             // paginaInicial
             // 
@@ -501,6 +691,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ClientSize = new System.Drawing.Size(750, 488);
+<<<<<<< Updated upstream
+=======
+            this.Controls.Add(this.cyberButton1);
+            this.Controls.Add(this.tb_peso);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.tb_altura);
+>>>>>>> Stashed changes
             this.Controls.Add(this.label4);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.probar_calorias);
@@ -511,6 +708,7 @@
             this.Controls.Add(this.pn_opcoes);
             this.Controls.Add(this.lbl_nome);
             this.Controls.Add(this.lbl_ola);
+<<<<<<< Updated upstream
             this.Controls.Add(this.bigLabel3);
             this.Controls.Add(this.bigLabel2);
             this.Controls.Add(this.bigLabel1);
@@ -520,6 +718,13 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
+=======
+            this.Controls.Add(this.lbl_atualizarPeso);
+            this.Controls.Add(this.chartTreinos);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+>>>>>>> Stashed changes
             this.MaximumSize = new System.Drawing.Size(750, 488);
             this.MinimumSize = new System.Drawing.Size(750, 488);
             this.Name = "paginaInicial";
@@ -529,7 +734,11 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.pn_opcoes.ResumeLayout(false);
+<<<<<<< Updated upstream
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+=======
+            ((System.ComponentModel.ISupportInitialize)(this.chartTreinos)).EndInit();
+>>>>>>> Stashed changes
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -565,5 +774,12 @@
         private System.Windows.Forms.ProgressBar probar_calorias;
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Label label4;
+<<<<<<< Updated upstream
+=======
+        private System.Windows.Forms.TextBox tb_peso;
+        private System.Windows.Forms.Label label5;
+        private ReaLTaiizor.Controls.CyberButton cyberButton1;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartTreinos;
+>>>>>>> Stashed changes
     }
 }

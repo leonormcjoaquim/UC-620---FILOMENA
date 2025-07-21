@@ -78,39 +78,38 @@ namespace Projeto_620
 
             if (username.Length <= 0 || username.Length > 20)
             {
-                MessageBox.Show("Username só pode ter no máximo 20 caracteres");
+                MessageBox.Show("Username só pode ter no máximo 20 caracteres", "Erro!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             bool usernameExiste = doc.Descendants("user").Elements("Dados").Elements("username").Any(x => x.Value == username);
 
             if (usernameExiste)
             {
-                MessageBox.Show("Este username já existe. Por favor escolhe outro.");
+                MessageBox.Show("Este username já existe. Por favor escolhe outro.", "Erro!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 tb_username.Text = string.Empty;
                 return;
             }
 
             if (!int.TryParse(tb_idade.Text, out idade) && idade <= 0)
             {
-                MessageBox.Show("Valor inserido na idade inválida!");
+                MessageBox.Show("Valor inserido na idade inválida!", "Erro!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
             if (!double.TryParse(tb_weight.Text, out double peso) && peso <= 0)
             {
-                MessageBox.Show("Valor inserido no peso inválido! Tente com virgula");
+                MessageBox.Show("Valor inserido no peso inválido! Tente com virgula", "Erro!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             if (!double.TryParse(tb_height.Text, out double altura) && altura <= 0)
             {
-                MessageBox.Show("Valor inserido na altura inválido! Tente com virgula");
+                MessageBox.Show("Valor inserido na altura inválido! Tente com virgula", "Erro!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
             if (string.IsNullOrEmpty(nome) || string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password) || string.IsNullOrEmpty(objetivo) || altura >= 260)
             {
-                MessageBox.Show($"nome: {nome}\nusername: {username}\npass: {password}\nobje: {objetivo}\naltura: {altura}\npeso: {peso}");
-                MessageBox.Show("Erro! Tem de preencher todos os campos.");
+                MessageBox.Show("Tem de preencher todos os campos.", "Erro!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -133,7 +132,7 @@ namespace Projeto_620
             doc.Save(GlobalUtils.caminho);
 
             // ALTERAR PARA UMA MENSAGEM MAIS 'NITA
-            MessageBox.Show("Utilizador criado com sucesso!");
+            MessageBox.Show("Utilizador criado com sucesso!", "Sucesso!", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             this.Close();
         }
@@ -150,12 +149,12 @@ namespace Projeto_620
 
             if (!double.TryParse(tb_weight.Text, out double peso) && peso <= 0)
             {
-                MessageBox.Show("Valor inserido no peso inválido! Tente com virgula");
+                MessageBox.Show("Valor inserido no peso inválido! Tente com virgula", "Erro!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             if (!double.TryParse(tb_height.Text, out double altura) && altura <= 0)
             {
-                MessageBox.Show("Valor inserido na altura inválido! Tente com virgula");
+                MessageBox.Show("Valor inserido na altura inválido! Tente com virgula", "Erro!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 

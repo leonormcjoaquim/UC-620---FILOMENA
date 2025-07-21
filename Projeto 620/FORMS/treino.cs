@@ -119,7 +119,7 @@ namespace Projeto_620.FORMS
         {
             if (cbb_tipoTreino.SelectedIndex == -1 )
             {
-                MessageBox.Show("Erro! Tem de ter o tipo de treino selecionado");
+                MessageBox.Show("Tem de ter o tipo de treino selecionado", "Erros!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 cbb_tipoTreino.SelectedIndex = -1;
                 return;
             }
@@ -127,20 +127,20 @@ namespace Projeto_620.FORMS
             string nomeTreino = tb_nomeTreino.Text;
             if (string.IsNullOrEmpty(nomeTreino))
             {
-                MessageBox.Show("Erro! O nome de treino não pode estar vazio!");
+                MessageBox.Show("O nome de treino não pode estar vazio!", "Erros!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
 
             if (!int.TryParse(tb_duracaoTreino.Text, out int duracaoTreino) || duracaoTreino <= 0)
             {
-                MessageBox.Show("Erro! Introduza uma duração válida.");
+                MessageBox.Show("Introduza uma duração válida.", "Erros!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
             if (!int.TryParse(tb_caloriasQueimadas.Text, out int caloriasQueimadas) || caloriasQueimadas <= 0)
             {
-                MessageBox.Show("Erro! Introduza um valor de calorias válido.");
+                MessageBox.Show("Introduza um valor de calorias válido.", "Erros!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -191,7 +191,7 @@ namespace Projeto_620.FORMS
 
             //doc.Save(GlobalUtils.caminho);
 
-            MessageBox.Show("Treino inserido com sucesso!");
+            MessageBox.Show("Treino inserido com sucesso!", "Bora Campeao!", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             AtualizarListaTreinos();
 
