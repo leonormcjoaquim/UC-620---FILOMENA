@@ -133,6 +133,9 @@
       <DependentUpon>registar.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\Projeto_620.models.Alimentacao.datasource" />
+    <None Include="Properties\DataSources\Projeto_620.models.Exercicio.datasource" />
+    <None Include="Properties\DataSources\Projeto_620.models.User.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

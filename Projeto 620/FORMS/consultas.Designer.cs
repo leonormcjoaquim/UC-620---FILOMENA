@@ -45,6 +45,7 @@
             this.btn_exit = new System.Windows.Forms.Button();
             this.tab_marcar_consultas = new ReaLTaiizor.Controls.MetroTabControl();
             this.metroTabPage1 = new ReaLTaiizor.Child.Metro.MetroTabPage();
+            this.lbl_tipo = new System.Windows.Forms.Label();
             this.data_caixa = new System.Windows.Forms.MonthCalendar();
             this.btn_marcar_consulta = new ReaLTaiizor.Controls.CyberButton();
             this.cbb_especialidades = new System.Windows.Forms.ComboBox();
@@ -59,7 +60,8 @@
             this.cbb_tipo_consulta = new System.Windows.Forms.ComboBox();
             this.list_box = new System.Windows.Forms.ListBox();
             this.sidebarTransition = new System.Windows.Forms.Timer(this.components);
-            this.lbl_tipo = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_menu)).BeginInit();
             this.pn_opcoes.SuspendLayout();
@@ -77,7 +79,7 @@
             this.panel1.Controls.Add(this.pb_menu);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(750, 41);
             this.panel1.TabIndex = 5;
@@ -97,7 +99,7 @@
             this.nightControlBox1.EnableMaximizeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
             this.nightControlBox1.EnableMinimizeButton = true;
             this.nightControlBox1.EnableMinimizeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
-            this.nightControlBox1.Location = new System.Drawing.Point(646, 0);
+            this.nightControlBox1.Location = new System.Drawing.Point(611, 0);
             this.nightControlBox1.MaximizeHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.nightControlBox1.MaximizeHoverForeColor = System.Drawing.Color.White;
             this.nightControlBox1.MinimizeHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -110,7 +112,7 @@
             // 
             this.pan_color.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.pan_color.Location = new System.Drawing.Point(45, 43);
-            this.pan_color.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pan_color.Margin = new System.Windows.Forms.Padding(2);
             this.pan_color.Name = "pan_color";
             this.pan_color.Size = new System.Drawing.Size(705, 448);
             this.pan_color.TabIndex = 6;
@@ -119,18 +121,18 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(52, 6);
+            this.label1.Location = new System.Drawing.Point(40, 6);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 30);
+            this.label1.Size = new System.Drawing.Size(113, 30);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Perfil";
+            this.label1.Text = "Consultas";
             // 
             // pb_menu
             // 
             this.pb_menu.Image = ((System.Drawing.Image)(resources.GetObject("pb_menu.Image")));
-            this.pb_menu.Location = new System.Drawing.Point(2, 10);
-            this.pb_menu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pb_menu.Location = new System.Drawing.Point(-5, 6);
+            this.pb_menu.Margin = new System.Windows.Forms.Padding(2);
             this.pb_menu.Name = "pb_menu";
             this.pb_menu.Padding = new System.Windows.Forms.Padding(11, 4, 0, 0);
             this.pb_menu.Size = new System.Drawing.Size(38, 28);
@@ -149,16 +151,15 @@
             this.pn_opcoes.Controls.Add(this.btn_motivacao);
             this.pn_opcoes.Controls.Add(this.bt_logout);
             this.pn_opcoes.Controls.Add(this.btn_exit);
-            this.pn_opcoes.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pn_opcoes.Location = new System.Drawing.Point(0, 41);
-            this.pn_opcoes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pn_opcoes.Location = new System.Drawing.Point(-1, 42);
+            this.pn_opcoes.Margin = new System.Windows.Forms.Padding(2);
             this.pn_opcoes.Name = "pn_opcoes";
-            this.pn_opcoes.Size = new System.Drawing.Size(38, 447);
+            this.pn_opcoes.Size = new System.Drawing.Size(40, 338);
             this.pn_opcoes.TabIndex = 17;
             // 
             // btn_home
             // 
-            this.btn_home.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_home.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
             this.btn_home.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btn_home.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlLightLight;
             this.btn_home.FlatAppearance.BorderSize = 2;
@@ -179,7 +180,7 @@
             // 
             // btn_appointment
             // 
-            this.btn_appointment.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_appointment.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
             this.btn_appointment.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btn_appointment.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlLightLight;
             this.btn_appointment.FlatAppearance.BorderSize = 2;
@@ -200,7 +201,7 @@
             // 
             // btn_workouts
             // 
-            this.btn_workouts.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_workouts.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
             this.btn_workouts.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btn_workouts.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlLightLight;
             this.btn_workouts.FlatAppearance.BorderSize = 2;
@@ -221,7 +222,7 @@
             // 
             // btn_food
             // 
-            this.btn_food.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_food.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
             this.btn_food.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btn_food.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlLightLight;
             this.btn_food.FlatAppearance.BorderSize = 2;
@@ -242,7 +243,7 @@
             // 
             // btn_motivacao
             // 
-            this.btn_motivacao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_motivacao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
             this.btn_motivacao.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btn_motivacao.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.btn_motivacao.FlatAppearance.BorderSize = 2;
@@ -263,7 +264,7 @@
             // 
             // bt_logout
             // 
-            this.bt_logout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.bt_logout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
             this.bt_logout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.bt_logout.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlLightLight;
             this.bt_logout.FlatAppearance.BorderSize = 2;
@@ -283,7 +284,7 @@
             // 
             // btn_exit
             // 
-            this.btn_exit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_exit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
             this.btn_exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btn_exit.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.btn_exit.FlatAppearance.BorderSize = 2;
@@ -311,10 +312,10 @@
             this.tab_marcar_consultas.ControlsVisible = true;
             this.tab_marcar_consultas.IsDerivedStyle = true;
             this.tab_marcar_consultas.ItemSize = new System.Drawing.Size(100, 38);
-            this.tab_marcar_consultas.Location = new System.Drawing.Point(38, 41);
+            this.tab_marcar_consultas.Location = new System.Drawing.Point(40, 41);
             this.tab_marcar_consultas.MCursor = System.Windows.Forms.Cursors.Hand;
             this.tab_marcar_consultas.Name = "tab_marcar_consultas";
-            this.tab_marcar_consultas.SelectedIndex = 0;
+            this.tab_marcar_consultas.SelectedIndex = 1;
             this.tab_marcar_consultas.SelectedTextColor = System.Drawing.Color.White;
             this.tab_marcar_consultas.Size = new System.Drawing.Size(710, 447);
             this.tab_marcar_consultas.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
@@ -330,6 +331,7 @@
             // metroTabPage1
             // 
             this.metroTabPage1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.metroTabPage1.Controls.Add(this.panel2);
             this.metroTabPage1.Controls.Add(this.lbl_tipo);
             this.metroTabPage1.Controls.Add(this.data_caixa);
             this.metroTabPage1.Controls.Add(this.btn_marcar_consulta);
@@ -353,10 +355,24 @@
             this.metroTabPage1.ThemeName = "MetroDark";
             this.metroTabPage1.ToolTipText = null;
             // 
+            // lbl_tipo
+            // 
+            this.lbl_tipo.AutoSize = true;
+            this.lbl_tipo.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_tipo.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_tipo.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lbl_tipo.Location = new System.Drawing.Point(160, 82);
+            this.lbl_tipo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_tipo.Name = "lbl_tipo";
+            this.lbl_tipo.Size = new System.Drawing.Size(134, 25);
+            this.lbl_tipo.TabIndex = 9;
+            this.lbl_tipo.Text = "Tipo de treino:";
+            // 
             // data_caixa
             // 
+            this.data_caixa.BackColor = System.Drawing.Color.LightGray;
             this.data_caixa.Location = new System.Drawing.Point(322, 144);
-            this.data_caixa.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.data_caixa.Margin = new System.Windows.Forms.Padding(7);
             this.data_caixa.MaxDate = new System.DateTime(2026, 7, 25, 23, 59, 0, 0);
             this.data_caixa.MinDate = new System.DateTime(2025, 7, 25, 23, 59, 59, 0);
             this.data_caixa.Name = "data_caixa";
@@ -389,7 +405,7 @@
             this.btn_marcar_consulta.LinearGradient_Background = false;
             this.btn_marcar_consulta.LinearGradientPen = false;
             this.btn_marcar_consulta.Location = new System.Drawing.Point(250, 344);
-            this.btn_marcar_consulta.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_marcar_consulta.Margin = new System.Windows.Forms.Padding(2);
             this.btn_marcar_consulta.Name = "btn_marcar_consulta";
             this.btn_marcar_consulta.PenWidth = 15;
             this.btn_marcar_consulta.Rounding = true;
@@ -406,12 +422,15 @@
             // 
             // cbb_especialidades
             // 
+            this.cbb_especialidades.BackColor = System.Drawing.Color.LightGray;
             this.cbb_especialidades.Enabled = false;
+            this.cbb_especialidades.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.cbb_especialidades.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.cbb_especialidades.FormattingEnabled = true;
             this.cbb_especialidades.Location = new System.Drawing.Point(322, 82);
-            this.cbb_especialidades.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbb_especialidades.Margin = new System.Windows.Forms.Padding(2);
             this.cbb_especialidades.Name = "cbb_especialidades";
-            this.cbb_especialidades.Size = new System.Drawing.Size(198, 24);
+            this.cbb_especialidades.Size = new System.Drawing.Size(198, 29);
             this.cbb_especialidades.TabIndex = 5;
             // 
             // lbl_especialidade
@@ -455,17 +474,21 @@
             // 
             // cbb_tipo
             // 
+            this.cbb_tipo.BackColor = System.Drawing.Color.LightGray;
+            this.cbb_tipo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.cbb_tipo.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.cbb_tipo.FormattingEnabled = true;
             this.cbb_tipo.Location = new System.Drawing.Point(322, 28);
-            this.cbb_tipo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbb_tipo.Margin = new System.Windows.Forms.Padding(2);
             this.cbb_tipo.Name = "cbb_tipo";
-            this.cbb_tipo.Size = new System.Drawing.Size(198, 24);
+            this.cbb_tipo.Size = new System.Drawing.Size(198, 29);
             this.cbb_tipo.TabIndex = 0;
             this.cbb_tipo.SelectedIndexChanged += new System.EventHandler(this.cbb_tipo_SelectedIndexChanged);
             // 
             // tab_pages
             // 
             this.tab_pages.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.tab_pages.Controls.Add(this.panel3);
             this.tab_pages.Controls.Add(this.btn_filtrar);
             this.tab_pages.Controls.Add(this.label4);
             this.tab_pages.Controls.Add(this.label2);
@@ -512,8 +535,8 @@
             this.btn_filtrar.Lighting = false;
             this.btn_filtrar.LinearGradient_Background = false;
             this.btn_filtrar.LinearGradientPen = false;
-            this.btn_filtrar.Location = new System.Drawing.Point(45, 181);
-            this.btn_filtrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_filtrar.Location = new System.Drawing.Point(46, 247);
+            this.btn_filtrar.Margin = new System.Windows.Forms.Padding(2);
             this.btn_filtrar.Name = "btn_filtrar";
             this.btn_filtrar.PenWidth = 15;
             this.btn_filtrar.Rounding = true;
@@ -534,7 +557,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(20, 88);
+            this.label4.Location = new System.Drawing.Point(21, 154);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(142, 21);
@@ -547,7 +570,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(19, 23);
+            this.label2.Location = new System.Drawing.Point(19, 105);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(99, 32);
@@ -556,26 +579,31 @@
             // 
             // cbb_tipo_consulta
             // 
+            this.cbb_tipo_consulta.BackColor = System.Drawing.Color.LightGray;
+            this.cbb_tipo_consulta.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.cbb_tipo_consulta.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.cbb_tipo_consulta.FormattingEnabled = true;
             this.cbb_tipo_consulta.Items.AddRange(new object[] {
             "",
             "Especialista",
             "Treino PT",
             "Todas"});
-            this.cbb_tipo_consulta.Location = new System.Drawing.Point(24, 114);
-            this.cbb_tipo_consulta.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbb_tipo_consulta.Location = new System.Drawing.Point(25, 180);
+            this.cbb_tipo_consulta.Margin = new System.Windows.Forms.Padding(2);
             this.cbb_tipo_consulta.Name = "cbb_tipo_consulta";
-            this.cbb_tipo_consulta.Size = new System.Drawing.Size(181, 24);
+            this.cbb_tipo_consulta.Size = new System.Drawing.Size(181, 29);
             this.cbb_tipo_consulta.TabIndex = 1;
             // 
             // list_box
             // 
+            this.list_box.BackColor = System.Drawing.Color.LightGray;
+            this.list_box.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.list_box.FormattingEnabled = true;
-            this.list_box.ItemHeight = 16;
-            this.list_box.Location = new System.Drawing.Point(241, 62);
-            this.list_box.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.list_box.ItemHeight = 17;
+            this.list_box.Location = new System.Drawing.Point(241, 45);
+            this.list_box.Margin = new System.Windows.Forms.Padding(2);
             this.list_box.Name = "list_box";
-            this.list_box.Size = new System.Drawing.Size(428, 228);
+            this.list_box.Size = new System.Drawing.Size(428, 327);
             this.list_box.TabIndex = 0;
             // 
             // sidebarTransition
@@ -583,30 +611,37 @@
             this.sidebarTransition.Interval = 10;
             this.sidebarTransition.Tick += new System.EventHandler(this.sidebarTransition_Tick);
             // 
-            // lbl_tipo
+            // panel2
             // 
-            this.lbl_tipo.AutoSize = true;
-            this.lbl_tipo.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_tipo.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_tipo.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lbl_tipo.Location = new System.Drawing.Point(160, 82);
-            this.lbl_tipo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbl_tipo.Name = "lbl_tipo";
-            this.lbl_tipo.Size = new System.Drawing.Size(134, 25);
-            this.lbl_tipo.TabIndex = 9;
-            this.lbl_tipo.Text = "Tipo de treino:";
+            this.panel2.BackColor = System.Drawing.Color.Transparent;
+            this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel2.Location = new System.Drawing.Point(619, 9);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(75, 73);
+            this.panel2.TabIndex = 10;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Transparent;
+            this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
+            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel3.Location = new System.Drawing.Point(119, 26);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(62, 62);
+            this.panel3.TabIndex = 7;
             // 
             // consultas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ClientSize = new System.Drawing.Size(750, 488);
             this.Controls.Add(this.pn_opcoes);
             this.Controls.Add(this.tab_marcar_consultas);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "consultas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "consultas";
@@ -656,5 +691,7 @@
         private System.Windows.Forms.Timer sidebarTransition;
         private System.Windows.Forms.MonthCalendar data_caixa;
         private System.Windows.Forms.Label lbl_tipo;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
     }
 }

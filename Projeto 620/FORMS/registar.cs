@@ -66,16 +66,44 @@ namespace Projeto_620
             string objetivo = cbb_objectives.SelectedItem.ToString();
             string altura_box = tb_height.Text;
             string peso_box = tb_weight.Text;
-            string caminho = @"C:\cometudoperdetudo\users.xml";
+            int idade;
+            string email = tb_email.Text;
+            
+            // Tivemos de Criar um ficheiro XML para guardar as informações dos utilizadores
+            // XDocument doc = new XDocument(new XElement("users"));
+            // doc.Save(caminho);
 
-            if(!int.TryParse(altura_box, out int altura))
+            // Um género de abrir documento para trabalharmos com ele
+            XDocument doc = XDocument.Load(GlobalUtils.caminho);
+
+            if (username.Length <= 0 || username.Length > 20)
             {
-                MessageBox.Show("Número inserido na altura é inválido");
+                MessageBox.Show("Username só pode ter no máximo 20 caracteres");
                 return;
             }
-            if (!int.TryParse(peso_box, out int peso))
+            bool usernameExiste = doc.Descendants("user").Elements("Dados").Elements("username").Any(x => x.Value == username);
+
+            if (usernameExiste)
             {
-                MessageBox.Show("Número inserido no peso é inválido");
+                MessageBox.Show("Este username já existe. Por favor escolhe outro.");
+                tb_username.Text = string.Empty;
+                return;
+            }
+
+            if (!int.TryParse(tb_idade.Text, out idade) && idade <= 0)
+            {
+                MessageBox.Show("Valor inserido na idade inválida!");
+                return;
+            }
+
+            if (!double.TryParse(tb_weight.Text, out double peso) && peso <= 0)
+            {
+                MessageBox.Show("Valor inserido no peso inválido! Tente com virgula");
+                return;
+            }
+            if (!double.TryParse(tb_height.Text, out double altura) && altura <= 0)
+            {
+                MessageBox.Show("Valor inserido na altura inválido! Tente com virgula");
                 return;
             }
 
@@ -85,36 +113,32 @@ namespace Projeto_620
                 MessageBox.Show("Erro! Tem de preencher todos os campos.");
                 return;
             }
-            // Tivemos de Criar um ficheiro XML para guardar as informações dos utilizadores
-            // XDocument doc = new XDocument(new XElement("users"));
-            // doc.Save(caminho);
-
-            // Um género de abrir documento para trabalharmos com ele
-            XDocument doc = XDocument.Load(caminho);
 
             // aqui sim colocamos os dados novos no documento - VER AULA 15 JULHO - PACHECO
             XElement novoUser = new XElement("user",
-                                new XElement("username", username),
-                                new XElement("nome", nome),
-                                new XElement("password", password),
-                                new XElement("objetivo", objetivo),
-                                new XElement("altura", altura),
-                                new XElement("peso", peso));
+                                    new XElement("Dados",
+                                        new XElement("username", username),
+                                        new XElement("nome", nome),
+                                        new XElement("password", password),
+                                        new XElement("idade", idade),
+                                        new XElement("email", email),
+                                        new XElement("objetivo", objetivo),
+                                        new XElement("altura", altura),
+                                        new XElement("peso", peso)));
 
             // adicionar o utilizador novo ao documento XML
             doc.Root.Add(novoUser);
 
             // guardar o documento XML atualizado
-            doc.Save(caminho);
+            doc.Save(GlobalUtils.caminho);
 
             // ALTERAR PARA UMA MENSAGEM MAIS 'NITA
             MessageBox.Show("Utilizador criado com sucesso!");
 
-
-            Form loginPagina = new login();
-            loginPagina.Show();
             this.Close();
         }
+
+        
 
         private void btn_voltar_Click(object sender, EventArgs e)
         {
@@ -123,9 +147,19 @@ namespace Projeto_620
 
         private void btn_calculoIMC_Click(object sender, EventArgs e)
         {
-            double peso = double.Parse(tb_weight.Text);
 
-            double altura = double.Parse(tb_height.Text);
+            if (!double.TryParse(tb_weight.Text, out double peso) && peso <= 0)
+            {
+                MessageBox.Show("Valor inserido no peso inválido! Tente com virgula");
+                return;
+            }
+            if (!double.TryParse(tb_height.Text, out double altura) && altura <= 0)
+            {
+                MessageBox.Show("Valor inserido na altura inválido! Tente com virgula");
+                return;
+            }
+
+
 
             double imc = peso / (altura * altura);
 

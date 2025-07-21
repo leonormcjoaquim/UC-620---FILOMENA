@@ -127,6 +127,7 @@ namespace Projeto_620
             Alimentacao refeicao = new Alimentacao(nomeComida, calorias, tipoSelecionado);
 
             utilizador.Alimentacao.Add(refeicao);
+            GlobalUtils.caloriasConsumidas += calorias;
 
             //XDocument doc = XDocument.Load(GlobalUtils.caminho);
 
@@ -230,6 +231,51 @@ namespace Projeto_620
         private void pn_opcoes_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void btn_home_MouseHover(object sender, EventArgs e)
+        {
+            btn_home.Cursor = Cursors.Hand;
+        }
+
+        private void btn_appoitments_MouseHover(object sender, EventArgs e)
+        {
+            btn_appoitments.Cursor = Cursors.Hand;
+        }
+
+        private void btn_workouts_MouseHover(object sender, EventArgs e)
+        {
+            btn_workouts.Cursor = Cursors.Hand;
+        }
+
+        private void btn_food_MouseHover(object sender, EventArgs e)
+        {
+            btn_food.Cursor = Cursors.Hand;
+        }
+
+        private void btn_motivacao_MouseHover(object sender, EventArgs e)
+        {
+            btn_motivacao.Cursor = Cursors.Hand;
+        }
+
+        private void bt_logout_MouseLeave(object sender, EventArgs e)
+        {
+            bt_logout.Cursor = Cursors.Hand;
+        }
+
+        private void btn_exit_MouseHover(object sender, EventArgs e)
+        {
+            btn_exit.Cursor = Cursors.Hand;
+        }
+
+        private void btn_inserirRefeicao_MouseHover(object sender, EventArgs e)
+        {
+            btn_inserirRefeicao.Cursor = Cursors.Hand;
+        }
+
+        private void pb_menu_MouseHover(object sender, EventArgs e)
+        {
+            pb_menu.Cursor = Cursors.Hand;
         }
     }
 }

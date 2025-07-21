@@ -13,6 +13,7 @@ using ReaLTaiizor.Controls;
 using Projeto_620.FORMS;
 using Projeto_620.models;
 using Projeto_620.utils;
+using System.IO;
 
 namespace Projeto_620.FORMS
 {
@@ -95,8 +96,21 @@ namespace Projeto_620.FORMS
                 return;
             }
 
-            // vê todos os users no ficheiro xml e compara se existe ou nao aquele login 
-            XDocument doc = XDocument.Load(GlobalUtils.caminho);
+            XDocument doc;
+
+            if (!File.Exists(GlobalUtils.caminho))
+            {
+                doc = new XDocument(new XElement("users"));
+                // grava o novo ficheiro com raiz válida
+                doc.Save(GlobalUtils.caminho); 
+            }
+            else
+            {
+                // vê todos os users no ficheiro xml e compara se existe ou nao aquele login 
+                doc = XDocument.Load(GlobalUtils.caminho); 
+            }
+
+            
             bool userExists = doc.Root.Elements("user").Descendants("Dados").Any(x =>x.Element("username")?.Value == username &&x.Element("password")?.Value == password);
 
             GlobalUtils.username = username;

@@ -44,7 +44,7 @@ namespace Projeto_620.FORMS
             else
             {
                 pn_opcoes.Width += 10;
-                if (pn_opcoes.Width >= 245)
+                if (pn_opcoes.Width >= 240)
                 {
                     sidebarExpand = true;
                     sidebarTransition.Stop();
@@ -54,7 +54,7 @@ namespace Projeto_620.FORMS
 
         private void btn_exit_MouseHover(object sender, EventArgs e)
         {
-            btn_exit.Cursor = Cursors.Default;
+            btn_exit.Cursor = Cursors.Hand;
         }
 
         private void btn_home_Click(object sender, EventArgs e)
@@ -152,8 +152,8 @@ namespace Projeto_620.FORMS
 
             utilizador.Exercicios.Add(treino);
 
-            lb_listaTreino.Items.Clear();
-            lb_listaTreino.Items.Add(treino);
+            //lb_listaTreino.Items.Clear();
+            //lb_listaTreino.Items.Add(treino);
 
 
             // -- Metodo Inicial sem utilização das classes --
@@ -199,6 +199,9 @@ namespace Projeto_620.FORMS
             tb_duracaoTreino.Clear();
             tb_caloriasQueimadas.Clear();
             cbb_tipoTreino.SelectedIndex = -1;
+
+            dataGridView1.DataSource = null; 
+            dataGridView1.DataSource = utilizador.Exercicios;
         }
 
         private void AtualizarListaTreinos()
@@ -244,17 +247,61 @@ namespace Projeto_620.FORMS
 
             User utilizador = GlobalUtils.users.FirstOrDefault(u => u.Username == GlobalUtils.username);
 
-            lb_listaTreino.Items.Clear();
+            //lb_listaTreino.Items.Clear();
 
-            foreach (Exercicio treino in utilizador.Exercicios)
-            {
-                lb_listaTreino.Items.Add(treino);
-            }
+            //foreach (Exercicio treino in utilizador.Exercicios)
+            //{
+            //    lb_listaTreino.Items.Add(treino);
+                
+            //}
+
+            dataGridView1.DataSource = null; // limpa antes para forçar o refresh
+            dataGridView1.DataSource = utilizador.Exercicios;
         }
 
         private void pb_menu_Click_1(object sender, EventArgs e)
         {
             sidebarTransition.Start();
+        }
+
+        private void btn_inserirTreino_MouseHover(object sender, EventArgs e)
+        {
+            btn_inserirTreino.Cursor = Cursors.Hand;
+        }
+
+        private void pb_menu_MouseHover(object sender, EventArgs e)
+        {
+            pb_menu.Cursor = Cursors.Hand;
+        }
+
+        private void btn_home_MouseHover(object sender, EventArgs e)
+        {
+            btn_home.Cursor = Cursors.Hand;
+        }
+
+        private void btn_appoitments_MouseHover(object sender, EventArgs e)
+        {
+            btn_appoitments.Cursor = Cursors.Hand;
+        }
+
+        private void btn_workouts_MouseHover(object sender, EventArgs e)
+        {
+            btn_workouts.Cursor = Cursors.Hand;
+        }
+
+        private void btn_food_MouseHover(object sender, EventArgs e)
+        {
+            btn_food.Cursor = Cursors.Hand;
+        }
+
+        private void btn_motivacao_MouseHover(object sender, EventArgs e)
+        {
+            btn_motivacao.Cursor = Cursors.Hand;
+        }
+
+        private void bt_logout_MouseHover(object sender, EventArgs e)
+        {
+            bt_logout.Cursor = Cursors.Hand;
         }
     }
 

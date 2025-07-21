@@ -229,11 +229,6 @@ namespace Projeto_620.FORMS
                 }
             }
         }
-
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 
 }
