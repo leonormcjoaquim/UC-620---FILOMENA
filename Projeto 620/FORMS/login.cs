@@ -14,11 +14,13 @@ using Projeto_620.FORMS;
 using Projeto_620.models;
 using Projeto_620.utils;
 using System.IO;
+using System.Media;
 
 namespace Projeto_620.FORMS
 {
     public partial class login : Form
     {
+        public SoundPlayer player = new SoundPlayer(Properties.Resources.dry_fart);
         public login()
         {
             InitializeComponent();
@@ -88,7 +90,7 @@ namespace Projeto_620.FORMS
             if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password))
             {
                 //melhorar esta textbox
-                MessageBox.Show("Por favor, preencha todos os campos.");
+                MessageBox.Show("Por favor, preencha todos os campos.", "Campos obrigatórios", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
                 tb_username.TextButton = string.Empty;
                 tb_password.TextButton = string.Empty;
@@ -118,8 +120,7 @@ namespace Projeto_620.FORMS
             // if userexists == true
             if (!userExists)
             {
-                //melhorar esta textbox
-                MessageBox.Show("Utilizador ou password incorretos. Tente novamente.");
+                MessageBox.Show("Utilizador ou password incorretos. Tente novamente.", "Erro!", MessageBoxButtons.OK,MessageBoxIcon.Warning);
                 tb_username.Focus();
                 tb_username.TextButton = string.Empty;
                 tb_password.TextButton = string.Empty;
@@ -127,8 +128,8 @@ namespace Projeto_620.FORMS
             }
             else
             {
-                //melhorar esta textbox 
-                MessageBox.Show("Login efetuado com sucesso!");
+                player.Play();
+                MessageBox.Show("Login efetuado com sucesso!", "Eureka", MessageBoxButtons.OK, MessageBoxIcon.None);
                 XmlToList();
                 Form paginaInicial = new paginaInicial();
                 paginaInicial.Show();
@@ -182,7 +183,7 @@ namespace Projeto_620.FORMS
                             break;
 
                         default:
-                            MessageBox.Show($"Tipo de marcação desconhecido: {tipo}");
+                            MessageBox.Show($"Tipo de marcação desconhecido: {tipo}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                             continue;
                     }
 
@@ -204,7 +205,7 @@ namespace Projeto_620.FORMS
 
                     if (!Enum.TryParse(tipoRefeicaoStr, true, out TipoRefeicao tipoRefeicao))
                     {
-                        MessageBox.Show($"Tipo de refeição desconhecido: {tipoRefeicaoStr}");
+                        MessageBox.Show($"Tipo de refeição desconhecido: {tipoRefeicaoStr}", "Erro!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         continue;
                     }
 
@@ -232,7 +233,7 @@ namespace Projeto_620.FORMS
 
                     if (!Enum.TryParse(tipoStr, true, out TipoTreino tipoTreino))
                     {
-                        MessageBox.Show($"Tipo de treino desconhecido: {tipoStr}");
+                        MessageBox.Show($"Tipo de treino desconhecido: {tipoStr}", "Erros!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         continue;
                     }
 

@@ -219,5 +219,71 @@ namespace Projeto_620.FORMS
         {
             
         }
+
+        private void cyberButton1_Click(object sender, EventArgs e)
+        {
+
+            User utilizador = GlobalUtils.users.FirstOrDefault(u => u.Username == GlobalUtils.username);
+
+            string nome = tb_nome.Text;
+            int idade = 0;
+            double altura = 0;
+            double peso = 0;
+            
+            if (string.IsNullOrEmpty(nome))
+            {
+                nome = utilizador.Nome;
+            }
+            else
+            {
+                utilizador.Nome = nome;
+            }
+
+            if (string.IsNullOrEmpty(tb_idade.Text))
+            {
+                idade = utilizador.Idade;
+            }
+            else if (!int.TryParse(tb_idade.Text, out int idadeV) || idadeV <= 0 || idadeV >= 140)
+            {
+                MessageBox.Show("Tem de colocar um numero válido na idade");
+                return;
+            }
+            else
+            {
+                utilizador.Idade = idadeV;
+            }
+
+            if (string.IsNullOrEmpty(tb_altura.Text))
+            {
+                altura = utilizador.Altura;
+            }
+            else if (!double.TryParse(tb_altura.Text, out double alturaV) || alturaV < 0)
+            {
+                MessageBox.Show("Tem de colocar uma altura válida!");
+                return;
+            }
+            else
+            {
+                utilizador.Altura = alturaV;
+            }
+
+            if (string.IsNullOrEmpty(tb_peso.Text))
+            {
+                peso = utilizador.Peso;
+            }
+            else if (!double.TryParse(tb_peso.Text, out double pesoV) || pesoV <= 0)
+            {
+                MessageBox.Show("Tem de colocar um peso válido!");
+                return;
+            } else
+            {
+                utilizador.Peso = pesoV;
+            }
+
+
+            MessageBox.Show("Dados alterados com sucesso!");
+
+
+        }
     }
 }

@@ -46,7 +46,15 @@
             this.btn_exit = new System.Windows.Forms.Button();
             this.ficheiro = new System.Windows.Forms.OpenFileDialog();
             this.lbl_atualizarPeso = new System.Windows.Forms.Label();
+            this.tb_idade = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.tb_nome = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.tb_altura = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.tb_peso = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.cyberButton1 = new ReaLTaiizor.Controls.CyberButton();
             ((System.ComponentModel.ISupportInitialize)(this.pb_menu)).BeginInit();
             this.panel1.SuspendLayout();
             this.pn_opcoes.SuspendLayout();
@@ -55,11 +63,11 @@
             // pb_menu
             // 
             this.pb_menu.Image = ((System.Drawing.Image)(resources.GetObject("pb_menu.Image")));
-            this.pb_menu.Location = new System.Drawing.Point(-7, 7);
-            this.pb_menu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pb_menu.Location = new System.Drawing.Point(-5, 6);
+            this.pb_menu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pb_menu.Name = "pb_menu";
-            this.pb_menu.Padding = new System.Windows.Forms.Padding(15, 5, 0, 0);
-            this.pb_menu.Size = new System.Drawing.Size(51, 34);
+            this.pb_menu.Padding = new System.Windows.Forms.Padding(11, 4, 0, 0);
+            this.pb_menu.Size = new System.Drawing.Size(38, 28);
             this.pb_menu.TabIndex = 3;
             this.pb_menu.TabStop = false;
             this.pb_menu.Click += new System.EventHandler(this.pb_menu_Click);
@@ -73,27 +81,28 @@
             this.panel1.Controls.Add(this.pb_menu);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1000, 50);
+            this.panel1.Size = new System.Drawing.Size(750, 41);
             this.panel1.TabIndex = 4;
             // 
             // pan_color
             // 
             this.pan_color.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.pan_color.Location = new System.Drawing.Point(60, 53);
-            this.pan_color.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pan_color.Location = new System.Drawing.Point(45, 43);
+            this.pan_color.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pan_color.Name = "pan_color";
-            this.pan_color.Size = new System.Drawing.Size(940, 551);
+            this.pan_color.Size = new System.Drawing.Size(705, 448);
             this.pan_color.TabIndex = 6;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(57, 7);
+            this.label1.Location = new System.Drawing.Point(43, 6);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(87, 38);
+            this.label1.Size = new System.Drawing.Size(68, 30);
             this.label1.TabIndex = 4;
             this.label1.Text = "Perfil";
             // 
@@ -107,9 +116,10 @@
             this.lbl_ola.AutoSize = true;
             this.lbl_ola.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_ola.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lbl_ola.Location = new System.Drawing.Point(61, 59);
+            this.lbl_ola.Location = new System.Drawing.Point(46, 48);
+            this.lbl_ola.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_ola.Name = "lbl_ola";
-            this.lbl_ola.Size = new System.Drawing.Size(92, 51);
+            this.lbl_ola.Size = new System.Drawing.Size(74, 39);
             this.lbl_ola.TabIndex = 14;
             this.lbl_ola.Text = "Olá";
             // 
@@ -123,10 +133,10 @@
             this.pn_opcoes.Controls.Add(this.btn_motivacao);
             this.pn_opcoes.Controls.Add(this.bt_logout);
             this.pn_opcoes.Controls.Add(this.btn_exit);
-            this.pn_opcoes.Location = new System.Drawing.Point(0, 53);
-            this.pn_opcoes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pn_opcoes.Location = new System.Drawing.Point(0, 43);
+            this.pn_opcoes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pn_opcoes.Name = "pn_opcoes";
-            this.pn_opcoes.Size = new System.Drawing.Size(51, 416);
+            this.pn_opcoes.Size = new System.Drawing.Size(38, 338);
             this.pn_opcoes.TabIndex = 16;
             // 
             // btn_home
@@ -141,9 +151,9 @@
             this.btn_home.Image = ((System.Drawing.Image)(resources.GetObject("btn_home.Image")));
             this.btn_home.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_home.Location = new System.Drawing.Point(0, 0);
-            this.btn_home.Margin = new System.Windows.Forms.Padding(0, 0, 0, 7);
+            this.btn_home.Margin = new System.Windows.Forms.Padding(0, 0, 0, 6);
             this.btn_home.Name = "btn_home";
-            this.btn_home.Size = new System.Drawing.Size(317, 53);
+            this.btn_home.Size = new System.Drawing.Size(238, 43);
             this.btn_home.TabIndex = 7;
             this.btn_home.Text = "Home";
             this.btn_home.UseVisualStyleBackColor = false;
@@ -160,10 +170,10 @@
             this.btn_appoitments.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btn_appoitments.Image = ((System.Drawing.Image)(resources.GetObject("btn_appoitments.Image")));
             this.btn_appoitments.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_appoitments.Location = new System.Drawing.Point(0, 60);
-            this.btn_appoitments.Margin = new System.Windows.Forms.Padding(0, 0, 0, 7);
+            this.btn_appoitments.Location = new System.Drawing.Point(0, 49);
+            this.btn_appoitments.Margin = new System.Windows.Forms.Padding(0, 0, 0, 6);
             this.btn_appoitments.Name = "btn_appoitments";
-            this.btn_appoitments.Size = new System.Drawing.Size(317, 50);
+            this.btn_appoitments.Size = new System.Drawing.Size(238, 41);
             this.btn_appoitments.TabIndex = 7;
             this.btn_appoitments.Text = "Especialista";
             this.btn_appoitments.UseVisualStyleBackColor = false;
@@ -180,10 +190,10 @@
             this.btn_workouts.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btn_workouts.Image = ((System.Drawing.Image)(resources.GetObject("btn_workouts.Image")));
             this.btn_workouts.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_workouts.Location = new System.Drawing.Point(0, 117);
-            this.btn_workouts.Margin = new System.Windows.Forms.Padding(0, 0, 0, 7);
+            this.btn_workouts.Location = new System.Drawing.Point(0, 96);
+            this.btn_workouts.Margin = new System.Windows.Forms.Padding(0, 0, 0, 6);
             this.btn_workouts.Name = "btn_workouts";
-            this.btn_workouts.Size = new System.Drawing.Size(317, 53);
+            this.btn_workouts.Size = new System.Drawing.Size(238, 43);
             this.btn_workouts.TabIndex = 7;
             this.btn_workouts.Text = "Exercicios";
             this.btn_workouts.UseVisualStyleBackColor = false;
@@ -200,10 +210,10 @@
             this.btn_food.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btn_food.Image = ((System.Drawing.Image)(resources.GetObject("btn_food.Image")));
             this.btn_food.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_food.Location = new System.Drawing.Point(0, 177);
-            this.btn_food.Margin = new System.Windows.Forms.Padding(0, 0, 0, 7);
+            this.btn_food.Location = new System.Drawing.Point(0, 145);
+            this.btn_food.Margin = new System.Windows.Forms.Padding(0, 0, 0, 6);
             this.btn_food.Name = "btn_food";
-            this.btn_food.Size = new System.Drawing.Size(317, 53);
+            this.btn_food.Size = new System.Drawing.Size(238, 43);
             this.btn_food.TabIndex = 7;
             this.btn_food.Text = "Comida";
             this.btn_food.UseVisualStyleBackColor = false;
@@ -220,10 +230,10 @@
             this.btn_motivacao.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btn_motivacao.Image = ((System.Drawing.Image)(resources.GetObject("btn_motivacao.Image")));
             this.btn_motivacao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_motivacao.Location = new System.Drawing.Point(0, 237);
-            this.btn_motivacao.Margin = new System.Windows.Forms.Padding(0, 0, 0, 7);
+            this.btn_motivacao.Location = new System.Drawing.Point(0, 194);
+            this.btn_motivacao.Margin = new System.Windows.Forms.Padding(0, 0, 0, 6);
             this.btn_motivacao.Name = "btn_motivacao";
-            this.btn_motivacao.Size = new System.Drawing.Size(317, 52);
+            this.btn_motivacao.Size = new System.Drawing.Size(238, 42);
             this.btn_motivacao.TabIndex = 7;
             this.btn_motivacao.Text = "Motivação";
             this.btn_motivacao.UseVisualStyleBackColor = false;
@@ -240,10 +250,10 @@
             this.bt_logout.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.bt_logout.Image = ((System.Drawing.Image)(resources.GetObject("bt_logout.Image")));
             this.bt_logout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bt_logout.Location = new System.Drawing.Point(0, 296);
-            this.bt_logout.Margin = new System.Windows.Forms.Padding(0, 0, 0, 7);
+            this.bt_logout.Location = new System.Drawing.Point(0, 242);
+            this.bt_logout.Margin = new System.Windows.Forms.Padding(0, 0, 0, 6);
             this.bt_logout.Name = "bt_logout";
-            this.bt_logout.Size = new System.Drawing.Size(317, 53);
+            this.bt_logout.Size = new System.Drawing.Size(238, 43);
             this.bt_logout.TabIndex = 7;
             this.bt_logout.Text = "Logout";
             this.bt_logout.UseVisualStyleBackColor = false;
@@ -260,10 +270,10 @@
             this.btn_exit.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btn_exit.Image = ((System.Drawing.Image)(resources.GetObject("btn_exit.Image")));
             this.btn_exit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_exit.Location = new System.Drawing.Point(0, 356);
-            this.btn_exit.Margin = new System.Windows.Forms.Padding(0, 0, 0, 7);
+            this.btn_exit.Location = new System.Drawing.Point(0, 291);
+            this.btn_exit.Margin = new System.Windows.Forms.Padding(0, 0, 0, 6);
             this.btn_exit.Name = "btn_exit";
-            this.btn_exit.Size = new System.Drawing.Size(317, 52);
+            this.btn_exit.Size = new System.Drawing.Size(238, 42);
             this.btn_exit.TabIndex = 7;
             this.btn_exit.Text = "Exit";
             this.btn_exit.UseVisualStyleBackColor = false;
@@ -276,37 +286,164 @@
             // lbl_atualizarPeso
             // 
             this.lbl_atualizarPeso.AutoSize = true;
-            this.lbl_atualizarPeso.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_atualizarPeso.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.lbl_atualizarPeso.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lbl_atualizarPeso.Location = new System.Drawing.Point(611, 481);
+            this.lbl_atualizarPeso.Location = new System.Drawing.Point(461, 185);
+            this.lbl_atualizarPeso.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_atualizarPeso.Name = "lbl_atualizarPeso";
-            this.lbl_atualizarPeso.Size = new System.Drawing.Size(152, 28);
+            this.lbl_atualizarPeso.Size = new System.Drawing.Size(51, 21);
             this.lbl_atualizarPeso.TabIndex = 37;
-            this.lbl_atualizarPeso.Text = "Atualizar Peso:";
+            this.lbl_atualizarPeso.Text = "Idade:";
+            // 
+            // tb_idade
+            // 
+            this.tb_idade.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.tb_idade.Location = new System.Drawing.Point(511, 182);
+            this.tb_idade.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tb_idade.Name = "tb_idade";
+            this.tb_idade.Size = new System.Drawing.Size(148, 29);
+            this.tb_idade.TabIndex = 38;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label2.Location = new System.Drawing.Point(473, 81);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(181, 30);
+            this.label2.TabIndex = 39;
+            this.label2.Text = "Atualizar dados:";
+            // 
+            // tb_nome
+            // 
+            this.tb_nome.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.tb_nome.Location = new System.Drawing.Point(511, 136);
+            this.tb_nome.Margin = new System.Windows.Forms.Padding(2);
+            this.tb_nome.Name = "tb_nome";
+            this.tb_nome.Size = new System.Drawing.Size(148, 29);
+            this.tb_nome.TabIndex = 41;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label3.Location = new System.Drawing.Point(456, 139);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(56, 21);
+            this.label3.TabIndex = 40;
+            this.label3.Text = "Nome:";
+            // 
+            // tb_altura
+            // 
+            this.tb_altura.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.tb_altura.Location = new System.Drawing.Point(511, 226);
+            this.tb_altura.Margin = new System.Windows.Forms.Padding(2);
+            this.tb_altura.Name = "tb_altura";
+            this.tb_altura.Size = new System.Drawing.Size(148, 29);
+            this.tb_altura.TabIndex = 43;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label4.Location = new System.Drawing.Point(458, 229);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(55, 21);
+            this.label4.TabIndex = 42;
+            this.label4.Text = "Altura:";
             // 
             // tb_peso
             // 
-            this.tb_peso.Location = new System.Drawing.Point(780, 488);
+            this.tb_peso.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.tb_peso.Location = new System.Drawing.Point(511, 268);
+            this.tb_peso.Margin = new System.Windows.Forms.Padding(2);
             this.tb_peso.Name = "tb_peso";
-            this.tb_peso.Size = new System.Drawing.Size(155, 22);
-            this.tb_peso.TabIndex = 38;
+            this.tb_peso.Size = new System.Drawing.Size(148, 29);
+            this.tb_peso.TabIndex = 45;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.label5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label5.Location = new System.Drawing.Point(467, 271);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(45, 21);
+            this.label5.TabIndex = 44;
+            this.label5.Text = "Peso:";
+            // 
+            // cyberButton1
+            // 
+            this.cyberButton1.Alpha = 20;
+            this.cyberButton1.BackColor = System.Drawing.Color.Transparent;
+            this.cyberButton1.Background = true;
+            this.cyberButton1.Background_WidthPen = 4F;
+            this.cyberButton1.BackgroundPen = true;
+            this.cyberButton1.ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
+            this.cyberButton1.ColorBackground_1 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
+            this.cyberButton1.ColorBackground_2 = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(63)))), ((int)(((byte)(86)))));
+            this.cyberButton1.ColorBackground_Pen = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
+            this.cyberButton1.ColorLighting = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
+            this.cyberButton1.ColorPen_1 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
+            this.cyberButton1.ColorPen_2 = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(63)))), ((int)(((byte)(86)))));
+            this.cyberButton1.CyberButtonStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
+            this.cyberButton1.Effect_1 = true;
+            this.cyberButton1.Effect_1_ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
+            this.cyberButton1.Effect_1_Transparency = 25;
+            this.cyberButton1.Effect_2 = true;
+            this.cyberButton1.Effect_2_ColorBackground = System.Drawing.Color.White;
+            this.cyberButton1.Effect_2_Transparency = 20;
+            this.cyberButton1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cyberButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
+            this.cyberButton1.Lighting = false;
+            this.cyberButton1.LinearGradient_Background = false;
+            this.cyberButton1.LinearGradientPen = false;
+            this.cyberButton1.Location = new System.Drawing.Point(523, 319);
+            this.cyberButton1.Name = "cyberButton1";
+            this.cyberButton1.PenWidth = 15;
+            this.cyberButton1.Rounding = true;
+            this.cyberButton1.RoundingInt = 70;
+            this.cyberButton1.Size = new System.Drawing.Size(119, 43);
+            this.cyberButton1.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            this.cyberButton1.TabIndex = 46;
+            this.cyberButton1.Tag = "Cyber";
+            this.cyberButton1.TextButton = "Atualizar";
+            this.cyberButton1.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.cyberButton1.Timer_Effect_1 = 5;
+            this.cyberButton1.Timer_RGB = 300;
+            this.cyberButton1.Click += new System.EventHandler(this.cyberButton1_Click);
             // 
             // paginaInicial
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.ClientSize = new System.Drawing.Size(1000, 601);
+            this.ClientSize = new System.Drawing.Size(750, 488);
+            this.Controls.Add(this.cyberButton1);
             this.Controls.Add(this.tb_peso);
-            this.Controls.Add(this.lbl_atualizarPeso);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.tb_altura);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.tb_nome);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.tb_idade);
             this.Controls.Add(this.pn_opcoes);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lbl_ola);
+            this.Controls.Add(this.lbl_atualizarPeso);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.MaximumSize = new System.Drawing.Size(1000, 601);
-            this.MinimumSize = new System.Drawing.Size(1000, 601);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MaximumSize = new System.Drawing.Size(750, 488);
+            this.MinimumSize = new System.Drawing.Size(750, 488);
             this.Name = "paginaInicial";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "paginaInicial";
@@ -336,6 +473,14 @@
         private System.Windows.Forms.Button btn_exit;
         private System.Windows.Forms.OpenFileDialog ficheiro;
         private System.Windows.Forms.Label lbl_atualizarPeso;
+        private System.Windows.Forms.TextBox tb_idade;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox tb_nome;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox tb_altura;
+        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox tb_peso;
+        private System.Windows.Forms.Label label5;
+        private ReaLTaiizor.Controls.CyberButton cyberButton1;
     }
 }
