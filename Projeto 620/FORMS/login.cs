@@ -152,6 +152,7 @@ namespace Projeto_620.FORMS
             string nome = (string)dados.Element("nome");
             string password = (string)dados.Element("password");
             string email = (string)dados.Element("email");
+            string sexo = (string)dados.Element("sexo");
             int idade = (int)dados.Element("idade");
             double altura = (double)dados.Element("altura");
             double peso = (double)dados.Element("peso");
@@ -241,7 +242,7 @@ namespace Projeto_620.FORMS
 
             // CRIAR OBJETO USER
 
-            User utilizador = new User(nome, username, password, email, idade, altura, peso, marcacoes, alimentacoes, exercicios);
+            User utilizador = new User(nome, username, password, email, sexo, idade, altura, peso, marcacoes, alimentacoes, exercicios);
             GlobalUtils.users.Add(utilizador);
         }
 

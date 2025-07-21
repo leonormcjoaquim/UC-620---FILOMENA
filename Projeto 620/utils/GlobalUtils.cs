@@ -38,6 +38,7 @@ namespace Projeto_620.utils
             new XElement("username", utilizador.Username),
             new XElement("nome", utilizador.Nome),
             new XElement("password", utilizador.Password),
+            new XElement("sexo", utilizador.Sexo),
             new XElement("email", utilizador.Email),
             new XElement("idade", utilizador.Idade),
             new XElement("altura", utilizador.Altura),

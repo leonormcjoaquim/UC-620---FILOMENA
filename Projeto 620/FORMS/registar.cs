@@ -68,7 +68,8 @@ namespace Projeto_620
             string peso_box = tb_weight.Text;
             int idade;
             string email = tb_email.Text;
-            
+            string sexo = cbb_sexo.SelectedItem.ToString();
+
             // Tivemos de Criar um ficheiro XML para guardar as informações dos utilizadores
             // XDocument doc = new XDocument(new XElement("users"));
             // doc.Save(caminho);
@@ -107,7 +108,7 @@ namespace Projeto_620
                 return;
             }
 
-            if (string.IsNullOrEmpty(nome) || string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password) || string.IsNullOrEmpty(objetivo) || altura >= 260)
+            if (string.IsNullOrEmpty(nome) || string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password) || string.IsNullOrEmpty(objetivo) || altura >= 260 || string.IsNullOrEmpty(sexo))
             {
                 MessageBox.Show($"nome: {nome}\nusername: {username}\npass: {password}\nobje: {objetivo}\naltura: {altura}\npeso: {peso}");
                 MessageBox.Show("Erro! Tem de preencher todos os campos.");
@@ -120,6 +121,7 @@ namespace Projeto_620
                                         new XElement("username", username),
                                         new XElement("nome", nome),
                                         new XElement("password", password),
+                                        new XElement("sexo", sexo),
                                         new XElement("idade", idade),
                                         new XElement("email", email),
                                         new XElement("objetivo", objetivo),

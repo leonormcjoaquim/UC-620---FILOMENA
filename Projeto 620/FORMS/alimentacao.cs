@@ -18,7 +18,24 @@ namespace Projeto_620
     {
         public alimentacao()
         {
+            this.BackColor = Color.FromArgb(30, 30, 30);
             InitializeComponent();
+            AtualizarBarraCalorias();
+            lbl_tituloGanhar.Visible = false;
+            lbl_tituloperder.Visible = false;
+            lbl_tituloManter.Visible = false;
+            lbl_ganhar.Visible = false;
+            lbl_perder.Visible = false;
+            lbl_normal.Visible = false;
+            lbl_objetivo.Visible = true;
+            lbl_objetivo.Text = GlobalUtils.caloriasObjetivo.ToString("0");
+
+        }
+        private void AtualizarBarraCalorias()
+        {
+            probar_calorias.Maximum = GlobalUtils.caloriasObjetivo;
+            int valor = Math.Min(GlobalUtils.caloriasConsumidas, GlobalUtils.caloriasObjetivo);
+            probar_calorias.Value = Math.Max(0, valor);
         }
 
         bool sidebarExpand = false;
@@ -276,6 +293,88 @@ namespace Projeto_620
         private void pb_menu_MouseHover(object sender, EventArgs e)
         {
             pb_menu.Cursor = Cursors.Hand;
+        }
+
+        private void metroTabControl1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_calorias_Click(object sender, EventArgs e)
+        {
+            User utilizador = GlobalUtils.users.FirstOrDefault(u => u.Username == GlobalUtils.username);
+            string tipoAtividade = cbb_tipo_atividade.Text;
+            string sexo = utilizador.Sexo;
+            double peso = utilizador.Peso;
+            double altura = utilizador.Altura * 100;
+            int idade = utilizador.Idade;
+            double taxaMetabolica;
+            if (sexo == "Masculino")
+            {
+                taxaMetabolica = 88.362 + (13.397 * peso) + (4.799 * altura) - (5.677 * idade);
+            }
+            else if (sexo == "Feminino")
+            {
+                taxaMetabolica = 447.593 + (9.247 * peso) + (3.098 * altura) - (4.330 * idade);
+            }
+            else
+            {
+                MessageBox.Show("Tem de selecionar uma das opções disponíveis");
+                return;
+            }
+
+            double fatorAtividade;
+            switch (tipoAtividade)
+            {
+                case "Sedentário":
+                    fatorAtividade = 1.2;
+                    break;
+                case "Exercício leve 1–3 dias/semana":
+                    fatorAtividade = 1.375;
+                    break;
+                case "Exercício moderado 3–5 dias/semana":
+                    fatorAtividade = 1.55;
+                    break;
+                case "Exercício intenso 6–7 dias/semana":
+                    fatorAtividade = 1.725;
+                    break;
+                case "Treinos muito intensos ou 2x por dia":
+                    fatorAtividade = 1.9;
+                    break;
+                default:
+                    MessageBox.Show("Tem de selecionar uma opção válida no campo 'Tipo de Atividade'.");
+                    return;
+            }
+
+            double calorias = taxaMetabolica * fatorAtividade;
+            GlobalUtils.caloriasObjetivo = (int)Math.Round(calorias);
+            probar_calorias.Maximum = GlobalUtils.caloriasObjetivo;
+            lbl_normal.Text = calorias.ToString();
+            double perder = calorias - 300;
+            lbl_normal.Text = GlobalUtils.caloriasObjetivo.ToString();
+            lbl_perder.Text = $"{calorias - 500:0} a {calorias - 300:0}";
+            lbl_ganhar.Text = $"{calorias + 300:0} a {calorias + 500:0}";
+            lbl_perder.Visible = true;
+            lbl_ganhar.Visible = true;
+            lbl_normal.Visible = true;
+            lbl_tituloGanhar.Visible = true;
+            lbl_tituloManter.Visible = true;
+            lbl_tituloperder.Visible = true;
+            lbl_objetivo.Text = GlobalUtils.caloriasObjetivo.ToString();
+        }
+
+        private void btn_atualizarCaloriasObjetivo_Click(object sender, EventArgs e)
+        {
+            int calorias;
+            if (int.TryParse(tb_atualizarCalorias.Text, out calorias))
+            {
+                GlobalUtils.caloriasObjetivo = calorias;
+            }
+            else
+            {
+                MessageBox.Show("Valor inválido. Introduz um número inteiro.");
+            }
+            lbl_objetivo.Text = GlobalUtils.caloriasObjetivo.ToString();
         }
     }
 }
