@@ -1,20 +1,21 @@
-﻿using System;
+﻿using Projeto_620.FORMS;
+using Projeto_620.models;
+using Projeto_620.utils;
+using ReaLTaiizor.Controls;
+using ReaLTaiizor.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Drawing.Drawing2D;
+using System.IO;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
-using ReaLTaiizor.Controls;
-using Projeto_620.FORMS;
-using Projeto_620.models;
-using Projeto_620.utils;
-using System.IO;
-using System.Media;
 
 namespace Projeto_620.FORMS
 {
@@ -28,14 +29,15 @@ namespace Projeto_620.FORMS
 
         private void nightControlBox1_Click(object sender, EventArgs e)
         {
+            Application.Exit();
             if (MinimizeBox)
             {
                 this.WindowState = FormWindowState.Minimized;
             }
             else
             {
-                this.Close();
-                Application.Exit();
+                //this.Close();
+                
             }
         }
 
@@ -107,8 +109,13 @@ namespace Projeto_620.FORMS
                 player.Play();
                 MessageBox.Show("Login efetuado com sucesso!", "Eureka", MessageBoxButtons.OK, MessageBoxIcon.None);
                 XmlToList();
-                Form paginaInicial = new paginaInicial();
-                paginaInicial.Show();
+                using (var home = new paginaInicial())
+                {
+                    home.ShowDialog();
+                }
+                // -- DESTA MANEIRA NÃO ESTÁVA A FECHAR DEPOIS DO LOGOUT --
+                //Form paginaInicial = new paginaInicial();
+                //paginaInicial.Show();
                 this.Hide();
             }
 
@@ -220,7 +227,30 @@ namespace Projeto_620.FORMS
 
             User utilizador = new User(nome, username, password, email, sexo, caloriasObjetivo, idade, altura, peso, marcacoes, alimentacoes, exercicios);
             GlobalUtils.users.Add(utilizador);
+
+            
         }
 
+        private void nightControlBox1_MouseClick(object sender, MouseEventArgs e)
+        {
+            int larguraBotao = 30;
+
+            if (e.X >= nightControlBox1.Width - larguraBotao)
+            {
+                Application.Exit(); // Botão Fechar
+            }
+            else if (e.X >= nightControlBox1.Width - 2 * larguraBotao)
+            {
+                // Botão Maximizar (se estiver ativo)
+                if (this.WindowState == FormWindowState.Normal)
+                    this.WindowState = FormWindowState.Maximized;
+                else
+                    this.WindowState = FormWindowState.Normal;
+            }
+            else if (e.X >= nightControlBox1.Width - 3 * larguraBotao)
+            {
+                this.WindowState = FormWindowState.Minimized; // Botão Minimizar
+            }
+        }
     }
 }
