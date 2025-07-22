@@ -73,9 +73,11 @@ namespace Projeto_620.FORMS
 
         private void btn_workouts_Click(object sender, EventArgs e)
         {
-            Form workout = new treino();
-            workout.Show();
-            this.Close();
+            this.Enabled = false;
+            Cursor = Cursors.WaitCursor;
+            Task.Delay(500);
+            this.Enabled = true;
+            Cursor = Cursors.Default;
         }
 
         private void btn_food_Click(object sender, EventArgs e)
@@ -104,8 +106,7 @@ namespace Projeto_620.FORMS
         private void btn_exit_Click(object sender, EventArgs e)
         {
             User utilizador = GlobalUtils.users.FirstOrDefault(u => u.Username == GlobalUtils.username);
-            GlobalUtils.GuardarXML(utilizador);
-            Application.Exit();
+            GlobalUtils.sairSemGuardar();
         }
 
         private void form_Load(object sender, EventArgs e)
@@ -115,9 +116,109 @@ namespace Projeto_620.FORMS
 
         }
 
-        private void btn_inserirTreino_Click(object sender, EventArgs e)
+        private void AtualizarListaTreinos()
         {
-            if (cbb_tipoTreino.SelectedIndex == -1 )
+
+            // -- Metodo Inicial sem utilização das classes --
+            //lb_listaTreino.Items.Clear();
+
+            //GlobalUtils.username = "root";
+
+            //XDocument doc = XDocument.Load(GlobalUtils.caminho);
+
+            //var user = doc.Root.Elements("user")
+            //                  .FirstOrDefault(x => x.Element("username")?.Value == GlobalUtils.username);
+
+            //var treinos = user.Element("Treinos");
+
+            //if (treinos == null)
+            //{
+            //    treinos = new XElement("Treinos");
+            //    user.Add(treinos);
+            //    doc.Save(GlobalUtils.caminho); 
+            //}
+            //if (!treinos.Elements("Treino").Any())
+            //{
+            //    MessageBox.Show("Sem treinos para mostrar, vamos a isso!");
+            //    return;
+            //}
+
+            //foreach (var trei in treinos.Elements("Treino"))
+            //{
+            //    string nomeTreino = (string)trei.Element("NomeTreino");
+            //    string tipoExercicio = (string)trei.Element("TipoExercicio");
+            //    string duracao = (string)trei.Element("Duracao");
+            //    string calorias = (string)trei.Element("CaloriasQueimadas");
+            //    string data = (string)trei.Element("Data");
+
+            //    string linha = $"{nomeTreino} ({tipoExercicio}) - {calorias} kcal queimadas em {duracao} min, às {data}h";
+
+            //    lb_listaTreino.Items.Add(linha);
+
+            //}
+
+            User utilizador = GlobalUtils.users.FirstOrDefault(u => u.Username == GlobalUtils.username);
+
+            //lb_listaTreino.Items.Clear();
+
+            //foreach (Exercicio treino in utilizador.Exercicios)
+            //{
+            //    lb_listaTreino.Items.Add(treino);
+                
+            //}
+
+            dataGridView1.DataSource = null; // limpa antes para forçar o refresh
+            dataGridView1.DataSource = utilizador.Exercicios;
+        }
+
+        private void pb_menu_Click_1(object sender, EventArgs e)
+        {
+            sidebarTransition.Start();
+        }
+
+        private void btn_inserirTreino_MouseHover(object sender, EventArgs e)
+        {
+            btn_inserir.Cursor = Cursors.Hand;
+        }
+
+        private void pb_menu_MouseHover(object sender, EventArgs e)
+        {
+            pb_menu.Cursor = Cursors.Hand;
+        }
+
+        private void btn_home_MouseHover(object sender, EventArgs e)
+        {
+            btn_home.Cursor = Cursors.Hand;
+        }
+
+        private void btn_appoitments_MouseHover(object sender, EventArgs e)
+        {
+            btn_appoitments.Cursor = Cursors.Hand;
+        }
+
+        private void btn_workouts_MouseHover(object sender, EventArgs e)
+        {
+            btn_workouts.Cursor = Cursors.Hand;
+        }
+
+        private void btn_food_MouseHover(object sender, EventArgs e)
+        {
+            btn_food.Cursor = Cursors.Hand;
+        }
+
+        private void btn_motivacao_MouseHover(object sender, EventArgs e)
+        {
+            btn_motivacao.Cursor = Cursors.Hand;
+        }
+
+        private void bt_logout_MouseHover(object sender, EventArgs e)
+        {
+            bt_logout.Cursor = Cursors.Hand;
+        }
+
+        private void btn_inserir_Click(object sender, EventArgs e)
+        {
+            if (cbb_tipoTreino.SelectedIndex == -1)
             {
                 MessageBox.Show("Tem de ter o tipo de treino selecionado", "Erros!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 cbb_tipoTreino.SelectedIndex = -1;
@@ -200,108 +301,8 @@ namespace Projeto_620.FORMS
             tb_caloriasQueimadas.Clear();
             cbb_tipoTreino.SelectedIndex = -1;
 
-            dataGridView1.DataSource = null; 
+            dataGridView1.DataSource = null;
             dataGridView1.DataSource = utilizador.Exercicios;
-        }
-
-        private void AtualizarListaTreinos()
-        {
-
-            // -- Metodo Inicial sem utilização das classes --
-            //lb_listaTreino.Items.Clear();
-
-            //GlobalUtils.username = "root";
-
-            //XDocument doc = XDocument.Load(GlobalUtils.caminho);
-
-            //var user = doc.Root.Elements("user")
-            //                  .FirstOrDefault(x => x.Element("username")?.Value == GlobalUtils.username);
-
-            //var treinos = user.Element("Treinos");
-
-            //if (treinos == null)
-            //{
-            //    treinos = new XElement("Treinos");
-            //    user.Add(treinos);
-            //    doc.Save(GlobalUtils.caminho); 
-            //}
-            //if (!treinos.Elements("Treino").Any())
-            //{
-            //    MessageBox.Show("Sem treinos para mostrar, vamos a isso!");
-            //    return;
-            //}
-
-            //foreach (var trei in treinos.Elements("Treino"))
-            //{
-            //    string nomeTreino = (string)trei.Element("NomeTreino");
-            //    string tipoExercicio = (string)trei.Element("TipoExercicio");
-            //    string duracao = (string)trei.Element("Duracao");
-            //    string calorias = (string)trei.Element("CaloriasQueimadas");
-            //    string data = (string)trei.Element("Data");
-
-            //    string linha = $"{nomeTreino} ({tipoExercicio}) - {calorias} kcal queimadas em {duracao} min, às {data}h";
-
-            //    lb_listaTreino.Items.Add(linha);
-
-            //}
-
-            User utilizador = GlobalUtils.users.FirstOrDefault(u => u.Username == GlobalUtils.username);
-
-            //lb_listaTreino.Items.Clear();
-
-            //foreach (Exercicio treino in utilizador.Exercicios)
-            //{
-            //    lb_listaTreino.Items.Add(treino);
-                
-            //}
-
-            dataGridView1.DataSource = null; // limpa antes para forçar o refresh
-            dataGridView1.DataSource = utilizador.Exercicios;
-        }
-
-        private void pb_menu_Click_1(object sender, EventArgs e)
-        {
-            sidebarTransition.Start();
-        }
-
-        private void btn_inserirTreino_MouseHover(object sender, EventArgs e)
-        {
-            btn_inserirTreino.Cursor = Cursors.Hand;
-        }
-
-        private void pb_menu_MouseHover(object sender, EventArgs e)
-        {
-            pb_menu.Cursor = Cursors.Hand;
-        }
-
-        private void btn_home_MouseHover(object sender, EventArgs e)
-        {
-            btn_home.Cursor = Cursors.Hand;
-        }
-
-        private void btn_appoitments_MouseHover(object sender, EventArgs e)
-        {
-            btn_appoitments.Cursor = Cursors.Hand;
-        }
-
-        private void btn_workouts_MouseHover(object sender, EventArgs e)
-        {
-            btn_workouts.Cursor = Cursors.Hand;
-        }
-
-        private void btn_food_MouseHover(object sender, EventArgs e)
-        {
-            btn_food.Cursor = Cursors.Hand;
-        }
-
-        private void btn_motivacao_MouseHover(object sender, EventArgs e)
-        {
-            btn_motivacao.Cursor = Cursors.Hand;
-        }
-
-        private void bt_logout_MouseHover(object sender, EventArgs e)
-        {
-            bt_logout.Cursor = Cursors.Hand;
         }
     }
 

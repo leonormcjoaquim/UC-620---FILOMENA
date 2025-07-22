@@ -29,11 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(treino));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btn_sair = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_inserir = new ReaLTaiizor.Controls.CyberButton();
             this.pn_opcoes = new System.Windows.Forms.FlowLayoutPanel();
             this.btn_home = new System.Windows.Forms.Button();
             this.btn_appoitments = new System.Windows.Forms.Button();
@@ -49,7 +50,6 @@
             this.caloriasQueimadasDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.exercicioBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.btn_inserirTreino = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -60,15 +60,15 @@
             this.label3 = new System.Windows.Forms.Label();
             this.tb_nomeTreino = new System.Windows.Forms.TextBox();
             this.cbb_tipoTreino = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbl_inserirTreino = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pb_menu = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.sidebarTransition = new System.Windows.Forms.Timer(this.components);
             this.userBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.alimentacaoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.exercicioBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.pn_opcoes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -78,6 +78,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.userBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.alimentacaoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.exercicioBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_sair
@@ -94,9 +95,10 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.btn_inserir);
             this.panel1.Controls.Add(this.pn_opcoes);
             this.panel1.Controls.Add(this.dataGridView1);
-            this.panel1.Controls.Add(this.btn_inserirTreino);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label6);
@@ -107,14 +109,54 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.tb_nomeTreino);
             this.panel1.Controls.Add(this.cbb_tipoTreino);
-            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.lbl_inserirTreino);
             this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.panel4);
             this.panel1.Location = new System.Drawing.Point(0, 1);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1007, 606);
             this.panel1.TabIndex = 1;
+            // 
+            // btn_inserir
+            // 
+            this.btn_inserir.Alpha = 20;
+            this.btn_inserir.BackColor = System.Drawing.Color.Transparent;
+            this.btn_inserir.Background = true;
+            this.btn_inserir.Background_WidthPen = 4F;
+            this.btn_inserir.BackgroundPen = true;
+            this.btn_inserir.ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
+            this.btn_inserir.ColorBackground_1 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
+            this.btn_inserir.ColorBackground_2 = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(63)))), ((int)(((byte)(86)))));
+            this.btn_inserir.ColorBackground_Pen = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
+            this.btn_inserir.ColorLighting = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
+            this.btn_inserir.ColorPen_1 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
+            this.btn_inserir.ColorPen_2 = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(63)))), ((int)(((byte)(86)))));
+            this.btn_inserir.CyberButtonStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
+            this.btn_inserir.Effect_1 = true;
+            this.btn_inserir.Effect_1_ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
+            this.btn_inserir.Effect_1_Transparency = 25;
+            this.btn_inserir.Effect_2 = true;
+            this.btn_inserir.Effect_2_ColorBackground = System.Drawing.Color.White;
+            this.btn_inserir.Effect_2_Transparency = 20;
+            this.btn_inserir.Font = new System.Drawing.Font("Arial", 11F);
+            this.btn_inserir.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
+            this.btn_inserir.Lighting = false;
+            this.btn_inserir.LinearGradient_Background = false;
+            this.btn_inserir.LinearGradientPen = false;
+            this.btn_inserir.Location = new System.Drawing.Point(719, 233);
+            this.btn_inserir.Name = "btn_inserir";
+            this.btn_inserir.PenWidth = 15;
+            this.btn_inserir.Rounding = true;
+            this.btn_inserir.RoundingInt = 70;
+            this.btn_inserir.Size = new System.Drawing.Size(150, 70);
+            this.btn_inserir.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            this.btn_inserir.TabIndex = 45;
+            this.btn_inserir.Tag = "Cyber";
+            this.btn_inserir.TextButton = "Inserir";
+            this.btn_inserir.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.btn_inserir.Timer_Effect_1 = 5;
+            this.btn_inserir.Timer_RGB = 300;
+            this.btn_inserir.Click += new System.EventHandler(this.btn_inserir_Click);
             // 
             // pn_opcoes
             // 
@@ -295,26 +337,26 @@
             this.caloriasQueimadasDataGridViewTextBoxColumn,
             this.dataDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.exercicioBindingSource1;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 10.75F);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.75F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.Location = new System.Drawing.Point(81, 340);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.ControlDark;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.ControlDark;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(903, 245);
             this.dataGridView1.TabIndex = 44;
@@ -368,24 +410,6 @@
             // exercicioBindingSource1
             // 
             this.exercicioBindingSource1.DataSource = typeof(Projeto_620.models.Exercicio);
-            // 
-            // btn_inserirTreino
-            // 
-            this.btn_inserirTreino.BackColor = System.Drawing.Color.LightGray;
-            this.btn_inserirTreino.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_inserirTreino.FlatAppearance.BorderSize = 5;
-            this.btn_inserirTreino.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_inserirTreino.Font = new System.Drawing.Font("Segoe UI", 14.25F);
-            this.btn_inserirTreino.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btn_inserirTreino.Location = new System.Drawing.Point(736, 229);
-            this.btn_inserirTreino.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_inserirTreino.Name = "btn_inserirTreino";
-            this.btn_inserirTreino.Size = new System.Drawing.Size(127, 79);
-            this.btn_inserirTreino.TabIndex = 20;
-            this.btn_inserirTreino.Text = "Inserir";
-            this.btn_inserirTreino.UseVisualStyleBackColor = false;
-            this.btn_inserirTreino.Click += new System.EventHandler(this.btn_inserirTreino_Click);
-            this.btn_inserirTreino.MouseHover += new System.EventHandler(this.btn_inserirTreino_MouseHover);
             // 
             // label8
             // 
@@ -498,16 +522,16 @@
             this.cbb_tipoTreino.Size = new System.Drawing.Size(280, 40);
             this.cbb_tipoTreino.TabIndex = 10;
             // 
-            // label1
+            // lbl_inserirTreino
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(308, 59);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(171, 35);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "Inserir Treino";
+            this.lbl_inserirTreino.AutoSize = true;
+            this.lbl_inserirTreino.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_inserirTreino.Location = new System.Drawing.Point(115, 58);
+            this.lbl_inserirTreino.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_inserirTreino.Name = "lbl_inserirTreino";
+            this.lbl_inserirTreino.Size = new System.Drawing.Size(233, 46);
+            this.lbl_inserirTreino.TabIndex = 9;
+            this.lbl_inserirTreino.Text = "Inserir Treino";
             // 
             // panel3
             // 
@@ -546,16 +570,6 @@
             this.label2.TabIndex = 9;
             this.label2.Text = "Treino";
             // 
-            // panel4
-            // 
-            this.panel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel4.BackgroundImage")));
-            this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel4.Location = new System.Drawing.Point(315, 95);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(173, 6);
-            this.panel4.TabIndex = 43;
-            // 
             // sidebarTransition
             // 
             this.sidebarTransition.Interval = 10;
@@ -572,6 +586,16 @@
             // exercicioBindingSource
             // 
             this.exercicioBindingSource.DataSource = typeof(Projeto_620.models.Exercicio);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(856, 58);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(115, 80);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 46;
+            this.pictureBox1.TabStop = false;
             // 
             // treino
             // 
@@ -599,6 +623,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.userBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.alimentacaoBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.exercicioBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -619,19 +644,17 @@
         private System.Windows.Forms.Timer sidebarTransition;
         private System.Windows.Forms.TextBox tb_nomeTreino;
         private System.Windows.Forms.ComboBox cbb_tipoTreino;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbl_inserirTreino;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox tb_duracaoTreino;
-        private System.Windows.Forms.Button btn_inserirTreino;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox tb_caloriasQueimadas;
         private System.Windows.Forms.PictureBox pb_menu;
-        private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.BindingSource alimentacaoBindingSource;
         private System.Windows.Forms.BindingSource userBindingSource;
         private System.Windows.Forms.BindingSource exercicioBindingSource;
@@ -642,5 +665,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn duracaoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn caloriasQueimadasDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataDataGridViewTextBoxColumn;
+        private ReaLTaiizor.Controls.CyberButton btn_inserir;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

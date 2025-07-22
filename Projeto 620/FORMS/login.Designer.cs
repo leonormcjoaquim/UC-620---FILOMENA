@@ -123,7 +123,7 @@
             this.btn_login.PressedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.btn_login.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.btn_login.Size = new System.Drawing.Size(145, 50);
-            this.btn_login.TabIndex = 4;
+            this.btn_login.TabIndex = 3;
             this.btn_login.Text = "Login";
             this.btn_login.TextAlignment = System.Drawing.StringAlignment.Center;
             this.btn_login.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btn_login_MouseClick);

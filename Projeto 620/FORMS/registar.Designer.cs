@@ -58,6 +58,7 @@
             this.nightLabel8 = new ReaLTaiizor.Controls.NightLabel();
             this.tb_calorias = new ReaLTaiizor.Controls.SmallTextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.lbl_opc_sexo = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pb_foto)).BeginInit();
             this.SuspendLayout();
             // 
@@ -92,7 +93,7 @@
             this.tb_nome.CustomBGColor = System.Drawing.Color.White;
             this.tb_nome.Font = new System.Drawing.Font("Tahoma", 11F);
             this.tb_nome.ForeColor = System.Drawing.Color.DimGray;
-            this.tb_nome.Location = new System.Drawing.Point(136, 103);
+            this.tb_nome.Location = new System.Drawing.Point(144, 103);
             this.tb_nome.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_nome.MaxLength = 32767;
             this.tb_nome.Multiline = false;
@@ -119,7 +120,7 @@
             this.tb_username.ReadOnly = false;
             this.tb_username.Size = new System.Drawing.Size(228, 33);
             this.tb_username.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
-            this.tb_username.TabIndex = 3;
+            this.tb_username.TabIndex = 2;
             this.tb_username.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
             this.tb_username.UseSystemPasswordChar = false;
             // 
@@ -150,7 +151,7 @@
             this.tb_password.ReadOnly = false;
             this.tb_password.Size = new System.Drawing.Size(228, 33);
             this.tb_password.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
-            this.tb_password.TabIndex = 4;
+            this.tb_password.TabIndex = 3;
             this.tb_password.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
             this.tb_password.UseSystemPasswordChar = false;
             // 
@@ -193,7 +194,7 @@
             this.tb_height.ReadOnly = false;
             this.tb_height.Size = new System.Drawing.Size(144, 33);
             this.tb_height.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
-            this.tb_height.TabIndex = 7;
+            this.tb_height.TabIndex = 9;
             this.tb_height.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
             this.tb_height.UseSystemPasswordChar = false;
             // 
@@ -212,7 +213,7 @@
             // pb_foto
             // 
             this.pb_foto.Image = ((System.Drawing.Image)(resources.GetObject("pb_foto.Image")));
-            this.pb_foto.Location = new System.Drawing.Point(669, 97);
+            this.pb_foto.Location = new System.Drawing.Point(712, 103);
             this.pb_foto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pb_foto.Name = "pb_foto";
             this.pb_foto.Size = new System.Drawing.Size(260, 300);
@@ -227,7 +228,7 @@
             this.nightLabel6.BackColor = System.Drawing.Color.Transparent;
             this.nightLabel6.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nightLabel6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.nightLabel6.Location = new System.Drawing.Point(759, 54);
+            this.nightLabel6.Location = new System.Drawing.Point(796, 60);
             this.nightLabel6.Name = "nightLabel6";
             this.nightLabel6.Size = new System.Drawing.Size(82, 41);
             this.nightLabel6.TabIndex = 14;
@@ -245,7 +246,7 @@
             this.cbb_objectives.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbb_objectives.Name = "cbb_objectives";
             this.cbb_objectives.Size = new System.Drawing.Size(228, 30);
-            this.cbb_objectives.TabIndex = 6;
+            this.cbb_objectives.TabIndex = 5;
             this.cbb_objectives.UseSelectable = true;
             // 
             // tb_weight
@@ -263,7 +264,7 @@
             this.tb_weight.ReadOnly = false;
             this.tb_weight.Size = new System.Drawing.Size(144, 33);
             this.tb_weight.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
-            this.tb_weight.TabIndex = 8;
+            this.tb_weight.TabIndex = 10;
             this.tb_weight.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
             this.tb_weight.UseSystemPasswordChar = false;
             // 
@@ -313,7 +314,7 @@
             this.btn_registar.RoundingInt = 70;
             this.btn_registar.Size = new System.Drawing.Size(185, 75);
             this.btn_registar.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.btn_registar.TabIndex = 10;
+            this.btn_registar.TabIndex = 11;
             this.btn_registar.Tag = "Cyber";
             this.btn_registar.TextButton = "Registar";
             this.btn_registar.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
@@ -436,7 +437,7 @@
             this.tb_idade.ReadOnly = false;
             this.tb_idade.Size = new System.Drawing.Size(157, 33);
             this.tb_idade.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
-            this.tb_idade.TabIndex = 2;
+            this.tb_idade.TabIndex = 7;
             this.tb_idade.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
             this.tb_idade.UseSystemPasswordChar = false;
             // 
@@ -467,7 +468,7 @@
             this.tb_email.ReadOnly = false;
             this.tb_email.Size = new System.Drawing.Size(228, 33);
             this.tb_email.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
-            this.tb_email.TabIndex = 5;
+            this.tb_email.TabIndex = 4;
             this.tb_email.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
             this.tb_email.UseSystemPasswordChar = false;
             // 
@@ -500,13 +501,14 @@
             this.cbb_sexo.FormattingEnabled = true;
             this.cbb_sexo.ItemHeight = 24;
             this.cbb_sexo.Items.AddRange(new object[] {
+            "",
             "Masculino",
             "Feminino"});
             this.cbb_sexo.Location = new System.Drawing.Point(478, 103);
             this.cbb_sexo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbb_sexo.Name = "cbb_sexo";
             this.cbb_sexo.Size = new System.Drawing.Size(157, 30);
-            this.cbb_sexo.TabIndex = 9;
+            this.cbb_sexo.TabIndex = 6;
             this.cbb_sexo.UseSelectable = true;
             // 
             // nightLabel8
@@ -529,7 +531,7 @@
             this.tb_calorias.CustomBGColor = System.Drawing.Color.White;
             this.tb_calorias.Font = new System.Drawing.Font("Tahoma", 11F);
             this.tb_calorias.ForeColor = System.Drawing.Color.DimGray;
-            this.tb_calorias.Location = new System.Drawing.Point(510, 270);
+            this.tb_calorias.Location = new System.Drawing.Point(498, 271);
             this.tb_calorias.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_calorias.MaxLength = 32767;
             this.tb_calorias.Multiline = false;
@@ -537,7 +539,7 @@
             this.tb_calorias.ReadOnly = false;
             this.tb_calorias.Size = new System.Drawing.Size(125, 33);
             this.tb_calorias.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
-            this.tb_calorias.TabIndex = 29;
+            this.tb_calorias.TabIndex = 8;
             this.tb_calorias.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
             this.tb_calorias.UseSystemPasswordChar = false;
             // 
@@ -545,13 +547,24 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label1.Location = new System.Drawing.Point(477, 315);
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label1.Location = new System.Drawing.Point(463, 315);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(186, 32);
             this.label1.TabIndex = 30;
             this.label1.Text = "Pode colocar 0 \r\nse não tiver a certeza do valor";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbl_opc_sexo
+            // 
+            this.lbl_opc_sexo.AutoSize = true;
+            this.lbl_opc_sexo.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lbl_opc_sexo.Location = new System.Drawing.Point(475, 135);
+            this.lbl_opc_sexo.Name = "lbl_opc_sexo";
+            this.lbl_opc_sexo.Size = new System.Drawing.Size(163, 32);
+            this.lbl_opc_sexo.TabIndex = 31;
+            this.lbl_opc_sexo.Text = "Vai servir apenas para \r\ncalcular a taxa metabólica";
+            this.lbl_opc_sexo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // registar
             // 
@@ -559,6 +572,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ClientSize = new System.Drawing.Size(1000, 601);
+            this.Controls.Add(this.lbl_opc_sexo);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tb_calorias);
             this.Controls.Add(this.nightLabel8);
@@ -632,5 +646,6 @@
         private ReaLTaiizor.Controls.NightLabel nightLabel8;
         private ReaLTaiizor.Controls.SmallTextBox tb_calorias;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbl_opc_sexo;
     }
 }

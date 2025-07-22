@@ -14,7 +14,7 @@ namespace Projeto_620.models
         public string Password { get; set; }
         public string Email { get; set; }
         public string Sexo { get; set; }
-        public int Calorias { get; set; }
+        public int CaloriasObjetivo { get; set; }
         public int Idade { get; set; }
         public double Altura { get; set; }
         public double Peso { get; set; }
@@ -22,14 +22,14 @@ namespace Projeto_620.models
         public List<Alimentacao> Alimentacao { get; set; } = new List<Alimentacao>();
         public List<Exercicio> Exercicios { get; set; } = new List<Exercicio>();
 
-        public User(string nome, string username, string password, string email, string sexo, int calorias, int idade, double altura, double peso, List<Marcacao> marcacao, List<Alimentacao> alimentacao, List<Exercicio> exercicios)
+        public User(string nome, string username, string password, string email, string sexo, int caloriasObjetivo, int idade, double altura, double peso, List<Marcacao> marcacao, List<Alimentacao> alimentacao, List<Exercicio> exercicios)
         {
             Nome = nome;
             Username = username;
             Password = password;
             Email = email;
             Sexo = sexo;
-            Calorias = Calorias;
+            CaloriasObjetivo = caloriasObjetivo;
             Idade = idade;
             Altura = altura;
             Peso = peso;
@@ -38,14 +38,14 @@ namespace Projeto_620.models
             Exercicios = exercicios;
         }
 
-        public User(string nome, string username, string password, string email, string sexo, int calorias, int idade, double altura, double peso)
+        public User(string nome, string username, string password, string email, string sexo, int caloriasObjetivo, int idade, double altura, double peso)
         {
             Nome = nome;
             Username = username;
             Password = password;
             Email = email;
             Sexo = sexo;
-            Calorias = calorias;
+            CaloriasObjetivo = caloriasObjetivo;
             Idade = idade;
             Altura = altura;
             Peso = peso;

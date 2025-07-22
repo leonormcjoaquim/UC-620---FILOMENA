@@ -37,7 +37,7 @@ namespace Projeto_620.utils
             new XElement("nome", utilizador.Nome),
             new XElement("password", utilizador.Password),
             new XElement("sexo", utilizador.Sexo),
-            new XElement("calorias", utilizador.Calorias),
+            new XElement("calorias", utilizador.CaloriasObjetivo),
             new XElement("email", utilizador.Email),
             new XElement("idade", utilizador.Idade),
             new XElement("altura", utilizador.Altura),
@@ -88,10 +88,19 @@ namespace Projeto_620.utils
             // Apagar Temporario
             File.Delete(casofalhe);
 
-
-            MessageBox.Show("Dados gravados com sucesso!");
+            MessageBox.Show("Dados gravados com sucesso!", "Sucesso!",MessageBoxButtons.OK, MessageBoxIcon.Information);
 
         }
+
+        public static void sairSemGuardar()
+        {
+            DialogResult resultado = MessageBox.Show("Tem a certeza que pretende sair?\n Se não fizer logout os dados não serão guardados.\n", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning );
+            if (resultado == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
+
     }
 
     public enum TipoMarcacao
@@ -102,7 +111,6 @@ namespace Projeto_620.utils
 
     public enum Especialidade
     {
-        PersonalTrainer,
         Nutricionista,
         Fisioterapeuta,
         Endocrinologista,
@@ -128,7 +136,5 @@ namespace Projeto_620.utils
         Almoco,
         Jantar,
         Snack
-    }
-
-   
+    } 
 }

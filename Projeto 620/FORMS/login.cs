@@ -26,25 +26,6 @@ namespace Projeto_620.FORMS
             InitializeComponent();
         }
 
-        private void btn_registar_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            paginaInicial registar = new paginaInicial();
-            registar.Show();
-        }
-
-        private void btn_logout_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void btn_login_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            paginaInicial PaginaInicial = new paginaInicial();
-            PaginaInicial.Show();
-        }
-
         private void nightControlBox1_Click(object sender, EventArgs e)
         {
             if (MinimizeBox)
@@ -52,7 +33,10 @@ namespace Projeto_620.FORMS
                 this.WindowState = FormWindowState.Minimized;
             }
             else
+            {
+                this.Close();
                 Application.Exit();
+            }
         }
 
         private void checkBox1_CheckedChanged(object sender)
@@ -75,12 +59,6 @@ namespace Projeto_620.FORMS
 
         private void btn_login_MouseClick(object sender, MouseEventArgs e)
         {
-            //// PARA TESTES
-            ////melhorar esta textbox
-            //MessageBox.Show("Login efetuado com sucesso!");
-            //Form paginaInicial = new paginaInicial();
-            //paginaInicial.Show();
-            //this.Hide();
 
             tb_username.Focus();
             string username = tb_username.TextButton; // textButton devido à framework que estamos a usar não ter a propriedade text para este elemento
@@ -112,10 +90,8 @@ namespace Projeto_620.FORMS
                 doc = XDocument.Load(GlobalUtils.caminho); 
             }
 
-            
-            bool userExists = doc.Root.Elements("user").Descendants("Dados").Any(x =>x.Element("username")?.Value == username &&x.Element("password")?.Value == password);
-
             GlobalUtils.username = username;
+            bool userExists = doc.Root.Elements("user").Descendants("Dados").Any(x =>x.Element("username")?.Value == username &&x.Element("password")?.Value == password);
 
             // if userexists == true
             if (!userExists)
@@ -146,8 +122,6 @@ namespace Projeto_620.FORMS
             var dados = doc.Root.Elements("user").Select(x => x.Element("Dados")).FirstOrDefault(d => d != null && (string)d.Element("username") == GlobalUtils.username);
 
             var user = doc.Root.Elements("user").FirstOrDefault(x => (string)x.Element("Dados")?.Element("username") == GlobalUtils.username);
-
-
 
             string username = (string)dados.Element("username");
             string nome = (string)dados.Element("nome");

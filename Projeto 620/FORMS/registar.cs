@@ -33,31 +33,6 @@ namespace Projeto_620
             pb_foto.Image = new Bitmap(pb_foto.Image, new Size(150, 150));
         }
 
-        private void nightControlBox1_MouseClick(object sender, MouseEventArgs e)
-        {
-
-            // Usar botões com base no seu tamanho
-
-            var controlBox = sender as ReaLTaiizor.Controls.NightControlBox;
-            int buttonWidth = controlBox.Width / 3; // 3 botões 
-
-            if (e.X < buttonWidth) //  Minimizar
-            {
-                this.WindowState = FormWindowState.Minimized;
-            }
-            else if (e.X < buttonWidth * 2) // Maximizar
-            {
-                if (this.WindowState == FormWindowState.Maximized)
-                    this.WindowState = FormWindowState.Normal;
-                else
-                    this.WindowState = FormWindowState.Maximized;
-            }
-            else //  fechar
-            {
-                Application.Exit();
-            }
-        }
-
         private void btn_registar_Click(object sender, EventArgs e)
         {
             string nome = tb_nome.Text;

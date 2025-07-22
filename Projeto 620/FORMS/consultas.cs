@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
 using Projeto_620.models;
@@ -18,37 +19,20 @@ namespace Projeto_620.FORMS
 
 
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            login Login = new login();
-            Login.Show();
-        }
-
-        private void tab_marcar_consultas_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-
         private void btn_home_MouseHover(object sender, EventArgs e)
         {
             btn_home.Cursor = Cursors.Hand;
         }
-
-
 
         private void btn_appoitments_MouseHover(object sender, EventArgs e)
         {
             btn_appointment.Cursor = Cursors.Hand;
         }
 
-
         private void btn_workouts_MouseHover(object sender, EventArgs e)
         {
             btn_workouts.Cursor = Cursors.Hand;
         }
-
         private void btn_food_MouseHover(object sender, EventArgs e)
         {
             btn_food.Cursor = Cursors.Hand;
@@ -75,9 +59,11 @@ namespace Projeto_620.FORMS
 
         private void btn_appoitments_Click(object sender, EventArgs e)
         {
-            Form consulta = new consultas();
-            consulta.Show();
-            this.Close();
+            this.Enabled = false;
+            Cursor = Cursors.WaitCursor;
+            Task.Delay(500);
+            this.Enabled = true;
+            Cursor = Cursors.Default;
         }
 
         private void btn_workouts_Click(object sender, EventArgs e)
@@ -113,8 +99,7 @@ namespace Projeto_620.FORMS
         private void btn_exit_Click(object sender, EventArgs e)
         {
             User utilizador = GlobalUtils.users.FirstOrDefault(u => u.Username == GlobalUtils.username);
-            GlobalUtils.GuardarXML(utilizador);
-            Application.Exit();
+            GlobalUtils.sairSemGuardar();
         }
 
         private void btn_marcar_consulta_Click(object sender, EventArgs e)
@@ -222,7 +207,7 @@ namespace Projeto_620.FORMS
             else
             {
                 pn_opcoes.Width += 10;
-                if (pn_opcoes.Width >= 245)
+                if (pn_opcoes.Width >= 240)
                 {
                     sidebarExpand = true;
                     sidebarTransition.Stop();

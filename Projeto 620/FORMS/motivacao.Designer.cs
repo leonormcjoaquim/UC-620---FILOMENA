@@ -108,7 +108,7 @@
             this.pn_opcoes.Location = new System.Drawing.Point(-1, 52);
             this.pn_opcoes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pn_opcoes.Name = "pn_opcoes";
-            this.pn_opcoes.Size = new System.Drawing.Size(53, 416);
+            this.pn_opcoes.Size = new System.Drawing.Size(50, 416);
             this.pn_opcoes.TabIndex = 18;
             // 
             // btn_home

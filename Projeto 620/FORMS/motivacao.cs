@@ -26,7 +26,7 @@ namespace Projeto_620.FORMS
         private void MostrarImagemAleatoria()
         {
             string pastaImagens = @"C:\cometudoperdetudo\imgs";
-            int numeroEscolhido = rnd.Next(1, 4); // temos 3 imagens agora, adicionar mais
+            int numeroEscolhido = rnd.Next(1, 11); 
 
             string caminhoImagem = Path.Combine(pastaImagens, $"{numeroEscolhido}.jpeg");
             if (File.Exists(caminhoImagem))
@@ -80,9 +80,11 @@ namespace Projeto_620.FORMS
 
         private void btn_motivacao_Click(object sender, EventArgs e)
         {
-            Form motivation = new motivacao();
-            motivation.Show();
-            this.Close();
+            this.Enabled = false;
+            Cursor = Cursors.WaitCursor;
+            Task.Delay(500);
+            this.Enabled = true;
+            Cursor = Cursors.Default;
         }
 
         private void btn_food_MouseHover(object sender, EventArgs e)
@@ -107,8 +109,7 @@ namespace Projeto_620.FORMS
         private void btn_exit_Click(object sender, EventArgs e)
         {
             User utilizador = GlobalUtils.users.FirstOrDefault(u => u.Username == GlobalUtils.username);
-            GlobalUtils.GuardarXML(utilizador);
-            Application.Exit();
+            GlobalUtils.sairSemGuardar();
         }
 
         private void bt_logout_MouseHover(object sender, EventArgs e)

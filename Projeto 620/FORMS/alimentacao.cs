@@ -19,7 +19,6 @@ namespace Projeto_620
         public alimentacao()
         {
             User utilizador = GlobalUtils.users.FirstOrDefault(x => x.Username == GlobalUtils.username);
-            this.BackColor = Color.FromArgb(30, 30, 30);
             InitializeComponent();
             AtualizarBarraCalorias();
             lbl_tituloGanhar.Visible = false;
@@ -29,9 +28,7 @@ namespace Projeto_620
             lbl_perder.Visible = false;
             lbl_normal.Visible = false;
             lbl_objetivo.Visible = true;
-            lbl_objetivo.Text = utilizador.Calorias.ToString();
-            
-
+            lbl_objetivo.Text = utilizador.CaloriasObjetivo.ToString();
         }
         private void AtualizarBarraCalorias()
         {
@@ -44,9 +41,9 @@ namespace Projeto_620
 
             int caloriasHoje = caloriasPorDia.ContainsKey(hoje) ? caloriasPorDia[hoje] : 0;
 
-            probar_calorias.Maximum = utilizador.Calorias;
+            probar_calorias.Maximum = utilizador.CaloriasObjetivo;
             lbl_caloriasIngeridas.Text = caloriasHoje.ToString();
-            probar_calorias.Value = Math.Min(caloriasHoje, utilizador.Calorias);
+            probar_calorias.Value = Math.Min(caloriasHoje, utilizador.CaloriasObjetivo);
         }
 
         bool sidebarExpand = false;
@@ -65,7 +62,7 @@ namespace Projeto_620
             else
             {
                 pn_opcoes.Width += 10;
-                if (pn_opcoes.Width >= 245)
+                if (pn_opcoes.Width >= 240)
                 {
                     sidebarExpand = true;
                     sidebarTransition.Stop();
@@ -98,9 +95,11 @@ namespace Projeto_620
 
         private void btn_food_Click(object sender, EventArgs e)
         {
-            Form comida = new alimentacao();
-            comida.Show();
-            this.Close();
+            this.Enabled = false;
+            Cursor = Cursors.WaitCursor;
+            Task.Delay(500);
+            this.Enabled = true;
+            Cursor = Cursors.Default;
         }
 
         private void btn_motivacao_Click(object sender, EventArgs e)
@@ -122,82 +121,7 @@ namespace Projeto_620
         private void btn_exit_Click(object sender, EventArgs e)
         {
             User utilizador = GlobalUtils.users.FirstOrDefault(u => u.Username == GlobalUtils.username);
-            GlobalUtils.GuardarXML(utilizador);
-            Application.Exit();
-        }
-
-        private void btn_inserirRefeicao_Click(object sender, EventArgs e)
-        {
-            if (cbb_tipoRefeicao.SelectedIndex == -1)
-            {
-                MessageBox.Show("Tem de ter o tipo de alimentação selecionado", "Warning!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                cbb_tipoRefeicao.SelectedIndex = -1;
-                return;
-            }
-
-            string nomeComida = tb_nomeComida.Text;
-            if (string.IsNullOrEmpty(nomeComida))
-            {
-                MessageBox.Show("O nome da comida não pode estar vazio!", "Warning!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-
-
-            if (!int.TryParse(tb_calorias.Text, out int calorias) || calorias <= 0)
-            {
-                MessageBox.Show("Introduza um valor de calorias válido.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-            TipoRefeicao tipoSelecionado = (TipoRefeicao)cbb_tipoRefeicao.SelectedItem;
-
-            User utilizador = GlobalUtils.users.FirstOrDefault(u => u.Username == GlobalUtils.username);
-
-            Alimentacao refeicao = new Alimentacao(nomeComida, calorias, tipoSelecionado);
-
-            utilizador.Alimentacao.Add(refeicao);
-
-            //XDocument doc = XDocument.Load(GlobalUtils.caminho);
-
-            //GlobalUtils.username = "root"; //ALTERAR PRECISAMOS DE UMA GLOBAL VARIABLE
-
-            //XElement user = doc.Descendants("user").FirstOrDefault(x => x.Element("username")?.Value == GlobalUtils.username);
-
-            //if (user == null)
-            //{
-            //    MessageBox.Show("Utilizador não encontrado!");
-            //    return;
-            //}
-
-            //XElement alimentacoes = user.Element("Alimentacoes");
-            //if (alimentacoes == null)
-            //{
-            //    alimentacoes = new XElement("Alimentacoes");
-            //    user.Add(alimentacoes);
-            //}
-
-
-
-            //XElement novaRefeicao = new XElement("refeicao",
-            //        new XElement("NomeComida", nomeComida),
-            //        new XElement("TipoRefeicao", tipoSelecionado.ToString()),
-            //        new XElement("Calorias", calorias),
-            //        new XElement("Data", DateTime.Now.ToString("s"))
-            //    );
-
-            //alimentacoes.Add(novaRefeicao);
-
-
-            //doc.Save(GlobalUtils.caminho);
-
-            MessageBox.Show("Refeição inserida com sucesso!", "Tá Certo!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-            tb_calorias.Clear();
-            tb_nomeComida.Clear();
-            cbb_tipoRefeicao.SelectedIndex = -1;
-
-            AtualizarListaRefeicoes();
-            AtualizarBarraCalorias();
-        
+            GlobalUtils.sairSemGuardar();
         }
 
         private void Form_load(object sender, EventArgs e)
@@ -298,7 +222,7 @@ namespace Projeto_620
 
         private void btn_inserirRefeicao_MouseHover(object sender, EventArgs e)
         {
-            btn_inserirRefeicao.Cursor = Cursors.Hand;
+            btn_inserir.Cursor = Cursors.Hand;
         }
 
         private void pb_menu_MouseHover(object sender, EventArgs e)
@@ -365,6 +289,9 @@ namespace Projeto_620
             lbl_perder.Visible = true;
             lbl_ganhar.Visible = true;
             lbl_normal.Visible = true;
+            lbl_tituloGanhar.Text = "Ganhar Peso:";
+            lbl_tituloManter.Text = "Manter Peso:";
+            lbl_tituloperder.Text = "Perder Peso:";
             lbl_tituloGanhar.Visible = true;
             lbl_tituloManter.Visible = true;
             lbl_tituloperder.Visible = true;
@@ -376,13 +303,13 @@ namespace Projeto_620
 
             if (int.TryParse(tb_atualizarCalorias.Text, out int calorias))
             {
-                utilizador.Calorias = calorias;
+                utilizador.CaloriasObjetivo = calorias;
             }
             else
             {
                 MessageBox.Show("Valor inválido. Introduz um número inteiro.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            lbl_objetivo.Text = utilizador.Calorias.ToString();
+            lbl_objetivo.Text = utilizador.CaloriasObjetivo.ToString();
             AtualizarBarraCalorias();
             tb_atualizarCalorias.Text = string.Empty;
         }
@@ -397,5 +324,79 @@ namespace Projeto_620
             lbl_normal.Visible = false;
             lbl_objetivo.Visible = true;
         }
+
+        private void btn_inserir_Click(object sender, EventArgs e)
+        {
+            if (cbb_tipoRefeicao.SelectedIndex == -1)
+            {
+                MessageBox.Show("Tem de ter o tipo de alimentação selecionado", "Warning!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                cbb_tipoRefeicao.SelectedIndex = -1;
+                return;
+            }
+
+            string nomeComida = tb_nomeComida.Text;
+            if (string.IsNullOrEmpty(nomeComida))
+            {
+                MessageBox.Show("O nome da comida não pode estar vazio!", "Warning!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+
+            if (!int.TryParse(tb_calorias.Text, out int calorias) || calorias <= 0)
+            {
+                MessageBox.Show("Introduza um valor de calorias válido.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            TipoRefeicao tipoSelecionado = (TipoRefeicao)cbb_tipoRefeicao.SelectedItem;
+
+            User utilizador = GlobalUtils.users.FirstOrDefault(u => u.Username == GlobalUtils.username);
+
+            Alimentacao refeicao = new Alimentacao(nomeComida, calorias, tipoSelecionado);
+
+            utilizador.Alimentacao.Add(refeicao);
+
+            //XDocument doc = XDocument.Load(GlobalUtils.caminho);
+
+            //GlobalUtils.username = "root"; //ALTERAR PRECISAMOS DE UMA GLOBAL VARIABLE
+
+            //XElement user = doc.Descendants("user").FirstOrDefault(x => x.Element("username")?.Value == GlobalUtils.username);
+
+            //if (user == null)
+            //{
+            //    MessageBox.Show("Utilizador não encontrado!");
+            //    return;
+            //}
+
+            //XElement alimentacoes = user.Element("Alimentacoes");
+            //if (alimentacoes == null)
+            //{
+            //    alimentacoes = new XElement("Alimentacoes");
+            //    user.Add(alimentacoes);
+            //}
+
+
+
+            //XElement novaRefeicao = new XElement("refeicao",
+            //        new XElement("NomeComida", nomeComida),
+            //        new XElement("TipoRefeicao", tipoSelecionado.ToString()),
+            //        new XElement("Calorias", calorias),
+            //        new XElement("Data", DateTime.Now.ToString("s"))
+            //    );
+
+            //alimentacoes.Add(novaRefeicao);
+
+
+            //doc.Save(GlobalUtils.caminho);
+
+            MessageBox.Show("Refeição inserida com sucesso!", "Tá Certo!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            tb_calorias.Clear();
+            tb_nomeComida.Clear();
+            cbb_tipoRefeicao.SelectedIndex = -1;
+
+            AtualizarListaRefeicoes();
+            AtualizarBarraCalorias();
+        }
+
     }
 }

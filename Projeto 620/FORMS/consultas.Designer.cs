@@ -299,7 +299,6 @@
             this.tab_marcar_consultas.ThemeAuthor = "Taiizor";
             this.tab_marcar_consultas.ThemeName = "MetroDark";
             this.tab_marcar_consultas.UnselectedTextColor = System.Drawing.Color.Gray;
-            this.tab_marcar_consultas.SelectedIndexChanged += new System.EventHandler(this.tab_marcar_consultas_SelectedIndexChanged);
             // 
             // metroTabPage1
             // 

@@ -25,11 +25,17 @@ namespace Projeto_620.FORMS
             CarregarGraficoTreinos();
             EstilizarGrafico();
             lbl_ola.Text = "Olá " + GlobalUtils.username;
+            User utilizador = GlobalUtils.users.FirstOrDefault(u => u.Username == GlobalUtils.username);
+
+            tb_nome.Text = utilizador.Nome;
+            tb_idade.Text = utilizador.Idade.ToString();
+            tb_altura.Text = utilizador.Altura.ToString();
+            tb_peso.Text = utilizador.Peso.ToString();
         }
 
         private void btn_logout_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
             login Login = new login();
             Login.Show();
         }
@@ -71,7 +77,7 @@ namespace Projeto_620.FORMS
             {
                 pn_opcoes.Width += 10;
                 lbl_ola.Location = new Point(lbl_ola.Location.X + 10, lbl_ola.Location.Y);
-                if (pn_opcoes.Width >= 245)
+                if (pn_opcoes.Width >= 240)
                 {
                     sidebarExpand = true;
                     sidebarTransition.Stop();
@@ -96,9 +102,11 @@ namespace Projeto_620.FORMS
    
         private void btn_home_Click(object sender, EventArgs e)
         {
-            Form paginaInicial = new paginaInicial();
-            paginaInicial.Show();
-            this.Hide();
+            this.Enabled = false;
+            Cursor = Cursors.WaitCursor;
+            Task.Delay(500);
+            this.Enabled = true;
+            Cursor = Cursors.Default;
         }
 
         private void btn_home_MouseHover(object sender, EventArgs e)
@@ -141,31 +149,6 @@ namespace Projeto_620.FORMS
             btn_appoitments.Cursor = Cursors.Hand;
         }
 
-        private void nightControlBox1_MouseClick(object sender, MouseEventArgs e)
-        {
-            // Use buttons base on their size
-
-            var controlBox = sender as ReaLTaiizor.Controls.NightControlBox;
-            int buttonWidth = controlBox.Width / 3; // 3 buttons 
-
-            if (e.X < buttonWidth) //  Minimize
-            {
-                this.WindowState = FormWindowState.Minimized;
-            }
-            else if (e.X < buttonWidth * 2) // Maximize
-            {
-                if (this.WindowState == FormWindowState.Maximized)
-                    this.WindowState = FormWindowState.Normal;
-                else
-                    this.WindowState = FormWindowState.Maximized;
-            }
-            else //  Close
-            {
-                Application.Exit();
-            }
-        }
-
-
         private void btn_appoitments_Click(object sender, EventArgs e)
         {
             Form consulta = new consultas();
@@ -206,88 +189,7 @@ namespace Projeto_620.FORMS
         private void btn_exit_Click(object sender, EventArgs e)
         {
             User utilizador = GlobalUtils.users.FirstOrDefault(u => u.Username == GlobalUtils.username);
-            GlobalUtils.GuardarXML(utilizador);
-            Application.Exit();
-        }
-
-        private void btn_calorias_Click(object sender, EventArgs e)
-        {
-            
-        }
-        private void AtualizarBarraCalorias()
-        {
-          
-        }
-
-        private void btn_atualizarCaloriasObjetivo_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void cyberButton1_Click(object sender, EventArgs e)
-        {
-
-            User utilizador = GlobalUtils.users.FirstOrDefault(u => u.Username == GlobalUtils.username);
-
-            string nome = tb_nome.Text;
-            int idade = 0;
-            double altura = 0;
-            double peso = 0;
-            
-            if (string.IsNullOrEmpty(nome))
-            {
-                nome = utilizador.Nome;
-            }
-            else
-            {
-                utilizador.Nome = nome;
-            }
-
-            if (string.IsNullOrEmpty(tb_idade.Text))
-            {
-                idade = utilizador.Idade;
-            }
-            else if (!int.TryParse(tb_idade.Text, out int idadeV) || idadeV <= 0 || idadeV >= 140)
-            {
-                MessageBox.Show("Tem de colocar um numero válido na idade", "Erro!", MessageBoxButtons.OK, MessageBoxIcon.Warning); ;
-                return;
-            }
-            else
-            {
-                utilizador.Idade = idadeV;
-            }
-
-            if (string.IsNullOrEmpty(tb_altura.Text))
-            {
-                altura = utilizador.Altura;
-            }
-            else if (!double.TryParse(tb_altura.Text, out double alturaV) || alturaV < 0)
-            {
-                MessageBox.Show("Tem de colocar uma altura válida!", "Erro!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-            else
-            {
-                utilizador.Altura = alturaV;
-            }
-
-            if (string.IsNullOrEmpty(tb_peso.Text))
-            {
-                peso = utilizador.Peso;
-            }
-            else if (!double.TryParse(tb_peso.Text, out double pesoV) || pesoV <= 0)
-            {
-                MessageBox.Show("Tem de colocar um peso válido!", "Erro!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            } else
-            {
-                utilizador.Peso = pesoV;
-            }
-
-
-            MessageBox.Show("Dados alterados com sucesso!", "Sucesso!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-
+            GlobalUtils.sairSemGuardar();
         }
 
         public void CarregarGraficoTreinos()
@@ -386,6 +288,71 @@ namespace Projeto_620.FORMS
             // Fundo do gráfico
             chartTreinos.BackColor = Color.Transparent;
             chartTreinos.BorderlineColor = Color.White;
+        }
+
+        private void btn_atualizarDados_Click(object sender, EventArgs e)
+        {
+            User utilizador = GlobalUtils.users.FirstOrDefault(u => u.Username == GlobalUtils.username);
+
+            string nome = tb_nome.Text;
+            int idade = 0;
+            double altura = 0;
+            double peso = 0;
+
+            if (string.IsNullOrEmpty(nome))
+            {
+                nome = utilizador.Nome;
+            }
+            else
+            {
+                utilizador.Nome = nome;
+            }
+
+            if (string.IsNullOrEmpty(tb_idade.Text))
+            {
+                idade = utilizador.Idade;
+            }
+            else if (!int.TryParse(tb_idade.Text, out int idadeV) || idadeV <= 0 || idadeV >= 140)
+            {
+                MessageBox.Show("Tem de colocar um numero válido na idade", "Erro!", MessageBoxButtons.OK, MessageBoxIcon.Warning); ;
+                return;
+            }
+            else
+            {
+                utilizador.Idade = idadeV;
+            }
+
+            if (string.IsNullOrEmpty(tb_altura.Text))
+            {
+                altura = utilizador.Altura;
+            }
+            else if (!double.TryParse(tb_altura.Text, out double alturaV) || alturaV < 0)
+            {
+                MessageBox.Show("Tem de colocar uma altura válida!", "Erro!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            else
+            {
+                utilizador.Altura = alturaV;
+            }
+
+            if (string.IsNullOrEmpty(tb_peso.Text))
+            {
+                peso = utilizador.Peso;
+            }
+            else if (!double.TryParse(tb_peso.Text, out double pesoV) || pesoV <= 0)
+            {
+                MessageBox.Show("Tem de colocar um peso válido!", "Erro!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            else
+            {
+                utilizador.Peso = pesoV;
+            }
+
+
+            MessageBox.Show("Dados alterados com sucesso!", "Sucesso!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
         }
     }
 }
