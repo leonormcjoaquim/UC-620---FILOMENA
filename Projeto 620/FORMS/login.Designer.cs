@@ -41,6 +41,8 @@
             this.nightControlBox1 = new ReaLTaiizor.Controls.NightControlBox();
             this.checkBox1 = new ReaLTaiizor.Controls.CheckBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
@@ -57,8 +59,8 @@
             this.btn_registar.Image = null;
             this.btn_registar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_registar.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
-            this.btn_registar.Location = new System.Drawing.Point(308, 419);
-            this.btn_registar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_registar.Location = new System.Drawing.Point(313, 419);
+            this.btn_registar.Margin = new System.Windows.Forms.Padding(2);
             this.btn_registar.Name = "btn_registar";
             this.btn_registar.PressedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.btn_registar.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
@@ -74,7 +76,7 @@
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(-17, 184);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(250, 307);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -87,7 +89,7 @@
             this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox2.Location = new System.Drawing.Point(430, 247);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(321, 242);
             this.pictureBox2.TabIndex = 2;
@@ -119,7 +121,7 @@
             this.btn_login.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_login.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
             this.btn_login.Location = new System.Drawing.Point(499, 201);
-            this.btn_login.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_login.Margin = new System.Windows.Forms.Padding(2);
             this.btn_login.Name = "btn_login";
             this.btn_login.PressedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.btn_login.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
@@ -172,7 +174,7 @@
             this.tb_password.Lighting = false;
             this.tb_password.LinearGradientPen = false;
             this.tb_password.Location = new System.Drawing.Point(308, 248);
-            this.tb_password.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tb_password.Margin = new System.Windows.Forms.Padding(2);
             this.tb_password.Name = "tb_password";
             this.tb_password.Password = true;
             this.tb_password.PenWidth = 15;
@@ -204,7 +206,7 @@
             this.tb_username.Lighting = false;
             this.tb_username.LinearGradientPen = false;
             this.tb_username.Location = new System.Drawing.Point(308, 191);
-            this.tb_username.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tb_username.Margin = new System.Windows.Forms.Padding(2);
             this.tb_username.Name = "tb_username";
             this.tb_username.PenWidth = 15;
             this.tb_username.RGB = false;
@@ -234,7 +236,7 @@
             this.nightControlBox1.EnableMinimizeButton = true;
             this.nightControlBox1.EnableMinimizeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
             this.nightControlBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.nightControlBox1.Location = new System.Drawing.Point(648, 0);
+            this.nightControlBox1.Location = new System.Drawing.Point(613, 0);
             this.nightControlBox1.MaximizeHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.nightControlBox1.MaximizeHoverForeColor = System.Drawing.Color.White;
             this.nightControlBox1.MinimizeHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -256,7 +258,7 @@
             this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.checkBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(125)))), ((int)(((byte)(132)))));
             this.checkBox1.Location = new System.Drawing.Point(318, 303);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(2);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(124, 16);
             this.checkBox1.TabIndex = 3;
@@ -266,6 +268,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.checkBox1);
             this.panel1.Controls.Add(this.nightControlBox1);
             this.panel1.Controls.Add(this.tb_username);
@@ -278,10 +282,36 @@
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.btn_registar);
             this.panel1.Location = new System.Drawing.Point(-2, -2);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(752, 493);
             this.panel1.TabIndex = 4;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 11.2F);
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3.Location = new System.Drawing.Point(287, 392);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(147, 20);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "Regista-te campeão!";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 11.2F);
+            this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label4.Location = new System.Drawing.Point(305, 371);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(116, 20);
+            this.label4.TabIndex = 13;
+            this.label4.Text = "Não tens conta?";
             // 
             // login
             // 
@@ -291,7 +321,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximumSize = new System.Drawing.Size(750, 488);
             this.MinimumSize = new System.Drawing.Size(750, 488);
             this.Name = "login";
@@ -319,5 +349,7 @@
         private ReaLTaiizor.Controls.CheckBox checkBox1;
         private System.Windows.Forms.Panel panel1;
         public ReaLTaiizor.Controls.NightControlBox nightControlBox1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
     }
 }

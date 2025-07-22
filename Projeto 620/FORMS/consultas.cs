@@ -91,6 +91,7 @@ namespace Projeto_620.FORMS
         {
             User utilizador = GlobalUtils.users.FirstOrDefault(u => u.Username == GlobalUtils.username);
             GlobalUtils.GuardarXML(utilizador);
+            GlobalUtils.soundPlayer.Play();
             Form log = new login();
             log.Show();
             this.Close();

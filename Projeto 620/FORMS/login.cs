@@ -21,7 +21,7 @@ namespace Projeto_620.FORMS
 {
     public partial class login : Form
     {
-        public SoundPlayer player = new SoundPlayer(Properties.Resources.dry_fart);
+        public SoundPlayer player = new SoundPlayer(Properties.Resources.helloThere);
         public login()
         {
             InitializeComponent();

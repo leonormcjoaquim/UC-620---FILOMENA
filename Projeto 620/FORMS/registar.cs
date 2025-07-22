@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -16,10 +17,13 @@ namespace Projeto_620
 {
     public partial class registar : Form
     {
+        public SoundPlayer player = new SoundPlayer(Properties.Resources.espetaculo);
         public registar()
         {
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
+            cbb_objectives.SelectedIndex = 1;
+            cbb_sexo.SelectedIndex = 1;
         }
 
         private void pb_foto_Click(object sender, EventArgs e)
@@ -118,7 +122,7 @@ namespace Projeto_620
 
             // ALTERAR PARA UMA MENSAGEM MAIS 'NITA
             MessageBox.Show("Utilizador criado com sucesso!", "Sucesso!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+            player.Play();
             this.Close();
         }
 
@@ -161,7 +165,7 @@ namespace Projeto_620
             }
             else
             {
-                lbl_resultado_IMC.Text = $"O IMC é: {imc:F2}. Está obeso.";
+                lbl_resultado_IMC.Text = $"O IMC é: {imc:F2}. Precisa de se registar urgentemente na nossa aplicação!";
             }
         }       
     }

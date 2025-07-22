@@ -9,6 +9,7 @@ using System.Runtime.Remoting;
 using System.Xml.Linq;
 using System.Windows.Forms;
 using System.IO;
+using System.Media;
 
 namespace Projeto_620.utils
 {
@@ -16,7 +17,7 @@ namespace Projeto_620.utils
     {
 
         public static List<User> users = new List<User>();
-
+        public static SoundPlayer soundPlayer = new SoundPlayer(Properties.Resources.byeByeBye);
 
         public static string username = "";
         public static string caminho = @"C:\cometudoperdetudo\users.xml";
@@ -92,11 +93,13 @@ namespace Projeto_620.utils
 
         }
 
-        public static void sairSemGuardar()
+        public static async Task sairSemGuardar()
         {
             DialogResult resultado = MessageBox.Show("Tem a certeza que pretende sair?\n Se não fizer logout os dados não serão guardados.\n", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning );
             if (resultado == DialogResult.Yes)
             {
+                GlobalUtils.soundPlayer.Play();
+                await Task.Delay(1500);
                 Application.Exit();
             }
         }

@@ -154,5 +154,23 @@
   <ItemGroup>
     <None Include="Resources\dry-fart.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\helloThere.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\espetaculo.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\byebyebye.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\byeByeBye.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\espetaculo.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\helloThere.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -118,7 +118,16 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="byeByeBye" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\byeByeBye.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="dry_fart" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dry-fart.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="espetaculo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\espetaculo.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="helloThere" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\helloThere.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

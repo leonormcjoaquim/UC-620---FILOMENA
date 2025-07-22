@@ -74,19 +74,20 @@ namespace Projeto_620.models
             Console.WriteLine("Treino adicionado.");
         }
 
-        // VER COMO FAZER SENDO QUE TEMOS DE ENVIAR PARA UMA LISTBOX??? TODO:
-        public string VerHistoricoTreino()
-        {
-            return "AQUI";
-        }
-        public string VerHistoricoConsulta()
-        {
-            return "AQUI";
-        }
+        // NÃO IMPLEMENTAMOS POIS FIZEMOS DE OUTRO METODO
+        //// VER COMO FAZER SENDO QUE TEMOS DE ENVIAR PARA UMA LISTBOX??? TODO:
+        //public string VerHistoricoTreino()
+        //{
+        //    return "AQUI";
+        //}
+        //public string VerHistoricoConsulta()
+        //{
+        //    return "AQUI";
+        //}
 
-        public string VerHistoricoAlimentacao()
-        {
-            return "AQUI";
-        }
+        //public string VerHistoricoAlimentacao()
+        //{
+        //    return "AQUI";
+        //}
     }
 }
