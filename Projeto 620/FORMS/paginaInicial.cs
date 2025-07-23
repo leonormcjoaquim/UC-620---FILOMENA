@@ -8,6 +8,7 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -180,6 +181,7 @@ namespace Projeto_620.FORMS
         private void bt_logout_Click(object sender, EventArgs e)
         {
             User utilizador = GlobalUtils.users.FirstOrDefault(u => u.Username == GlobalUtils.username);
+            GlobalUtils.soundPlayer.Play();
             GlobalUtils.GuardarXML(utilizador);
             Form log = new login();
             log.Show();
