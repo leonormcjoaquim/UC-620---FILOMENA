@@ -20,11 +20,11 @@ namespace Projeto_620.utils
         public static SoundPlayer soundPlayer = new SoundPlayer(Properties.Resources.byeByeBye);
 
         public static string username = "";
-        public static string caminho = @"C:\cometudoperdetudo\users.xml";
+        public static string caminho = @"C:\Projeto 620\UC-620---FILOMENA\Projeto 620\XML\users.xml";
 
         public static void GuardarXML(User utilizador)
         {
-            string casofalhe = @"C:\cometudoperdetudo\users_temp.xml";
+            string casofalhe = @"C:\Projeto 620\UC-620---FILOMENA\Projeto 620\XMLusers_temp.xml";
             XDocument doc = XDocument.Load(caminho);
             var todosDados = doc.Root.Elements("user").FirstOrDefault(u =>(string)u.Element("Dados")?.Element("username") == username);
 

@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<users>
+  <user>
+    <Dados>
+      <username>root</username>
+      <nome>root</nome>
+      <password>123456</password>
+      <sexo>Masculino</sexo>
+      <calorias>1800</calorias>
+      <email>teste@email.com</email>
+      <idade>28</idade>
+      <altura>1.49</altura>
+      <peso>41</peso>
+    </Dados>
+    <Consultas></Consultas>
+    <Treinos></Treinos>
+    <Alimentacoes></Alimentacoes>
+  </user>
+  <user>
+    <Dados>
+      <username>Teste</username>
+      <nome>Teste</nome>
+      <password>123</password>
+      <sexo>Masculino</sexo>
+      <calorias>2222</calorias>
+      <idade>2</idade>
+      <email>teste</email>
+      <objetivo>Perder Peso</objetivo>
+      <altura>2</altura>
+      <peso>2</peso>
+    </Dados>
+  </user>
+  <user>
+    <Dados>
+      <username>andreC</username>
+      <nome>André Correia</nome>
+      <password>123</password>
+      <sexo>Masculino</sexo>
+      <calorias>1800</calorias>
+      <email>andrecorreia@email.com</email>
+      <idade>28</idade>
+      <altura>1.72</altura>
+      <peso>72</peso>
+    </Dados>
+    <Consultas>
+      <Consulta>
+        <TipoMarcacao>Especialista</TipoMarcacao>
+        <DataMarcacao>2025-08-02</DataMarcacao>
+        <Especialidade>Psicologo</Especialidade>
+      </Consulta>
+    </Consultas>
+    <Treinos>
+      <Treino>
+        <NomeTreino>Flexibilidade</NomeTreino>
+        <TipoExercicio>Yoga</TipoExercicio>
+        <Duracao>35</Duracao>
+        <CaloriasQueimadas>121</CaloriasQueimadas>
+        <Data>2025-07-22T16:12:57</Data>
+      </Treino>
+      <Treino>
+        <NomeTreino>Corri Bue</NomeTreino>
+        <TipoExercicio>Cardio</TipoExercicio>
+        <Duracao>12</Duracao>
+        <CaloriasQueimadas>600</CaloriasQueimadas>
+        <Data>2025-07-22T17:57:29</Data>
+      </Treino>
+    </Treinos>
+    <Alimentacoes>
+      <refeicao>
+        <NomeComida>Comida boa</NomeComida>
+        <TipoRefeicao>Jantar</TipoRefeicao>
+        <Calorias>375</Calorias>
+        <Data>2025-07-22T16:13:18</Data>
+      </refeicao>
+      <refeicao>
+        <NomeComida>Barra energética</NomeComida>
+        <TipoRefeicao>Snack</TipoRefeicao>
+        <Calorias>35</Calorias>
+        <Data>2025-07-22T17:57:45</Data>
+      </refeicao>
+    </Alimentacoes>
+  </user>
+  <user>
+    <Dados>
+      <username>leonorj</username>
+      <nome>Leonor Joaquim</nome>
+      <password>123</password>
+      <sexo>Feminino</sexo>
+      <calorias>1400</calorias>
+      <email>leonorjoaquim@email.com</email>
+      <idade>26</idade>
+      <altura>1.7</altura>
+      <peso>60</peso>
+    </Dados>
+    <Consultas />
+    <Treinos />
+    <Alimentacoes />
+  </user>
+</users>
