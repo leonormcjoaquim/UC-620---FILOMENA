@@ -93,7 +93,15 @@
       <peso>60</peso>
     </Dados>
     <Consultas />
-    <Treinos />
+    <Treinos>
+      <Treino>
+        <NomeTreino>faf</NomeTreino>
+        <TipoExercicio>Cardio</TipoExercicio>
+        <Duracao>12</Duracao>
+        <CaloriasQueimadas>12</CaloriasQueimadas>
+        <Data>2025-07-24T20:49:22</Data>
+      </Treino>
+    </Treinos>
     <Alimentacoes />
   </user>
 </users>

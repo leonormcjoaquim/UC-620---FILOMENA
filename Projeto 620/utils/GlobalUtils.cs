@@ -80,7 +80,6 @@ namespace Projeto_620.utils
             // Adicionar novo utilizador ao XML
             doc.Root.Add(novoUser);
 
-            // Gravar
             doc.Save(casofalhe);
 
             // Copiar temp para novo

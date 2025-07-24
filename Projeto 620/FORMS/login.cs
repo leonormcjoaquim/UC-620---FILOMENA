@@ -34,11 +34,6 @@ namespace Projeto_620.FORMS
             {
                 this.WindowState = FormWindowState.Minimized;
             }
-            else
-            {
-                //this.Close();
-                
-            }
         }
 
         private void checkBox1_CheckedChanged(object sender)

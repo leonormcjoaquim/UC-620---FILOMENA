@@ -75,7 +75,6 @@ namespace Projeto_620.models
         }
 
         // NÃO IMPLEMENTAMOS POIS FIZEMOS DE OUTRO METODO
-        //// VER COMO FAZER SENDO QUE TEMOS DE ENVIAR PARA UMA LISTBOX??? TODO:
         //public string VerHistoricoTreino()
         //{
         //    return "AQUI";
