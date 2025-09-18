@@ -56,7 +56,11 @@ UC-620---FILOMENA/
 
 > Add some screenshots of your app here (use a `/screenshots` folder).
 
-![Screenshot](./screenshots/example.png)
+![Login](./screenshots/Login.png)
+
+![Home+Menu](./screenshots/Home+Menu.png)
+
+![Appointments](./screenshots/Appointments.png)
 
 ---
 
