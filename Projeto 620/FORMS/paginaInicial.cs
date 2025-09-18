@@ -27,6 +27,7 @@ namespace Projeto_620.FORMS
             EstilizarGrafico();
             lbl_ola.Text = "Olá " + GlobalUtils.username;
             User utilizador = GlobalUtils.users.FirstOrDefault(u => u.Username == GlobalUtils.username);
+            GlobalUtils.mudarSomSaida();
 
             tb_nome.Text = utilizador.Nome;
             tb_idade.Text = utilizador.Idade.ToString();
@@ -181,7 +182,7 @@ namespace Projeto_620.FORMS
         private void bt_logout_Click(object sender, EventArgs e)
         {
             User utilizador = GlobalUtils.users.FirstOrDefault(u => u.Username == GlobalUtils.username);
-            GlobalUtils.soundPlayer.Play();
+            GlobalUtils.somSaida.Play();
             GlobalUtils.GuardarXML(utilizador);
             Form log = new login();
             log.Show();

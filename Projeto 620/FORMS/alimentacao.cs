@@ -21,6 +21,7 @@ namespace Projeto_620
             User utilizador = GlobalUtils.users.FirstOrDefault(x => x.Username == GlobalUtils.username);
             InitializeComponent();
             AtualizarBarraCalorias();
+            GlobalUtils.mudarSomSaida();
             lbl_tituloGanhar.Visible = false;
             lbl_tituloperder.Visible = false;
             lbl_tituloManter.Visible = false;
@@ -113,7 +114,7 @@ namespace Projeto_620
         {
             User utilizador = GlobalUtils.users.FirstOrDefault(u => u.Username == GlobalUtils.username);
             GlobalUtils.GuardarXML(utilizador);
-            GlobalUtils.soundPlayer.Play();
+            GlobalUtils.somSaida.Play();
             Form log = new login();
             log.Show();
             this.Close();
@@ -399,5 +400,9 @@ namespace Projeto_620
             AtualizarBarraCalorias();
         }
 
+        private void label4_MouseHover(object sender, EventArgs e)
+        {
+            label4.Cursor = Cursors.Hand;
+        }
     }
 }

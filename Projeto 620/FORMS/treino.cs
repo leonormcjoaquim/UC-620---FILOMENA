@@ -19,6 +19,7 @@ namespace Projeto_620.FORMS
         public treino()
         {
             InitializeComponent();
+            GlobalUtils.mudarSomSaida();
         }
 
         private void btn_sair_Click(object sender, EventArgs e)
@@ -99,7 +100,7 @@ namespace Projeto_620.FORMS
             sidebarTransition.Stop();
             this.Close();
             User utilizador = GlobalUtils.users.FirstOrDefault(u => u.Username == GlobalUtils.username);
-            GlobalUtils.soundPlayer.Play();
+            GlobalUtils.somSaida.Play();
             GlobalUtils.GuardarXML(utilizador);
             Form log = new login();
             log.Show();

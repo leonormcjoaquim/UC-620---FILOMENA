@@ -1,20 +1,24 @@
-﻿using System;
+﻿using Projeto_620.models;
+using Projeto_620.utils;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Media;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
-using Projeto_620.models;
-using Projeto_620.utils;
 
 
 namespace Projeto_620.FORMS
 {
     public partial class consultas : Form
     {
+        
+        public SoundPlayer playerSaida = new SoundPlayer();
         public consultas()
         {
             InitializeComponent();
+            GlobalUtils.mudarSomSaida();
         }
 
 
@@ -91,7 +95,7 @@ namespace Projeto_620.FORMS
         {
             User utilizador = GlobalUtils.users.FirstOrDefault(u => u.Username == GlobalUtils.username);
             GlobalUtils.GuardarXML(utilizador);
-            GlobalUtils.soundPlayer.Play();
+            GlobalUtils.somSaida.Play();
             Form log = new login();
             log.Show();
             this.Close();

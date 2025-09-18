@@ -27,6 +27,7 @@ namespace Projeto_620.FORMS
             InitializeComponent();
         }
 
+
         private void nightControlBox1_Click(object sender, EventArgs e)
         {
             Application.Exit();

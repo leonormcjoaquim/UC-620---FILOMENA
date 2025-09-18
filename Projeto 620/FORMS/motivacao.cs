@@ -20,6 +20,7 @@ namespace Projeto_620.FORMS
         {
             InitializeComponent();
             MostrarImagemAleatoria();
+            GlobalUtils.mudarSomSaida();
         }
 
         Random rnd = new Random();
@@ -101,7 +102,7 @@ namespace Projeto_620.FORMS
         {
             User utilizador = GlobalUtils.users.FirstOrDefault(u => u.Username == GlobalUtils.username);
             GlobalUtils.GuardarXML(utilizador);
-            GlobalUtils.soundPlayer.Play();
+            GlobalUtils.somSaida.Play();
             Form sair = new login();
             sair.Show();
             this.Close();

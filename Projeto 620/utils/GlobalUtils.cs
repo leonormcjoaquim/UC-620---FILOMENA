@@ -18,10 +18,13 @@ namespace Projeto_620.utils
 
         public static List<User> users = new List<User>();
         public static SoundPlayer soundPlayer = new SoundPlayer(Properties.Resources.byeByeBye);
+        public static SoundPlayer somSaida = new SoundPlayer();
 
         public static string username = "";
         public static string caminho = @"C:\Projeto 620\UC-620---FILOMENA\Projeto 620\XML\users.xml";
 
+        
+        
         public static void GuardarXML(User utilizador)
         {
             string casofalhe = @"C:\Projeto 620\UC-620---FILOMENA\Projeto 620\XMLusers_temp.xml";
@@ -100,6 +103,32 @@ namespace Projeto_620.utils
                 GlobalUtils.soundPlayer.Play();
                 await Task.Delay(1500);
                 Application.Exit();
+            }
+        }
+        public static void mudarSomSaida()
+        {
+            string saida1 = @"C:\cometudoperdetudo\EduSai.wav";
+            string saida2 = @"C:\cometudoperdetudo\RicSai.wav";
+            string saida3 = @"C:\cometudoperdetudo\BilSai.wav";
+            string saida4 = @"C:\cometudoperdetudo\HugSai.wav";
+
+            Random teste = new Random();
+            int num = teste.Next(1, 5);
+
+            if(num == 1)
+            {
+                GlobalUtils.somSaida = new SoundPlayer(saida1);
+            } else if (num == 2)
+            {
+                GlobalUtils.somSaida = new SoundPlayer(saida2);
+
+            } else if (num == 3)
+            {
+                GlobalUtils.somSaida = new SoundPlayer(saida3);
+
+            } else if (num == 4)
+            {
+                GlobalUtils.somSaida = new SoundPlayer(saida4);
             }
         }
 
